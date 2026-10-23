@@ -1,0 +1,741 @@
+{
+ "id": "tribute",
+ "speaker": "minos",
+ "flag": "myth",
+ "origin": {
+  "x": 1145.7,
+  "y": 905.7
+ },
+ "party": {
+  "girl": [
+   -8,
+   36
+  ],
+  "owl": [
+   -24,
+   34
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  30,
+  46
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    30,
+    46
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "minos",
+   "sprite": "c_minos_0",
+   "x": 46,
+   "y": 34,
+   "anchor": [
+    12,
+    47
+   ],
+   "walk": [
+    "c_minos_1",
+    "c_minos_0",
+    "c_minos_2",
+    "c_minos_0"
+   ],
+   "ghost": true,
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "I am King Minos of Crete.",
+   "hold": 600,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1100,
+   "at": [
+    44,
+    40
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1781
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p0",
+   "sprite": "c_citizen_0",
+   "x": 16,
+   "y": 66,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p1",
+   "sprite": "c_citizen2_0",
+   "x": 30,
+   "y": 70,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p2",
+   "sprite": "c_citizen3_0",
+   "x": 62,
+   "y": 68,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p3",
+   "sprite": "c_citizen_0",
+   "x": 74,
+   "y": 62,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "My son Androgeos died in Athens, and I hold that city to blame.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "minos",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "p0",
+   "emote": "sad",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "p2",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1350
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.2,
+   "ms": 600,
+   "at": [
+    40,
+    48
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "So I set a price on them, and the price was children.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "p1",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1772
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pot",
+   "sprite": "p_pot",
+   "x": 30,
+   "y": 52,
+   "anchor": [
+    11,
+    17
+   ],
+   "shadow": 0,
+   "z": 0
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    26,
+    52
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b0",
+   "sprite": "c_boy_0",
+   "x": -4,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g0",
+   "sprite": "c_girl_0",
+   "x": -4,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b1",
+   "sprite": "c_boy_0",
+   "x": 5,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g1",
+   "sprite": "c_girl_0",
+   "x": 5,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b2",
+   "sprite": "c_boy_0",
+   "x": 14,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g2",
+   "sprite": "c_girl_0",
+   "x": 14,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b3",
+   "sprite": "c_boy_0",
+   "x": 23,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g3",
+   "sprite": "c_girl_0",
+   "x": 23,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b4",
+   "sprite": "c_boy_0",
+   "x": 32,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g4",
+   "sprite": "c_girl_0",
+   "x": 32,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b5",
+   "sprite": "c_boy_0",
+   "x": 41,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g5",
+   "sprite": "c_girl_0",
+   "x": 41,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b6",
+   "sprite": "c_boy_0",
+   "x": 50,
+   "y": 78,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g6",
+   "sprite": "c_girl_0",
+   "x": 50,
+   "y": 92,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 500
+  },
+  {
+   "t": "caption",
+   "text": "Every nine years Athens must send me seven boys and seven girls.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "wait",
+   "ms": 1477
+  },
+  {
+   "t": "caption",
+   "text": "They are chosen by lot.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "p1",
+   "to": [
+    34,
+    56
+   ],
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.jump",
+   "id": "p1",
+   "height": 6,
+   "ms": 300
+  },
+  {
+   "t": "actor.emote",
+   "id": "b1",
+   "emote": "dots",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "b4",
+   "emote": "dots",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "g3",
+   "emote": "sad",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "I shut them in the Labyrinth, and the Minotaur takes them.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.45,
+   "ms": 1200,
+   "color": "15,8,30",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1911
+  },
+  {
+   "t": "still",
+   "image": "art/stills/minotaur_eyes.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 2,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "caption",
+   "text": "He is half man and half bull, and he is always hungry.",
+   "hold": 600,
+   "cps": 38,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2221
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "fx",
+     "type": "wash",
+     "alpha": 0,
+     "ms": 1,
+     "par": true
+    },
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      150
+     ]
+    },
+    {
+     "t": "actor.spawn",
+     "id": "ship",
+     "sprite": "ship_5_0",
+     "x": 60,
+     "y": 215,
+     "anchor": [
+      35,
+      48
+     ],
+     "scale": 0.55,
+     "smooth": true,
+     "wake": true,
+     "shadow": 0,
+     "z": 0,
+     "abs": true
+    },
+    {
+     "t": "actor.anim",
+     "id": "ship",
+     "frames": [
+      "ship_5_0",
+      "ship_5_1",
+      "ship_5_2",
+      "ship_5_1"
+     ],
+     "fps": 3,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    380,
+    170
+   ],
+   "ms": 9000,
+   "ease": "eio",
+   "scale": [
+    0.55,
+    0.9
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Their ship sails under black sails. That is how everyone knows what it carries.",
+   "hold": 600,
+   "cps": 34,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    150
+   ],
+   "ms": 2000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3223
+  },
+  {
+   "t": "caption",
+   "text": "No one has ever come back to change them to white.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2370
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "story": "epicurus",
+ "title": "Epicurus and the Garden",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "epicurus",
+   "leontion",
+   "mys"
+  ],
+  [
+   "epicurus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A sunny garden outside Athens: Epicurus (gentle, curly beard, simple clothes) with Leontion writing a scroll and the young slave Mys studying, men and women learning together under fig trees; a small sign on the garden gate reads STRANGER, YOU WILL DO WELL TO STAY HERE",
+   "caption": "Around 306 BC Epicurus bought a garden and taught there. Men, women, even slaves.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "Anyone can join."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A simple table with a loaf of bread, a jug of water and a tiny pot of cheese, Epicurus beaming with delight, a letter beside it",
+   "caption": "Bread and water make me happy. Send me a little pot of cheese, so that I can have a feast.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "A little pot of cheese!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Atoms swirling and scattering in a cosmic swirl at the top; below on clouds, the gods lounging bored and uninterested, one yawning, one eating grapes, ignoring the world",
+   "caption": "Do not fear the gods: they do not meddle with us. Everything is made of tiny atoms.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "The gods are not interested."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Epicurus calm with a gentle smile, atoms drifting like dust in a sunbeam, a ribbon with the quote",
+   "caption": "Do not fear death. When we die, the atoms simply scatter.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "Where death is, I am not."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "The Agora: rivals whispering behind their hands, pointing at the Garden; in a small inset a Stoic writing and forging rude letters by candlelight with a mean smirk, a pile of fifty letters",
+   "caption": "Enemies hated that women and slaves were welcome. They spread rumours, and a rival Stoic forged fifty rude letters in his name.",
+   "speech": {
+    "speaker": "Rival",
+    "text": "A glutton, they say..."
+   },
+   "sfx": null,
+   "tag": "HISTORY"
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Split image: on the left a cartoon of a huge fat 'Epicurus the glutton' stuffing his face at a banquet, on the right the real Epicurus quietly eating a piece of bread with a cup of water; a bold line between them",
+   "caption": "They said he overate till he was sick. He lived on bread and water.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "Bread and water."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A big open dictionary page with the word EPICURE highlighted and a big red stamp reading UNFAIR!, Glauka the owl pointing indignantly at it",
+   "caption": "The insult stuck: today an epicure means someone who loves rich food.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Unfair!"
+   },
+   "sfx": "STAMP",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Old Epicurus sitting in the garden surrounded by his smiling friends, Leontion, Mys and others, warm golden light, his eyes crinkled with a peaceful smile despite a blanket round his legs",
+   "caption": "He died in 270 BC in great pain, writing to a friend that remembering their conversations made it a happy day.",
+   "speech": {
+    "speaker": "Epicurus",
+    "text": "A happy day."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

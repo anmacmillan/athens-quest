@@ -1,0 +1,350 @@
+{
+ "id": "spartan-fox",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "road",
+     "camera": [
+      240,
+      200
+     ],
+     "zoom": 1.2
+    },
+    {
+     "t": "actor.spawn",
+     "id": "b1",
+     "sprite": "c_spartanboy_0",
+     "x": 160,
+     "y": 200,
+     "anchor": [
+      8,
+      33
+     ],
+     "walk": [
+      "c_spartanboy_1",
+      "c_spartanboy_0",
+      "c_spartanboy_2",
+      "c_spartanboy_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "b2",
+     "sprite": "c_spartanboy_0",
+     "x": 200,
+     "y": 214,
+     "anchor": [
+      8,
+      33
+     ],
+     "walk": [
+      "c_spartanboy_1",
+      "c_spartanboy_0",
+      "c_spartanboy_2",
+      "c_spartanboy_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "b3",
+     "sprite": "c_spartanboy_0",
+     "x": 240,
+     "y": 204,
+     "anchor": [
+      8,
+      33
+     ],
+     "walk": [
+      "c_spartanboy_1",
+      "c_spartanboy_0",
+      "c_spartanboy_2",
+      "c_spartanboy_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "mom",
+     "sprite": "c_citizen3_0",
+     "x": 330,
+     "y": 200,
+     "anchor": [
+      10,
+      40
+     ],
+     "walk": [
+      "c_citizen3_1",
+      "c_citizen3_0",
+      "c_citizen3_2",
+      "c_citizen3_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "sol",
+     "sprite": "c_soldier_0",
+     "x": 400,
+     "y": 210,
+     "anchor": [
+      17,
+      52
+     ],
+     "walk": [
+      "c_soldier_1",
+      "c_soldier_0",
+      "c_soldier_2",
+      "c_soldier_0"
+     ],
+     "abs": true
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "In Sparta, boys were taken from their families at seven to train as soldiers.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "sol",
+   "to": [
+    300,
+    212
+   ],
+   "ms": 2400,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "actor.emote",
+   "id": "mom",
+   "emote": "sad",
+   "ms": 2200
+  },
+  {
+   "t": "actor.move",
+   "id": "b2",
+   "to": [
+    330,
+    214
+   ],
+   "ms": 1500,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "The system was called the agoge. The boys were kept hungry on purpose.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "b1",
+   "to": [
+    380,
+    212
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "b2",
+   "to": [
+    400,
+    212
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "b3",
+   "to": [
+    420,
+    212
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "sol",
+   "to": [
+    440,
+    212
+   ],
+   "ms": 2800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "actor.remove",
+   "id": "mom",
+   "ms": 800
+  },
+  {
+   "t": "caption",
+   "text": "They were encouraged to steal food.",
+   "hold": 1500,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "b1",
+   "emote": "dots",
+   "ms": 2600
+  },
+  {
+   "t": "actor.emote",
+   "id": "b3",
+   "emote": "dots",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 2500
+  },
+  {
+   "t": "caption",
+   "text": "A boy caught stealing was beaten: for being caught, not for stealing. Xenophon and Plutarch both wrote it down.",
+   "hold": 1700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "bread",
+   "sprite": "p_cup",
+   "x": 280,
+   "y": 150,
+   "anchor": [
+    4,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "b2",
+   "to": [
+    276,
+    160
+   ],
+   "ms": 1800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "b2",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "caption",
+   "text": "Plutarch tells of a boy who stole a fox cub and hid it under his cloak.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    260,
+    190
+   ],
+   "ms": 1500,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "Rather than be found out, he let the cub tear at his stomach with its teeth and claws until he fell dead.",
+   "hold": 1800,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "b2",
+   "emote": "dots",
+   "ms": 3500
+  },
+  {
+   "t": "wait",
+   "ms": 3600
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live"
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  }
+ ]
+}

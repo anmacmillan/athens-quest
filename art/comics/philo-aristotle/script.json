@@ -1,0 +1,153 @@
+{
+ "story": "philo-aristotle",
+ "title": "Aristotle and the Falling Balls",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "aristotle",
+   "plato"
+  ],
+  [
+   "aristotle"
+  ],
+  [
+   "aristotle",
+   "stevin",
+   "medieval_scholar"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Aristotle (dandy, rings, neat beard, fine cloak) crouching in a sunny garden with a notebook, carefully watching two real cats washing and stalking",
+   "caption": "Aristotle watched real cats.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "Watch real cats."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Plato gazing dreamily upward at a glowing, golden, perfect, ideal cat floating in the clouds, hands clasped, while Aristotle in the corner rolls his eyes",
+   "caption": "Plato dreamed of the perfect cat.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "The Form of Cat..."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Aristotle counting a cat's whiskers and measuring its paw with a ruler, notes and sketches of birds, plants and a weathervane around him",
+   "caption": "Count, compare, take them apart.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "Count. Compare."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Aristotle in the Lyceum surrounded by animals, plants, weather charts and scrolls on politics, an exuberant scholar, Glauka the owl on a shelf",
+   "caption": "He studied animals, plants, weather and politics.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Aristotle at a writing table with his young son Nicomachus (a small boy with curly hair) leaning on his arm, both reading a scroll",
+   "caption": "He wrote a book on how to live well, named after his son Nicomachus.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "For you, Nicomachus."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A big unrolled scroll with the title NICOMACHEAN ETHICS and the words HOW TO LIVE WELL, light shining from it",
+   "caption": "The Nicomachean Ethics.",
+   "speech": null,
+   "sfx": null,
+   "tag": "OR HIS FATHER?"
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A tree in full blossom with golden fruit and white flowers growing from a scroll, a big word EUDAIMONIA on a ribbon",
+   "caption": "The goal of life is eudaimonia: flourishing.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "Flourish by being good at being human."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Medieval scholars in hooded robes bowing deeply before a tall stack of Aristotle's books on a desk, candlelit monastery library, centuries passing as a calendar",
+   "caption": "For over a thousand years people believed what he wrote.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Aristotle explaining with a lead ball and a wooden ball held up in each hand, a thought-bubble of the lead ball falling first; a tick next to it, it looks right",
+   "caption": "He wrote that heavy things fall faster than light ones. It sounds right.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "Heavy falls faster."
+   },
+   "sfx": null,
+   "tag": "WRONG!"
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A tall church tower in Delft in 1586 with Simon Stevin (Flemish engineer, ruff collar, beard) on the top holding two lead balls over the parapet, a friend waiting far below with a hand cupped to his ear",
+   "caption": "In 1586 Simon Stevin dropped two lead balls from a church tower in Delft.",
+   "speech": {
+    "speaker": "Stevin",
+    "text": "One ten times heavier!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Two lead balls, one big and one small, falling side by side from the tower with speed lines, the friend below with eyes shut listening, a single big sound-effect",
+   "caption": "They hit the ground together. A thousand years earlier John Philoponus had already doubted Aristotle.",
+   "speech": null,
+   "sfx": "THUD",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A small old Italian scholar (Galileo, in a doctor's robe) on the Leaning Tower of Pisa dropping balls, dotted memory-frame, a question mark and a stamp",
+   "caption": "The Galileo and Pisa story may never have happened. Galileo did prove it with balls rolling down slopes.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "story": "tribute",
+ "title": "The Tribute to Crete",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "minos",
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "King Minos on his throne in Knossos, stern, purple robe, double-axe emblem, a golden bull relief behind him",
+   "caption": "King Minos of Crete: his son Androgeos died in Athens.",
+   "speech": {
+    "speaker": "Minos",
+    "text": "Athens will pay."
+   },
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Seven boys and seven girls from Athens standing in a line, frightened, drawing lots from a jar held by an official",
+   "caption": "Every nine years Athens must send seven boys and seven girls, chosen by lot.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The dark Labyrinth entrance at the foot of the palace, torches, a distant huge shadow of a bull-headed giant, young faces",
+   "caption": "Minos shut them in the Labyrinth, and the Minotaur takes them.",
+   "speech": {
+    "speaker": "Minos",
+    "text": "Feed the Minotaur."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A ship with solid black sails leaving the harbour of Athens, grey sky, families waving from the shore",
+   "caption": "Their ship sails under black sails. No one has ever come back to change them to white.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

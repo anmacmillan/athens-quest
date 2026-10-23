@@ -1,0 +1,54 @@
+{
+ "story": "flag-1941",
+ "title": "The Flag at the Edge",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Acropolis in April 1941 with a huge dark-red occupation banner (no symbols) hanging from the flagpole above the temples, grey-uniformed soldiers small in the distance, a sad dark sky, Glauka in the corner",
+   "caption": "In April 1941 the German army took Athens. They raised their banner on the Acropolis.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Two Greek students (young men in dark jackets) creeping up the rock at night under the moon, tiptoeing",
+   "caption": "On the night of 30 May 1941 two students climbed up.",
+   "speech": {
+    "speaker": "Student",
+    "text": "Quiet."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The two students tearing the banner down from its pole at night, flag falling like a cloth, hearts racing",
+   "caption": "Manolis Glezos and Apostolos Santas tore the flag down and took it away.",
+   "speech": null,
+   "sfx": "RIIIP",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A young Greek guard wrapped in the Greek flag on the rock edge in a hazy memory-like dotted frame with a question mark",
+   "caption": "A story says a young guard, Konstantinos Koukidis, wrapped himself in the flag and jumped. Historians are not sure it happened.",
+   "speech": null,
+   "sfx": null,
+   "tag": "NOT SURE"
+  }
+ ]
+}

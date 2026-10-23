@@ -1,0 +1,57 @@
+{
+ "story": "pericles",
+ "title": "Pericles and His Helmet",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "pericles"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Pericles on the Pnyx speaking to a crowd of Athenians with a raised hand, citizens voting with raised hands",
+   "caption": "For about thirty years, from 461 to 429 BC, Pericles was the leading man of Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Pericles pointing at the rising Parthenon and Propylaia on the Acropolis, builders at work",
+   "caption": "Pericles persuaded Athens to build the Parthenon and the Propylaia.",
+   "speech": {
+    "speaker": "Pericles",
+    "text": "Build it. Build it all."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A comic poet laughing on a stage as he points at Pericles' very long head under the helmet, an onion floating above, the crowd laughing",
+   "caption": "Comic poets joked that the helmet hid his strangely long head. They called him onion-head.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A crowded city in the grip of the plague, a mournful Pericles at a doorway, shadows, no bodies shown, only sorrow",
+   "caption": "In 430 BC a terrible plague struck. His two sons died of it, and in 429 BC so did he.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

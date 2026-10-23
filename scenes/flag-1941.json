@@ -1,0 +1,424 @@
+{
+ "id": "flag-1941",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   -120.0,
+   100.0
+  ],
+  "owl": [
+   -76.0,
+   96.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  -300.0,
+  80.0
+ ],
+ "origin": {
+  "x": 2931,
+  "y": 1996
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    -300.0,
+    80.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "text": "In April 1941 the German army took Athens.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dark",
+   "sprite": "p_flag_dark",
+   "x": -336.0,
+   "y": 72.0,
+   "anchor": [
+    11,
+    12
+   ],
+   "scale": 1.1,
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g1",
+   "sprite": "c_german_0",
+   "x": -280.0,
+   "y": 140.0,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_german_1",
+    "c_german_0",
+    "c_german_2",
+    "c_german_0"
+   ],
+   "ghost": true,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g2",
+   "sprite": "c_german_0",
+   "x": -256.0,
+   "y": 160.0,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_german_1",
+    "c_german_0",
+    "c_german_2",
+    "c_german_0"
+   ],
+   "ghost": true,
+   "ms": 800
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -300.0,
+    92.0
+   ],
+   "ms": 1600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "caption",
+   "text": "They raised the Nazi flag up here on the Acropolis.",
+   "hold": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "caption",
+   "text": "It flew above the temples.",
+   "hold": 1400,
+   "par": false
+  },
+  {
+   "t": "caption",
+   "text": "The city was under occupation."
+  },
+  {
+   "t": "actor.emote",
+   "id": "g1",
+   "emote": "dots",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "text": "On the night of 30 May 1941 two students climbed up.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.5,
+   "ms": 1400,
+   "color": "10,8,40",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "actor.spawn",
+   "id": "glezos",
+   "sprite": "c_student_0",
+   "x": -180.0,
+   "y": 200.0,
+   "anchor": [
+    10,
+    38
+   ],
+   "walk": [
+    "c_student_1",
+    "c_student_0",
+    "c_student_2",
+    "c_student_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "santas",
+   "sprite": "c_student_0",
+   "x": -152.0,
+   "y": 208.0,
+   "anchor": [
+    10,
+    38
+   ],
+   "walk": [
+    "c_student_1",
+    "c_student_0",
+    "c_student_2",
+    "c_student_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "actor.remove",
+   "id": "g1",
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "g2",
+   "ms": 300
+  },
+  {
+   "t": "caption",
+   "text": "Their names were Manolis Glezos and Apostolos Santas.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "glezos",
+   "to": [
+    -320.0,
+    144.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "santas",
+   "to": [
+    -300.0,
+    152.0
+   ],
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "caption",
+   "text": "They tore the flag down and took it away.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "dark"
+  },
+  {
+   "t": "actor.jump",
+   "id": "glezos",
+   "height": 8,
+   "ms": 400
+  },
+  {
+   "t": "sfx",
+   "name": "whoosh"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dark2",
+   "sprite": "p_flag_dark",
+   "x": -320.0,
+   "y": 132.0,
+   "anchor": [
+    11,
+    12
+   ],
+   "scale": 0.8,
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "glezos",
+   "to": [
+    -180.0,
+    212.0
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "santas",
+   "to": [
+    -160.0,
+    220.0
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dark2",
+   "to": [
+    -180.0,
+    212.0
+   ],
+   "ms": 2200
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.remove",
+   "id": "glezos",
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "santas",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "dark2"
+  },
+  {
+   "t": "caption",
+   "text": "A story says that when the Germans arrived, a young guard called Konstantinos Koukidis wrapped himself in the Greek flag and jumped rather than hand it over.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "k",
+   "sprite": "c_koukidis_0",
+   "x": -300.0,
+   "y": 124.0,
+   "anchor": [
+    10,
+    42
+   ],
+   "walk": [
+    "c_koukidis_1",
+    "c_koukidis_0",
+    "c_koukidis_2",
+    "c_koukidis_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "actor.spawn",
+   "id": "greek",
+   "sprite": "p_flag_greek",
+   "x": -352.0,
+   "y": 68.0,
+   "anchor": [
+    11,
+    12
+   ],
+   "scale": 1.4,
+   "shadow": 0
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "caption",
+   "text": "Historians are not sure it happened.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "k",
+   "to": [
+    -320.0,
+    104.0
+   ],
+   "ms": 1200
+  },
+  {
+   "t": "actor.sprite",
+   "id": "k",
+   "sprite": "c_koukidis_up"
+  },
+  {
+   "t": "actor.jump",
+   "id": "k",
+   "height": 10,
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "k",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "question",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

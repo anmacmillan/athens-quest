@@ -1,0 +1,54 @@
+{
+ "story": "zeno-porch",
+ "title": "Zeno and the Painted Porch",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "zeno"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A Cypriot merchant ship with purple dye barrels sinking in a storm, Zeno clinging to a plank",
+   "caption": "Zeno came from Cyprus as a merchant with a cargo of purple dye. His ship was wrecked.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Zeno in a bookshop in Athens reading a scroll, a bookseller pointing out of the door at a passing philosopher",
+   "caption": "In a bookshop in Athens he asked where he could find men like Socrates.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The Painted Porch (Stoa Poikile): a long colonnade covered with battle paintings, Zeno teaching a crowd",
+   "caption": "He taught in the Painted Porch. His followers were called Stoics, after the stoa.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The slave Epictetus with his leg twisted by his master, calm face, a stern master, a sweat drop; no gore",
+   "caption": "A Stoic called Epictetus, born a slave, said calmly: 'You will break it.' Then: 'Did I not tell you?'",
+   "speech": {
+    "speaker": "Epictetus",
+    "text": "You will break it."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

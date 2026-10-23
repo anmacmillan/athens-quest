@@ -1,0 +1,51 @@
+{
+ "story": "aristotle-lyceum",
+ "title": "Aristotle's Lyceum",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "aristotle"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Aristotle (dandy, rings, fashionable hair) at Plato's Academy with a scroll, a bench of students, a clock showing twenty years",
+   "caption": "Aristotle studied at Plato's Academy for about twenty years.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Aristotle tutoring a boy, the young Alexander the Great, with a map of the world",
+   "caption": "He tutored the young Alexander the Great.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Aristotle walking and talking under covered walkways of the Lyceum, a bunch of students struggling to keep up, out of breath",
+   "caption": "People say he taught while walking. His followers were called Peripatetics, the walkers-about.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MAYBE A STORY"
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Builders in 1996 digging a foundation and finding ancient ruins, an excited archaeologist, a modern crane behind",
+   "caption": "The ruins of the Lyceum were only found in 1996, when builders dug for a new museum.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "story": "areopagus",
+ "title": "The Rock of Ares",
+ "notes": [
+  "p1.3: a modern judge's gavel is drawn on the stone in the foreground. Anachronistic; narration ignores it. Optional patch.",
+  "p2.4 / p3.1: art and card show the tie first and Athena's vote after it. In Aeschylus (Eumenides 734-741) Athena announces her vote for Orestes before the count and rules that a tie acquits. Narration covers both readings: 'Athena had promised her vote to Orestes' plus 'on this rock, a tie sets you free'. No art change.",
+  "p3.1: narration is deliberately short (climax). Athena's voice_speech is voice only; no bubble is lettered.",
+  "p3.4: no honesty tag on the coda panel (the bible puts the tag on the first and coda panels). Narration carries the label; optional patch."
+ ],
+ "flag": "myth",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "glauka"
+  ],
+  [
+   "clytemnestra",
+   "athena"
+  ],
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The bare rock of the Areopagus with the Acropolis behind it, a few stone steps carved into the rock, Glauka the owl on top",
+   "caption": "The Rock of Ares.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Hoo! This is the Rock of Ares, the god of war. The Greeks said the first murder trial in the world was held right here."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Ares the god of war (crested helmet, red cloak, fierce) standing over a fallen figure in the mist, a dark shape of a young man, no gore",
+   "caption": "Ares had killed a son of Poseidon.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Ares had killed a son of Poseidon. The young man, Halirrhothius, had attacked Ares's daughter, so Ares struck him down. Poseidon, the sea god, wanted his son's killer tried."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The twelve gods sitting on rough stone seats on the rock as judges, big robes and stern faces; Ares standing before them",
+   "caption": "The other gods sat on this stone, heard the case and judged him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The other gods sat on this stone, heard the case and judged him. Twelve of them, on rough seats, with the god of war standing in the middle. They let him go."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A stone judge's gavel-like marble ballot and Glauka the owl whispering in a god's ear, the word FIRST in a banner",
+   "caption": "The first murder trial in the world.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The first murder trial in the world. I was there, on a god's shoulder. Maybe I whispered some advice. Nobody asked for it."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Young Orestes (dark curly hair, haggard, hunted look) stands before a jury of Athenians on the Areopagus rock; behind him dim shapes of the Furies with snakes in their hair",
+   "caption": "Much later, Orestes was tried on this same rock.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Much later, Orestes was tried on this same rock. Look behind him: the Furies, with snakes for hair. They hunt anyone who kills their own family. Now they had found him."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Orestes' face in an inset with a shadow of his mother Clytemnestra behind him",
+   "caption": "He had killed his own mother, Clytemnestra.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "He had killed his own mother, Clytemnestra. She had murdered his father, King Agamemnon, so Orestes came home and killed her. Now the Furies wanted him dead."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A row of Athenian jurors dropping black and white pebbles into two urns, speed lines",
+   "caption": "The jury of Athenians voted.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The jury of Athenians voted. One by one they dropped their pebbles into the urns. Black for death. White for freedom."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Two equal piles of pebbles, the black and white heaps exactly the same height, jurors gasping with sweat drops",
+   "caption": "The votes came out exactly even.",
+   "speech": null,
+   "sfx": "!?",
+   "tag": null,
+   "narr": "Then they counted. Two piles. Exactly the same height. The votes came out exactly even: half for death, half for freedom."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Athena (helmet, spear, calm) stepping forward, placing a white pebble in the urn, golden light",
+   "caption": "Athena herself cast the deciding vote.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Athena had promised her vote to Orestes. She stepped forward. White.",
+   "voice_speech": {
+    "speaker": "Athena",
+    "text": "My pebble is for Orestes."
+   }
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Orestes sinking to his knees with relief, tears, the Furies fading into mist behind him",
+   "caption": "Orestes walked free.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Orestes walked free. He fell to his knees and cried. The Furies let him go, and Athena gave them a cave under this very rock. From then on, a tie set you free."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Saint Paul (an old traveller in a plain cloak, scroll in hand) speaking to a crowd on the rock in AD 51",
+   "caption": "In AD 51 Saint Paul stood here and spoke to the people of Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "That's a myth: a story the Greeks told, not a thing that happened. But this next part is real. In AD 51 Saint Paul stood here and spoke to the people of Athens."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A bronze plaque with Greek letters at the foot of the steps and Glauka reading it with a tiny scroll",
+   "caption": "His speech is cut into a bronze plaque.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "I have read it. I read Greek."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "That's history: it happened, and here's how we know. The book of Acts in the Bible tells it, and the speech is cut into this bronze plaque. Find it, and mind the slippery rock."
+  }
+ ]
+}

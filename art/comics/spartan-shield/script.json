@@ -1,0 +1,55 @@
+{
+ "story": "spartan-shield",
+ "title": "With Your Shield, or On It",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "spartan_mother",
+   "spartan_boy"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A Spartan mother handing a round bronze shield with a lambda to her young son, stern pride, a hint of tears",
+   "caption": "When my son goes to war, I hand him his shield.",
+   "speech": {
+    "speaker": "Mother",
+    "text": "Come back with this, or on it."
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A line of soldiers carried home on their shields on a funeral march, a mother at the roadside standing straight",
+   "caption": "Win, or be carried home dead on it.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A fleeing soldier throwing away his shield in panic, a Spartan woman's disapproving face in an inset",
+   "caption": "Never throw it away to run.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Spartan girls racing, wrestling and learning to be strong; a woman overseeing an estate with scrolls and farm workers",
+   "caption": "Spartan girls run races and wrestle. Women can own land and run the estates while the men are at war.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

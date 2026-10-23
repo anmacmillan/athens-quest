@@ -1,0 +1,49 @@
+{
+ "story": "xerxes-fire",
+ "title": "The Persians Burn the Acropolis",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  []
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Persian king Xerxes (tall crown, rich robe, fierce) on a throne watching Athens from a hill, his huge army arrayed",
+   "caption": "In 480 BC the Persian king Xerxes captured Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Most Athenians fleeing by ship to the island of Salamis, a long line of boats on the sea at dawn",
+   "caption": "Most Athenians had fled to the island of Salamis.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Persian soldiers in scale armour in the foreground as the temples on the Acropolis burn behind them; a lone Athenian defender leaps from the wall in silhouette against the flames",
+   "caption": "Then the Persians burnt the temples.",
+   "speech": null,
+   "sfx": "FWOOOSH",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A small green olive shoot sprouting from a burnt black stump of the sacred olive tree, a ray of light, an amazed Greek looking on",
+   "caption": "The next day a new shoot a forearm long had grown from the burnt olive tree.",
+   "speech": null,
+   "sfx": null,
+   "tag": "Herodotus"
+  }
+ ]
+}

@@ -1,0 +1,469 @@
+{
+ "id": "athena-poseidon",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   -6,
+   54
+  ],
+  "owl": [
+   14,
+   52
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  20,
+  62
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    20,
+    62
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "text": "Before any temple, two gods stood on this rock and argued.",
+   "flag": "myth"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "poseidon",
+   "sprite": "c_poseidon_0",
+   "x": -34,
+   "y": 72,
+   "anchor": [
+    13,
+    53
+   ],
+   "walk": [
+    "c_poseidon_1",
+    "c_poseidon_0",
+    "c_poseidon_2",
+    "c_poseidon_0"
+   ],
+   "ghost": true,
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "athena",
+   "sprite": "c_athena_0",
+   "x": 66,
+   "y": 72,
+   "anchor": [
+    16,
+    52
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 1500,
+   "flip": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 900,
+   "at": [
+    16,
+    62
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Mine! This city is mine!",
+   "speaker": "poseidon"
+  },
+  {
+   "t": "actor.move",
+   "id": "poseidon",
+   "to": [
+    0,
+    72
+   ],
+   "ms": 1700
+  },
+  {
+   "t": "actor.sprite",
+   "id": "poseidon",
+   "sprite": "c_poseidon_up"
+  },
+  {
+   "t": "actor.jump",
+   "id": "poseidon",
+   "height": 10,
+   "ms": 450
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 600,
+   "amp": 3
+  },
+  {
+   "t": "sfx",
+   "name": "splash"
+  },
+  {
+   "t": "still",
+   "image": "art/stills/poseidon_trident.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "shake": 2
+  },
+  {
+   "t": "fx",
+   "type": "splash",
+   "x": 0,
+   "y": 76,
+   "ms": 1600
+  },
+  {
+   "t": "actor.sprite",
+   "id": "poseidon",
+   "sprite": "c_poseidon_0"
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Then let the people choose.",
+   "speaker": "athena"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c0",
+   "sprite": "c_citizen_0",
+   "x": 30,
+   "y": 96,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen2_0",
+   "x": 46,
+   "y": 92,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c2",
+   "sprite": "c_citizen3_0",
+   "x": -14,
+   "y": 96,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "c0",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "question",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    20,
+    66
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Best gift wins the city. And its name.",
+   "flag": "myth"
+  },
+  {
+   "t": "actor.move",
+   "id": "athena",
+   "to": [
+    30,
+    72
+   ],
+   "ms": 1600
+  },
+  {
+   "t": "actor.spawn",
+   "id": "sapling",
+   "sprite": "p_olive_sapling",
+   "x": 22,
+   "y": 72,
+   "anchor": [
+    8,
+    19
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.6,
+   "ms": 800,
+   "at": [
+    26,
+    62
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 700
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 900,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "sapling"
+    },
+    {
+     "t": "actor.spawn",
+     "id": "olive",
+     "sprite": "p_olive_tree",
+     "x": 22,
+     "y": 78,
+     "anchor": [
+      24,
+      53
+     ],
+     "shadow": 0
+    }
+   ]
+  },
+  {
+   "t": "still",
+   "image": "art/stills/athena_olive.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.move",
+   "id": "c0",
+   "to": [
+    34,
+    90
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "c1",
+   "to": [
+    44,
+    92
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "c2",
+   "to": [
+    18,
+    94
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "c0",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "heart",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c2",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    20,
+    66
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "poseidon",
+   "to": [
+    -56,
+    78
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "poseidon",
+   "emote": "sad",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena",
+   "emote": "happy",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "poseidon"
+    },
+    {
+     "t": "actor.remove",
+     "id": "athena"
+    },
+    {
+     "t": "actor.remove",
+     "id": "c0"
+    },
+    {
+     "t": "actor.remove",
+     "id": "c1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "c2"
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      4,
+      -28
+     ],
+     "zoom": 1.4
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    10,
+    -34
+   ],
+   "ms": 3000
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what they brought.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  }
+ ]
+}

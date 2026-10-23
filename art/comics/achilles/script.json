@@ -1,0 +1,55 @@
+{
+ "story": "achilles",
+ "title": "Achilles and Hector",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "achilles",
+   "hector"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Achilles in a fury over his friend's funeral pyre, golden hair, burning eyes, a spear in hand",
+   "caption": "The Trojan prince Hector killed Achilles' best friend Patroclus.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Achilles and Hector facing each other in a duel beneath the walls of Troy, dust swirl, shield and spear clashes, no gore",
+   "caption": "Achilles went out to meet Hector in single combat outside the walls.",
+   "speech": null,
+   "sfx": "KRANG",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Achilles' chariot racing around the walls of Troy, a billow of dust trailing behind it, Hector's parents on the battlements with hands to their mouths",
+   "caption": "He dragged Hector round the walls of Troy for days. Nobody stopped him.",
+   "speech": null,
+   "sfx": "DODODO",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Old King Priam kneeling in Achilles' tent with a gentle expression, Achilles weeping with him, lamp glow",
+   "caption": "One night old King Priam begged for his son's body. Achilles wept with him, and gave Hector back.",
+   "speech": {
+    "speaker": "Priam",
+    "text": "Give me my son."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

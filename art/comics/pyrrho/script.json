@@ -1,0 +1,109 @@
+{
+ "story": "pyrrho",
+ "title": "Pyrrho and the Calm Pig",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "pyrrho"
+  ],
+  [
+   "pyrrho",
+   "pig"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Pyrrho (lean, serene, travel-worn) marching with Alexander the Great's army across a dusty Indian landscape, elephants and banners, a row of calm sages sitting cross-legged in plain wraps under a tree in the background",
+   "caption": "Pyrrho marched with Alexander all the way to India and met wise men who sat perfectly calm.",
+   "speech": {
+    "speaker": "Pyrrho",
+    "text": "I am Pyrrho of Elis."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A jar of honey with a spoon and Pyrrho tasting it with a thoughtful face, a thought bubble reading 'seems sweet'",
+   "caption": "Is honey sweet? It seems sweet to me.",
+   "speech": {
+    "speaker": "Pyrrho",
+    "text": "That is all I can say."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Pyrrho sitting in a peaceful garden with a smile, glowing calm, floating word ATARAXIA on a ribbon, his worry-lines fading, followers listening",
+   "caption": "Once he stopped insisting he knew, he stopped worrying. Peace of mind: ataraxia. They were the Sceptics.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Pyrrho cheerfully strolling straight towards a cliff edge with a dreamy smile while two worried friends grab his cloak and haul him back, a drop in the background",
+   "caption": "Stories say friends had to pull him back from cliffs and carts.",
+   "speech": {
+    "speaker": "Friend",
+    "text": "Pyrrho! The cliff!"
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Pyrrho calmly walking across a street into the path of a rolling cart, a driver shouting and two friends diving to pull him aside, comic speed lines",
+   "caption": "And from carts.",
+   "speech": {
+    "speaker": "Friend",
+    "text": "Watch out!"
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A ship in a violent storm at sea with everyone on deck panicking, waving arms, clutching the mast, huge waves, and in the middle a fat pig calmly eating from a trough, comic",
+   "caption": "In a storm at sea everyone panicked.",
+   "speech": null,
+   "sfx": "KRASH",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Close-up of the pig chewing with a ridiculously serene half-closed-eyes expression while Pyrrho points at it with a big smile, a halo of calm around the pig",
+   "caption": "Pyrrho pointed at a pig calmly eating on deck.",
+   "speech": {
+    "speaker": "Pyrrho",
+    "text": "Be like the pig."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Pyrrho shrugging with open hands and a small smile, a scroll with a question mark, and behind him a thin ghost image of a sensible man walking along a safe road",
+   "caption": "Other old writers said he lived sensibly and the cliff stories were jokes.",
+   "speech": {
+    "speaker": "Pyrrho",
+    "text": "I cannot be sure. Neither can you."
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  }
+ ]
+}

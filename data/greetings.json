@@ -1,0 +1,15 @@
+{
+  "socrates": ["Ah, visitors! Good. I was getting bored of my own opinions.", "Come, I have a few questions for you."],
+  "plato": ["Welcome to the Academy, young ones.", "Shall we see what you make of a circle?"],
+  "aristotle": ["Do keep up, I walk while I talk.", "Now, let us look at what is really there."],
+  "solon": ["Sit, children. I have a story from my travels.", "Mind it well: it is about a king."],
+  "caryatid": ["Hello, little ones. Look up. Yes, here.", "I cannot move my head, but I can talk."],
+  "diogenes": ["Mind my lamp. I am looking for an honest person.", "You will do, for now."],
+  "tortoise": ["Slowly, slowly. I was here first.", "Let me tell you about the eagle."],
+  "minos": ["I am Minos, king of Crete. You may bow."],
+  "arrephoros": ["Shh. Come closer. We are not supposed to talk about this."],
+  "priestess": ["Welcome to the house of Athena. Quietly, please."],
+  "default": ["Hello! Come and listen."],
+  "caryatids": ["You looked up. Hardly anyone does. Shall I tell you about my sister?"],
+  "solon-croesus": ["Sit, children. Tell me: who is the happiest person alive?", "Think carefully. Richer people than you have got it wrong."]
+}

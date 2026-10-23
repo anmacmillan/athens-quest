@@ -1,0 +1,482 @@
+{
+ "id": "caryatids",
+ "speaker": "caryatid",
+ "flag": "history",
+ "party": {
+  "girl": [
+   -8.0,
+   72.0
+  ],
+  "owl": [
+   36.0,
+   68.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  -60.0,
+  48.0
+ ],
+ "origin": {
+  "x": 2276.0,
+  "y": 1849.7
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    -60.0,
+    48.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Look up. Those women are holding a roof on their heads.",
+   "speaker": "glauka",
+   "flag": "history"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_caryatid_0",
+   "x": -72.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "scale": 1.3
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Six of us. Count. Go on, count."
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s0",
+   "sprite": "c_caryatid_0",
+   "x": -120.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s1",
+   "sprite": "c_caryatid_0",
+   "x": -100.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s2",
+   "sprite": "c_caryatid_0",
+   "x": -44.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s3",
+   "sprite": "c_caryatid_0",
+   "x": -24.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s4",
+   "sprite": "c_caryatid_0",
+   "x": 0.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1800,
+   "at": [
+    -64.0,
+    44.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.jump",
+   "id": "s0",
+   "height": 4,
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "s1",
+   "height": 4,
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "s2",
+   "height": 4,
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "s3",
+   "height": 4,
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "s4",
+   "height": 4,
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "c1",
+   "height": 4,
+   "ms": 300
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Not all of us are what we seem."
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 900,
+   "at": [
+    -40.0,
+    52.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "s0",
+   "to": [
+    240.0,
+    140.0
+   ],
+   "ms": 3200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s1",
+   "to": [
+    264.0,
+    140.0
+   ],
+   "ms": 3200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s2",
+   "to": [
+    288.0,
+    140.0
+   ],
+   "ms": 3200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s3",
+   "to": [
+    312.0,
+    140.0
+   ],
+   "ms": 3200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s4",
+   "to": [
+    252.0,
+    160.0
+   ],
+   "ms": 3200,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    80.0,
+    80.0
+   ],
+   "ms": 2800,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "dots",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "still",
+   "image": "art/stills/caryatids_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -60.0,
+    48.0
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      160
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ship",
+   "sprite": "ship_5_0",
+   "x": 80,
+   "y": 220,
+   "anchor": [
+    35,
+    48
+   ],
+   "scale": 0.8,
+   "smooth": true,
+   "wake": true,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.anim",
+   "id": "ship",
+   "frames": [
+    "ship_5_0",
+    "ship_5_1",
+    "ship_5_2",
+    "ship_5_1"
+   ],
+   "fps": 3,
+   "loop": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    180
+   ],
+   "ms": 1,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    340,
+    190
+   ],
+   "ms": 4200,
+   "ease": "eio",
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "LONDON",
+   "x": 300,
+   "y": 100,
+   "per": 240,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 4200
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      -60.0,
+      48.0
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.remove",
+   "id": "ship"
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you where my sisters went.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

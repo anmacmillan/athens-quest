@@ -1,0 +1,51 @@
+{
+ "story": "bull-leapers",
+ "title": "The Bull-Leapers",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The great palace of Knossos with red columns and bright painted walls, Glauka the owl flying above",
+   "caption": "Knossos was the biggest palace of the Minoans, about three thousand five hundred years ago.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A bird's-eye view of a vast tangled maze of rooms, more than a thousand, a tiny lost visitor in the middle",
+   "caption": "More than a thousand rooms, all tangled together. People say this is where the Labyrinth story came from.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A Minoan wall painting in painted fresco style: a young man somersaulting over the back of a charging bull while a girl holds its horns",
+   "caption": "On the palace walls are paintings of young people who somersault over a charging bull.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A real bull charging in a courtyard with a trio of young acrobats in flight, dust and speed lines, the crowd cheering",
+   "caption": "Nobody knows if it was a sport, a ritual, or both. The bull was very real.",
+   "speech": null,
+   "sfx": "DODODO",
+   "tag": null
+  }
+ ]
+}

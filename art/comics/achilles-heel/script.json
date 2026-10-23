@@ -1,0 +1,55 @@
+{
+ "story": "achilles-heel",
+ "title": "Achilles' Heel",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "achilles",
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The goddess Thetis dipping baby Achilles in the River Styx, holding him by one heel, glowing water",
+   "caption": "When Achilles was a baby, his mother dipped him in the River Styx. He became impossible to wound.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LATER ADDITION"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "The baby Achilles held up, the water dripping, the heel dry with a tiny circle showing the dry spot",
+   "caption": "She held him by the heel, so the heel stayed dry. Later writers added this part: Homer never told it.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Paris the Trojan prince aiming a bow; Apollo's light guiding the arrow in a golden trail towards Achilles' heel",
+   "caption": "Apollo guided Paris's arrow into that one heel. Achilles died.",
+   "speech": null,
+   "sfx": "ZUPP",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A modern doctor's diagram of the Achilles tendon at the back of the ankle with a label, Glauka wearing a stethoscope-like gag, pointing",
+   "caption": "We still call a weak spot an Achilles heel. The Achilles tendon takes its name from it.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Both phrases are real."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

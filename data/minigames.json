@@ -1,0 +1,142 @@
+{
+ "sphinx-riddle": {
+  "type": "riddle",
+  "title": "The Riddle of the Sphinx",
+  "speaker": "sphinx",
+  "still": "sphinx_riddle",
+  "riddle": "What walks on four legs in the morning, two at noon and three in the evening?",
+  "options": [
+   "A dog",
+   "A human being",
+   "A horse",
+   "A spider"
+  ],
+  "answer": 1,
+  "accept": [
+   "human",
+   "humans",
+   "human being",
+   "a human",
+   "a human being",
+   "person",
+   "a person",
+   "people",
+   "man",
+   "a man",
+   "woman",
+   "a woman",
+   "mankind",
+   "humankind",
+   "a baby",
+   "baby"
+  ],
+  "tries": 3,
+  "wrong": [
+   "Wrong... you have {n} more tries.",
+   "Wrong... you have {n} more try.",
+   "Wrong again."
+  ],
+  "hint": "Think of a whole life, from baby to old age.",
+  "hintSpeaker": "glauka",
+  "success": "Correct! The Sphinx shrieks and throws herself from her rock.",
+  "burst": "AIIIEEE!",
+  "badge": {
+   "id": "trail:Riddle Solver",
+   "title": "Riddle Solver"
+  },
+  "audio": "minigames/sphinx-riddle"
+ },
+ "socratic-questions": {
+  "type": "questions",
+  "title": "Questions, questions",
+  "speaker": "socrates",
+  "intro": "Tell me, friend. I only ask questions. You answer as best you can.",
+  "rounds": [
+   {
+    "q": "What is courage?",
+    "options": [
+     "Not being afraid of anything",
+     "Doing what is right even when you are afraid",
+     "Being strong and winning fights"
+    ],
+    "follow": [
+     "Is a soldier who does not understand the danger brave, or just foolish?",
+     "But a soldier who runs forward in the wrong battle: is he doing right? Who decides what is right?",
+     "Is a bully who wins every fight brave? And what of the one who loses but does not give in?"
+    ]
+   },
+   {
+    "q": "Then what is justice?",
+    "options": [
+     "Giving everyone what they deserve",
+     "Following the rules",
+     "Whatever the strong decide"
+    ],
+    "follow": [
+     "Who decides what each person deserves? And if you are wrong about it, is that still justice?",
+     "If the rules are unfair, is it just to follow them? Who makes the rules?",
+     "Then if the strong decide to hurt you, would that be just? You frown. Why?"
+    ]
+   },
+   {
+    "q": "One more. What is wisdom?",
+    "options": [
+     "Knowing lots of facts",
+     "Knowing what you do not know",
+     "Being good at winning arguments"
+    ],
+    "follow": [
+     "A man may know every fact and still choose badly. Is he wise?",
+     "Ah. And how many people do you know who admit that?",
+     "The sophists thought so. Did they ever change their own minds?"
+    ]
+   }
+  ],
+  "end": "So you don't know either. Neither do I. Now we are both wiser.",
+  "badge": null
+ },
+ "perfect-circle": {
+  "type": "circle",
+  "title": "The perfect circle",
+  "speaker": "plato",
+  "intro": "Draw me a perfect circle. One stroke, in the sand.",
+  "verdict": "Close, but only the Idea is perfect.",
+  "verdictHigh": "Remarkable. Yet still only a shadow of the Idea.",
+  "low": "That is not yet a circle. Close it up and try again.",
+  "badge": null
+ },
+ "ball-drop": {
+  "type": "drop",
+  "title": "The falling balls",
+  "speaker": "aristotle",
+  "intro": "Two balls, one lead, one wood, dropped from a tall tower. Which lands first?",
+  "options": [
+   [
+    "lead",
+    "The lead ball lands first"
+   ],
+   [
+    "wood",
+    "The wooden ball lands first"
+   ],
+   [
+    "both",
+    "They land together"
+   ]
+  ],
+  "after": {
+   "lead": "That's what I thought too, for 1,800 years.",
+   "wood": "Wood first? No. Look: they land together.",
+   "both": "Correct, and it took the world a long while to check. Simon Stevin did, in 1586."
+  },
+  "badge": null
+ },
+ "labyrinth-maze": {
+  "type": "maze",
+  "title": "The Labyrinth",
+  "speaker": "ariadne",
+  "size": 13,
+  "torch": 2.3,
+  "time": 80
+ }
+}

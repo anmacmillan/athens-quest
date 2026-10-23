@@ -1,0 +1,54 @@
+{
+ "story": "slavery-athens",
+ "title": "The People Without a Vote",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Serious, sober tone: a line of war captives, men, women and children in plain rags, arriving in the Athenian Agora under a heavy sky, led by a trader with a stick held low; faces tired and dignified, no cruelty shown, Glauka watching from a column",
+   "caption": "In classical Athens perhaps a third of the people were enslaved. Many were captives of war, or bought from slave traders.",
+   "speech": null,
+   "sfx": null,
+   "tag": "HISTORY"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A split scene of everyday labour: a girl fetching water in a jar from a fountain house, an enslaved man at a potter's wheel in a workshop, and a man keeping accounts on a wax tablet, quiet muted mood",
+   "caption": "Some worked in houses, shops and workshops, fetched water or kept accounts.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The Laurion silver mines: a dark cramped tunnel with low stone ceilings lit by tiny oil lamps, exhausted miners crouched with picks, deep shadows, heavy oppressive mood, no violence shown",
+   "caption": "The worst fate was the silver mines at Laurion, where thousands worked in cramped tunnels underground, often until they died.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Split panel: top, shining silver owl coins and a fleet of Athenian warships (triremes) at Salamis in 480 BC; bottom, citizens raising their hands to vote on the Pnyx hill while a small group of enslaved people stand outside the crowd at the edge, looking on",
+   "caption": "Laurion's silver paid for the warships at Salamis and the owl coins. Athens' glory rested partly on people who had no vote and no freedom.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "No vote. No freedom."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

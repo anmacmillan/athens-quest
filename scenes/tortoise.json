@@ -1,0 +1,339 @@
+{
+ "id": "tortoise",
+ "speaker": "tortoise",
+ "flag": "legend",
+ "party": {
+  "girl": [
+   60.0,
+   20.0
+  ],
+  "owl": [
+   104.0,
+   16.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  120.0,
+  60.0
+ ],
+ "origin": {
+  "x": 2712,
+  "y": 2466
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    120.0,
+    60.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tort",
+   "sprite": "p_tortoise",
+   "x": 120.0,
+   "y": 72.0,
+   "anchor": [
+    9,
+    10
+   ],
+   "scale": 2.2,
+   "shadow": 0
+  },
+  {
+   "t": "caption",
+   "text": "I am a tortoise.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1500,
+   "at": [
+    120.0,
+    64.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "tort",
+   "emote": "happy",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "Aeschylus, the first great writer of tragedies, died in Sicily around 456 BC.",
+   "hold": 1400,
+   "par": false
+  },
+  {
+   "t": "caption",
+   "text": "He wrote plays that were performed on this slope."
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      160
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aes",
+   "sprite": "c_aeschylus_0",
+   "x": 240,
+   "y": 120,
+   "anchor": [
+    11,
+    39
+   ],
+   "walk": [
+    "c_aeschylus_1",
+    "c_aeschylus_0",
+    "c_aeschylus_2",
+    "c_aeschylus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "SICILY",
+   "x": 200,
+   "y": 40,
+   "per": 240,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "The story goes that an eagle was carrying a tortoise, one of my ancestors, high over Sicily.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "eagle",
+   "sprite": "p_eagle",
+   "x": 60,
+   "y": 20,
+   "anchor": [
+    14,
+    15
+   ],
+   "scale": 1.8,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "t2",
+   "sprite": "p_tortoise",
+   "x": 60,
+   "y": 28,
+   "anchor": [
+    9,
+    10
+   ],
+   "scale": 1.4,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    200,
+    90
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "eagle",
+   "to": [
+    235,
+    70
+   ],
+   "ms": 2800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t2",
+   "to": [
+    235,
+    78
+   ],
+   "ms": 2800,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aes",
+   "emote": "question",
+   "ms": 1500
+  },
+  {
+   "t": "caption",
+   "text": "It looked down, mistook the old man's bald head for a rock, and dropped the tortoise to crack its shell.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.fall",
+   "id": "t2",
+   "path": [
+    [
+     0,
+     10
+    ],
+    [
+     0,
+     22
+    ],
+    [
+     0,
+     34
+    ]
+   ],
+   "ms": 700,
+   "remove": false,
+   "vanish": false,
+   "speedlines": false,
+   "sfx": false
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 400,
+   "amp": 3
+  },
+  {
+   "t": "sfx",
+   "name": "pop"
+  },
+  {
+   "t": "actor.sprite",
+   "id": "aes",
+   "sprite": "c_aeschylus_sad"
+  },
+  {
+   "t": "actor.emote",
+   "id": "aes",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "caption",
+   "text": "Some birds of prey really do drop tortoises on rocks to break them open.",
+   "hold": 1600,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      120.0,
+      60.0
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.remove",
+   "id": "aes"
+  },
+  {
+   "t": "actor.remove",
+   "id": "eagle"
+  },
+  {
+   "t": "actor.remove",
+   "id": "t2"
+  },
+  {
+   "t": "actor.emote",
+   "id": "tort",
+   "emote": "question",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "A bald playwright, though?",
+   "hold": 1700,
+   "par": false
+  },
+  {
+   "t": "caption",
+   "text": "Almost certainly made up. Take it as a story, not a report."
+  },
+  {
+   "t": "actor.jump",
+   "id": "tort",
+   "height": 5,
+   "ms": 400
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  }
+ ]
+}

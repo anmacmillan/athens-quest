@@ -1,0 +1,449 @@
+{
+ "id": "parthenon",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   -16.0,
+   60.0
+  ],
+  "owl": [
+   36.0,
+   56.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  40.0,
+  68.0
+ ],
+ "origin": {
+  "x": 2304.1,
+  "y": 2090.9
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    40.0,
+    68.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "When this temple was new, its sculptor was called a thief.",
+   "flag": "legend"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    60.0,
+    48.0
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pericles",
+   "sprite": "c_pericles_0",
+   "x": -60.0,
+   "y": 88.0,
+   "anchor": [
+    11,
+    46
+   ],
+   "walk": [
+    "c_pericles_1",
+    "c_pericles_0",
+    "c_pericles_2",
+    "c_pericles_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "phidias",
+   "sprite": "c_phidias_0",
+   "x": 12.0,
+   "y": 96.0,
+   "anchor": [
+    10,
+    39
+   ],
+   "walk": [
+    "c_phidias_1",
+    "c_phidias_0",
+    "c_phidias_2",
+    "c_phidias_0"
+   ],
+   "ghost": true,
+   "ms": 1300
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Thief! He stole Athena's gold!",
+   "speaker": "citizen"
+  },
+  {
+   "t": "actor.move",
+   "id": "pericles",
+   "to": [
+    -28.0,
+    104.0
+   ],
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "pericles",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Stole it? Look at what I built first.",
+   "speaker": "phidias"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "statue",
+   "sprite": "c_athena_0",
+   "x": 140.0,
+   "y": 80.0,
+   "anchor": [
+    16,
+    52
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 1800,
+   "scale": 2.6,
+   "shadow": 0,
+   "glow": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1600,
+   "at": [
+    92.0,
+    44.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "still",
+   "image": "art/stills/parthenon_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    60.0,
+    60.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "statue",
+   "ms": 900
+  },
+  {
+   "t": "actor.remove",
+   "id": "pericles",
+   "ms": 400
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    40.0,
+    -16.0
+   ],
+   "ms": 2000,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.6,
+   "ms": 2000,
+   "at": [
+    40.0,
+    -16.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2500
+  },
+  {
+   "t": "actor.move",
+   "id": "phidias",
+   "to": [
+    40.0,
+    40.0
+   ],
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "phidias",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.28,
+   "ms": 700,
+   "color": "216,69,60",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.28,
+   "ms": 700,
+   "color": "60,110,216",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.28,
+   "ms": 700,
+   "color": "245,197,66",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 600,
+   "at": [
+    40.0,
+    80.0
+   ],
+   "par": true
+  },
+  {
+   "t": "still",
+   "image": "art/stills/parthenon_b3.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c0",
+   "sprite": "c_citizen2_0",
+   "x": -80.0,
+   "y": 112.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen_0",
+   "x": -52.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "phidias",
+   "to": [
+    20.0,
+    108.0
+   ],
+   "ms": 1200
+  },
+  {
+   "t": "actor.emote",
+   "id": "phidias",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c0",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.spawn",
+   "id": "gold",
+   "sprite": "p_gold",
+   "x": 48.0,
+   "y": 112.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "gold2",
+   "sprite": "p_gold",
+   "x": 68.0,
+   "y": 116.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "scales",
+   "sprite": "p_scales",
+   "x": 0.0,
+   "y": 124.0,
+   "anchor": [
+    13,
+    19
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "c0",
+   "to": [
+    -24.0,
+    120.0
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.jump",
+   "id": "c0",
+   "height": 6,
+   "ms": 400
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "dots",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.emote",
+   "id": "phidias",
+   "emote": "happy",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "c0",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what he built.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

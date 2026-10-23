@@ -1,0 +1,74 @@
+{
+ "story": "medea-cup",
+ "title": "The Poisoned Cup",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "aegeus",
+   "medea",
+   "theseus"
+  ],
+  [
+   "aegeus",
+   "medea",
+   "theseus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A young Theseus lifting a huge heavy rock to take the sword and sandals hidden under it, muscles straining, an old palace on the Acropolis behind, a hill-top",
+   "caption": "Aegeus had left a sword and a pair of sandals under a heavy rock.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Far from Athens, a boy heaves up a rock his father left for him. Under it: a sword, sandals, and an order. Come to Athens."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Theseus setting off along a dusty road to Athens, sword on his hip, defeating a lurking bandit in a small inset",
+   "caption": "Theseus walked to Athens. On the road he met villains. That is a different story.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Theseus walks, and beats every bandit on the road. By the time he reaches Athens, everyone knows his name. Everyone except his father."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A palace feast: Theseus at the table taking up his knife, a golden cup beside his plate; Medea in the background, hooded, glaring with glowing eyes",
+   "caption": "Medea persuaded Aegeus to poison the stranger's cup.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "But Medea knows. She wants her own little son to be king. So she tells the old king this famous stranger has come to steal his throne, and hands him the poison."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "King Aegeus' hand slaps the golden cup away from the young man's lips; green poison arcs through the air with a tiny skull shape; Medea flees",
+   "caption": "Aegeus knew that sword. He knocked the cup away.",
+   "speech": {
+    "speaker": "Aegeus",
+    "text": "My son!"
+   },
+   "sfx": "KSHHH",
+   "tag": null,
+   "narr": "Theseus draws his sword to cut his meat, on purpose, so his father will see it. Aegeus knows that sword. Medea grabs her boy and runs. That's a myth: Plutarch tells it.",
+   "voice_speech": {
+    "speaker": "aegeus",
+    "text": "Not that cup! My son. My son!"
+   }
+  }
+ ],
+ "narr_voice": "glauka",
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated",
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

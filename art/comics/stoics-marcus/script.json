@@ -1,0 +1,63 @@
+{
+ "story": "stoics-marcus",
+ "title": "The Emperor Who Was a Stoic",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "marcus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Emperor Marcus Aurelius (bearded, simple cloak over armour) writing in a tent in a military camp by lamplight at night, a scroll and a stylus, soldiers' fires outside",
+   "caption": "Marcus Aurelius, emperor of Rome, wrote notes to himself in Greek, night after night: the Meditations.",
+   "speech": {
+    "speaker": "Marcus",
+    "text": "Write it down."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Marcus's hand writing on a scroll with the lamp glow, a swirl of the words beside it, a calm face",
+   "caption": "You cannot control what others do, only what you do.",
+   "speech": {
+    "speaker": "Marcus",
+    "text": "Only what I do."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Marcus sitting on the edge of a narrow camp bed on a cold morning wrapped in a blanket, grumpy and sleepy, his breath steaming, getting up with effort",
+   "caption": "On mornings he dreaded, he told himself to get up.",
+   "speech": {
+    "speaker": "Marcus",
+    "text": "Get up. I was made to work with others, like hands and feet."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Athens in AD 176: Marcus on the Acropolis steps pointing at four professors at four lecterns shown as four vignettes in a row: a Platonist with a circle diagram, an Aristotelian with a cat and notebook, a Stoic under a porch and an Epicurean in a garden",
+   "caption": "In AD 176 he visited Athens and paid for four professors of philosophy.",
+   "speech": {
+    "speaker": "Marcus",
+    "text": "One for each school."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

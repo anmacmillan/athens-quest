@@ -1,0 +1,58 @@
+{
+ "story": "naxos",
+ "title": "Left on Naxos",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "ariadne",
+   "theseus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Theseus and Ariadne on a ship sailing away from Crete, bright sea, Theseus smiling, Ariadne leaning on the rail",
+   "caption": "Ariadne and Theseus sailed away from Crete together.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Ariadne asleep on the beach at Naxos in the dawn light, Theseus's ship leaving the shore far behind",
+   "caption": "On Naxos he left her asleep on the beach and sailed on.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Ariadne seen from behind, long dark hair whipping in wind, a tiny ship on the far horizon, an inset of her eye with a tear and the ship in it",
+   "caption": "He left her.",
+   "speech": {
+    "speaker": "Ariadne",
+    "text": "Theseus?"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Dionysus the god (garlands, grape-vine crown, smiling kindly) offering Ariadne a hand on the shore, tiger and vines behind him, a bit of colour",
+   "caption": "Then the god Dionysus found her and married her. Theseus was far away.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

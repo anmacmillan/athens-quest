@@ -1,0 +1,886 @@
+{
+ "socrates": {
+  "cell": [
+   29,
+   42
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   14,
+   41
+  ],
+  "src": "socrates_a.jpeg"
+ },
+ "pericles": {
+  "cell": [
+   26,
+   49
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   48
+  ],
+  "src": "pericles_a.jpeg"
+ },
+ "diogenes": {
+  "cell": [
+   25,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   44
+  ],
+  "src": "diogenes_a.jpeg"
+ },
+ "aegeus": {
+  "cell": [
+   23,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   42
+  ],
+  "src": "aegeus_a.jpeg"
+ },
+ "agamemnon": {
+  "cell": [
+   27,
+   46
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   45
+  ],
+  "src": "agamemnon_a.jpeg"
+ },
+ "ariadne": {
+  "cell": [
+   22,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   42
+  ],
+  "src": "ariadne_a.jpeg"
+ },
+ "aristotle": {
+  "cell": [
+   22,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   42
+  ],
+  "src": "aristotle_a.jpeg"
+ },
+ "atreus": {
+  "cell": [
+   27,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   44
+  ],
+  "src": "atreus_a.jpeg"
+ },
+ "clytemnestra": {
+  "cell": [
+   22,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   44
+  ],
+  "src": "clytemnestra_a.jpeg"
+ },
+ "epicurus": {
+  "cell": [
+   25,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   42
+  ],
+  "src": "epicurus_a.jpeg"
+ },
+ "hypatia": {
+  "cell": [
+   21,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   10,
+   46
+  ],
+  "src": "hypatia_a.jpeg"
+ },
+ "marcus": {
+  "cell": [
+   24,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   46
+  ],
+  "src": "marcus_a.jpeg"
+ },
+ "minos": {
+  "cell": [
+   30,
+   52
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   51
+  ],
+  "src": "minos_a.jpeg"
+ },
+ "minotaur": {
+  "cell": [
+   46,
+   77
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   23,
+   76
+  ],
+  "src": "minotaur_a.jpeg"
+ },
+ "plato": {
+  "cell": [
+   24,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   44
+  ],
+  "src": "plato_a.jpeg"
+ },
+ "pyrrho": {
+  "cell": [
+   25,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   42
+  ],
+  "src": "pyrrho_a.jpeg"
+ },
+ "solon": {
+  "cell": [
+   29,
+   51
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   14,
+   50
+  ],
+  "src": "solon_a.jpeg"
+ },
+ "theseus": {
+  "cell": [
+   20,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   10,
+   42
+  ],
+  "src": "theseus_a.jpeg"
+ },
+ "zeno": {
+  "cell": [
+   24,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   42
+  ],
+  "src": "zeno_a.jpeg"
+ },
+ "athena": {
+  "cell": [
+   28,
+   56
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   14,
+   55
+  ],
+  "src": "athena_a.jpeg"
+ },
+ "caryatid": {
+  "cell": [
+   20,
+   43
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   10,
+   42
+  ],
+  "src": "caryatid_a.jpeg"
+ },
+ "cyclops": {
+  "cell": [
+   49,
+   90
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   24,
+   89
+  ],
+  "src": "cyclops_a.jpeg"
+ },
+ "lycurgus": {
+  "cell": [
+   26,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   46
+  ],
+  "src": "lycurgus_a.jpeg"
+ },
+ "medea": {
+  "cell": [
+   25,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   46
+  ],
+  "src": "medea_a.jpeg"
+ },
+ "oedipus": {
+  "cell": [
+   24,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   44
+  ],
+  "src": "oedipus_a.jpeg"
+ },
+ "poseidon": {
+  "cell": [
+   43,
+   57
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   21,
+   56
+  ],
+  "src": "poseidon_a.jpeg"
+ },
+ "spartan_mother": {
+  "cell": [
+   23,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   46
+  ],
+  "src": "spartan_mother_a.jpeg"
+ },
+ "sphinx": {
+  "cell": [
+   52,
+   73
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   26,
+   72
+  ],
+  "src": "sphinx_a.jpeg"
+ },
+ "stevin": {
+  "cell": [
+   27,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   44
+  ],
+  "src": "stevin_a.jpeg"
+ },
+ "tortoise": {
+  "cell": [
+   32,
+   29
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   16,
+   28
+  ],
+  "src": "tortoise_b.jpeg"
+ },
+ "zeus": {
+  "cell": [
+   42,
+   57
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   21,
+   56
+  ],
+  "src": "zeus_a.jpeg"
+ },
+ "hera": {
+  "cell": [
+   44,
+   54
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   22,
+   53
+  ],
+  "src": "hera_a.jpeg"
+ },
+ "hermes": {
+  "cell": [
+   39,
+   51
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   19,
+   50
+  ],
+  "src": "hermes_a.jpeg"
+ },
+ "apollo": {
+  "cell": [
+   34,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   17,
+   52
+  ],
+  "src": "apollo_a.jpeg"
+ },
+ "artemis": {
+  "cell": [
+   32,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   16,
+   52
+  ],
+  "src": "artemis_a.jpeg"
+ },
+ "dionysus": {
+  "cell": [
+   34,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   17,
+   52
+  ],
+  "src": "dionysus_a.jpeg"
+ },
+ "hephaestus": {
+  "cell": [
+   31,
+   47
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   46
+  ],
+  "src": "hephaestus_a.jpeg"
+ },
+ "demeter": {
+  "cell": [
+   32,
+   52
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   16,
+   51
+  ],
+  "src": "demeter_a.jpeg"
+ },
+ "persephone": {
+  "cell": [
+   23,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   44
+  ],
+  "src": "persephone_a.jpeg"
+ },
+ "hades": {
+  "cell": [
+   48,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   24,
+   52
+  ],
+  "src": "hades_a.jpeg"
+ },
+ "aphrodite": {
+  "cell": [
+   31,
+   51
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   50
+  ],
+  "src": "aphrodite_a.jpeg"
+ },
+ "cronus": {
+  "cell": [
+   58,
+   90
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   29,
+   89
+  ],
+  "src": "cronus_a.jpeg"
+ },
+ "python": {
+  "cell": [
+   52,
+   74
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   26,
+   73
+  ],
+  "src": "python_a.jpeg"
+ },
+ "pythia": {
+  "cell": [
+   30,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   52
+  ],
+  "src": "pythia_a.jpeg"
+ },
+ "herm": {
+  "cell": [
+   24,
+   44
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   43
+  ],
+  "src": "herm_a.jpeg"
+ },
+ "argus": {
+  "cell": [
+   38,
+   59
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   19,
+   58
+  ],
+  "src": "argus_a.jpeg"
+ },
+ "little_bear": {
+  "cell": [
+   23,
+   39
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   11,
+   38
+  ],
+  "src": "little_bear_a.jpeg"
+ },
+ "nike": {
+  "cell": [
+   31,
+   53
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   52
+  ],
+  "src": "nike_a.jpeg"
+ },
+ "hestia": {
+  "cell": [
+   21,
+   46
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   10,
+   45
+  ],
+  "src": "hestia_a.jpeg"
+ },
+ "paris": {
+  "cell": [
+   30,
+   49
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   15,
+   48
+  ],
+  "src": "paris_a.jpeg"
+ },
+ "eris": {
+  "cell": [
+   35,
+   49
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   17,
+   48
+  ],
+  "src": "eris_a.jpeg"
+ },
+ "ares": {
+  "cell": [
+   39,
+   57
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   19,
+   56
+  ],
+  "src": "ares_a.jpeg"
+ }
+}

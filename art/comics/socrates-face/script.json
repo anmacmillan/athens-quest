@@ -1,0 +1,55 @@
+{
+ "story": "socrates-face",
+ "title": "The Ugliest Man in Athens",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "socrates"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Socrates barefoot in the snow in the same old cloak, a belly, bulging eyes, cheerful, a shivering soldier next to him",
+   "caption": "My friends said I looked like a satyr: snub nose, bulging eyes. I walked barefoot, even in winter.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Socrates as a stonemason's son with a chisel in a workshop, then as a soldier with a shield, in a split frame",
+   "caption": "I was a stonemason's son and I fought as a soldier for Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The priestess at Delphi (Pythia) on a tripod in swirling mist, golden glow, saying 'no one is wiser than Socrates', Socrates' face confused",
+   "caption": "The oracle at Delphi said no one was wiser than me.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "I know that I know nothing."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Socrates cornering a pompous Athenian with a pile of question marks flying, the Athenian turning red and sweating",
+   "caption": "I went round asking people what courage, justice and beauty were. It made me very annoying.",
+   "speech": null,
+   "sfx": "?!?!",
+   "tag": null
+  }
+ ],
+ "narr_voice": "socrates"
+}

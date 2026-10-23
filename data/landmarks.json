@@ -1,0 +1,227 @@
+[
+ {
+  "id": "propylaia",
+  "name": "Propylaia",
+  "short": "Propylaia",
+  "subtitle": "the gateway",
+  "x": 1905,
+  "y": 1965,
+  "big": false
+ },
+ {
+  "id": "nike",
+  "name": "Temple of Athena Nike",
+  "short": "Athena Nike",
+  "subtitle": "Athena of Victory",
+  "x": 1828,
+  "y": 2039,
+  "big": false
+ },
+ {
+  "id": "parthenon",
+  "name": "Parthenon",
+  "short": "Parthenon",
+  "subtitle": "temple of Athena the Maiden",
+  "x": 2304,
+  "y": 2048,
+  "big": false
+ },
+ {
+  "id": "erechtheion",
+  "name": "Erechtheion",
+  "short": "Erechtheion",
+  "subtitle": "temple of Athena of the City",
+  "x": 2265,
+  "y": 1836,
+  "big": false
+ },
+ {
+  "id": "acropolis",
+  "name": "Acropolis",
+  "short": "Acropolis",
+  "subtitle": "",
+  "x": 2304,
+  "y": 1702,
+  "big": true,
+  "reveal": 640
+ },
+ {
+  "id": "theatre",
+  "name": "Theatre of Dionysus",
+  "short": "Theatre",
+  "subtitle": "where theatre was born",
+  "x": 2588,
+  "y": 2375,
+  "big": false,
+  "reveal": 300
+ },
+ {
+  "id": "odeon",
+  "name": "Odeon of Herodes Atticus",
+  "short": "Odeon",
+  "subtitle": "music hall",
+  "x": 1722,
+  "y": 2292,
+  "big": false,
+  "reveal": 300
+ },
+ {
+  "id": "eumenes",
+  "name": "Stoa of Eumenes",
+  "short": "Stoa of Eumenes",
+  "subtitle": "",
+  "x": 2088,
+  "y": 2356,
+  "big": false
+ },
+ {
+  "id": "areopagus",
+  "name": "Areopagus",
+  "short": "Areopagus",
+  "subtitle": "rock of Ares, the court",
+  "x": 1386,
+  "y": 1783,
+  "big": false,
+  "reveal": 260
+ },
+ {
+  "id": "agora",
+  "name": "Ancient Agora",
+  "short": "Agora",
+  "subtitle": "the market and meeting place",
+  "x": 1146,
+  "y": 906,
+  "big": true,
+  "reveal": 420
+ },
+ {
+  "id": "hephaestus",
+  "name": "Temple of Hephaestus",
+  "short": "Hephaestus",
+  "subtitle": "the blacksmith god",
+  "x": 842,
+  "y": 587,
+  "big": false
+ },
+ {
+  "id": "attalos",
+  "name": "Stoa of Attalos",
+  "short": "Stoa of Attalos",
+  "subtitle": "shopping arcade, now a museum",
+  "x": 1630,
+  "y": 745,
+  "big": false
+ },
+ {
+  "id": "winds",
+  "name": "Tower of the Winds",
+  "short": "Tower of the Winds",
+  "subtitle": "clock and weathervane",
+  "x": 2419,
+  "y": 1088,
+  "big": false
+ },
+ {
+  "id": "roman_agora",
+  "name": "Roman Agora",
+  "short": "Roman Agora",
+  "subtitle": "",
+  "x": 2224,
+  "y": 1051,
+  "big": false
+ },
+ {
+  "id": "hadrian_arch",
+  "name": "Hadrian's Arch",
+  "short": "Hadrian's Arch",
+  "subtitle": "the emperor's gate",
+  "x": 3819,
+  "y": 2517,
+  "big": false
+ },
+ {
+  "id": "olympieion",
+  "name": "Temple of Olympian Zeus",
+  "short": "Olympieion",
+  "subtitle": "king of the gods",
+  "x": 4123,
+  "y": 2784,
+  "big": true,
+  "reveal": 360
+ },
+ {
+  "id": "museum",
+  "name": "Acropolis Museum",
+  "short": "Acropolis Museum",
+  "subtitle": "the treasures inside",
+  "x": 2824,
+  "y": 3106,
+  "big": false
+ },
+ {
+  "id": "philopappos",
+  "name": "Philopappos Monument",
+  "short": "Philopappos",
+  "subtitle": "a prince's tomb",
+  "x": 830,
+  "y": 3523,
+  "big": true,
+  "reveal": 420
+ },
+ {
+  "id": "pnyx",
+  "name": "Pnyx",
+  "short": "Pnyx",
+  "subtitle": "where Athenians voted",
+  "x": 272,
+  "y": 2034,
+  "big": false,
+  "reveal": 300
+ },
+ {
+  "id": "lysicrates",
+  "name": "Lysicrates Monument",
+  "short": "Lysicrates",
+  "subtitle": "",
+  "x": 2908,
+  "y": 2234,
+  "big": false
+ },
+ {
+  "id": "anafiotika",
+  "name": "Anafiotika",
+  "short": "Anafiotika",
+  "subtitle": "",
+  "x": 2752,
+  "y": 1594,
+  "big": false
+ },
+ {
+  "id": "plaka",
+  "name": "Plaka",
+  "short": "Plaka",
+  "subtitle": "",
+  "x": 3264,
+  "y": 1664,
+  "big": true,
+  "reveal": 380
+ },
+ {
+  "id": "epicurus",
+  "name": "Epicurus's Garden",
+  "short": "Epicurus's Garden",
+  "subtitle": "",
+  "x": 333,
+  "y": 161,
+  "big": false
+ },
+ {
+  "id": "kerameikos",
+  "name": "Kerameikos",
+  "short": "Kerameikos",
+  "subtitle": "",
+  "x": -54,
+  "y": -492,
+  "big": false
+ }
+]

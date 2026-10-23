@@ -1,0 +1,1079 @@
+{
+ "id": "labyrinth",
+ "speaker": "ariadne",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   -100,
+   80
+  ],
+  "owl": [
+   -84,
+   76
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  220,
+  190
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    220,
+    190
+   ],
+   "zoom": 1.2,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ariadne",
+   "sprite": "c_ariadne_0",
+   "x": 120,
+   "y": 196,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_ariadne_1",
+    "c_ariadne_0",
+    "c_ariadne_2",
+    "c_ariadne_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "I am Ariadne, daughter of Minos.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "daedalus",
+   "sprite": "c_daedalus_0",
+   "x": 190,
+   "y": 190,
+   "anchor": [
+    11,
+    39
+   ],
+   "walk": [
+    "c_daedalus_1",
+    "c_daedalus_0",
+    "c_daedalus_2",
+    "c_daedalus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Daedalus built the Labyrinth for my father, and he built it so cleverly that once you were inside you could not find the way out.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "daedalus",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    170,
+    190
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3283
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.5,
+   "ms": 1500,
+   "color": "10,6,24",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Not even Daedalus was sure he could.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "daedalus",
+   "emote": "question",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "dots",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1700
+  },
+  {
+   "t": "actor.remove",
+   "id": "daedalus",
+   "ms": 700
+  },
+  {
+   "t": "actor.spawn",
+   "id": "theseus",
+   "sprite": "c_theseus_0",
+   "x": 40,
+   "y": 200,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_theseus_1",
+    "c_theseus_0",
+    "c_theseus_2",
+    "c_theseus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "torch",
+   "sprite": "p_torch",
+   "x": 52,
+   "y": 190,
+   "anchor": [
+    4,
+    19
+   ],
+   "shadow": 0,
+   "z": 1
+  },
+  {
+   "t": "caption",
+   "text": "Theseus came from Athens as one of the seven.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    100,
+    196
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    90,
+    204
+   ],
+   "speed": 45
+  },
+  {
+   "t": "caption",
+   "text": "I loved him, and I gave him a ball of thread.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ariadne",
+   "to": [
+    108,
+    198
+   ],
+   "ms": 800
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ball",
+   "sprite": "p_thread",
+   "x": 104,
+   "y": 190,
+   "anchor": [
+    3,
+    3
+   ],
+   "scale": 3,
+   "shadow": 0,
+   "z": 1
+  },
+  {
+   "t": "wait",
+   "ms": 1150
+  },
+  {
+   "t": "actor.move",
+   "id": "ball",
+   "to": [
+    92,
+    196
+   ],
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He tied the end at the door and let it unroll as he walked deeper in.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "ball"
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    150,
+    200
+   ],
+   "ms": 1000
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha1",
+   "sprite": "p_thread",
+   "x": 96.0,
+   "y": 205.6,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha2",
+   "sprite": "p_thread",
+   "x": 102.0,
+   "y": 205.2,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha3",
+   "sprite": "p_thread",
+   "x": 108.0,
+   "y": 204.8,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha4",
+   "sprite": "p_thread",
+   "x": 114.0,
+   "y": 204.4,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha5",
+   "sprite": "p_thread",
+   "x": 120.0,
+   "y": 204.0,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha6",
+   "sprite": "p_thread",
+   "x": 126.0,
+   "y": 203.6,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha7",
+   "sprite": "p_thread",
+   "x": 132.0,
+   "y": 203.2,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha8",
+   "sprite": "p_thread",
+   "x": 138.0,
+   "y": 202.8,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha9",
+   "sprite": "p_thread",
+   "x": 144.0,
+   "y": 202.4,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tha10",
+   "sprite": "p_thread",
+   "x": 150.0,
+   "y": 202.0,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.move",
+   "id": "torch",
+   "to": [
+    160,
+    194
+   ],
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1416
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    230,
+    232
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "torch",
+   "to": [
+    240,
+    226
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    230,
+    215
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb1",
+   "sprite": "p_thread",
+   "x": 155.71428571428572,
+   "y": 204.14285714285714,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb2",
+   "sprite": "p_thread",
+   "x": 161.42857142857142,
+   "y": 206.28571428571428,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb3",
+   "sprite": "p_thread",
+   "x": 167.14285714285714,
+   "y": 208.42857142857142,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb4",
+   "sprite": "p_thread",
+   "x": 172.85714285714286,
+   "y": 210.57142857142858,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb5",
+   "sprite": "p_thread",
+   "x": 178.57142857142858,
+   "y": 212.71428571428572,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb6",
+   "sprite": "p_thread",
+   "x": 184.28571428571428,
+   "y": 214.85714285714286,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb7",
+   "sprite": "p_thread",
+   "x": 190.0,
+   "y": 217.0,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb8",
+   "sprite": "p_thread",
+   "x": 195.71428571428572,
+   "y": 219.14285714285714,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb9",
+   "sprite": "p_thread",
+   "x": 201.42857142857144,
+   "y": 221.28571428571428,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb10",
+   "sprite": "p_thread",
+   "x": 207.14285714285714,
+   "y": 223.42857142857142,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb11",
+   "sprite": "p_thread",
+   "x": 212.85714285714286,
+   "y": 225.57142857142858,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb12",
+   "sprite": "p_thread",
+   "x": 218.57142857142856,
+   "y": 227.71428571428572,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb13",
+   "sprite": "p_thread",
+   "x": 224.28571428571428,
+   "y": 229.85714285714286,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thb14",
+   "sprite": "p_thread",
+   "x": 230.0,
+   "y": 232.0,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.62,
+   "ms": 1000,
+   "color": "6,3,18",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "mino",
+   "sprite": "c_minotaur_0",
+   "x": 380,
+   "y": 180,
+   "anchor": [
+    23,
+    73
+   ],
+   "walk": [
+    "c_minotaur_1",
+    "c_minotaur_0",
+    "c_minotaur_2",
+    "c_minotaur_0"
+   ],
+   "ghost": true,
+   "ms": 1500,
+   "shadow": 24,
+   "glow": false,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    300,
+    224
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "torch",
+   "to": [
+    308,
+    218
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc1",
+   "sprite": "p_thread",
+   "x": 236.36363636363637,
+   "y": 231.27272727272728,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc2",
+   "sprite": "p_thread",
+   "x": 242.72727272727272,
+   "y": 230.54545454545453,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc3",
+   "sprite": "p_thread",
+   "x": 249.0909090909091,
+   "y": 229.8181818181818,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc4",
+   "sprite": "p_thread",
+   "x": 255.45454545454544,
+   "y": 229.0909090909091,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc5",
+   "sprite": "p_thread",
+   "x": 261.8181818181818,
+   "y": 228.36363636363637,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc6",
+   "sprite": "p_thread",
+   "x": 268.1818181818182,
+   "y": 227.63636363636363,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc7",
+   "sprite": "p_thread",
+   "x": 274.54545454545456,
+   "y": 226.9090909090909,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc8",
+   "sprite": "p_thread",
+   "x": 280.9090909090909,
+   "y": 226.1818181818182,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc9",
+   "sprite": "p_thread",
+   "x": 287.27272727272725,
+   "y": 225.45454545454547,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc10",
+   "sprite": "p_thread",
+   "x": 293.6363636363636,
+   "y": 224.72727272727272,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thc11",
+   "sprite": "p_thread",
+   "x": 300.0,
+   "y": 224.0,
+   "anchor": [
+    3,
+    3
+   ],
+   "shadow": 0,
+   "z": -1
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    330,
+    205
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He found the Minotaur in the dark and killed it, with his bare hands, or with a sword.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.8,
+   "ms": 900,
+   "at": [
+    340,
+    205
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "mino",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 2688
+  },
+  {
+   "t": "still",
+   "image": "art/stills/minotaur_eyes.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 3,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    330,
+    214
+   ],
+   "ms": 600
+  },
+  {
+   "t": "actor.move",
+   "id": "mino",
+   "to": [
+    350,
+    214
+   ],
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 600,
+   "amp": 4
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "actor.sprite",
+   "id": "mino",
+   "sprite": "c_minotaur_lie"
+  },
+  {
+   "t": "actor.place",
+   "id": "mino",
+   "x": 372,
+   "y": 228
+  },
+  {
+   "t": "caption",
+   "text": "The stories disagree.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "dots",
+   "ms": 1600
+  },
+  {
+   "t": "wait",
+   "ms": 1083
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.2,
+   "ms": 1400,
+   "color": "6,3,18",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Then he followed the thread back out to the light.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    230,
+    232
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "torch",
+   "to": [
+    238,
+    226
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.2,
+   "ms": 1500,
+   "at": [
+    270,
+    215
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "mino",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    150,
+    202
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "torch",
+   "to": [
+    158,
+    196
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    140
+   ],
+   "ms": 2200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "There was a real palace at Knossos, a maze of rooms with bulls painted on the walls. Perhaps that is where the story came from.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 4027
+  },
+  {
+   "t": "caption",
+   "text": "Nobody knows for certain.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1194
+  },
+  {
+   "t": "badge",
+   "flag": "legend"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

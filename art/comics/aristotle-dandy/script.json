@@ -1,0 +1,57 @@
+{
+ "story": "aristotle-dandy",
+ "title": "Aristotle the Dandy",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "aristotle"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Aristotle in fine clothes with rings on his fingers, thin legs, small eyes, lisping, a mirror in hand",
+   "caption": "Writers said Aristotle had thin legs and small eyes, a lisp, fine clothes and rings.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "I am thimply thplendid."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Aristotle cutting open a fish and a tiny octopus on a table, notebook and labelled sketches of hundreds of animals",
+   "caption": "He studied everything and described hundreds of animals.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A big pile of scrolls on stars, plants, poetry, politics and logic, with Aristotle perched at the top reading",
+   "caption": "Animals, plants, the stars, poetry, politics, how arguments work.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Aristotle writing in a book 'women have fewer teeth than men', his wife with a big smile showing a full set of teeth, comic",
+   "caption": "He thought women had fewer teeth than men. He never checked.",
+   "speech": {
+    "speaker": "Aristotle",
+    "text": "Hmm."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

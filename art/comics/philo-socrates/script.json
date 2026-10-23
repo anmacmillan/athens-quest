@@ -1,0 +1,162 @@
+{
+ "story": "philo-socrates",
+ "title": "Socrates and the Sophists",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "socrates"
+  ],
+  [
+   "socrates"
+  ],
+  [
+   "socrates"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Travelling sophists in fine robes teaching a crowd of rich young men in the Agora, each with a heavy bag of coins at his feet, confident smirks",
+   "caption": "Sophists travelled from city to city teaching young men to win arguments, for money.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Two sophists side by side with price tags hanging from their lecterns: one tag reads 100 MINAS (a huge pile of coin bags), the other reads 5 MINAS (a small bag)",
+   "caption": "Protagoras was said to charge a hundred minas. Evenus charged five.",
+   "speech": {
+    "speaker": "Sophist",
+    "text": "A hundred minas, please!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Socrates (ugly, bald, bushy beard, barefoot, shabby cloak) holding out empty open hands with a cheerful grin, a tiny price tag showing 0 and an empty pouch",
+   "caption": "Socrates charged nothing, and he had nothing.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "I charged nothing, and I had nothing."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Socrates looking up at a very confident pompous sophist with a raised chin, a big question mark floating between them",
+   "caption": "He would ask a simple question.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "What is justice?"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "The pompous sophist answers with a grand gesture and a speech scroll, young men watching, a mood of confidence",
+   "caption": "The sophist answered confidently.",
+   "speech": {
+    "speaker": "Sophist",
+    "text": "Justice is obvious!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Socrates with a finger raised asking another question, a chain of question marks, the sophist's smirk beginning to slip, a sweat drop",
+   "caption": "Then another question, and another.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "But what about this case?"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "The sophist tangled in his own words, hair standing up, eyes spinning, a knot of scribbled lines above his head, sweat drops flying; young men in the background laughing",
+   "caption": "Until he contradicted himself in front of everyone.",
+   "speech": {
+    "speaker": "Sophist",
+    "text": "Er... wait..."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "The Oracle at Delphi (the Pythia on a golden tripod in swirling mist) declaring in glowing light, Socrates confused in the foreground",
+   "caption": "The oracle called him the wisest man in Athens.",
+   "speech": {
+    "speaker": "Pythia",
+    "text": "No one is wiser than Socrates."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Socrates tapping his own chest with a gentle smile while behind him a row of pompous Athenians each stand with a thought bubble full of 'I know'",
+   "caption": "The only reason: he did not think he knew what he did not know. Everyone else did.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "I don't think I know what I don't know."
+   },
+   "sfx": null,
+   "tag": "HISTORY"
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A general on a hillside tricking the enemy: a decoy campfire and a hidden army, the general smiling slyly; Socrates and the young Euthydemus watching in an inset",
+   "caption": "Is deceiving always wrong? A general who tricks the enemy?",
+   "speech": {
+    "speaker": "Euthydemus",
+    "text": "Hmm."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "A father hiding bitter medicine in a spoon of honeyed food to feed his sick son in bed, the boy trusting, the father tender",
+   "caption": "A father who tricks his sick son into taking medicine?",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A sad man sitting with his head in his hands in a dim room; his friend gently lifting a sword away from the table and holding it behind his back, tender, the sad man not harmed, mood quiet and kind",
+   "caption": "A man who takes a desperate friend's sword away?",
+   "speech": {
+    "speaker": "Euthydemus",
+    "text": "I must think again."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [3] regenerated"
+ ]
+}

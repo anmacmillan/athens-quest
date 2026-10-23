@@ -1,0 +1,54 @@
+{
+ "story": "thermopylae",
+ "title": "The Three Hundred",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A huge Persian army marching along a coast with endless banners, King Xerxes on a golden chariot",
+   "caption": "In 480 BC the Persian king Xerxes invaded Greece with a huge army.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "The narrow pass of Thermopylae between steep cliffs and the sea with a thin line of Spartan soldiers in red cloaks, round shields, King Leonidas in front",
+   "caption": "At the narrow pass, Leonidas with three hundred Spartans held them off for three days.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A Persian messenger demanding weapons, Leonidas replying calmly with his spear",
+   "caption": "Leonidas is said to have answered: come and take them.",
+   "speech": {
+    "speaker": "Leonidas",
+    "text": "Come and take them."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A local man, Ephialtes, pointing at a mountain path behind the Greeks, Persian scouts creeping on the high trail, dusk; no violence shown",
+   "caption": "Ephialtes showed the Persians a path round behind them. The Persians then marched on and burnt Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

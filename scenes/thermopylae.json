@@ -1,0 +1,491 @@
+{
+ "id": "thermopylae",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "road",
+     "camera": [
+      240,
+      200
+     ],
+     "zoom": 1.2
+    },
+    {
+     "t": "actor.spawn",
+     "id": "leo",
+     "sprite": "c_leonidas_0",
+     "x": 180,
+     "y": 204,
+     "anchor": [
+      18,
+      53
+     ],
+     "walk": [
+      "c_leonidas_1",
+      "c_leonidas_0",
+      "c_leonidas_2",
+      "c_leonidas_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "sp0",
+     "sprite": "c_soldier_0",
+     "x": 130,
+     "y": 214,
+     "anchor": [
+      17,
+      52
+     ],
+     "walk": [
+      "c_soldier_1",
+      "c_soldier_0",
+      "c_soldier_2",
+      "c_soldier_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "sp1",
+     "sprite": "c_soldier_0",
+     "x": 148,
+     "y": 222,
+     "anchor": [
+      17,
+      52
+     ],
+     "walk": [
+      "c_soldier_1",
+      "c_soldier_0",
+      "c_soldier_2",
+      "c_soldier_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "sp2",
+     "sprite": "c_soldier_0",
+     "x": 166,
+     "y": 214,
+     "anchor": [
+      17,
+      52
+     ],
+     "walk": [
+      "c_soldier_1",
+      "c_soldier_0",
+      "c_soldier_2",
+      "c_soldier_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "sp3",
+     "sprite": "c_soldier_0",
+     "x": 184,
+     "y": 222,
+     "anchor": [
+      17,
+      52
+     ],
+     "walk": [
+      "c_soldier_1",
+      "c_soldier_0",
+      "c_soldier_2",
+      "c_soldier_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "pe0",
+     "sprite": "c_persian_0",
+     "x": 360,
+     "y": 200,
+     "anchor": [
+      14,
+      52
+     ],
+     "walk": [
+      "c_persian_1",
+      "c_persian_0",
+      "c_persian_2",
+      "c_persian_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "pe1",
+     "sprite": "c_persian_0",
+     "x": 380,
+     "y": 214,
+     "anchor": [
+      14,
+      52
+     ],
+     "walk": [
+      "c_persian_1",
+      "c_persian_0",
+      "c_persian_2",
+      "c_persian_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "pe2",
+     "sprite": "c_persian_0",
+     "x": 400,
+     "y": 200,
+     "anchor": [
+      14,
+      52
+     ],
+     "walk": [
+      "c_persian_1",
+      "c_persian_0",
+      "c_persian_2",
+      "c_persian_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "pe3",
+     "sprite": "c_persian_0",
+     "x": 420,
+     "y": 214,
+     "anchor": [
+      14,
+      52
+     ],
+     "walk": [
+      "c_persian_1",
+      "c_persian_0",
+      "c_persian_2",
+      "c_persian_0"
+     ],
+     "abs": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "pe4",
+     "sprite": "c_persian_0",
+     "x": 440,
+     "y": 200,
+     "anchor": [
+      14,
+      52
+     ],
+     "walk": [
+      "c_persian_1",
+      "c_persian_0",
+      "c_persian_2",
+      "c_persian_0"
+     ],
+     "abs": true
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "In 480 BC the Persian king Xerxes invaded Greece with a huge army. At the narrow pass of Thermopylae, King Leonidas of Sparta with three hundred Spartans and a few thousand other Greeks held them off for three days.",
+   "hold": 1600,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "pe0",
+   "to": [
+    290,
+    200
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe1",
+   "to": [
+    306,
+    214
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe2",
+   "to": [
+    322,
+    200
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe3",
+   "to": [
+    338,
+    214
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe4",
+   "to": [
+    354,
+    200
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3200
+  },
+  {
+   "t": "caption",
+   "text": "The Persians told the Greeks to hand over their weapons.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "speaker": "persian",
+   "text": "Hand over your weapons!",
+   "extra": true,
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "pe2",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Leonidas is said to have answered: come and take them. Plutarch wrote that answer down.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "speaker": "leonidas",
+   "text": "Come and take them.",
+   "extra": true,
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "leo",
+   "sprite": "c_leonidas_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "leo",
+   "emote": "exclaim",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "A local man, Ephialtes, showed the Persians a mountain path round behind them.",
+   "hold": 1600,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "eph",
+   "sprite": "c_citizen2_0",
+   "x": 400,
+   "y": 150,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "eph",
+   "to": [
+    300,
+    150
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "Leonidas and the three hundred fought to the death.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe0",
+   "to": [
+    150,
+    190
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe1",
+   "to": [
+    164,
+    204
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe2",
+   "to": [
+    178,
+    190
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe3",
+   "to": [
+    192,
+    204
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pe4",
+   "to": [
+    206,
+    190
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 900,
+   "amp": 3
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "The Persians then marched on and burnt Athens and the Acropolis.",
+   "hold": 1700,
+   "par": true
+  },
+  {
+   "t": "still",
+   "image": "art/stills/xerxes_fire.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live"
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  }
+ ]
+}

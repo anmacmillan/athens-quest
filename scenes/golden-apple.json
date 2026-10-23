@@ -1,0 +1,603 @@
+{
+ "id": "golden-apple",
+ "speaker": "glauka",
+ "flag": "myth",
+ "origin": {
+  "x": 1910.0,
+  "y": 2152.5
+ },
+ "party": {
+  "girl": [
+   -30,
+   30
+  ],
+  "owl": [
+   -14,
+   28
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  86,
+  18
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    86,
+    18
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.3,
+   "ms": 1000,
+   "at": [
+    90,
+    20
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "zeus",
+   "sprite": "c_zeus_0",
+   "x": 70,
+   "y": 8,
+   "anchor": [
+    21,
+    56
+   ],
+   "walk": [
+    "c_zeus_1",
+    "c_zeus_0",
+    "c_zeus_2",
+    "c_zeus_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hera",
+   "sprite": "c_hera_0",
+   "x": 96,
+   "y": 12,
+   "anchor": [
+    22,
+    53
+   ],
+   "walk": [
+    "c_hera_1",
+    "c_hera_0",
+    "c_hera_2",
+    "c_hera_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "athena",
+   "sprite": "c_athena_0",
+   "x": 114,
+   "y": 22,
+   "anchor": [
+    14,
+    55
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aphrodite",
+   "sprite": "c_aphrodite_0",
+   "x": 130,
+   "y": 16,
+   "anchor": [
+    15,
+    50
+   ],
+   "walk": [
+    "c_aphrodite_1",
+    "c_aphrodite_0",
+    "c_aphrodite_2",
+    "c_aphrodite_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "flip": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "There was a wedding, and Eris, the goddess of strife, was not invited.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "wait",
+   "ms": 1044
+  },
+  {
+   "t": "actor.spawn",
+   "id": "eris",
+   "sprite": "c_eris_0",
+   "x": 150,
+   "y": 50,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_eris_1",
+    "c_eris_0",
+    "c_eris_2",
+    "c_eris_0"
+   ],
+   "ghost": true,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "eris",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "caption",
+   "text": "So she rolled a golden apple into the hall.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.spawn",
+   "id": "apple",
+   "sprite": "p_apple",
+   "x": 148,
+   "y": 56,
+   "anchor": [
+    5,
+    10
+   ],
+   "shadow": 6
+  },
+  {
+   "t": "actor.move",
+   "id": "apple",
+   "to": [
+    104,
+    44
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1494
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "FOR THE FAIREST",
+   "x": 40,
+   "y": 90,
+   "per": 120,
+   "scale": 1
+  },
+  {
+   "t": "caption",
+   "text": "On it were the words: 'For the fairest.'",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2576
+  },
+  {
+   "t": "stage",
+   "set": "live",
+   "camera": [
+    90,
+    20
+   ],
+   "zoom": 1.3
+  },
+  {
+   "t": "actor.move",
+   "id": "hera",
+   "to": [
+    92,
+    38
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "athena",
+   "to": [
+    110,
+    40
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "aphrodite",
+   "to": [
+    128,
+    38
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Hera, Athena and Aphrodite each claimed the apple for herself.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 700
+  },
+  {
+   "t": "actor.emote",
+   "id": "hera",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "aphrodite",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "wait",
+   "ms": 1522
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hermes",
+   "sprite": "c_hermes_0",
+   "x": 20,
+   "y": 60,
+   "anchor": [
+    19,
+    50
+   ],
+   "walk": [
+    "c_hermes_1",
+    "c_hermes_0",
+    "c_hermes_2",
+    "c_hermes_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Zeus would not choose between them, so he sent them to a Trojan prince called Paris.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "zeus",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "actor.remove",
+   "id": "zeus",
+   "ms": 800
+  },
+  {
+   "t": "wait",
+   "ms": 2833
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    100,
+    6
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "paris",
+   "sprite": "c_paris_0",
+   "x": 60,
+   "y": 14,
+   "anchor": [
+    14,
+    46
+   ],
+   "walk": [
+    "c_paris_1",
+    "c_paris_0",
+    "c_paris_2",
+    "c_paris_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "hera",
+   "to": [
+    104,
+    12
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "athena",
+   "to": [
+    118,
+    16
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "aphrodite",
+   "to": [
+    132,
+    12
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "text": "Hera offered Paris power.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.8,
+   "ms": 700,
+   "at": [
+    84,
+    12
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "hera",
+   "emote": "star",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 994
+  },
+  {
+   "t": "caption",
+   "text": "Athena offered him victory in war.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena",
+   "emote": "star",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1244
+  },
+  {
+   "t": "caption",
+   "text": "Aphrodite offered him the most beautiful woman in the world, Helen.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aphrodite",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2261
+  },
+  {
+   "t": "actor.spawn",
+   "id": "apple2",
+   "sprite": "p_apple",
+   "x": 70,
+   "y": 16,
+   "anchor": [
+    5,
+    10
+   ],
+   "shadow": 6
+  },
+  {
+   "t": "actor.move",
+   "id": "apple2",
+   "to": [
+    112,
+    20
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Paris chose Aphrodite.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "aphrodite",
+   "height": 8,
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "paris",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1311
+  },
+  {
+   "t": "actor.emote",
+   "id": "hera",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena",
+   "emote": "exclaim",
+   "ms": 2400
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    100,
+    10
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Helen was already married, so taking her started the Trojan War.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.35,
+   "ms": 1200,
+   "color": "120,20,10",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2277
+  },
+  {
+   "t": "caption",
+   "text": "Athena lost the contest, and she sided against Troy.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "athena",
+   "to": [
+    152,
+    16
+   ],
+   "ms": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena",
+   "emote": "sad",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1744
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "That is how an apple at a wedding led to a war.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2105
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  }
+ ]
+}

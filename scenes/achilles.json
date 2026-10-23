@@ -1,0 +1,574 @@
+{
+ "id": "achilles",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 120,
+   "y": 222,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 144,
+   "y": 220,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    200,
+    200
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "Achilles was the greatest Greek warrior at Troy.",
+   "hold": 1300,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ach",
+   "sprite": "c_achilles_0",
+   "x": 120,
+   "y": 204,
+   "anchor": [
+    17,
+    53
+   ],
+   "walk": [
+    "c_achilles_1",
+    "c_achilles_0",
+    "c_achilles_2",
+    "c_achilles_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "abs": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1000,
+   "at": [
+    190,
+    200
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "The Trojan prince Hector killed his best friend Patroclus.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pat",
+   "sprite": "c_soldier_0",
+   "x": 160,
+   "y": 232,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ach",
+   "emote": "sad",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Achilles went out to meet Hector in single combat outside the walls.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hec",
+   "sprite": "c_hector_0",
+   "x": 300,
+   "y": 204,
+   "anchor": [
+    17,
+    53
+   ],
+   "walk": [
+    "c_hector_1",
+    "c_hector_0",
+    "c_hector_2",
+    "c_hector_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "flip": true,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ach",
+   "to": [
+    190,
+    204
+   ],
+   "ms": 2200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "hec",
+   "to": [
+    262,
+    204
+   ],
+   "ms": 2200,
+   "abs": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "ach",
+   "height": 10,
+   "ms": 400,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "hec",
+   "height": 10,
+   "ms": 400
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 3
+  },
+  {
+   "t": "caption",
+   "text": "Hector died.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "hec",
+   "sprite": "c_hector_lie"
+  },
+  {
+   "t": "actor.emote",
+   "id": "ach",
+   "emote": "dots",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    240,
+    200
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Then Achilles tied Hector's body to his chariot by the ankles.",
+   "hold": 1500,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "chariot",
+   "sprite": "p_chariot",
+   "x": 200,
+   "y": 200,
+   "anchor": [
+    24,
+    27
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "ach"
+  },
+  {
+   "t": "actor.remove",
+   "id": "hec",
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 800
+  },
+  {
+   "t": "caption",
+   "text": "He dragged it round the walls of Troy, round and round, for days.",
+   "hold": 1700,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    330,
+    200
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    360,
+    236
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    240,
+    252
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    120,
+    236
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    120,
+    200
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "chariot",
+   "to": [
+    260,
+    190
+   ],
+   "ms": 1700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "Hector's parents stood on the battlements and watched.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pri",
+   "sprite": "c_priam_0",
+   "x": 240,
+   "y": 128,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_priam_1",
+    "c_priam_0",
+    "c_priam_2",
+    "c_priam_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hecuba",
+   "sprite": "c_citizen3_0",
+   "x": 268,
+   "y": 128,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "pri",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "actor.emote",
+   "id": "hecuba",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "Nobody stopped him.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.remove",
+   "id": "chariot"
+  },
+  {
+   "t": "actor.remove",
+   "id": "pri",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "hecuba",
+   "ms": 700
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.5,
+   "ms": 1200,
+   "color": "10,14,50",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "One night Hector's old father, King Priam, crept into the Greek camp.",
+   "hold": 1500,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tent",
+   "sprite": "c_soldier_0",
+   "x": 80,
+   "y": 214,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ach",
+   "sprite": "c_achilles_0",
+   "x": 150,
+   "y": 214,
+   "anchor": [
+    17,
+    53
+   ],
+   "walk": [
+    "c_achilles_1",
+    "c_achilles_0",
+    "c_achilles_2",
+    "c_achilles_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pri",
+   "sprite": "c_priam_0",
+   "x": 330,
+   "y": 232,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_priam_1",
+    "c_priam_0",
+    "c_priam_2",
+    "c_priam_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "pri",
+   "to": [
+    190,
+    218
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    170,
+    214
+   ],
+   "ms": 3200,
+   "abs": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.6,
+   "ms": 1200,
+   "at": [
+    170,
+    214
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He knelt and begged Achilles for his son's body.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "pri",
+   "sprite": "c_priam_sad"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Achilles wept with him.",
+   "hold": 1300,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ach",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "actor.emote",
+   "id": "pri",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Then he gave Hector back.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "pri",
+   "emote": "heart",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "story": "priestess",
+ "title": "The Priestess of Athena",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  []
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The priestess of Athena Polias (older woman in a long white robe and veil, regal) holding a key and standing by the temple door",
+   "caption": "The priestess of Athena Polias: the most important religious office in Athens. A woman held it for life.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A priestess shown in four ages as a young woman, middle-aged, older, then elderly, always at the same temple, a counter of 64",
+   "caption": "Lysimache served for sixty-four years.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Athenian women in their houses at home, a girl of about fourteen at a wedding, a husband leading her away, subdued and sad mood",
+   "caption": "Women could not vote or own much property, and girls were often married at about fourteen.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A carved stone slab with the priestess' name cut into it, hand tracing the letters, next to a crowd of nameless silhouettes",
+   "caption": "She was one of the few women whose name was carved on monuments. Most women's names were never written down.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

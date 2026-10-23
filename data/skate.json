@@ -1,0 +1,11 @@
+{
+  "rideable": "SlpP",
+  "walkAfter": "tdrC",
+  "maxMul": 2,
+  "zones": [
+    { "id": "summit", "label": "the Acropolis", "rect": [37.9703, 23.7243, 37.9724, 23.7287] },
+    { "id": "parliament", "label": "the Parliament", "rect": [37.9748, 23.7358, 37.9764, 23.7382] },
+    { "id": "agora", "label": "the Agora", "rect": [37.9734, 23.7192, 37.9762, 23.7236] }
+  ],
+  "whistle": "Fweet! No skateboards on the monuments!"
+}

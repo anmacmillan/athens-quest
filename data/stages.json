@@ -1,0 +1,134 @@
+{
+ "sea": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_sea.png",
+  "water": true,
+  "spawn": [
+   240,
+   60
+  ]
+ },
+ "crete": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_crete.png",
+  "spawn": [
+   240,
+   200
+  ],
+  "bounds": [
+   10,
+   120,
+   470,
+   300
+  ]
+ },
+ "mycenae": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_mycenae.png",
+  "spawn": [
+   240,
+   230
+  ],
+  "bounds": [
+   10,
+   150,
+   470,
+   300
+  ]
+ },
+ "naxos": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_naxos.png",
+  "water": true,
+  "spawn": [
+   120,
+   200
+  ],
+  "bounds": [
+   10,
+   10,
+   175,
+   310
+  ]
+ },
+ "road": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_road.png",
+  "spawn": [
+   60,
+   200
+  ],
+  "bounds": [
+   10,
+   160,
+   470,
+   240
+  ]
+ },
+ "knossos": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_knossos.png",
+  "spawn": [
+   240,
+   250
+  ],
+  "bounds": [
+   14,
+   112,
+   466,
+   300
+  ]
+ },
+ "troy": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_troy.png",
+  "spawn": [
+   330,
+   250
+  ],
+  "bounds": [
+   14,
+   160,
+   466,
+   306
+  ]
+ },
+ "epidaurus": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_epidaurus.png",
+  "spawn": [
+   240,
+   280
+  ],
+  "bounds": [
+   14,
+   90,
+   466,
+   306
+  ]
+ },
+ "nafplio": {
+  "w": 480,
+  "h": 320,
+  "img": "art/stage_nafplio.png",
+  "water": true,
+  "spawn": [
+   240,
+   222
+  ],
+  "bounds": [
+   14,
+   100,
+   466,
+   226
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Owl Quest">
+<meta name="theme-color" content="#1b1424">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png">
+<title>Owl Quest: Athens</title>
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body class="nohud">
+<div id="stage"><canvas id="cv" aria-label="Owl Quest: Athens game"></canvas></div>
+<div id="hud">
+  <div id="topleft">
+    <div id="counter" class="panel"><span id="cnt">0 / 0</span><i id="sync" class="sync local"></i></div>
+    <div class="row2"><canvas id="compass" width="31" height="31" title="Glauka's compass"></canvas><span id="who"></span></div>
+  </div>
+  <div id="topbtns"><button id="bBook" class="btn small" aria-label="Badge book"></button><button id="bMap" class="btn small" aria-label="Map"></button><button id="bBoard" class="btn small" aria-label="Scoreboard"></button><button id="bSound" class="btn small" aria-label="Sound"></button></div>
+  <div id="prompt" class="panel hidden"></div>
+  <button id="btnA" aria-label="Talk"></button>
+  <button id="skip" class="btn small hidden">Skip</button>
+</div>
+<div id="joy"><div id="joyknob"></div></div>
+<div id="toast"></div>
+<div id="loading"><p>Owl Quest: Athens</p><small>Loading the map...</small></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

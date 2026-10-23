@@ -1,0 +1,546 @@
+{
+ "id": "atreus-dinner",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 300,
+   "y": 206,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 324,
+   "y": 204,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    330,
+    172
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Two brothers lived up there, in the palace at the top.",
+   "flag": "myth"
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    330,
+    160
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "atreus",
+   "sprite": "c_atreus_0",
+   "x": 296,
+   "y": 166,
+   "anchor": [
+    12,
+    42
+   ],
+   "walk": [
+    "c_atreus_1",
+    "c_atreus_0",
+    "c_atreus_2",
+    "c_atreus_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thyestes",
+   "sprite": "c_thyestes_0",
+   "x": 364,
+   "y": 166,
+   "anchor": [
+    11,
+    40
+   ],
+   "walk": [
+    "c_thyestes_1",
+    "c_thyestes_0",
+    "c_thyestes_2",
+    "c_thyestes_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "flip": true,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Brother! Come home. Let us feast.",
+   "speaker": "atreus"
+  },
+  {
+   "t": "actor.move",
+   "id": "atreus",
+   "to": [
+    312,
+    166
+   ],
+   "ms": 900,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "thyestes",
+   "to": [
+    348,
+    166
+   ],
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "atreus",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "thyestes",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "actor.jump",
+   "id": "atreus",
+   "height": 8,
+   "ms": 400,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "thyestes",
+   "height": 8,
+   "ms": 400
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Thyestes came. He was hungry. Atreus was smiling.",
+   "flag": "myth"
+  },
+  {
+   "t": "actor.emote",
+   "id": "atreus",
+   "emote": "happy",
+   "ms": 2500
+  },
+  {
+   "t": "actor.spawn",
+   "id": "bench",
+   "sprite": "p_bench",
+   "x": 330,
+   "y": 176,
+   "anchor": [
+    10,
+    13
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pot",
+   "sprite": "p_pot",
+   "x": 330,
+   "y": 170,
+   "anchor": [
+    11,
+    17
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "thyestes",
+   "to": [
+    344,
+    182
+   ],
+   "ms": 1300,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "atreus",
+   "to": [
+    316,
+    182
+   ],
+   "ms": 1300,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "thyestes",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 3400
+  },
+  {
+   "t": "actor.remove",
+   "id": "pot"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "platter",
+   "sprite": "p_platter",
+   "x": 330,
+   "y": 172,
+   "anchor": [
+    12,
+    17
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 2.0,
+   "ms": 1000,
+   "at": [
+    330,
+    160
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "atreus",
+   "to": [
+    322,
+    172
+   ],
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "atreus",
+   "sprite": "c_atreus_up"
+  },
+  {
+   "t": "sfx",
+   "name": "pop"
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 600,
+   "amp": 4
+  },
+  {
+   "t": "still",
+   "image": "art/stills/atreus_platter.png",
+   "ms": 3000,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 3
+  },
+  {
+   "t": "still",
+   "image": "art/stills/atreus_dinner_b2.png",
+   "ms": 2200,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.sprite",
+   "id": "platter",
+   "sprite": "p_platter_empty"
+  },
+  {
+   "t": "actor.sprite",
+   "id": "thyestes",
+   "sprite": "c_thyestes_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "thyestes",
+   "emote": "exclaim",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 900,
+   "at": [
+    330,
+    140
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "sunReverse",
+   "ms": 4200
+  },
+  {
+   "t": "still",
+   "image": "art/stills/sun_turns_back.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "shake": 2
+  },
+  {
+   "t": "still",
+   "image": "art/stills/atreus_dinner_b3.png",
+   "ms": 2200,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.45,
+   "ms": 900,
+   "color": "120,0,10",
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "atreus",
+   "sprite": "c_atreus_0"
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.6,
+   "ms": 1000,
+   "at": [
+    348,
+    160
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "thyestes",
+   "sprite": "c_thyestes_up"
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "CURSED",
+   "x": 316,
+   "y": 120,
+   "per": 200,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 800,
+   "at": [
+    330,
+    172
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g0",
+   "sprite": "c_atreus_0",
+   "x": 150,
+   "y": 198,
+   "anchor": [
+    12,
+    42
+   ],
+   "walk": [
+    "c_atreus_1",
+    "c_atreus_0",
+    "c_atreus_2",
+    "c_atreus_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g1",
+   "sprite": "c_agamemnon_0",
+   "x": 110,
+   "y": 198,
+   "anchor": [
+    12,
+    43
+   ],
+   "walk": [
+    "c_agamemnon_1",
+    "c_agamemnon_0",
+    "c_agamemnon_2",
+    "c_agamemnon_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g2",
+   "sprite": "c_boy_0",
+   "x": 70,
+   "y": 198,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g0",
+   "to": [
+    520,
+    198
+   ],
+   "ms": 6000,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g1",
+   "to": [
+    530,
+    198
+   ],
+   "ms": 6000,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g2",
+   "to": [
+    540,
+    198
+   ],
+   "ms": 6000,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    330,
+    190
+   ],
+   "ms": 800,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 5800
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "text": "Watch what he served.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

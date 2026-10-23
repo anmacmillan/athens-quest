@@ -1,0 +1,97 @@
+{
+ "story": "wooden-horse",
+ "title": "The Wooden Horse",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "cassandra"
+  ],
+  [
+   "cassandra",
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Greek ships sailing away over the horizon in the morning light and a gigantic wooden horse standing alone on the beach",
+   "caption": "After ten years the Greeks pretended to give up and left a giant wooden horse on the beach.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Trojan crowds coming out of the gates to look at the horse, children pointing, a celebration atmosphere",
+   "caption": "It was a gift, they said.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Cassandra (wild dark hair, wide eyes) in front of the horse warning the crowd, nobody listening, a priest Laocoön next to her",
+   "caption": "Cassandra warned them it would destroy the city. Nobody ever believed Cassandra.",
+   "speech": {
+    "speaker": "Cassandra",
+    "text": "Don't open the gates!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Two huge sea serpents rising from the sea towards the priest Laocoön and his sons on the shore, dramatic waves, no gore shown",
+   "caption": "A priest called Laocoön warned them too. Sea serpents rose out of the water.",
+   "speech": null,
+   "sfx": "SHAAAA",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Trojans pulling the horse on ropes and rollers through the gates of Troy, wheels creaking, cheering",
+   "caption": "The Trojans dragged the horse inside the walls.",
+   "speech": null,
+   "sfx": "GOGOGO",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A hatch opening in the belly of the horse at night, Greek soldiers' helmets peeping out, moonlight",
+   "caption": "That night Greek soldiers climbed out of its belly.",
+   "speech": null,
+   "sfx": "CREAK",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "The Greek soldiers opening the city gates to let the army in, torches, a sleeping town, a burning tower beginning",
+   "caption": "They opened the gates and burnt Troy. Odysseus had thought of the trick.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "A modern computer screen with a picture of a horse on it and a little hand of a soldier peeking out, Glauka tapping the screen",
+   "caption": "A Trojan horse is also what we call a computer virus.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Looks harmless. A gift."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

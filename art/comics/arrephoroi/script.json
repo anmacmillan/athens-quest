@@ -1,0 +1,55 @@
+{
+ "story": "arrephoroi",
+ "title": "The Secret Basket Girls",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  []
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Two little girls of about nine in white robes on the Acropolis near a small house with a view over the city",
+   "caption": "Every year two girls from noble families were chosen to live on the Acropolis for a year.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "The girls helping weave a big saffron robe (the peplos) on a loom, threads and yarn balls, an old priestess watching",
+   "caption": "The girls helped start weaving the peplos, Athena's new robe.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The two girls at night with closed baskets balanced on their heads, descending a hidden stone passage lit by a tiny lamp",
+   "caption": "Once a year, at night, they carried closed baskets down a hidden passage.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The girls in a dark garden below the rock, exchanging baskets with a tiny puzzled expression, question marks",
+   "caption": "They did not know what was inside.",
+   "speech": {
+    "speaker": "Girl",
+    "text": "What is in it?"
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

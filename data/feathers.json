@@ -1,0 +1,202 @@
+[
+ {
+  "id": "odeon-roof",
+  "pos": {
+   "lat": 37.971119,
+   "lon": 23.724146
+  },
+  "fact": "The Odeon once had a roof of cedar wood. It burnt when the Herulians sacked Athens in AD 267."
+ },
+ {
+  "id": "muses-hill",
+  "pos": {
+   "lat": 37.967763,
+   "lon": 23.721968
+  },
+  "fact": "Philopappos Hill was one of the Hills of the Muses: the Athenians called it the Mouseion."
+ },
+ {
+  "id": "anafiotika-lane",
+  "pos": {
+   "lat": 37.972607,
+   "lon": 23.728433
+  },
+  "fact": "Some Anafiotika lanes are so narrow you can touch both walls at once."
+ },
+ {
+  "id": "hill-of-ares",
+  "pos": {
+   "lat": 37.972447,
+   "lon": 23.723149
+  },
+  "fact": "Areopagus means the Hill of Ares, the god of war."
+ },
+ {
+  "id": "pnyx-bema",
+  "pos": {
+   "lat": 37.971343,
+   "lon": 23.719581
+  },
+  "fact": "On the Pnyx you can still see the speakers' platform, the bema, cut into the rock."
+ },
+ {
+  "id": "hephaestus-ceiling",
+  "pos": {
+   "lat": 37.975804,
+   "lon": 23.721212
+  },
+  "fact": "The Temple of Hephaestus still keeps part of its marble ceiling, 2,400 years old."
+ },
+ {
+  "id": "attalos-rockefeller",
+  "pos": {
+   "lat": 37.974961,
+   "lon": 23.724418
+  },
+  "fact": "The Stoa of Attalos was rebuilt in the 1950s, paid for largely by the American Rockefeller family."
+ },
+ {
+  "id": "winds-dervishes",
+  "pos": {
+   "lat": 37.974297,
+   "lon": 23.727228
+  },
+  "fact": "In Ottoman times, whirling dervishes danced inside the Tower of the Winds."
+ },
+ {
+  "id": "roman-market",
+  "pos": {
+   "lat": 37.974203,
+   "lon": 23.726031
+  },
+  "fact": "The Romans built a second market beside the old Agora, with a grand gate to Athena Archegetis."
+ },
+ {
+  "id": "hadrian-beard",
+  "pos": {
+   "lat": 37.970387,
+   "lon": 23.732113
+  },
+  "fact": "Hadrian loved Greece so much that he wore a beard like a Greek philosopher."
+ },
+ {
+  "id": "zeus-columns",
+  "pos": {
+   "lat": 37.969237,
+   "lon": 23.733496
+  },
+  "fact": "The Temple of Olympian Zeus had 104 columns. Only 15 still stand."
+ },
+ {
+  "id": "museum-glass",
+  "pos": {
+   "lat": 37.968633,
+   "lon": 23.728171
+  },
+  "fact": "Under the museum's glass floor is a whole ancient neighbourhood, found while it was being built."
+ },
+ {
+  "id": "theatre-cushions",
+  "pos": {
+   "lat": 37.970286,
+   "lon": 23.727929
+  },
+  "fact": "The stone seats were hard: ancient theatre-goers brought their own cushions."
+ },
+ {
+  "id": "propylaia-dukes",
+  "pos": {
+   "lat": 37.971836,
+   "lon": 23.725297
+  },
+  "fact": "In the Middle Ages the Propylaia became the palace of the Florentine dukes of Athens."
+ },
+ {
+  "id": "parthenon-church",
+  "pos": {
+   "lat": 37.971703,
+   "lon": 23.726818
+  },
+  "fact": "The Parthenon was a church of the Virgin Mary for about a thousand years."
+ },
+ {
+  "id": "caryatid-london",
+  "pos": {
+   "lat": 37.9722,
+   "lon": 23.726578
+  },
+  "fact": "One Caryatid has stood in the British Museum in London since 1816."
+ },
+ {
+  "id": "lycabettus-view",
+  "pos": {
+   "lat": 37.9717,
+   "lon": 23.7288
+  },
+  "fact": "From the flag at the east end, look for Mount Lycabettus, the tallest hill in central Athens."
+ },
+ {
+  "id": "ceramic-word",
+  "pos": {
+   "lat": 37.977,
+   "lon": 23.7185
+  },
+  "fact": "The potters' quarter, Kerameikos, gave us the word ceramic."
+ },
+ {
+  "id": "plaka-old",
+  "pos": {
+   "lat": 37.9732,
+   "lon": 23.7315
+  },
+  "fact": "Plaka has been lived in for thousands of years: one of the oldest neighbourhoods in Europe."
+ },
+ {
+  "id": "piraeus-train",
+  "pos": {
+   "lat": 37.976261,
+   "lon": 23.726147
+  },
+  "fact": "The railway from here to the port of Piraeus opened in 1869, pulled by steam engines."
+ },
+ {
+  "id": "cave-treasures",
+  "pos": {
+   "lat": 37.969475,
+   "lon": 23.72101
+  },
+  "fact": "In the Second World War, treasures from the Acropolis were hidden in these caves."
+ },
+ {
+  "id": "olympic-street",
+  "pos": {
+   "lat": 37.9699,
+   "lon": 23.7242
+  },
+  "fact": "This street was closed to cars and turned into a promenade before the 2004 Athens Olympics."
+ },
+ {
+  "id": "lysicrates-byron",
+  "pos": {
+   "lat": 37.9706,
+   "lon": 23.73
+  },
+  "fact": "The little round Monument of Lysicrates celebrated a winning choir in 335 BC. Lord Byron later stayed in a monastery beside it."
+ },
+ {
+  "id": "areopagus-slippery",
+  "pos": {
+   "lat": 37.972147,
+   "lon": 23.723549
+  },
+  "fact": "The Areopagus steps are polished smooth by millions of shoes. Hold the rail."
+ },
+ {
+  "id": "owl-coin",
+  "pos": {
+   "lat": 37.97481,
+   "lon": 23.722793
+  },
+  "fact": "Athens' silver coins had an owl on them, Athena's bird: people called them owls."
+ }
+]

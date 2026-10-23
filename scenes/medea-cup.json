@@ -1,0 +1,530 @@
+{
+ "id": "medea-cup",
+ "speaker": "glauka",
+ "flag": "myth",
+ "origin": {
+  "x": 2152.4,
+  "y": 1871.1
+ },
+ "party": {
+  "girl": [
+   6,
+   40
+  ],
+  "owl": [
+   24,
+   38
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  -40,
+  20
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    -40,
+    20
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "rock",
+   "sprite": "p_boulder",
+   "x": -96,
+   "y": 40,
+   "anchor": [
+    18,
+    25
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Before the temples, a palace stood right here. An old king lived in it.",
+   "flag": "myth"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aegeus",
+   "sprite": "ae_stand",
+   "x": -44,
+   "y": 14,
+   "ghost": true,
+   "ms": 1500,
+   "shadow": 14,
+   "walk": [
+    "ae_walk0",
+    "ae_stand",
+    "ae_walk1",
+    "ae_stand"
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 1593
+  },
+  {
+   "t": "caption",
+   "cps": 36,
+   "par": true,
+   "text": "King Aegeus had no heir. His wife Medea had a son, and plans."
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 900,
+   "at": [
+    -60,
+    24
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2572
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -80,
+    28
+   ],
+   "ms": 1500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "cps": 34,
+   "par": true,
+   "text": "A famous stranger at our feast, husband? Leave him to me.",
+   "speaker": "medea"
+  },
+  {
+   "t": "wait",
+   "ms": 700
+  },
+  {
+   "t": "actor.spawn",
+   "id": "theseus",
+   "sprite": "c_theseus_0",
+   "x": -108,
+   "y": 44,
+   "anchor": [
+    10,
+    42
+   ],
+   "walk": [
+    "c_theseus_1",
+    "c_theseus_0",
+    "c_theseus_2",
+    "c_theseus_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1300
+  },
+  {
+   "t": "wait",
+   "ms": 4405
+  },
+  {
+   "t": "actor.sprite",
+   "id": "theseus",
+   "sprite": "c_theseus_up"
+  },
+  {
+   "t": "actor.move",
+   "id": "rock",
+   "to": [
+    -118,
+    36
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "theseus",
+   "height": 8,
+   "ms": 500
+  },
+  {
+   "t": "sfx",
+   "name": "whoosh"
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.sprite",
+   "id": "theseus",
+   "sprite": "c_theseus_0"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -30,
+    24
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    -20,
+    40
+   ],
+   "speed": 34,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 600,
+   "at": [
+    -40,
+    22
+   ],
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1100,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "rock"
+    },
+    {
+     "t": "actor.place",
+     "id": "theseus",
+     "x": -58,
+     "y": 28
+    },
+    {
+     "t": "actor.place",
+     "id": "aegeus",
+     "x": -22,
+     "y": 14
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      -40,
+      22
+     ],
+     "zoom": 1.5
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "plate",
+   "sprite": "p_platter_empty",
+   "x": -50,
+   "y": 38,
+   "anchor": [
+    12,
+    17
+   ],
+   "shadow": 0,
+   "z": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cup",
+   "sprite": "p_cup",
+   "x": -42,
+   "y": 36,
+   "anchor": [
+    4,
+    10
+   ],
+   "shadow": 0,
+   "z": 1
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "actor.spawn",
+   "id": "medea",
+   "sprite": "c_medea_0",
+   "x": -8,
+   "y": 14,
+   "anchor": [
+    12,
+    46
+   ],
+   "walk": [
+    "c_medea_1",
+    "c_medea_0",
+    "c_medea_2",
+    "c_medea_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aegeus",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 800
+  },
+  {
+   "t": "wait",
+   "ms": 4883
+  },
+  {
+   "t": "actor.emote",
+   "id": "medea",
+   "emote": "question",
+   "ms": 1600
+  },
+  {
+   "t": "actor.move",
+   "id": "medea",
+   "to": [
+    -16,
+    18
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 2.0,
+   "ms": 800,
+   "at": [
+    -34,
+    18
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aegeus",
+   "emote": "sad",
+   "ms": 2800
+  },
+  {
+   "t": "actor.emote",
+   "id": "medea",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.7,
+   "ms": 700,
+   "at": [
+    -54,
+    30
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "theseus",
+   "sprite": "c_theseus_up"
+  },
+  {
+   "t": "actor.jump",
+   "id": "theseus",
+   "height": 4,
+   "ms": 400
+  },
+  {
+   "t": "wait",
+   "ms": 1152
+  },
+  {
+   "t": "actor.sprite",
+   "id": "theseus",
+   "sprite": "c_theseus_0"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -36,
+    20
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aegeus",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 3984
+  },
+  {
+   "t": "actor.move",
+   "id": "aegeus",
+   "to": [
+    -46,
+    24
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "still",
+   "image": "art/stills/medea_cup.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "shake": 2,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "actor.fall",
+   "id": "cup",
+   "path": [
+    [
+     0,
+     -6
+    ],
+    [
+     -10,
+     -2
+    ],
+    [
+     -14,
+     6
+    ]
+   ],
+   "ms": 700,
+   "remove": false,
+   "vanish": false,
+   "speedlines": false,
+   "sfx": false
+  },
+  {
+   "t": "fx",
+   "type": "splash",
+   "x": -56,
+   "y": 40,
+   "ms": 900
+  },
+  {
+   "t": "wait",
+   "ms": 2100
+  },
+  {
+   "t": "actor.move",
+   "id": "medea",
+   "to": [
+    40,
+    8
+   ],
+   "speed": 95,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "medea",
+   "emote": "exclaim",
+   "ms": 1200
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.2,
+   "ms": 700,
+   "at": [
+    -45,
+    24
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "aegeus",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "actor.remove",
+   "id": "medea",
+   "ms": 900
+  },
+  {
+   "t": "wait",
+   "ms": 700
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you that feast.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

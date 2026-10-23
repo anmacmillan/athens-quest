@@ -1,0 +1,102 @@
+{
+ "story": "oedipus",
+ "title": "The Riddle of the Sphinx",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "oedipus",
+   "sphinx"
+  ],
+  [
+   "oedipus",
+   "jocasta",
+   "antigone"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A bare mountainside at dusk: a shepherd lifting a tiny baby with bound ankles from a rock; far below the walls of Thebes; a ghostly oracle's vision of a priestess in a mist above",
+   "caption": "An oracle said the baby prince of Thebes would kill his father and marry his mother. He was left on a mountainside.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "On a narrow road the young Oedipus (from the sheet) in a fierce argument with an old man in a chariot who pushes him aside, a rearing horse, dust and speed lines; no gore, the old man shown only shoving",
+   "caption": "On a narrow road an old man in a chariot pushed him aside. In a rage Oedipus killed him: King Laius, his real father.",
+   "speech": null,
+   "sfx": "DOGAAN",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The Sphinx (from the sheet: lion body, eagle wings, a woman's face) perched on a high rock above the walls of Thebes, looming over a small group of terrified travellers, eerie moonlight",
+   "caption": "The Sphinx ate everyone who could not answer her riddle.",
+   "speech": {
+    "speaker": "Sphinx",
+    "text": "What walks on four legs in the morning, two at noon and three in the evening?"
+   },
+   "sfx": "BIG RIDDLE BALLOON",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Close-up of young Oedipus calm and thinking, then a small three-part inset: a crawling baby, a grown man walking, an old man with a stick",
+   "caption": "Oedipus answered: a human being.",
+   "speech": {
+    "speaker": "Oedipus",
+    "text": "A human being!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "The Sphinx on her rock with wide stunned eyes, wings flaring, then leaping off the cliff in a swirl of feathers and speed lines, tiny Oedipus below looking up; no gore",
+   "caption": "The Sphinx threw herself off her rock.",
+   "speech": null,
+   "sfx": "WHOOOSH",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A simple royal wedding image: Oedipus crowned as king of Thebes in a red cloak and Queen Jocasta in a purple gown side by side on a throne in front of cheering crowds with flower petals; formal and dignified, nothing romantic",
+   "caption": "Thebes made Oedipus king, and he married the widowed queen, Jocasta.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "The truth revealed: a close-up of Oedipus' shocked face with tiny pupils and sweat drops, Jocasta's pale horrified face behind him; at the corner a small black impact-frame inset showing two raised gold brooches and, from far away, a thin shadow of an empty dangling rope on a wall; no blood",
+   "caption": "When the truth came out, Jocasta hanged herself. Oedipus blinded himself with her brooches.",
+   "speech": {
+    "speaker": "Oedipus",
+    "text": "No...!"
+   },
+   "sfx": "!!!",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "The old blind Oedipus with white bandaged eyes and a staff, led gently by his daughter Antigone along a path toward a shady sacred grove of olive trees at Colonus, golden evening light, Glauka in a tree",
+   "caption": "Led by Antigone, he came to Colonus, and died in a sacred grove. Sophocles was born here.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

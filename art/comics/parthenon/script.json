@@ -1,0 +1,156 @@
+{
+ "story": "parthenon",
+ "title": "The Parthenon",
+ "flag": "history",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "pericles",
+   "glauka"
+  ],
+  [
+   "glauka"
+  ],
+  [
+   "pericles",
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p3.1: the man pointing at Phidias wears the helmet and red cloak of Pericles from p1.2. In Plutarch, Pericles is Phidias's friend and the accuser is the workman Menon. Narration names Menon; patch the pointing figure's helmet or leave it.",
+  "p1.4 vs p3: Phidias is bald and muscular on p1.4 and curly-haired with a black beard on page 3. Narration avoids describing him.",
+  "The comic shows the building first and the accusation last. Narration hangs the whole story on the accusation from p1.1 onward so the architecture becomes the work he is defending.",
+  "Story-level flag stays 'history' (the building); the Phidias pages and the coda are 'legend'."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The completed Parthenon in bright painted colours (blue, red and gold pediments) glowing on the Acropolis, crowds of Athenians below, Glauka the owl in the sky",
+   "caption": "The Parthenon, built between 447 and 432 BC, when Pericles led Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The Parthenon went up between 447 and 432 BC, when Pericles led Athens. All Athens came to stare. Somewhere in this crowd is the man in charge. Soon they'll call him a thief."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Pericles (helmet pushed up on his head) points proudly up at the half-built temple while workers haul marble on ropes",
+   "caption": "Pericles led Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Pericles led Athens, and he wanted the finest temple in Greece. He also had enemies. If they couldn't hit him, they would hit his friends."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Interior view: a gigantic twelve-metre statue of Athena in gold and ivory, helmet and spear, towering over tiny worshippers; ray of light",
+   "caption": "Inside stood Athena, twelve metres tall, gold and ivory.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Inside stood Athena, twelve metres tall, in gold and ivory. Her gold weighed about a tonne, and it belonged to the city. People would keep an eye on it."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A sculptor with a chisel and a hammer (Phidias, balding, strong forearms) proudly stepping back from the statue's foot",
+   "caption": "Made by the sculptor Phidias.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "She was made by the sculptor Phidias, the best in Greece and a close friend of Pericles. That friendship was about to cost him."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Dramatic diagram-like drawing of the Parthenon with exaggerated curves: the floor bulging up in the middle, columns swelling and leaning inward, thin red guide lines, Glauka pointing with a wing",
+   "caption": "Almost no straight lines in the whole building.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "The floor rises in the middle!"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Phidias was in charge of the whole building. Watch this bit. Look closely: there are almost no straight lines in it."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Close-up of a column swelling in the middle, tape measure and an amazed builder",
+   "caption": "The columns swell and lean slightly inward.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The columns swell in the middle and lean slightly inward. Look at the builder's face. He has just measured it twice."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "The Parthenon from far away looking perfectly straight, a tiny girl-shaped visitor in the foreground squinting",
+   "caption": "From a distance it looks perfectly straight.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "From a distance your eye straightens out the curves, so the whole temple looks perfectly straight. Someone planned every one of those bends."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "The Parthenon painted in vivid colours (blue, red, gold) compared with a ghostly white modern version drawn in thin outline on the side",
+   "caption": "It was painted in bright colours, not the white we see now.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Its carvings were painted in bright colours too, red and blue, not the white we see now. This was the work of the man they called a thief."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "A crowd of angry Athenian officials in the Agora pointing at Phidias, who stands calm, arms folded, a scroll of accusation on the floor",
+   "caption": "Phidias was accused of stealing the gold.",
+   "speech": {
+    "speaker": "Official",
+    "text": "He took the gold!"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Then the blow fell. One of his own workmen, Menon, went to the market-place and accused Phidias of stealing gold from Athena's statue."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Phidias cleverly unlocking the gold robe plates from the statue of Athena, plates lying in a neat pile",
+   "caption": "He had built the statue so the gold could be lifted off and weighed.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Phidias didn't argue. Years before, on Pericles' advice, he had built the statue so the gold could be lifted off and weighed. Plate by plate, it came down."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "A huge pair of scales with the gold plates on one side and a weight on the other, officials leaning in with eyes popping out of their heads",
+   "caption": "They weighed it.",
+   "speech": null,
+   "sfx": "CLANG",
+   "tag": null,
+   "narr": "They weighed it.",
+   "direction": "Short. Let the CLANG land."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Phidias grinning smugly with arms folded; the scale perfectly balanced; officials with embarrassed sweat drops",
+   "caption": "It was all there.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Every scrap was there. So his enemies found another charge; Plutarch says Phidias died in prison. That's a legend: a real man, and a story that grew around him. His curves are still here."
+  }
+ ]
+}

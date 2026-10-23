@@ -1,0 +1,154 @@
+{
+ "story": "lion-gate",
+ "title": "The Lion Gate",
+ "flag": "history",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "glauka"
+  ],
+  [
+   "glauka"
+  ],
+  [
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p2.1 and p2.3: the lions are drawn as free-standing statues with hollow round neck stumps. The real lions are a flat relief on a triangular slab above the lintel.",
+  "p2.3: three headless lions are drawn; there are two. Narration never counts them on that panel.",
+  "p1.4: soldiers wear horned crested helmets and classical round shields, centuries too late for 1250 BC. Narration does not describe the armour.",
+  "p2.2: classical colonnaded ruins in the background. Harmless (it is a dream cloud), not mentioned.",
+  "Glauka is the chibi with the pink bow throughout this story; consistent within the story."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Lion Gate of Mycenae at golden hour, two stone lions facing each other on either side of a central column above a massive doorway",
+   "caption": "The main gate of Mycenae, built around 1250 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "About eighteen hundred years ago, a travel-writer called Pausanias climbed this road and stopped right here. The main gate of Mycenae, built around 1250 BC. Even then it was old."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Two stone lions, close-up of their bodies and paws on the altar, a column between them, rays of light",
+   "caption": "Two lions stand either side of a column, carved in stone.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "He looked up, the way you're about to. Two lions stand either side of a column, carved in stone, their front paws up on a stone base."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A map of Europe sculpted history shown as a stone with the date 1250 BC and Glauka pointing at a scroll",
+   "caption": "The oldest large sculpture still standing in Europe.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Older than Athens' temples."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Pausanias wrote that lions stand over the gate. They still do. It's the oldest large sculpture still standing in Europe. Older than me. I don't say that often."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Chiefs and chariots passing through the great gate in ancient times, banners, fierce soldiers in bronze",
+   "caption": "Chariots rolled through it.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Chariots rolled through it, horses first, soldiers running alongside. Whoever came home to Mycenae came home under these lions."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "The lions' necks with the heads missing, empty round sockets, a sad but cute Glauka looking at the gap",
+   "caption": "The lions' heads were made separately and fitted on.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Now look closer at the lions. Something's wrong. Their heads were made separately and fitted on. Look at those empty holes."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Lost heads: two lion heads in a dream cloud drifting away over the centuries, cartoon-like",
+   "caption": "They are gone now, lost somewhere in the centuries.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "They are gone now, lost somewhere in the centuries. Knocked off? Carried away? Buried under the rubble? Nobody has ever found them."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A tourist-view photo style panel: the lion bodies and the empty space, a question mark above the gap",
+   "caption": "What you see is the bodies and the empty space.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "So what you see is the bodies, and an empty space at the top, where the faces should be glaring down at you."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Glauka drawing in the air what the heads would look like, with a dotted outline of lion heads",
+   "caption": "Where the heads should be.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Imagine them roaring."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Where the heads should be. Close your eyes and put them back. Bigger. No, bigger than that."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "A worn stone threshold, deep grooves where the doors swung, a close-up shot with a hand tracing them",
+   "caption": "Look down at the threshold.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Now look down at the threshold, the big stone under your feet. Run your hand along it. Feel the grooves?"
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Great wooden doors swinging open on grooves in the stone, dust flying",
+   "caption": "The grooves show where the great doors swung open.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The grooves show where the great doors swung open and shut, again and again, for years and years."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Chariot wheels rolling over the stone threshold, tracks left in the stone, speed lines",
+   "caption": "And where chariot wheels rolled through.",
+   "speech": null,
+   "sfx": "GRRRR",
+   "tag": null,
+   "narr": "And where chariot wheels rolled through. Right here. Under the lions. Over this stone."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Present-day: two little visitors' feet on the threshold stone fitting the grooves, Glauka perched on the gate above them",
+   "caption": "You stand where they stood.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "You stand where they stood. That's history: it happened, and here's how we know. The grooves are under your feet. Now look up at the lions, and picture their heads."
+  }
+ ]
+}

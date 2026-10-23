@@ -1,0 +1,429 @@
+{
+ "id": "cyclopes",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 226,
+   "y": 206,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 250,
+   "y": 204,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    240,
+    160
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "Stand by the wall. The bottom stones are bigger than you.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    330,
+    150
+   ],
+   "ms": 2200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Some of these weigh several tonnes. So who lifted them?"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cy",
+   "sprite": "c_cyclops_0",
+   "x": 322,
+   "y": 168,
+   "anchor": [
+    25,
+    87
+   ],
+   "walk": [
+    "c_cyclops_1",
+    "c_cyclops_0",
+    "c_cyclops_2",
+    "c_cyclops_0"
+   ],
+   "ghost": true,
+   "ms": 1600,
+   "shadow": 24,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "rock",
+   "sprite": "p_boulder",
+   "x": 300,
+   "y": 170,
+   "anchor": [
+    18,
+    25
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "cy",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "The Greeks had an answer. A big one, with one eye."
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1200,
+   "at": [
+    318,
+    150
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "rock",
+   "to": [
+    322,
+    150
+   ],
+   "ms": 1600,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "cy",
+   "sprite": "c_cyclops_up"
+  },
+  {
+   "t": "wait",
+   "ms": 1700
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 700,
+   "amp": 4
+  },
+  {
+   "t": "sfx",
+   "name": "pop"
+  },
+  {
+   "t": "actor.move",
+   "id": "rock",
+   "to": [
+    322,
+    124
+   ],
+   "ms": 900,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "still",
+   "image": "art/stills/cyclopes_wall.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 3
+  },
+  {
+   "t": "still",
+   "image": "art/stills/cyclopes_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "actor.sprite",
+   "id": "cy",
+   "sprite": "c_cyclops_0"
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    300,
+    150
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "CYCLOPEAN",
+   "x": 250,
+   "y": 112,
+   "per": 200,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 4800
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "cy"
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      300,
+      168
+     ],
+     "zoom": 1,
+     "abs": true
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "w0",
+   "sprite": "c_citizen_0",
+   "x": 268,
+   "y": 176,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "w1",
+   "sprite": "c_citizen2_0",
+   "x": 292,
+   "y": 182,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "w2",
+   "sprite": "c_soldier_0",
+   "x": 316,
+   "y": 176,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "w3",
+   "sprite": "c_citizen3_0",
+   "x": 340,
+   "y": 182,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "rock2",
+   "sprite": "p_boulder",
+   "x": 300,
+   "y": 160,
+   "anchor": [
+    18,
+    25
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "actor.move",
+   "id": "w0",
+   "to": [
+    276,
+    170
+   ],
+   "ms": 1500,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "w1",
+   "to": [
+    298,
+    176
+   ],
+   "ms": 1500,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "w2",
+   "to": [
+    320,
+    170
+   ],
+   "ms": 1500,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "w3",
+   "to": [
+    342,
+    176
+   ],
+   "ms": 1500,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "rock2",
+   "to": [
+    330,
+    146
+   ],
+   "ms": 2600,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    310,
+    160
+   ],
+   "ms": 2600,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "w2",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 3400
+  },
+  {
+   "t": "actor.emote",
+   "id": "w0",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you who they blamed.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

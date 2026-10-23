@@ -1,0 +1,822 @@
+{
+ "id": "phaedra",
+ "speaker": "glauka",
+ "flag": "myth",
+ "origin": {
+  "x": 2568.7,
+  "y": 2356.3
+ },
+ "party": {
+  "girl": [
+   -30,
+   90
+  ],
+  "owl": [
+   -12,
+   88
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  40,
+  108
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    40,
+    108
+   ],
+   "zoom": 1.3
+  },
+  {
+   "t": "actor.spawn",
+   "id": "theseus",
+   "sprite": "c_theseus_0",
+   "x": 26,
+   "y": 116,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_theseus_1",
+    "c_theseus_0",
+    "c_theseus_2",
+    "c_theseus_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "phaedra",
+   "sprite": "c_phaedra_0",
+   "x": 48,
+   "y": 116,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_phaedra_1",
+    "c_phaedra_0",
+    "c_phaedra_2",
+    "c_phaedra_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Years after Naxos, Theseus married Ariadne's younger sister, Phaedra.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "wait",
+   "ms": 1216
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hippo",
+   "sprite": "c_hippolytus_0",
+   "x": 98,
+   "y": 112,
+   "anchor": [
+    10,
+    52
+   ],
+   "walk": [
+    "c_hippolytus_1",
+    "c_hippolytus_0",
+    "c_hippolytus_2",
+    "c_hippolytus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He already had a grown son, Hippolytus, who loved hunting and the goddess Artemis.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    70,
+    110
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.move",
+   "id": "hippo",
+   "to": [
+    82,
+    120
+   ],
+   "speed": 30,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "hippo",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1877
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aph",
+   "sprite": "c_aphrodite_0",
+   "x": 10,
+   "y": 104,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_aphrodite_1",
+    "c_aphrodite_0",
+    "c_aphrodite_2",
+    "c_aphrodite_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Hippolytus had no time at all for Aphrodite, goddess of love.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "hippo",
+   "emote": "dots",
+   "ms": 2200
+  },
+  {
+   "t": "actor.emote",
+   "id": "aph",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1194
+  },
+  {
+   "t": "caption",
+   "text": "That was a mistake.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 2
+  },
+  {
+   "t": "wait",
+   "ms": 1227
+  },
+  {
+   "t": "caption",
+   "text": "Aphrodite took her revenge.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.8,
+   "ms": 800,
+   "at": [
+    60,
+    112
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "aph",
+   "emote": "star",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1050
+  },
+  {
+   "t": "caption",
+   "text": "She made Phaedra fall desperately in love with her own stepson.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "phaedra",
+   "emote": "heart",
+   "ms": 2600
+  },
+  {
+   "t": "actor.move",
+   "id": "phaedra",
+   "to": [
+    76,
+    118
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2050
+  },
+  {
+   "t": "caption",
+   "text": "Hippolytus was disgusted and refused her.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "hippo",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "actor.move",
+   "id": "hippo",
+   "to": [
+    100,
+    112
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1438
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.4,
+   "ms": 1400,
+   "color": "15,8,30",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Phaedra hanged herself, and left a letter blaming him for something terrible he had not done.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "phaedra",
+   "sprite": "c_phaedra_sad"
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.sprite",
+   "id": "phaedra",
+   "sprite": "c_phaedra_lie"
+  },
+  {
+   "t": "actor.place",
+   "id": "phaedra",
+   "x": 70,
+   "y": 122
+  },
+  {
+   "t": "wait",
+   "ms": 1835
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "aph",
+   "ms": 600
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 700,
+   "at": [
+    50,
+    112
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Theseus believed the letter and cursed his son with a wish Poseidon had promised him.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "exclaim",
+   "ms": 2400
+  },
+  {
+   "t": "actor.jump",
+   "id": "theseus",
+   "height": 6,
+   "ms": 400
+  },
+  {
+   "t": "wait",
+   "ms": 2861
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    80,
+    110
+   ],
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "As Hippolytus drove his chariot along the shore, a monstrous bull burst out of the waves.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "hippo",
+   "to": [
+    140,
+    118
+   ],
+   "speed": 70,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "bull",
+   "sprite": "p_bull",
+   "x": -30,
+   "y": 118,
+   "anchor": [
+    21,
+    29
+   ],
+   "shadow": 0,
+   "z": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "bull",
+   "to": [
+    100,
+    120
+   ],
+   "ms": 1600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1872
+  },
+  {
+   "t": "still",
+   "image": "art/stills/phaedra_bull.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "shake": 3,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "text": "The horses bolted, the chariot smashed on the rocks, and Hippolytus, tangled in the reins, was dragged over the stones.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 700,
+   "amp": 4
+  },
+  {
+   "t": "actor.sprite",
+   "id": "hippo",
+   "sprite": "c_hippolytus_lie"
+  },
+  {
+   "t": "actor.place",
+   "id": "hippo",
+   "x": 112,
+   "y": 124
+  },
+  {
+   "t": "actor.move",
+   "id": "bull",
+   "to": [
+    40,
+    126
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.remove",
+   "id": "bull",
+   "ms": 800
+  },
+  {
+   "t": "wait",
+   "ms": 2405
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.7,
+   "ms": 800,
+   "at": [
+    100,
+    118
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    90,
+    122
+   ],
+   "speed": 60,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "They carried him back to his father, broken and dying.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.spawn",
+   "id": "artemis",
+   "sprite": "c_artemis_0",
+   "x": 130,
+   "y": 108,
+   "anchor": [
+    10,
+    52
+   ],
+   "walk": [
+    "c_artemis_1",
+    "c_artemis_0",
+    "c_artemis_2",
+    "c_artemis_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "The goddess Artemis appeared and told Theseus the truth.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "artemis",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1055
+  },
+  {
+   "t": "caption",
+   "text": "Father and son forgave each other, and then Hippolytus died.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "actor.emote",
+   "id": "hippo",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2166
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.35,
+   "ms": 1000,
+   "color": "15,8,30",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Theseus had learned the truth too late, again.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "theseus",
+   "emote": "sad",
+   "ms": 3200
+  },
+  {
+   "t": "wait",
+   "ms": 2252
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1200,
+   "mid": [
+    {
+     "t": "fx",
+     "type": "wash",
+     "alpha": 0,
+     "ms": 1,
+     "par": true
+    },
+    {
+     "t": "actor.remove",
+     "id": "hippo"
+    },
+    {
+     "t": "actor.remove",
+     "id": "artemis"
+    },
+    {
+     "t": "actor.remove",
+     "id": "theseus"
+    },
+    {
+     "t": "actor.remove",
+     "id": "phaedra"
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      40,
+      100
+     ],
+     "zoom": 1.2
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c0",
+   "sprite": "c_citizen_0",
+   "x": 14,
+   "y": -10,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen2_0",
+   "x": 30,
+   "y": -4,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c2",
+   "sprite": "c_citizen3_0",
+   "x": 60,
+   "y": -14,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c3",
+   "sprite": "c_citizen_0",
+   "x": 80,
+   "y": -2,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c4",
+   "sprite": "c_citizen2_0",
+   "x": 100,
+   "y": -8,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Euripides' play Hippolytus was first performed here in 428 BC and won first prize.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    50,
+    20
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2777
+  },
+  {
+   "t": "caption",
+   "text": "In Paris in 1677 Jean Racine retold it as Ph\u00e8dre, with Phaedra as the heroine, eaten up by guilt: in his version she takes poison. It became the most famous tragedy in French.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c3",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c2",
+   "emote": "heart",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 5661
+  },
+  {
+   "t": "badge",
+   "flag": "history"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "story": "simon-shop",
+ "title": "Simon's Shoe Shop",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "socrates"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Socrates sitting in a small shoemaker's shop in the Agora arguing with young men, Simon the shoemaker working at his bench",
+   "caption": "I liked to talk with young men at Simon's shoe shop.",
+   "speech": null,
+   "sfx": null,
+   "tag": "HISTORY"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Plato and Xenophon (two young men with scrolls) writing in a notebook, Socrates in the background with empty hands",
+   "caption": "I never wrote a word down. My pupils Plato and Xenophon did.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Archaeologists brushing the dust off hobnails and bone eyelets and a clay cup base with SIMONOS scratched on it",
+   "caption": "They found iron hobnails and the base of a cup marked SIMONOS: 'Simon's'.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Socrates answering a student's question with another question, a chain of question marks, the student pulling his hair out",
+   "caption": "I never answered a question straight.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "And what do you think?"
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "narr_voice": "socrates"
+}

@@ -1,0 +1,8 @@
+{
+  "_doc": "Soft map edges per live zone. margin: tiles from the edge where the vignette starts; line: Glauka's line at an edge (per side n/e/s/w or default); noise: sides with the ring road (traffic synth); bounce: signpost bounce lines by kind.",
+  "athens": { "margin": 7, "default": "That way lies the modern city. The stories are this way!", "sides": { "s": "That way is the road to Piraeus and the sea. Use the signpost if you want to sail!", "w": "That way lies the modern city. The stories are this way!" }, "noise": ["n", "e"], "haze": { "s": "#b8d8e8", "w": "#b8d8e8" } },
+  "academy": { "margin": 7, "default": "The busy road is out there. The Academy's olive grove is this way!", "noise": ["e", "s"] },
+  "syntagma": { "margin": 7, "default": "The busy avenues are out there. The square and the Parliament are this way!", "noise": ["e", "s", "n", "w"] },
+  "lyceum": { "margin": 7, "default": "The city is that way. Aristotle's walking paths are over here!", "noise": ["n", "w"] },
+  "bounce": { "city": ["That way lies the modern city (Syntagma Square, parliament and traffic). It is not in this game yet. The stories are this way!", "Not today! Syntagma is for a later visit. Let's find a flag."] }
+}

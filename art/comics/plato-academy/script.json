@@ -1,0 +1,54 @@
+{
+ "story": "plato-academy",
+ "title": "Plato's Academy",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "plato"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Plato teaching students in a shady olive grove with a sacred shrine, scrolls and a drawing in the dust",
+   "caption": "Around 387 BC Plato started a school in a grove sacred to the hero Akademos. So it was called the Academy.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A modern city park with ruins and a tall apartment building behind, Glauka perched on a broken column",
+   "caption": "Every academy in the world since then is named after that grove.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Plato's bare shoulders in a wrestling match in a gym, sand, a crowd, comic scene with 'Platon' meaning broad",
+   "caption": "Platon means broad. Some say it came from his shoulders.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "Broad. Like me."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A sign above a school door reading LET NO ONE IGNORANT OF GEOMETRY ENTER, a student reading it, a question mark and a clock showing centuries",
+   "caption": "Nobody mentioned that sign until centuries later.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LATE STORY"
+  }
+ ]
+}

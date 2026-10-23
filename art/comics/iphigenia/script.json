@@ -1,0 +1,55 @@
+{
+ "story": "iphigenia",
+ "title": "Agamemnon's Choice",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "agamemnon",
+   "iphigenia"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A Greek fleet at Aulis with motionless ships on a flat calm sea, limp sails, soldiers sweating",
+   "caption": "The ships were stuck at Aulis with no wind at all. Agamemnon had angered Artemis.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A seer in a hooded cloak whispering to King Agamemnon who is turning pale, a flash of cold",
+   "caption": "A seer told him the wind would come only if he sacrificed his daughter Iphigenia.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "King Agamemnon's face, torn between duty and grief, a tear running into his black beard, red cloak; behind him Iphigenia in a white veil with bowed head before an altar; no knife, no blood",
+   "caption": "No wind.",
+   "speech": {
+    "speaker": "Agamemnon",
+    "text": "Forgive me."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A white deer leaping through speed lines at the altar while a soft light carries Iphigenia away in the clouds, the sails of the ships filling with wind",
+   "caption": "In some versions, Artemis swapped her for a deer. The wind blew, and the ships sailed for Troy.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

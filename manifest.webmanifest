@@ -1,0 +1,1 @@
+{"name":"Owl Quest: Athens","short_name":"Owl Quest","description":"Explore Athens with Glauka the owl.","start_url":"./index.html","scope":"./","display":"fullscreen","orientation":"any","background_color":"#1b1424","theme_color":"#1b1424","icons":[{"src":"icon-180.png","sizes":"180x180","type":"image/png"},{"src":"art/icon-512.png","sizes":"512x512","type":"image/png"}]}

@@ -1,0 +1,1060 @@
+{
+ "id": "socrates",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   -60.0,
+   20.0
+  ],
+  "owl": [
+   -16.0,
+   16.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  60.0,
+  40.0
+ ],
+ "origin": {
+  "x": 797,
+  "y": 998
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    60.0,
+    40.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Hoo! Stand still in the market. Here he comes.",
+   "flag": "history"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "socrates",
+   "sprite": "c_socrates_0",
+   "x": 60.0,
+   "y": 56.0,
+   "anchor": [
+    13,
+    39
+   ],
+   "walk": [
+    "c_socrates_1",
+    "c_socrates_0",
+    "c_socrates_2",
+    "c_socrates_0"
+   ],
+   "ghost": true,
+   "ms": 1300
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1500,
+   "at": [
+    60.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "But what is justice? You must know, surely?",
+   "speaker": "socrates"
+  },
+  {
+   "t": "actor.emote",
+   "id": "socrates",
+   "emote": "question",
+   "ms": 2200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "acc1",
+   "sprite": "c_citizen2_0",
+   "x": 140.0,
+   "y": 60.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "acc2",
+   "sprite": "c_citizen3_0",
+   "x": 168.0,
+   "y": 76.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Some people loved his questions. Others hated them."
+  },
+  {
+   "t": "actor.emote",
+   "id": "acc1",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 900,
+   "at": [
+    60.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j0",
+   "sprite": "c_juror_0",
+   "x": -40.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j1",
+   "sprite": "c_citizen2_0",
+   "x": -12.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j2",
+   "sprite": "c_citizen_0",
+   "x": 16.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j3",
+   "sprite": "c_juror_0",
+   "x": 44.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j4",
+   "sprite": "c_citizen2_0",
+   "x": 72.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j5",
+   "sprite": "c_citizen_0",
+   "x": 100.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j6",
+   "sprite": "c_juror_0",
+   "x": 128.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j7",
+   "sprite": "c_citizen2_0",
+   "x": -28.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j8",
+   "sprite": "c_citizen_0",
+   "x": 0.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j9",
+   "sprite": "c_juror_0",
+   "x": 28.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j10",
+   "sprite": "c_citizen2_0",
+   "x": 56.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j11",
+   "sprite": "c_citizen_0",
+   "x": 84.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j12",
+   "sprite": "c_juror_0",
+   "x": 112.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j13",
+   "sprite": "c_citizen2_0",
+   "x": 140.0,
+   "y": -22.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j14",
+   "sprite": "c_citizen_0",
+   "x": -40.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j15",
+   "sprite": "c_juror_0",
+   "x": -12.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j16",
+   "sprite": "c_citizen2_0",
+   "x": 16.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j17",
+   "sprite": "c_citizen_0",
+   "x": 44.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j18",
+   "sprite": "c_juror_0",
+   "x": 72.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j19",
+   "sprite": "c_citizen2_0",
+   "x": 100.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j20",
+   "sprite": "c_citizen_0",
+   "x": 128.0,
+   "y": -4.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "In 399 BC, five hundred and one of them judged him."
+  },
+  {
+   "t": "actor.jump",
+   "id": "j0",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j3",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j6",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j9",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j12",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j15",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "j18",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "socrates",
+   "emote": "dots",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1500,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "j0"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j2"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j3"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j4"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j5"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j6"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j7"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j8"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j9"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j10"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j11"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j12"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j13"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j14"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j15"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j16"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j17"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j18"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j19"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j20"
+    },
+    {
+     "t": "actor.remove",
+     "id": "acc1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "acc2"
+    },
+    {
+     "t": "fx",
+     "type": "wash",
+     "alpha": 0.35,
+     "ms": 1,
+     "color": "20,14,40",
+     "par": true
+    }
+   ]
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    60.0,
+    60.0
+   ],
+   "ms": 1,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cup",
+   "sprite": "p_cup_hemlock",
+   "x": 80.0,
+   "y": 72.0,
+   "anchor": [
+    4,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "actor.spawn",
+   "id": "crito",
+   "sprite": "c_crito_0",
+   "x": 12.0,
+   "y": 68.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_crito_1",
+    "c_crito_0",
+    "c_crito_2",
+    "c_crito_0"
+   ],
+   "ghost": true,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "plato",
+   "sprite": "c_plato_0",
+   "x": -16.0,
+   "y": 88.0,
+   "anchor": [
+    13,
+    42
+   ],
+   "walk": [
+    "c_plato_1",
+    "c_plato_0",
+    "c_plato_2",
+    "c_plato_0"
+   ],
+   "ghost": true,
+   "ms": 800
+  },
+  {
+   "t": "actor.emote",
+   "id": "crito",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "actor.emote",
+   "id": "plato",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "actor.move",
+   "id": "crito",
+   "to": [
+    36.0,
+    68.0
+   ],
+   "ms": 900
+  },
+  {
+   "t": "actor.jump",
+   "id": "crito",
+   "height": 4,
+   "ms": 300
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "socrates",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1600,
+   "at": [
+    60.0,
+    60.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "actor.remove",
+   "id": "cup"
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "still",
+   "image": "art/stills/socrates_cup.png",
+   "ms": 3000,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.emote",
+   "id": "socrates",
+   "emote": "dots",
+   "ms": 4000
+  },
+  {
+   "t": "actor.sprite",
+   "id": "socrates",
+   "sprite": "c_socrates_sad"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "still",
+   "image": "art/stills/socrates_b2.png",
+   "ms": 2400,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.sprite",
+   "id": "socrates",
+   "sprite": "c_socrates_lie"
+  },
+  {
+   "t": "actor.emote",
+   "id": "plato",
+   "emote": "sad",
+   "ms": 3000
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "socrates"
+    },
+    {
+     "t": "actor.remove",
+     "id": "crito"
+    },
+    {
+     "t": "actor.remove",
+     "id": "plato"
+    },
+    {
+     "t": "fx",
+     "type": "wash",
+     "alpha": 0,
+     "ms": 1,
+     "par": true
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      -120.0,
+      200.0
+     ],
+     "zoom": 1
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b0",
+   "sprite": "p_clay",
+   "x": -128.0,
+   "y": 208.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b1",
+   "sprite": "p_clay",
+   "x": -104.0,
+   "y": 216.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b2",
+   "sprite": "p_clay",
+   "x": -80.0,
+   "y": 206.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    -104.0,
+    208.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "question",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "still",
+   "image": "art/stills/socrates_b3.png",
+   "ms": 2400,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what he did next.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

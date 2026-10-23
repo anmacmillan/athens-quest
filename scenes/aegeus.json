@@ -1,0 +1,511 @@
+{
+ "id": "aegeus",
+ "speaker": "glauka",
+ "flag": "myth",
+ "origin": {
+  "x": 1846,
+  "y": 2062
+ },
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  28,
+  -6
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    28,
+    -6
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "text": "Long ago, an old king stood right here, where you are standing.",
+   "hold": 2300
+  },
+  {
+   "t": "caption",
+   "text": "King Aegeus. Every day he watched the sea for his son Theseus.",
+   "hold": 2300,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aegeus",
+   "sprite": "ae_stand",
+   "x": 46,
+   "y": 0,
+   "ghost": true,
+   "ms": 1700,
+   "shadow": 14
+  },
+  {
+   "t": "actor.spawn",
+   "id": "stick",
+   "sprite": "stick_0",
+   "x": 53,
+   "y": -10,
+   "anchor": [
+    15,
+    15
+   ],
+   "ghost": true,
+   "ms": 1700,
+   "z": 2,
+   "shadow": 0,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "actor.sprite",
+   "id": "aegeus",
+   "sprite": "ae_shade"
+  },
+  {
+   "t": "wait",
+   "ms": 1900
+  },
+  {
+   "t": "caption",
+   "text": "Theseus had sailed to Crete to kill the Minotaur. If he lived, he would change his black sails to white.",
+   "hold": 2700,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 300
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      110
+     ]
+    },
+    {
+     "t": "actor.spawn",
+     "id": "ship",
+     "sprite": "ship_5_0",
+     "x": 60,
+     "y": 240,
+     "anchor": [
+      35,
+      48
+     ],
+     "scale": 0.36,
+     "smooth": true,
+     "wake": true,
+     "shadow": 0,
+     "z": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "ship",
+     "frames": [
+      "ship_5_0",
+      "ship_5_1",
+      "ship_5_2",
+      "ship_5_1"
+     ],
+     "fps": 3
+    }
+   ]
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    150,
+    205
+   ],
+   "ms": 3300,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "caption",
+   "text": "But Theseus forgot.",
+   "hold": 2800,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    250,
+    175
+   ],
+   "ms": 4600,
+   "ease": "eio",
+   "scale": [
+    0.36,
+    1.0
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    200,
+    170
+   ],
+   "ms": 4600,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1500,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      26,
+      -6
+     ]
+    },
+    {
+     "t": "actor.sprite",
+     "id": "aegeus",
+     "sprite": "ae_sad"
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "Black sails...",
+   "cps": 10,
+   "silent": true,
+   "hold": 500
+  },
+  {
+   "t": "sfx",
+   "name": "pop"
+  },
+  {
+   "t": "actor.anim",
+   "id": "stick",
+   "frames": [
+    "stick_1",
+    "stick_2",
+    "stick_3",
+    "stick_4"
+   ],
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "t": "actor.move",
+   "id": "stick",
+   "to": [
+    61,
+    -2
+   ],
+   "ms": 500,
+   "par": true,
+   "face": false
+  },
+  {
+   "t": "still",
+   "image": "art/stills/aegeus_blacksails.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.emote",
+   "id": "aegeus",
+   "emote": "sad",
+   "ms": 4600
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 2,
+   "ms": 900,
+   "at": [
+    46,
+    -12
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He believed his son was dead.",
+   "hold": 3000,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "actor.sprite",
+   "id": "aegeus",
+   "sprite": "ae_hands"
+  },
+  {
+   "t": "wait",
+   "ms": 3300
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1,
+   "ms": 700,
+   "at": [
+    42,
+    16
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He threw himself from the rock.",
+   "hold": 2500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "aegeus",
+   "to": [
+    46,
+    28
+   ],
+   "ms": 800,
+   "par": false,
+   "face": false
+  },
+  {
+   "t": "actor.remove",
+   "id": "stick"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "crown",
+   "sprite": "crown_0",
+   "x": 42,
+   "y": 9,
+   "anchor": [
+    11,
+    11
+   ],
+   "shadow": 0,
+   "z": 3
+  },
+  {
+   "t": "actor.anim",
+   "id": "crown",
+   "frames": [
+    "crown_0",
+    "crown_1",
+    "crown_2",
+    "crown_3",
+    "crown_4",
+    "crown_5",
+    "crown_6",
+    "crown_7"
+   ],
+   "fps": 9
+  },
+  {
+   "t": "sfx",
+   "name": "whoosh"
+  },
+  {
+   "t": "camera.follow",
+   "id": "aegeus"
+  },
+  {
+   "t": "fx",
+   "type": "speedlines",
+   "id": "aegeus",
+   "ms": 1500
+  },
+  {
+   "t": "actor.sprite",
+   "id": "aegeus",
+   "sprite": "ae_jump"
+  },
+  {
+   "t": "actor.fall",
+   "id": "crown",
+   "path": [
+    [
+     5,
+     -4
+    ],
+    [
+     8,
+     30
+    ],
+    [
+     9,
+     103
+    ],
+    [
+     8,
+     190
+    ]
+   ],
+   "ms": 1900,
+   "frames": null,
+   "speedlines": false,
+   "vanish": false,
+   "par": true,
+   "sfx": false
+  },
+  {
+   "t": "actor.fall",
+   "id": "aegeus",
+   "path": [
+    [
+     -2.7,
+     -7.5
+    ],
+    [
+     -4.9,
+     -10.0
+    ],
+    [
+     -6.5,
+     -7.5
+    ],
+    [
+     -7.5,
+     0.0
+    ],
+    [
+     -8.0,
+     12.5
+    ],
+    [
+     -8,
+     30.0
+    ],
+    [
+     -8,
+     52.5
+    ],
+    [
+     -8,
+     80.0
+    ]
+   ],
+   "ms": 1700,
+   "frames": [
+    "ae_fall0",
+    "ae_fall1"
+   ]
+  },
+  {
+   "t": "camera.follow"
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      200,
+      170
+     ]
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "And the sea was named after him: the Aegean.",
+   "hold": 3300,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "AEGEAN SEA",
+   "x": 110,
+   "y": 192,
+   "abs": true,
+   "per": 260,
+   "scale": 2
+  },
+  {
+   "t": "wait",
+   "ms": 4800
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1600,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      24,
+      -6
+     ]
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      24,
+      -6
+     ],
+     "zoom": 1
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "That's a myth. Some say he jumped at Cape Sounion instead.",
+   "hold": 4200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "badge",
+   "flag": "myth"
+  },
+  {
+   "t": "wait",
+   "ms": 3500
+  }
+ ]
+}

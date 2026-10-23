@@ -1,0 +1,895 @@
+{
+ "id": "wooden-horse",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 262,
+   "y": 272,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 286,
+   "y": 270,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    240,
+    220
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "After ten years the Greeks pretended to give up.",
+   "hold": 1300,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g1",
+   "sprite": "c_soldier_0",
+   "x": 170,
+   "y": 280,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g2",
+   "sprite": "c_odysseus_0",
+   "x": 200,
+   "y": 292,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_odysseus_1",
+    "c_odysseus_0",
+    "c_odysseus_2",
+    "c_odysseus_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g3",
+   "sprite": "c_soldier_0",
+   "x": 140,
+   "y": 288,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "caption",
+   "text": "They sailed away and left a giant wooden horse on the beach.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g1",
+   "to": [
+    40,
+    296
+   ],
+   "ms": 3800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g2",
+   "to": [
+    20,
+    296
+   ],
+   "ms": 3800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "g3",
+   "to": [
+    10,
+    296
+   ],
+   "ms": 3800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    200,
+    230
+   ],
+   "ms": 2400,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "caption",
+   "text": "It was a gift, they said.",
+   "hold": 1100,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "text": "The Trojans came out to look at it.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "t1",
+   "sprite": "c_trojan_0",
+   "x": 240,
+   "y": 150,
+   "anchor": [
+    14,
+    52
+   ],
+   "walk": [
+    "c_trojan_1",
+    "c_trojan_0",
+    "c_trojan_2",
+    "c_trojan_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "t2",
+   "sprite": "c_trojan_0",
+   "x": 262,
+   "y": 150,
+   "anchor": [
+    14,
+    52
+   ],
+   "walk": [
+    "c_trojan_1",
+    "c_trojan_0",
+    "c_trojan_2",
+    "c_trojan_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "t3",
+   "sprite": "c_citizen_0",
+   "x": 250,
+   "y": 156,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t1",
+   "to": [
+    190,
+    244
+   ],
+   "ms": 2600,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t2",
+   "to": [
+    230,
+    250
+   ],
+   "ms": 2800,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t3",
+   "to": [
+    160,
+    240
+   ],
+   "ms": 3000,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "t1",
+   "emote": "happy",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "t3",
+   "emote": "star",
+   "ms": 1600
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "text": "Cassandra, a Trojan princess, warned them it would destroy the city.",
+   "hold": 1500,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cas",
+   "sprite": "c_cassandra_0",
+   "x": 300,
+   "y": 236,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_cassandra_1",
+    "c_cassandra_0",
+    "c_cassandra_2",
+    "c_cassandra_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "cas",
+   "sprite": "c_cassandra_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "cas",
+   "emote": "exclaim",
+   "ms": 2500
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 900,
+   "at": [
+    250,
+    235
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "caption",
+   "text": "Nobody ever believed Cassandra.",
+   "hold": 1300,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "t1",
+   "emote": "question",
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "t2",
+   "emote": "dots",
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "t3",
+   "emote": "dots",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "text": "A priest called Laoco\u00f6n warned them too.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "lao",
+   "sprite": "c_laocoon_0",
+   "x": 120,
+   "y": 250,
+   "anchor": [
+    12,
+    40
+   ],
+   "walk": [
+    "c_laocoon_1",
+    "c_laocoon_0",
+    "c_laocoon_2",
+    "c_laocoon_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b1",
+   "sprite": "c_boy_0",
+   "x": 100,
+   "y": 258,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b2",
+   "sprite": "c_boy_0",
+   "x": 138,
+   "y": 258,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    150,
+    240
+   ],
+   "ms": 1400,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "lao",
+   "sprite": "c_laocoon_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "lao",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "text": "Two sea serpents rose out of the sea and strangled him and his sons.",
+   "hold": 1800,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "sp1",
+   "sprite": "p_serpent",
+   "x": 20,
+   "y": 256,
+   "anchor": [
+    19,
+    23
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "sp2",
+   "sprite": "p_serpent",
+   "x": 30,
+   "y": 276,
+   "anchor": [
+    19,
+    23
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "sp1",
+   "to": [
+    112,
+    250
+   ],
+   "ms": 2400,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "sp2",
+   "to": [
+    128,
+    262
+   ],
+   "ms": 2400,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 2
+  },
+  {
+   "t": "actor.emote",
+   "id": "lao",
+   "emote": "sad",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "b1",
+   "emote": "sad",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "b2",
+   "emote": "sad",
+   "ms": 1500
+  },
+  {
+   "t": "actor.remove",
+   "id": "lao",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "b1",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "b2",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "sp1",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "sp2",
+   "ms": 900
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 700,
+   "at": [
+    230,
+    230
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "The Trojans dragged the horse inside the walls.",
+   "hold": 1400,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t1",
+   "to": [
+    250,
+    160
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t2",
+   "to": [
+    270,
+    160
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "t3",
+   "to": [
+    290,
+    160
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3400
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.55,
+   "ms": 1400,
+   "color": "10,14,50",
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "That night Greek soldiers climbed out of its belly.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "t1"
+  },
+  {
+   "t": "actor.remove",
+   "id": "t2"
+  },
+  {
+   "t": "actor.remove",
+   "id": "t3"
+  },
+  {
+   "t": "actor.remove",
+   "id": "cas"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "o",
+   "sprite": "c_odysseus_0",
+   "x": 198,
+   "y": 252,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_odysseus_1",
+    "c_odysseus_0",
+    "c_odysseus_2",
+    "c_odysseus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s1",
+   "sprite": "c_soldier_0",
+   "x": 178,
+   "y": 256,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s2",
+   "sprite": "c_soldier_0",
+   "x": 220,
+   "y": 258,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "text": "They opened the gates and burnt Troy. Odysseus had thought of the trick.",
+   "hold": 1800,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "o",
+   "to": [
+    236,
+    158
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s1",
+   "to": [
+    222,
+    158
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "s2",
+   "to": [
+    252,
+    158
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    235,
+    190
+   ],
+   "ms": 3000,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.4,
+   "ms": 700,
+   "color": "160,40,0",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tc1",
+   "sprite": "p_torch",
+   "x": 210,
+   "y": 150,
+   "anchor": [
+    4,
+    19
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tc2",
+   "sprite": "p_torch",
+   "x": 268,
+   "y": 150,
+   "anchor": [
+    4,
+    19
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 600,
+   "amp": 3
+  },
+  {
+   "t": "still",
+   "image": "art/stills/xerxes_fire.png",
+   "ms": 2200,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.08
+   }
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1200
+  },
+  {
+   "t": "actor.remove",
+   "id": "o"
+  },
+  {
+   "t": "actor.remove",
+   "id": "s1"
+  },
+  {
+   "t": "actor.remove",
+   "id": "s2"
+  },
+  {
+   "t": "actor.remove",
+   "id": "tc1"
+  },
+  {
+   "t": "actor.remove",
+   "id": "tc2"
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    230,
+    235
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "A Trojan horse is also what we call a computer virus. It looks like something harmless, a gift.",
+   "hold": 1700,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "VIRUS?!",
+   "x": 196,
+   "y": 200,
+   "per": 200,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "question",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 3600
+  },
+  {
+   "t": "caption",
+   "text": "You open it, and the soldiers come out. The phrase is still in use today.",
+   "hold": 1700,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "girl",
+   "emote": "happy",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 3800
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

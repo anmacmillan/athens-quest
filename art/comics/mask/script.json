@@ -1,0 +1,54 @@
+{
+ "story": "mask",
+ "title": "The Mask of Agamemnon",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Heinrich Schliemann (Victorian archaeologist with a moustache, hat and spade) in a royal grave pit at Mycenae holding a golden mask up to the sun",
+   "caption": "In 1876 Schliemann dug up royal graves at Mycenae, full of gold.",
+   "speech": null,
+   "sfx": null,
+   "tag": "1876"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A beaten gold face mask with big eyes and a moustache, shining on a velvet cloth, rays of light",
+   "caption": "Among the gold were face masks beaten from thin sheets of metal.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Schliemann pointing dramatically at the mask with a big speech bubble, comic pose",
+   "caption": "He is often quoted as saying, I have gazed upon the face of Agamemnon.",
+   "speech": {
+    "speaker": "Schliemann",
+    "text": "I have gazed upon the face of Agamemnon!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A timeline: the mask, labelled 300 years older than any Trojan War, a big red 'NOT AGAMEMNON' stamp, Glauka shaking her head",
+   "caption": "The mask is about 300 years older than any Trojan War could have been. Perhaps he never said the famous sentence.",
+   "speech": null,
+   "sfx": null,
+   "tag": "TOURIST MYTH"
+  }
+ ]
+}

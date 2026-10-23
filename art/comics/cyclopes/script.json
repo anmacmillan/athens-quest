@@ -1,0 +1,156 @@
+{
+ "story": "cyclopes",
+ "title": "Walls of the Cyclopes",
+ "flag": "history",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "cyclops"
+  ],
+  [
+   "cyclops"
+  ],
+  [
+   "cyclops",
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p1.1 and p3.4: the walls are drawn as neat squared blocks, not the rough fitted boulders of real Cyclopean masonry (the close-ups on p2.3 are right). Narration avoids describing the stones' shape.",
+  "p3.3: the script asked for sleds; the art shows a wheeled cart. Narration does not name the vehicle.",
+  "Glauka is a realistic owl on p2.4 and a chibi with a pink bow on p3.4 (known cross-story issue, section 3.4 of the audit)."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The enormous stone walls of Mycenae in the sun, huge irregular boulders fitted together, tiny people at the bottom for scale",
+   "caption": "Look at the walls of Mycenae.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Look at the walls of Mycenae. See the little people at the bottom? Now look how far the stones go up above their heads."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of a boulder with a person's hand beside it for scale, stone texture, a sweat drop",
+   "caption": "Some of the boulders weigh several tonnes.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Some of these boulders weigh several tonnes, about as much as an elephant. Put your hand on one and push. Go on. Nothing."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Later Greeks (in tunics) staring up at the walls with their mouths open, pointing, cartoon amazement",
+   "caption": "Later Greeks decided no ordinary person could have lifted them.",
+   "speech": {
+    "speaker": "Greek",
+    "text": "Only giants!"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Hundreds of years later, Greeks came up this hill and stared. No ordinary person, they decided, could have lifted stones like these."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A one-eyed giant Cyclops with a big amber eye straining with a boulder on his shoulders, in a legendary glow",
+   "caption": "They said only the Cyclopes could have done it.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "So they said only the Cyclopes could have done it: giants with one round eye in the middle of the forehead, and shoulders like hills."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Extreme low angle: a Cyclops slams a gigantic boulder into the wall, chips of stone flying, amber eye glaring",
+   "caption": "The one-eyed giants.",
+   "speech": null,
+   "sfx": "GOGOGOGO",
+   "tag": null,
+   "narr": "The one-eyed giants. In the story, a Cyclops could slam a boulder into the wall with one shove. A travel-writer called Pausanias wrote it down."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Several Cyclopes working at the walls, one stacking, one chiselling, one eating a sandwich-sized loaf of bread",
+   "caption": "The name stuck.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The name stuck. People told the story so often that everybody pictured giants on the building site. Look at that one with the loaf. Even giants stop for lunch."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "An archaeologist with a notebook and a hat looking at the wall, a thought bubble of a Cyclops being crossed out",
+   "caption": "Archaeologists still call this kind of building Cyclopean.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Archaeologists still call this kind of building Cyclopean. They use the giants' name every day, but they don't believe in the giants."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Glauka the owl perched on a boulder with a smug expression and one wing raised",
+   "caption": "Even though they know exactly who built it.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "No giants. Sorry."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Even though they know exactly who built it. Want to meet the builders? Turn the page."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Real Mycenaean workers (men in simple tunics) hauling a huge stone up a sloping ramp with ropes, leaning, sweating",
+   "caption": "Real people built these walls about 3,300 years ago.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Real people built these walls, about 3,300 years ago. Look at the men in front, leaning hard into the ropes."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A long wooden lever under a boulder, workers pushing down, the boulder lifting",
+   "caption": "They used ramps and levers.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "They used ramps to drag the stones uphill, and long wooden levers to tip them into place. Three men on one pole. Push, push. There."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "A line of workers with ropes and sleds dragging a stone across the ground, dusty, a foreman shouting",
+   "caption": "And a great deal of muscle.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "And a great deal of muscle. A whole team on the ropes, one man shouting at all of them. Slowly, the stone moves."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "The finished walls at sunset with a tiny Cyclops silhouette fading into a tiny winking sun, Glauka looking on",
+   "caption": "No giants were involved.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Just very strong people."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "No giants were involved. That's history: it happened, and here's how we know. The walls are still here. You can put your hand on them."
+  }
+ ]
+}

@@ -1,0 +1,510 @@
+{
+ "id": "icarus",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   -120,
+   100
+  ],
+  "owl": [
+   -104,
+   96
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  300,
+  190
+ ],
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    300,
+    190
+   ],
+   "zoom": 1.3,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "minos",
+   "sprite": "c_minos_0",
+   "x": 372,
+   "y": 168,
+   "anchor": [
+    12,
+    47
+   ],
+   "walk": [
+    "c_minos_1",
+    "c_minos_0",
+    "c_minos_2",
+    "c_minos_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "daedalus",
+   "sprite": "c_daedalus_0",
+   "x": 330,
+   "y": 200,
+   "anchor": [
+    11,
+    39
+   ],
+   "walk": [
+    "c_daedalus_1",
+    "c_daedalus_0",
+    "c_daedalus_2",
+    "c_daedalus_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "icarus",
+   "sprite": "c_icarus_0",
+   "x": 350,
+   "y": 204,
+   "anchor": [
+    13,
+    35
+   ],
+   "walk": [
+    "c_icarus_1",
+    "c_icarus_0",
+    "c_icarus_2",
+    "c_icarus_0"
+   ],
+   "ghost": true,
+   "ms": 1000,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "King Minos wanted the secret of the Labyrinth kept forever.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "wait",
+   "ms": 938
+  },
+  {
+   "t": "caption",
+   "text": "So he locked Daedalus, the man who built it, in a tower.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "minos",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "actor.move",
+   "id": "minos",
+   "to": [
+    392,
+    178
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1855
+  },
+  {
+   "t": "caption",
+   "text": "Daedalus's son Icarus was locked in with him. I perched on the window and watched.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "daedalus",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "icarus",
+   "emote": "question",
+   "ms": 2400
+  },
+  {
+   "t": "actor.remove",
+   "id": "minos",
+   "ms": 900
+  },
+  {
+   "t": "wait",
+   "ms": 3177
+  },
+  {
+   "t": "caption",
+   "text": "Daedalus was clever with his hands.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "daedalus",
+   "to": [
+    300,
+    214
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.7,
+   "ms": 900,
+   "at": [
+    325,
+    206
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1272
+  },
+  {
+   "t": "caption",
+   "text": "He gathered feathers and stitched them with thread and wax into two pairs of wings.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "daedalus",
+   "sprite": "c_daedalus_up"
+  },
+  {
+   "t": "actor.jump",
+   "id": "daedalus",
+   "height": 4,
+   "ms": 400
+  },
+  {
+   "t": "actor.emote",
+   "id": "daedalus",
+   "emote": "happy",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2605
+  },
+  {
+   "t": "caption",
+   "text": "One pair for himself, one for the boy. He showed Icarus how to strap them on.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "daedalus",
+   "sprite": "c_daedalus_0"
+  },
+  {
+   "t": "actor.move",
+   "id": "icarus",
+   "to": [
+    322,
+    212
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "icarus",
+   "height": 8,
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 2938
+  },
+  {
+   "t": "caption",
+   "text": "Then he gave his warning.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "daedalus",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 994
+  },
+  {
+   "t": "caption",
+   "text": "Not too low, he said, or the sea spray will soak the feathers and drag you down.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "daedalus",
+   "sprite": "c_daedalus_up"
+  },
+  {
+   "t": "actor.move",
+   "id": "icarus",
+   "to": [
+    322,
+    206
+   ],
+   "ms": 300
+  },
+  {
+   "t": "wait",
+   "ms": 2522
+  },
+  {
+   "t": "caption",
+   "text": "Not too high, or the sun will melt the wax. Fly the middle path, between the two.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "daedalus",
+   "sprite": "c_daedalus_0"
+  },
+  {
+   "t": "actor.emote",
+   "id": "icarus",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2950
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1200,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "daedalus"
+    },
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      150
+     ],
+     "zoom": 1.2
+    },
+    {
+     "t": "actor.place",
+     "id": "icarus",
+     "x": 100,
+     "y": 210
+    }
+   ]
+  },
+  {
+   "t": "actor.sprite",
+   "id": "icarus",
+   "sprite": "c_icarus_up"
+  },
+  {
+   "t": "caption",
+   "text": "Icarus forgot the middle path.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "icarus",
+   "to": [
+    240,
+    130
+   ],
+   "ms": 2600,
+   "ease": "eio",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1133
+  },
+  {
+   "t": "actor.move",
+   "id": "icarus",
+   "to": [
+    300,
+    20
+   ],
+   "ms": 1800,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He climbed higher and higher, laughing, until the wax ran like tears down his shoulders.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "icarus",
+   "emote": "happy",
+   "ms": 1800
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    260,
+    70
+   ],
+   "ms": 1800,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 944
+  },
+  {
+   "t": "actor.sprite",
+   "id": "icarus",
+   "sprite": "c_icarus_sad"
+  },
+  {
+   "t": "fx",
+   "type": "speedlines",
+   "id": "icarus",
+   "ms": 1400
+  },
+  {
+   "t": "caption",
+   "text": "The feathers came loose and he fell into the sea and drowned. That sea is still called the Icarian Sea.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.fall",
+   "id": "icarus",
+   "path": [
+    [
+     4,
+     40
+    ],
+    [
+     8,
+     110
+    ],
+    [
+     10,
+     190
+    ]
+   ],
+   "ms": 1800,
+   "vanish": false,
+   "remove": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    300,
+    140
+   ],
+   "ms": 1800,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1900
+  },
+  {
+   "t": "fx",
+   "type": "splash",
+   "x": 310,
+   "y": 210,
+   "ms": 1200
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "ICARIAN SEA",
+   "x": 200,
+   "y": 150,
+   "per": 140,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1961
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1000,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      354,
+      140
+     ]
+    }
+   ]
+  },
+  {
+   "t": "badge",
+   "flag": "myth"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "story": "phaedra",
+ "title": "Two Phaedras",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "phaedra",
+   "hippolytus"
+  ],
+  [
+   "hippolytus",
+   "theseus",
+   "phaedra"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Prince Hippolytus hunting in the forest with a bow, laughing, a statue of Artemis in the trees; in the distance a small statue of Aphrodite turned away",
+   "caption": "Hippolytus loved hunting and the goddess Artemis. He had no time for Aphrodite.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Aphrodite (glowing, beautiful, cold) smiling cruelly in the clouds and pointing her finger at Phaedra, a pink glow curse",
+   "caption": "Aphrodite took her revenge.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Phaedra sitting alone by a window, troubled, a love-struck face, a sad shadow",
+   "caption": "She made Phaedra fall desperately in love with her own stepson.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Hippolytus turning away from Phaedra in disgust, Phaedra stunned, hurt, a dark tragedy mood",
+   "caption": "Hippolytus was disgusted and refused her.",
+   "speech": {
+    "speaker": "Hippolytus",
+    "text": "Never."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "A letter on a table, Phaedra's hand with a quill, the dark window; she is gone, only a fluttering curtain, a heavy tragic mood, nothing violent shown",
+   "caption": "Phaedra left a letter blaming him for something he had not done.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Theseus reading the letter with a stormy face, raising a fist to the sea, waves crashing",
+   "caption": "Theseus believed the letter and cursed his son with a wish Poseidon had promised him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "On a rocky shore a monstrous bull bursts out of a towering wave in front of a young prince's chariot: horses rearing in panic, spray and speed lines, no gore",
+   "caption": "A gift from the sea.",
+   "speech": null,
+   "sfx": "DOGOOON",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Theseus kneeling by the dying Hippolytus with Artemis appearing in silver light behind them, father and son forgiving each other, soft end",
+   "caption": "Artemis told Theseus the truth. Theseus had learned the truth too late, again.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

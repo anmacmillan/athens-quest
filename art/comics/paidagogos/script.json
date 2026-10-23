@@ -1,0 +1,54 @@
+{
+ "story": "paidagogos",
+ "title": "The Child-Leader",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A calm morning street in Athens: an enslaved man (middle-aged, plain tunic, kind weary face) walking beside a well-dressed boy of about 9, carrying the boy's wax writing tablets and a lyre case, the boy chattering",
+   "caption": "Rich Athenian boys did not walk to school alone. An enslaved man called a paidagogos, a child-leader, walked beside them and carried their writing tablets.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A classroom of boys sitting on stools learning to read and play the lyre, and at the back, on the floor by the wall, the paidagogos sitting quietly with the tablets on his knee, keeping watch; a stern teacher at the front",
+   "caption": "He sat in on lessons and made the boys behave.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The boy grown up into a young man in a fine cloak, standing beside the old paidagogos who is now grey-haired, the young man putting a hand on his shoulder, warm light; a thought bubble of the two of them walking as before",
+   "caption": "Many boys spent more time with their paidagogos than with their own fathers.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Glauka the owl with a little academic cap and a pointer standing next to a big chalkboard-like tablet with the word PEDAGOGUE in large letters; a small inset of an Athenian girl learning to read at home from her mother with a scroll",
+   "caption": "Our word pedagogue, a teacher, comes from him. Most Athenian girls learned at home, if they learned to read.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "PEDAGOGUE."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

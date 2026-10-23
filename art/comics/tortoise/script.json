@@ -1,0 +1,60 @@
+{
+ "story": "tortoise",
+ "title": "The Eagle and the Tortoise",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "tortoise"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The grumpy tortoise on the south slope of the Acropolis lifting a bored eyebrow at us",
+   "caption": "Meet the tortoise. It has heard a story or two.",
+   "speech": {
+    "speaker": "Tortoise",
+    "text": "Another story, is it."
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Aeschylus (bald old tragedian in a robe, writing) in Sicily in the sun, a scroll on his knee",
+   "caption": "Aeschylus, the first great writer of tragedies, died in Sicily around 456 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A giant eagle carrying a tortoise high above a rocky Sicilian hillside, below a bald man sitting, the sun glinting off his head",
+   "caption": "The story goes that an eagle mistook the old man's bald head for a rock and dropped the tortoise.",
+   "speech": null,
+   "sfx": "WHOOSH",
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The tortoise close-up with a deadpan face, one eyebrow raised, and a tiny sign reading 'story, not report'",
+   "caption": "A bald playwright, though? Almost certainly made up.",
+   "speech": {
+    "speaker": "Tortoise",
+    "text": "Take it as a story."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

@@ -1,0 +1,771 @@
+{
+ "id": "areopagus",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   -12.0,
+   12.0
+  ],
+  "owl": [
+   36.0,
+   8.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  -60.0,
+  -68.0
+ ],
+ "origin": {
+  "x": 1386,
+  "y": 1783
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    -60.0,
+    -68.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Careful: this rock is polished slippery. Stand still a moment.",
+   "flag": "myth"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -68.0,
+    -100.0
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Ares, the god of war, once stood here on trial."
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ares",
+   "sprite": "c_ares_0",
+   "x": -68.0,
+   "y": -60.0,
+   "anchor": [
+    18,
+    47
+   ],
+   "walk": [
+    "c_ares_1",
+    "c_ares_0",
+    "c_ares_2",
+    "c_ares_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "zeus",
+   "sprite": "c_zeus_0",
+   "x": -156.0,
+   "y": -132.0,
+   "anchor": [
+    13,
+    43
+   ],
+   "walk": [
+    "c_zeus_1",
+    "c_zeus_0",
+    "c_zeus_2",
+    "c_zeus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hera",
+   "sprite": "c_hera_0",
+   "x": -116.0,
+   "y": -144.0,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_hera_1",
+    "c_hera_0",
+    "c_hera_2",
+    "c_hera_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "athena",
+   "sprite": "c_athena_0",
+   "x": -68.0,
+   "y": -152.0,
+   "anchor": [
+    16,
+    52
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "poseidon",
+   "sprite": "c_poseidon_0",
+   "x": -20.0,
+   "y": -144.0,
+   "anchor": [
+    13,
+    53
+   ],
+   "walk": [
+    "c_poseidon_1",
+    "c_poseidon_0",
+    "c_poseidon_2",
+    "c_poseidon_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aphrodite",
+   "sprite": "c_aphrodite_0",
+   "x": 24.0,
+   "y": -132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_aphrodite_1",
+    "c_aphrodite_0",
+    "c_aphrodite_2",
+    "c_aphrodite_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1800,
+   "at": [
+    -68.0,
+    -100.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "actor.emote",
+   "id": "ares",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "zeus",
+   "emote": "dots",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "The other gods sat on this stone and judged him."
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "still",
+   "image": "art/stills/areopagus_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.remove",
+   "id": "ares",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "zeus",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "hera",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "poseidon",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "aphrodite",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Much later, a young man stood in the same spot, shaking.",
+   "flag": "myth"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "orestes",
+   "sprite": "c_orestes_0",
+   "x": -68.0,
+   "y": -60.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_orestes_1",
+    "c_orestes_0",
+    "c_orestes_2",
+    "c_orestes_0"
+   ],
+   "ghost": true,
+   "ms": 1000
+  },
+  {
+   "t": "actor.emote",
+   "id": "orestes",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j0",
+   "sprite": "c_juror_0",
+   "x": -160.0,
+   "y": -92.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j1",
+   "sprite": "c_citizen2_0",
+   "x": -128.0,
+   "y": -80.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j2",
+   "sprite": "c_juror_0",
+   "x": 4.0,
+   "y": -80.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_juror_1",
+    "c_juror_0",
+    "c_juror_2",
+    "c_juror_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j3",
+   "sprite": "c_citizen_0",
+   "x": 36.0,
+   "y": -92.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "I did it. I killed her. Judge me.",
+   "speaker": "orestes"
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v0",
+   "sprite": "p_blank",
+   "x": -160.0,
+   "y": -76.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "v0",
+   "to": [
+    -52.0,
+    -36.0
+   ],
+   "ms": 900,
+   "face": false,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v1",
+   "sprite": "p_clay",
+   "x": -128.0,
+   "y": -64.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "v1",
+   "to": [
+    -84.0,
+    -42.0
+   ],
+   "ms": 900,
+   "face": false,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v2",
+   "sprite": "p_blank",
+   "x": 4.0,
+   "y": -64.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "v2",
+   "to": [
+    -52.0,
+    -48.0
+   ],
+   "ms": 900,
+   "face": false,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v3",
+   "sprite": "p_clay",
+   "x": 36.0,
+   "y": -76.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "v3",
+   "to": [
+    -84.0,
+    -54.0
+   ],
+   "ms": 900,
+   "face": false
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.emote",
+   "id": "j0",
+   "emote": "question",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "j3",
+   "emote": "question",
+   "ms": 1500
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -68.0,
+    -120.0
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "athena2",
+   "sprite": "c_athena_0",
+   "x": -68.0,
+   "y": -148.0,
+   "anchor": [
+    16,
+    52
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 1000
+  },
+  {
+   "t": "actor.move",
+   "id": "athena2",
+   "to": [
+    -68.0,
+    -96.0
+   ],
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "vote",
+   "sprite": "p_blank",
+   "x": -64.0,
+   "y": -92.0,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "vote",
+   "to": [
+    -52.0,
+    -40.0
+   ],
+   "ms": 800
+  },
+  {
+   "t": "actor.emote",
+   "id": "athena2",
+   "emote": "star",
+   "ms": 1800
+  },
+  {
+   "t": "actor.jump",
+   "id": "orestes",
+   "height": 10,
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "orestes",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "orestes"
+    },
+    {
+     "t": "actor.remove",
+     "id": "athena2"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j0"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j2"
+    },
+    {
+     "t": "actor.remove",
+     "id": "j3"
+    },
+    {
+     "t": "actor.remove",
+     "id": "v0"
+    },
+    {
+     "t": "actor.remove",
+     "id": "v1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "v2"
+    },
+    {
+     "t": "actor.remove",
+     "id": "v3"
+    },
+    {
+     "t": "actor.remove",
+     "id": "vote"
+    },
+    {
+     "t": "actor.remove",
+     "id": "zeus"
+    },
+    {
+     "t": "actor.remove",
+     "id": "hera"
+    },
+    {
+     "t": "actor.remove",
+     "id": "athena"
+    },
+    {
+     "t": "actor.remove",
+     "id": "ares"
+    },
+    {
+     "t": "actor.remove",
+     "id": "poseidon"
+    },
+    {
+     "t": "actor.remove",
+     "id": "aphrodite"
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "paul",
+   "sprite": "c_paul_0",
+   "x": -68.0,
+   "y": -60.0,
+   "anchor": [
+    10,
+    39
+   ],
+   "walk": [
+    "c_paul_1",
+    "c_paul_0",
+    "c_paul_2",
+    "c_paul_0"
+   ],
+   "ghost": true,
+   "ms": 1000
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1200,
+   "at": [
+    -68.0,
+    -68.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "paul",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "actor.spawn",
+   "id": "l1",
+   "sprite": "c_citizen_0",
+   "x": -120.0,
+   "y": -40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "l2",
+   "sprite": "c_citizen3_0",
+   "x": -16.0,
+   "y": -36.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 1200,
+   "at": [
+    -40.0,
+    32.0
+   ],
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -40.0,
+    48.0
+   ],
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "plaque",
+   "sprite": "p_tablet",
+   "x": 28.0,
+   "y": 80.0,
+   "anchor": [
+    10,
+    15
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you how the pebbles fell.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

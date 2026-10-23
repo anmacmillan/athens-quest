@@ -1,0 +1,27 @@
+{
+  "start": { "lat": 37.97008, "lon": 23.72615 },
+  "acropolis": { "lat": 37.97138, "lon": 23.72662 },
+  "labels": [
+    { "name": "Athens", "lat": 37.98, "lon": 23.73, "big": true }, { "name": "Crete", "lat": 35.25, "lon": 25.0 }, { "name": "Troy", "lat": 39.96, "lon": 26.24 },
+    { "name": "Mycenae", "lat": 37.73, "lon": 22.76 }, { "name": "Sparta", "lat": 37.07, "lon": 22.43 }, { "name": "Delphi", "lat": 38.48, "lon": 22.5 },
+    { "name": "Olympia", "lat": 37.64, "lon": 21.63 }, { "name": "Naxos", "lat": 37.1, "lon": 25.38 }, { "name": "Aegean Sea", "lat": 37.9, "lon": 25.2, "sea": true },
+    { "name": "Thermopylae", "lat": 38.8, "lon": 22.54 }
+  ],
+  "captions": {
+    "greece": "Greece, 2,500 years ago... and today.",
+    "attica": "Attica, and the city of Athena.",
+    "acropolis": "The Acropolis, with Athens at its feet.",
+    "syntagma": "Syntagma Square, and our hotel."
+  },
+  "glauka": [
+    "Hoo! I'm Glauka, Athena's own owl.",
+    "Athens is full of stories: true ones, myths, old tales and a few tourist fibs.",
+    "Find the flags, hear the stories, and earn owl coins. I'll help you find your way."
+  ],
+  "tutorial": [
+    { "id": "move", "text": "First, move! Drag anywhere on the screen (or use the arrow keys). On streets you roll on your skateboard, twice as fast." },
+    { "id": "flag", "text": "See the flags? Walk up to one and press A, the round button, to hear its story." },
+    { "id": "compass", "text": "And the compass up there: its gold needle points to the next big story. Follow it, and I'll follow you. Hoo!" }
+  ],
+  "idleHint": "Hoo! Stuck? The gold needle on the compass points to {title}."
+}

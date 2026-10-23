@@ -1,0 +1,51 @@
+{
+ "story": "hypatia",
+ "title": "Hypatia of Alexandria",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "hypatia"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The great city of Alexandria in Egypt with the lighthouse and the library, a clear banner reading ALEXANDRIA, EGYPT",
+   "caption": "Hypatia lived and taught in Alexandria, in Egypt. Not in Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Hypatia lecturing with an astrolabe and scrolls to an attentive crowd of students from far away",
+   "caption": "Around AD 400 she taught mathematics, astronomy and Plato's philosophy.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Hypatia driving her own chariot through Alexandria's busy street, people watching with admiration and tension",
+   "caption": "She drove her own chariot and lectured in public.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A quiet, sad panel: an astrolabe and a few broken pottery shards (ostraka) lying on a church floor, a dark crowd's silhouettes at the edge of the frame; no violence shown",
+   "caption": "In AD 415 she was killed by a mob. A Christian historian condemned it.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

@@ -1,0 +1,676 @@
+{
+ "id": "explosion-1687",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   20.0,
+   80.0
+  ],
+  "owl": [
+   68.0,
+   76.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  -60.0,
+  40.0
+ ],
+ "origin": {
+  "x": 2444.5,
+  "y": 2048.1
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    -60.0,
+    40.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "September 1687. Ottoman soldiers held this rock. An army waited below.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -140.0,
+    40.0
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.spawn",
+   "id": "priestess",
+   "sprite": "c_priestess_0",
+   "x": -120.0,
+   "y": 88.0,
+   "anchor": [
+    10,
+    44
+   ],
+   "walk": [
+    "c_priestess_1",
+    "c_priestess_0",
+    "c_priestess_2",
+    "c_priestess_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "TEMPLE",
+   "x": -200.0,
+   "y": -104.0,
+   "per": 200,
+   "scale": 2
+  },
+  {
+   "t": "wait",
+   "ms": 1100
+  },
+  {
+   "t": "actor.remove",
+   "id": "priestess",
+   "ms": 500
+  },
+  {
+   "t": "stage",
+   "set": "live",
+   "camera": [
+    -140.0,
+    40.0
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "paul",
+   "sprite": "c_paul_0",
+   "x": -120.0,
+   "y": 88.0,
+   "anchor": [
+    10,
+    39
+   ],
+   "walk": [
+    "c_paul_1",
+    "c_paul_0",
+    "c_paul_2",
+    "c_paul_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "CHURCH",
+   "x": -200.0,
+   "y": -104.0,
+   "per": 200,
+   "scale": 2
+  },
+  {
+   "t": "wait",
+   "ms": 1100
+  },
+  {
+   "t": "actor.remove",
+   "id": "paul",
+   "ms": 500
+  },
+  {
+   "t": "stage",
+   "set": "live",
+   "camera": [
+    -140.0,
+    40.0
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ottoman",
+   "sprite": "c_ottoman_0",
+   "x": -120.0,
+   "y": 88.0,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_ottoman_1",
+    "c_ottoman_0",
+    "c_ottoman_2",
+    "c_ottoman_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "MOSQUE",
+   "x": -200.0,
+   "y": -104.0,
+   "per": 200,
+   "scale": 2
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Put the powder in the old temple. Nothing gets through those walls.",
+   "speaker": "ottoman"
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "stage",
+   "set": "live",
+   "camera": [
+    -140.0,
+    40.0
+   ]
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Aim for the top. Fire!",
+   "speaker": "morosini",
+   "flag": "history"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "morosini",
+   "sprite": "c_morosini_0",
+   "x": 140.0,
+   "y": 96.0,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_morosini_1",
+    "c_morosini_0",
+    "c_morosini_2",
+    "c_morosini_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v1",
+   "sprite": "c_venetian_0",
+   "x": 172.0,
+   "y": 116.0,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_venetian_1",
+    "c_venetian_0",
+    "c_venetian_2",
+    "c_venetian_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "v2",
+   "sprite": "c_venetian_0",
+   "x": 112.0,
+   "y": 124.0,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_venetian_1",
+    "c_venetian_0",
+    "c_venetian_2",
+    "c_venetian_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cannon",
+   "sprite": "p_cannon",
+   "x": 200.0,
+   "y": 108.0,
+   "anchor": [
+    18,
+    19
+   ],
+   "flip": true,
+   "shadow": 0
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    20.0,
+    60.0
+   ],
+   "ms": 2000,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "actor.move",
+   "id": "morosini",
+   "to": [
+    120.0,
+    96.0
+   ],
+   "ms": 700
+  },
+  {
+   "t": "actor.emote",
+   "id": "morosini",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "actor.remove",
+   "id": "ottoman"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "o1",
+   "sprite": "c_ottoman_0",
+   "x": -140.0,
+   "y": 60.0,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_ottoman_1",
+    "c_ottoman_0",
+    "c_ottoman_2",
+    "c_ottoman_0"
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "o2",
+   "sprite": "c_ottoman_0",
+   "x": -96.0,
+   "y": 72.0,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_ottoman_1",
+    "c_ottoman_0",
+    "c_ottoman_2",
+    "c_ottoman_0"
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b1",
+   "sprite": "p_barrel",
+   "x": -172.0,
+   "y": 44.0,
+   "anchor": [
+    7,
+    15
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b2",
+   "sprite": "p_barrel",
+   "x": -152.0,
+   "y": 40.0,
+   "anchor": [
+    7,
+    15
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "b3",
+   "sprite": "p_barrel",
+   "x": -132.0,
+   "y": 44.0,
+   "anchor": [
+    7,
+    15
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -120.0,
+    48.0
+   ],
+   "ms": 2200,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 2200,
+   "at": [
+    -120.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "actor.emote",
+   "id": "o1",
+   "emote": "question",
+   "ms": 1500
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    0.0,
+    48.0
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 1200,
+   "at": [
+    0.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "sfx",
+   "name": "pop"
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 2
+  },
+  {
+   "t": "actor.spawn",
+   "id": "shell",
+   "sprite": "p_shell",
+   "x": 180.0,
+   "y": 80.0,
+   "anchor": [
+    4,
+    8
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "shell",
+   "to": [
+    -152.0,
+    12.0
+   ],
+   "ms": 1700,
+   "ease": "eio"
+  },
+  {
+   "t": "sfx",
+   "name": "whoosh"
+  },
+  {
+   "t": "actor.remove",
+   "id": "shell"
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 900,
+   "mid": [
+    {
+     "t": "actor.spawn",
+     "id": "f1",
+     "sprite": "p_fire_0",
+     "x": -160.0,
+     "y": 40.0,
+     "anchor": [
+      8,
+      19
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f1",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f2",
+     "sprite": "p_fire_0",
+     "x": -132.0,
+     "y": 36.0,
+     "anchor": [
+      8,
+      19
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f2",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f3",
+     "sprite": "p_fire_0",
+     "x": -184.0,
+     "y": 48.0,
+     "anchor": [
+      8,
+      19
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f3",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "t": "still",
+   "image": "art/stills/parthenon_boom.png",
+   "ms": 3200,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 4
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 1200,
+   "amp": 4
+  },
+  {
+   "t": "actor.jump",
+   "id": "o1",
+   "height": 10,
+   "ms": 400,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "o2",
+   "height": 10,
+   "ms": 400
+  },
+  {
+   "t": "actor.emote",
+   "id": "o1",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "o2",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "o1",
+   "to": [
+    -280.0,
+    140.0
+   ],
+   "ms": 1800,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "o2",
+   "to": [
+    -300.0,
+    80.0
+   ],
+   "ms": 2000,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.3,
+   "ms": 1200,
+   "color": "50,30,20",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    -140.0,
+    8.0
+   ],
+   "ms": 2800,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 2800,
+   "at": [
+    -140.0,
+    8.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3000
+  },
+  {
+   "t": "still",
+   "image": "art/stills/explosion-1687_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what one shell did.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

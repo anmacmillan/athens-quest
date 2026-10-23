@@ -1,0 +1,170 @@
+{
+ "story": "atreus-dinner",
+ "title": "The Dinner of Atreus",
+ "flag": "myth",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "atreus",
+   "thyestes"
+  ],
+  [
+   "atreus",
+   "thyestes"
+  ],
+  [
+   "thyestes",
+   "atreus"
+  ]
+ ],
+ "notes": [
+  "p2.2: 'More stew, brother?' is lettered as a caption box, not a speech bubble. Voiced as Atreus (voice_speech).",
+  "p2.4 and p3.2: a classical columned temple sits on the citadel; Mycenae had a palace, not a temple. Narration says 'palace' and does not describe the building. Low priority.",
+  "p3.3: the kings wear medieval-style crowns. Cosmetic.",
+  "p3.4: a girl at a palace window replaces Glauka on a tower. Narration does not explain her; she reads as a watcher in the house.",
+  "p1: all-caps lettering, unlike pages 2 and 3. Cosmetic.",
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [2, 3] regenerated"
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Two brothers, Atreus (dark beard, red cloak) and Thyestes (thinner, grey-streaked), glaring at each other across the throne of Mycenae, lightning between their eyes",
+   "caption": "Atreus and Thyestes hated each other. Both wanted to be king of Mycenae.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Two brothers, one throne. Atreus and Thyestes both wanted to be king of Mycenae. In the end Atreus won, and threw his brother out."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of Atreus smirking with one eyebrow raised, offering a hand in false friendship",
+   "caption": "Atreus pretended to make peace.",
+   "speech": {
+    "speaker": "Atreus",
+    "text": "Brother! Let us feast."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Then Atreus found out that Thyestes had stolen his wife as well. So Atreus pretended to make peace. He smiled. Never trust that smile.",
+   "voice_speech": {
+    "speaker": "Atreus",
+    "text": "Brother! Come home. All is forgiven. Let us feast."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A long banquet hall with torches, a laden table, Thyestes hesitant at the door, servants hurrying",
+   "caption": "He invited Thyestes to a feast.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "He invited Thyestes to a feast. Thyestes came home in rags and stood in the doorway a long time. Then he smelled the cooking, and came in."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A big pot of stew steaming, ladle, and Atreus' sinister shadow looming over it",
+   "caption": "He served him a stew.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Atreus served him a stew. He had cooked it himself, for his dear brother. That should have been the first clue."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Thyestes eating happily, spoon to his mouth, with a bowl of stew; Atreus watching with a wicked grin in the background",
+   "caption": "Thyestes ate.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Thyestes ate. Years on the road had made him hungry. He ate every spoonful, and Atreus watched every one."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Low dramatic angle across the table: Atreus lifts the lid off a silver platter towards Thyestes; we do NOT see what is on the platter: a white starburst of light and ink spikes hides it",
+   "caption": "More stew, brother?",
+   "speech": null,
+   "sfx": "CLANG",
+   "tag": null,
+   "narr": "Then the lid came off.",
+   "voice_speech": {
+    "speaker": "Atreus",
+    "text": "More stew, brother?"
+   }
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Thyestes' face in the foreground frozen in horror, tiny pupils, sweat drops flying, silver spoon dropping",
+   "caption": "The stew was made from Thyestes' own sons.",
+   "speech": null,
+   "sfx": "!!!",
+   "tag": null,
+   "narr": "On the platter were the heads and hands of Thyestes' sons. Now he knew what the stew was made from."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "The sun in the sky above the Bronze Age citadel of Mycenae has a horrified manga face, hands on cheeks, its rays bending backwards; below, the rough boulder walls and the flat-roofed palace hall",
+   "caption": "The sun was so horrified that it turned back in the sky.",
+   "speech": null,
+   "sfx": "GASP!!",
+   "tag": null,
+   "narr": "Even the sun couldn't watch. It was so horrified that it turned round in the sky, and went back the way it had come."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Thyestes on his feet, arm raised, pointing at Atreus with fury, his cloak swirling, black ink spikes",
+   "caption": "Thyestes cursed the whole family.",
+   "speech": {
+    "speaker": "Thyestes",
+    "text": "A curse on your house!"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Thyestes had one weapon left. He cursed the family, every one of them.",
+   "voice_speech": {
+    "speaker": "Thyestes",
+    "text": "A curse on your house! On your sons, and their sons!"
+   }
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A dark cloud of curse like a snake coiling over the Bronze Age palace citadel of Mycenae (rough boulder walls, flat-roofed palace hall) in a stormy sky",
+   "caption": "That curse did not stop with him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "That curse did not stop with him. Greek curses don't wear off. They wait, coiled over the palace like a snake."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "A line of silhouettes of kings through the generations from father to son to son, each with a dark thread connecting them to the next",
+   "caption": "It ran down through the generations, from father to son to son.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "It ran down through the generations, from father to son to son. Atreus had a son called Agamemnon. Keep an eye on that name. That curse is coming for him next."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "The Lion Gate at night under a black sky with a faint red glow, Glauka watching from a tower",
+   "caption": "The house of Atreus was cursed.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The house of Atreus was cursed. That's a myth: a story the Greeks told, not a thing that happened. But the palace was real, up the hill. Climb and find it."
+  }
+ ]
+}

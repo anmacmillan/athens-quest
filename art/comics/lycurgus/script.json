@@ -1,0 +1,54 @@
+{
+ "story": "lycurgus",
+ "title": "Two Men Called Lycurgus",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "lycurgus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Spartans carrying huge heavy iron bars as money, a wagon creaking under a pile of iron bars for a single purchase, a rich man sweating; Lycurgus (stern, dignified, from the sheet) overseeing with arms folded",
+   "caption": "Lycurgus is said to have given Sparta its laws, with money made of heavy iron bars so that nobody could get rich.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A split panel: left, a furious rich young man striking Lycurgus with a stick, Lycurgus clutching a hand over his eye (no blood); right, Lycurgus kindly leading the young man into his house, the young man bowing",
+   "caption": "A young man knocked out Lycurgus's eye. Lycurgus took him in, and he became his most loyal follower.",
+   "speech": null,
+   "sfx": "WHAK",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A crowd of Spartans raising their hands to swear an oath, and Lycurgus (one eye covered with a patch) walking away alone up a road toward Delphi at sunset, never looking back",
+   "caption": "He made the Spartans swear to keep his laws until he came back. He went to Delphi and never returned.",
+   "speech": {
+    "speaker": "Lycurgus",
+    "text": "Keep my laws unchanged."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A different man, the Athenian Lycurgus (a statesman in 330 BC), supervising workers laying stone seats in the Theatre of Dionysus, and scribes copying scrolls of plays at a table; a big 'TWO MEN' sign with two different faces",
+   "caption": "Athens had its own Lycurgus, a real one, about 330 BC. He rebuilt the theatre in stone and had official copies made of the plays. Don't mix them up.",
+   "speech": null,
+   "sfx": null,
+   "tag": "TWO LYCURGUSES"
+  }
+ ]
+}

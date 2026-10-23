@@ -1,0 +1,54 @@
+{
+ "story": "procrustes",
+ "title": "Procrustes and His Bed",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "theseus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A roadside house on the road to Athens at dusk, an iron bed, and a grinning huge host Procrustes inviting a traveller in",
+   "caption": "On the road to Athens lived a man called Procrustes. He offered travellers a bed for the night.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A lanky traveller lying on a short iron bed with his feet hanging off and Procrustes looming with a mallet, a sweat drop",
+   "caption": "If a guest was too short, he stretched him. If too tall, he chopped off his legs.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Procrustes, a hulking grinning villain with an axe, looms over his iron bed in a dark room; the young hero Theseus in the lit doorway in silhouette, sword in hand, long shadow; no blood",
+   "caption": "Then Theseus came down the road.",
+   "speech": {
+    "speaker": "Theseus",
+    "text": "Lie down."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A quiet empty road at sunrise with the iron bed abandoned and Theseus walking away, tiny",
+   "caption": "We still say a Procrustean bed: forcing everything to fit one rule.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

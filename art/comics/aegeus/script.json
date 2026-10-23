@@ -1,0 +1,180 @@
+{
+ "story": "aegeus",
+ "title": "Aegeus's Leap",
+ "flag": "myth",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "aegeus",
+   "theseus"
+  ],
+  [
+   "aegeus",
+   "theseus",
+   "glauka"
+  ],
+  [
+   "aegeus",
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p2.2: the lettered bubble 'The sails! The white sails!' shows Theseus noticing his mistake at sea, which would let him fix it in time. Narration says only that he forgot and the black sails went up, so it does not contradict the bubble. Patch the bubble to '...' if regenerating.",
+  "p3.1-3.2: the art puts the sea directly below the cliff and floats the cloak on it. The Acropolis is about 7 km from the sea. Narration avoids saying he fell into the sea.",
+  "p3.3: the tag is lettered STORY. Card and coda say MYTH. Patch the tag to MYTH.",
+  "p3.4: the caption 'Nobody knows which is true' stays as lettered. Narration replaces it with the coda formula."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "King Aegeus (old, white beard, crown, purple cloak) stands on the Nike bastion of the Acropolis, hand on the shoulder of his young curly-haired son Theseus, both facing the harbour where a ship waits; sea behind",
+   "caption": "Aegeus sent his son Theseus to Crete to kill the Minotaur.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Hoo. Every nine years Athens had to send fourteen of its young people to Crete, to be fed to a monster, the Minotaur. This time the king's own son, Theseus, went to kill it."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of two hands clasped; Aegeus pointing to a folded white sail and a black sail lying side by side on the stone",
+   "caption": "The signal: white sails if Theseus lived. Black if he died.",
+   "speech": {
+    "speaker": "Aegeus",
+    "text": "White sails, if you live."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "The ship had black sails, because that is how you sail to a funeral. So the old king made a deal: white sails if Theseus lived, black if he died.",
+   "voice_speech": {
+    "speaker": "Aegeus",
+    "text": "White sails, if you live. White sails. Promise me."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A black-sailed ship leaving the harbour under a heavy grey sky, tiny Theseus waving at the stern, small owl Glauka flying above",
+   "caption": "The ship sailed under black sails.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The ship sailed under black sails, and I flew with it to the headland. Everything rested on a teenage boy remembering something. You can guess where this is going."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "King Aegeus alone at the edge of the cliff watching the horizon, wind in his white hair and purple cloak, Glauka perched on the wall beside him",
+   "caption": "Every day he climbed to the rock and watched the sea.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Then I came back to keep the old man company. Every day he climbed to this rock, the one under your feet, and watched the sea until dark.",
+   "voice_speech": {
+    "speaker": "Aegeus",
+    "text": "Surely today. Surely, surely, white sails."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Theseus on the ship's deck, sword in hand, victorious and smiling, the Minotaur's horned head carved on a coin-like emblem in a thought bubble; behind him the Cretan coast fading",
+   "caption": "Theseus won in Crete. The ship turned for home.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Far away in Crete, Theseus killed the Minotaur and found his way out of the Labyrinth. The ship turned for home, and he was very pleased with himself."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "The ship's crew hoisting sails; the sail being raised is BLACK; Theseus in the foreground with his hand on his forehead, staring at it in shock, tiny pupils, sweat drop",
+   "caption": "Theseus forgot.",
+   "speech": {
+    "speaker": "Theseus",
+    "text": "The sails! The white sails!"
+   },
+   "sfx": "!!",
+   "tag": null,
+   "narr": "So pleased that Theseus forgot. The crew hauled up the same black sails they had left with."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Dramatic wide view: the ship returning to Athens under black sails, golden sunset, tiny figure of Aegeus on the cliff top in silhouette",
+   "caption": "His ship came back under black sails.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "His ship came back under black sails. From up here the sail is the first thing you see, long before faces, long before anyone can shout."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Close-up of Aegeus' face, huge eyes with a tiny black-sailed ship reflected in each pupil, a tear running into his white beard, radial speed lines",
+   "caption": "He believed his son was dead.",
+   "speech": {
+    "speaker": "Aegeus",
+    "text": "Black sails..."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "He believed his son was dead. (pause) Aegeus didn't wait to find out.",
+   "voice_speech": {
+    "speaker": "Aegeus",
+    "text": "Black... black sails."
+   }
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Aegeus seen from behind stepping to the edge of the high cliff, arms open, purple cloak billowing, the sea far below; no gore, dramatic manga angle",
+   "caption": "He threw himself from the rock.",
+   "speech": null,
+   "sfx": "HYUUUU",
+   "tag": null,
+   "narr": "He stepped off the rock.",
+   "direction": "Speak low, then silence. Let the SFX play."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Seabirds and a ring of white spray on the deep blue Aegean, the sea shown wide and calm, a purple cloak floating, soft light",
+   "caption": "The Aegean Sea is named after him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "When Theseus came ashore with his good news, the city was already weeping for its king. The sea kept the old man's name. We still call it the Aegean."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "An old travel-writer (Pausanias, in a travelling hat with a scroll) points to the spot beside the little temple of Athena Nike, tourists looking",
+   "caption": "Pausanias was shown this spot beside the temple of Nike.",
+   "speech": null,
+   "sfx": null,
+   "tag": "STORY",
+   "narr": "Was it really here? About eighteen hundred years ago a travel-writer called Pausanias climbed this hill. He wrote that this was the spot, beside the little Nike temple."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A split image: left half the Nike bastion in Athens, right half the cliffs of Cape Sounion with a temple, a big question mark between them, Glauka the owl shrugging a wing",
+   "caption": "Others said Cape Sounion. Nobody knows which is true.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "The story is old either way."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Guides at Cape Sounion, down the coast, say it was there. That's a myth: a story the Greeks told, not a thing that happened. But go to the edge and look south-west. That's his sea.",
+   "voice_speech": {
+    "speaker": "Glauka",
+    "text": "Either way, the sails were black."
+   }
+  }
+ ]
+}

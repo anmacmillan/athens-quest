@@ -1,0 +1,28 @@
+{
+ "parthenos": {
+  "spot": "parthenon",
+  "cella": {
+   "tiles": [
+    140,
+    126,
+    148,
+    130
+   ],
+   "reach": 2.6
+  },
+  "height_m": 12,
+  "speaker": "athena",
+  "line": "You came all this way. Look up.",
+  "still": "athena_parthenos",
+  "sticker": "vision:parthenos",
+  "gold": "245,214,120"
+ },
+ "finale": {
+  "line": "Every flag found. Athens is yours. Look up, little owls.",
+  "sticker": "vision:finale"
+ },
+ "sprite": [
+  "art/athena_parthenos/athena_parthenos.png"
+ ],
+ "glow": []
+}

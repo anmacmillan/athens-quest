@@ -1,0 +1,54 @@
+{
+ "story": "nike",
+ "title": "Wingless Victory",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The small temple of Athena Nike on its high bastion on the right of the steps up the Acropolis, bright sun, Glauka on the roof",
+   "caption": "On your right as you climb stands a small temple on a high bastion. Built around 420 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "The goddess Nike with big feathered wings flying from one champion to the next, laurel wreath in hand",
+   "caption": "Nike, goddess of victory, normally has wings. Wings let her fly from one winner to the next.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The wingless statue of Athena Nike on the bastion, athletic, calm, held on the spot by a chain of laurel",
+   "caption": "In Athens she was shown without wings.",
+   "speech": {
+    "speaker": "Pausanias",
+    "text": "Wingless Victory."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Spartan soldiers marching into a defeated Athens while a tiny Nike flies away over the horizon",
+   "caption": "Athens lost the war with Sparta anyway. Victory did fly away in the end.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

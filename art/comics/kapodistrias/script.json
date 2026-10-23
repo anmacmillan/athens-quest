@@ -1,0 +1,54 @@
+{
+ "story": "kapodistrias",
+ "title": "The Bullet in the Wall",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The harbour town of Nafplio in the 1830s with a fortress above, flags, the new Greek capital looking busy",
+   "caption": "Nafplio was the first capital of modern Greece after independence.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Ioannis Kapodistrias (dignified man in a dark coat, white hair) walking up the street to church with guards behind",
+   "caption": "Its first head of state was Ioannis Kapodistrias.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The church of Saint Spyridon in Nafplio on a dawn street, a quiet moment before danger, two shadows lurking at the corner",
+   "caption": "On 9 October 1831 he was attacked outside the church of Saint Spyridon by two men from a rival family.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A small bullet hole in the church wall behind a pane of glass, a hand pointing at it, Glauka perched beside it",
+   "caption": "A bullet hole is still in the wall, behind glass, for nearly two hundred years.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Look for the glass."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

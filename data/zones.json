@@ -1,0 +1,37 @@
+{
+  "athens": { "label": "Athens", "kind": "live", "data": "data/world_athens.json",
+    "signposts": [
+      { "id": "to-academy", "label": "To Plato's Academy", "to": "academy", "near": { "x": 80, "y": 80 } },
+      { "id": "to-lyceum", "label": "To Aristotle's Lyceum", "to": "lyceum", "near": { "lat": 37.9722, "lon": 23.7318 } },
+      { "id": "to-greece", "label": "To Piraeus (Sail to Greece)", "to": "greece", "near": { "x": 130, "y": 3520 } },
+      { "id": "to-hotel", "label": "Back to the hotel", "to": "syntagma", "near": { "x": 4420, "y": 640 }, "arrive": { "lat": 37.97831, "lon": 23.73299 } },
+      { "id": "to-hotel-plaka", "label": "Back to the hotel", "to": "syntagma", "near": { "lat": 37.9742, "lon": 23.7306 }, "arrive": { "lat": 37.97831, "lon": 23.73299 } }
+    ] },
+  "academy": { "label": "Plato's Academy", "kind": "live", "data": "data/world_academy.json",
+    "signposts": [ { "id": "to-athens", "label": "Back to Athens", "to": "athens", "near": { "x": 2333, "y": 1260 } },
+      { "id": "to-kifisias", "label": "To Kifisias Avenue (not in this game yet)", "to": null, "bounce": "city", "near": { "x": 3300, "y": 560 } } ] },
+  "lyceum": { "label": "Aristotle's Lyceum", "kind": "live", "data": "data/world_lyceum.json",
+    "signposts": [ { "id": "to-athens", "label": "Back to Athens", "to": "athens", "near": { "x": 260, "y": 760 } },
+      { "id": "to-kolonaki", "label": "To Kolonaki (not in this game yet)", "to": null, "bounce": "city", "near": { "x": 1650, "y": 900 } } ] },
+  "syntagma": { "label": "Syntagma", "kind": "live", "data": "data/world_syntagma.json",
+    "signposts": [ { "id": "to-acropolis", "label": "To the Acropolis, 15 min", "to": "athens", "near": { "lat": 37.9749, "lon": 23.73509 } } ] },
+  "greece": { "label": "Greece", "kind": "map",
+    "signposts": [
+      { "id": "to-athens", "label": "Athens", "to": "athens", "near": { "lat": 37.935, "lon": 23.655 } },
+      { "id": "to-knossos", "label": "Sail to Crete", "to": "knossos", "near": { "lat": 35.33, "lon": 25.12 } },
+      { "id": "to-troy", "label": "Sail to Troy", "to": "troy", "near": { "lat": 39.96, "lon": 26.2 } },
+      { "id": "to-mycenae", "label": "Mycenae", "to": "mycenae", "near": { "lat": 37.745, "lon": 22.77 } },
+      { "id": "to-epidaurus", "label": "Epidaurus", "to": "epidaurus", "near": { "lat": 37.6, "lon": 23.06 } },
+      { "id": "to-nafplio", "label": "Nafplio", "to": "nafplio", "near": { "lat": 37.55, "lon": 22.8 } }
+    ] },
+  "knossos": { "label": "Knossos, Crete", "kind": "stage", "geo": { "lat": 35.298, "lon": 25.1631 }, "mpp": 0.7, "arrival": [240, 250],
+    "signposts": [ { "id": "to-greece", "label": "Back to Greece", "to": "greece", "near": { "x": 110, "y": 288 } } ] },
+  "troy": { "label": "Troy", "kind": "stage", "geo": { "lat": 39.9573, "lon": 26.2389 }, "mpp": 0.9, "arrival": [330, 250],
+    "signposts": [ { "id": "to-greece", "label": "Back to Greece", "to": "greece", "near": { "x": 110, "y": 288 } } ] },
+  "mycenae": { "label": "Mycenae", "kind": "stage", "geo": { "lat": 37.7309, "lon": 22.7568 }, "mpp": 0.7, "arrival": [240, 230],
+    "signposts": [ { "id": "to-greece", "label": "Back to Greece", "to": "greece", "near": { "x": 110, "y": 288 } } ] },
+  "epidaurus": { "label": "Epidaurus", "kind": "stage", "geo": { "lat": 37.5978, "lon": 23.077 }, "mpp": 0.7, "arrival": [240, 280],
+    "signposts": [ { "id": "to-greece", "label": "Back to Greece", "to": "greece", "near": { "x": 110, "y": 288 } } ] },
+  "nafplio": { "label": "Nafplio", "kind": "stage", "geo": { "lat": 37.564, "lon": 22.806 }, "mpp": 0.9, "arrival": [240, 222],
+    "signposts": [ { "id": "to-greece", "label": "Back to Greece", "to": "greece", "near": { "x": 110, "y": 205 } } ] }
+}

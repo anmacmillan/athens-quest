@@ -1,0 +1,226 @@
+{
+ "_doc": "Marker set for the engine. All images are PNG with transparency, drawn at world scale (1 px = 1 game px, the map is drawn at 2x by the engine). 'anchor' is the point that sits on the map location (pole foot for banners, tip for pins, centre for the rest). banner: 3 flutter frames per kind, cycle every ~0.18 s. pin: 'window' = {cx,cy,r} in sprite px, the engine draws the story character's portrait clipped to that circle UNDER the pin image (the window is transparent). pin_glauka: pins with the owl icon already in the window (for Glauka stories). coin = done marker. sign = undiscovered marker. owl = Glauka icon. player_ring: window {cx,cy,r} for the player's face, draw the face under the ring. Kinds: history=gold, myth=lilac, legend=orange, tourist_myth=red.",
+ "banner": {
+  "history": {
+   "frames": [
+    "banner_history_0.png",
+    "banner_history_1.png",
+    "banner_history_2.png"
+   ],
+   "size": [
+    25,
+    40
+   ],
+   "anchor": [
+    2,
+    39
+   ]
+  },
+  "myth": {
+   "frames": [
+    "banner_myth_0.png",
+    "banner_myth_1.png",
+    "banner_myth_2.png"
+   ],
+   "size": [
+    25,
+    40
+   ],
+   "anchor": [
+    2,
+    39
+   ]
+  },
+  "legend": {
+   "frames": [
+    "banner_legend_0.png",
+    "banner_legend_1.png",
+    "banner_legend_2.png"
+   ],
+   "size": [
+    25,
+    40
+   ],
+   "anchor": [
+    2,
+    39
+   ]
+  },
+  "tourist_myth": {
+   "frames": [
+    "banner_tourist_myth_0.png",
+    "banner_tourist_myth_1.png",
+    "banner_tourist_myth_2.png"
+   ],
+   "size": [
+    26,
+    40
+   ],
+   "anchor": [
+    3,
+    39
+   ]
+  }
+ },
+ "pin": {
+  "history": {
+   "file": "pin_history.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ],
+   "window": {
+    "cx": 12.5,
+    "cy": 13.5,
+    "r": 5.292567428401227
+   }
+  },
+  "myth": {
+   "file": "pin_myth.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ],
+   "window": {
+    "cx": 12.5,
+    "cy": 13.5,
+    "r": 5.292567428401227
+   }
+  },
+  "legend": {
+   "file": "pin_legend.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ],
+   "window": {
+    "cx": 12.5,
+    "cy": 13.5,
+    "r": 5.292567428401227
+   }
+  },
+  "tourist_myth": {
+   "file": "pin_tourist_myth.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ],
+   "window": {
+    "cx": 12.5,
+    "cy": 13.5,
+    "r": 5.292567428401227
+   }
+  }
+ },
+ "pin_glauka": {
+  "history": {
+   "file": "pin_history_glauka.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ]
+  },
+  "myth": {
+   "file": "pin_myth_glauka.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ]
+  },
+  "legend": {
+   "file": "pin_legend_glauka.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ]
+  },
+  "tourist_myth": {
+   "file": "pin_tourist_myth_glauka.png",
+   "size": [
+    26,
+    36
+   ],
+   "anchor": [
+    13,
+    35
+   ]
+  }
+ },
+ "coin": {
+  "file": "coin.png",
+  "size": [
+   16,
+   16
+  ],
+  "anchor": [
+   8,
+   8
+  ]
+ },
+ "sign": {
+  "file": "sign.png",
+  "size": [
+   19,
+   22
+  ],
+  "anchor": [
+   9,
+   21
+  ]
+ },
+ "owl": {
+  "file": "owl.png",
+  "size": [
+   15,
+   16
+  ],
+  "anchor": [
+   7,
+   8
+  ]
+ },
+ "player_ring": {
+  "file": "player_ring.png",
+  "size": [
+   31,
+   32
+  ],
+  "anchor": [
+   15,
+   16
+  ],
+  "window": {
+   "cx": 15.0,
+   "cy": 15.5,
+   "r": 8.291859587312052
+  }
+ }
+}

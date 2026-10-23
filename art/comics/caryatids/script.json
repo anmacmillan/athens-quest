@@ -1,0 +1,183 @@
+{
+ "story": "caryatids",
+ "title": "The Stone Maidens",
+ "flag": "history",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "caryatid"
+  ],
+  [
+   "caryatid",
+   "glauka"
+  ],
+  [
+   "caryatid"
+  ]
+ ],
+ "notes": [
+  "Narration in this story is spoken by the Caryatid (one of the five originals in the museum, speaking for the sisters as 'we'). Each panel carries 'narr_speaker'. Glauka speaks p2.1 and the coda on p3.4.",
+  "p3.3: the lettered caption 'Her place on the porch is empty' is wrong today: copies fill all six places on the porch, and the card says so. The gap is in the museum. Narration says so; patch the caption to 'Her place in the museum is empty.'",
+  "p1.2, p2.3, p3.4: the same words are lettered in a caption box and a speech bubble (audit 6.3). Patch out the caption boxes if regenerating.",
+  "p1.1 and p1.4 show only four maidens: correct for the front row (four in front, two behind). Narration says so."
+ ],
+ "narr_voice": "caryatid",
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Six stone maidens (Caryatids) standing in a row as columns of the Erechtheion porch, baskets on their heads supporting the roof, golden light",
+   "caption": "Six of us hold up the roof of this porch on our heads.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Six of us once held up the roof of this porch, on our heads. No hands. Count the places: four in front, two behind.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up: one Caryatid's carved face slowly opening her eyes, a faint smile, tiny dust falling from her stone lashes",
+   "caption": "I am a Caryatid.",
+   "speech": {
+    "speaker": "Caryatid",
+    "text": "I am a Caryatid."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Yes, the stone is talking. You have to stand very still to hear us. Most people never do.",
+   "narr_speaker": "caryatid",
+   "voice_speech": {
+    "speaker": "Caryatid",
+    "text": "I am a Caryatid. One of six sisters."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Seen from below, a Caryatid's head and the stone roof resting on it, birds nesting nearby, centuries passing as clock-hands",
+   "caption": "We have stood here a very long time.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "We stood up there for more than two thousand years. Armies came and went. Birds nested on our heads. We held the roof.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Wide shot of tourists and school groups walking under the porch, taking photographs",
+   "caption": "Everyone looks up at us.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Everyone looks up at us: crowds of faces, little clicking boxes. Nobody asks what we are carrying, or for how long.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Five modern concrete-grey copies of the Caryatids standing on the porch with a sign in the shadow, Glauka pointing at one",
+   "caption": "The maidens you see outside are copies.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Here's a secret: the maidens you see out here are copies, every one of them. The real sisters moved indoors, down the hill.",
+   "narr_speaker": "glauka"
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Inside the Acropolis Museum: five original Caryatids glowing in a bright hall, protected behind glass, calm",
+   "caption": "Five of the originals are in the Acropolis Museum, safe from the weather.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Five of us are in the Acropolis Museum now, safe from the weather. Warm, dry, well lit. We hold up nothing at all.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Caryatid close-up shrugging with a stone shrug and a tiny weary eyebrow raised",
+   "caption": "I do not mind. Much.",
+   "speech": {
+    "speaker": "Caryatid",
+    "text": "I do not mind. Much."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Do I miss the porch? The sky, the wind, the roof on my head?",
+   "narr_speaker": "caryatid",
+   "voice_speech": {
+    "speaker": "Caryatid",
+    "text": "I do not mind. Much."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "A small group of the Caryatid sisters in the Museum looking sideways with a gentle, grumpy expression",
+   "caption": "The sisters keep each other company.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Down here, the five of us keep each other company. But look closely at our row. There is a space where a sister should be.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Lord Elgin's men (nineteenth-century Englishmen in tall hats and coats) hauling a statue on ropes and wooden rollers, Greek workers watching",
+   "caption": "The sixth sister was taken to London by Lord Elgin's men around 1801.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The sixth sister was taken by Lord Elgin's men, around 1801. Ropes, rollers, then a ship to London. Nobody asked her.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A statue of a Caryatid in a grand museum in London with tall windows and foggy weather outside",
+   "caption": "She is still there.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "She is still there.",
+   "narr_speaker": "caryatid",
+   "direction": "Flat and quiet. No music."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "The empty gap among the Caryatids: five in a row and a dark space where the sixth should stand, a gentle sad atmosphere",
+   "caption": "Her place on the porch is empty.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Up on the porch, a copy stands in her place now. But down in the museum, beside the five of us, her place is still empty.",
+   "narr_speaker": "caryatid"
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "The Caryatid sisters in a row, all looking in the same direction, towards the west, with a tear-like drop of rain on one stone cheek",
+   "caption": "We have been waiting a long time.",
+   "speech": {
+    "speaker": "Caryatid",
+    "text": "We have been waiting."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "That's history: it happened, and you can visit her in the British Museum today. Now go down to the Acropolis Museum and find the gap where she should stand.",
+   "narr_speaker": "glauka",
+   "voice_speech": {
+    "speaker": "Caryatid",
+    "text": "We have been waiting. We can wait longer."
+   }
+  }
+ ]
+}

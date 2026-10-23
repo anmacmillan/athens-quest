@@ -1,0 +1,23 @@
+{
+ "_doc": "Athena Parthenos overlay for the ruined Parthenon. Draw art/athena_parthenos/glow.png ADDITIVE (globalCompositeOperation 'lighter', alpha 0.35 + 0.1*sin(t*1.5)) centred on the statue's chest, scaled x2.2, then athena_parthenos_ghost.png (already translucent) y-sorted at base. Sizes are game px (1:1, the map is drawn at 2x). Statue = 12 m: 82 px tall equals plan scale at ws 2. Show when the player is near or the story/vision is playing.",
+ "sprite": "art/athena_parthenos/athena_parthenos.png",
+ "ghost": "art/athena_parthenos/athena_parthenos_ghost.png",
+ "glow": "art/athena_parthenos/glow.png",
+ "size": [
+  45,
+  84
+ ],
+ "anchor": [
+  22,
+  83
+ ],
+ "chest_offset_from_anchor": [
+  0,
+  -50
+ ],
+ "world_m": [
+  13.8,
+  -6.8
+ ],
+ "note": "world_m is metres from the Parthenon origin (generator frame): the naos, 8 m east of the temple centre along its axis (rotated -13 deg)."
+}

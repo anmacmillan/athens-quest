@@ -1,0 +1,51 @@
+{
+ "story": "odeon",
+ "title": "Odeon of Herodes Atticus",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Odeon of Herodes Atticus: arched stone facade and curved rows, a summer-night concert with musicians and lanterns",
+   "caption": "A music hall for about five thousand people, built around AD 161.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Herodes Atticus (rich Greek in fine robes, beard) standing in front of his building proudly, a coin purse",
+   "caption": "Herodes Atticus was the richest man in Greece.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Herodes by a grave wreath with a sad face, the half-built Odeon behind him, dusk",
+   "caption": "He built it in memory of his wife Regilla. She died while pregnant.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A Roman court with magistrates and Herodes standing calmly while Regilla's brother points at him accusingly",
+   "caption": "Her brother accused him of ordering it. He was tried in Rome and let off.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "story": "palamidi",
+ "title": "The 999 Steps",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Palamidi fortress on a cliff above Nafplio and its bay, many stone steps zigzagging up, sunny",
+   "caption": "The Palamidi fortress, built by the Venetians between about 1711 and 1714.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A tour guide with a flag saying '999 steps!' pointing up, tourists with sweaty faces, sun hats",
+   "caption": "Everyone says there are 999 steps.",
+   "speech": {
+    "speaker": "Guide",
+    "text": "999 steps!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A boy counting steps with a clicker, a sweat drop, a long staircase going up out of frame",
+   "caption": "People who actually counted get different numbers.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Several people each holding a number sign: 850, 920, 999, 1,000, arguing, Glauka looking amused",
+   "caption": "Usually between about 850 and 1,000, depending on where you start and stop.",
+   "speech": null,
+   "sfx": null,
+   "tag": "TOURIST MYTH"
+  }
+ ]
+}

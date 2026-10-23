@@ -1,0 +1,335 @@
+{
+ "sounds": {
+  "title": {
+   "file": "audio/music/title.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.55
+  },
+  "athens": {
+   "file": "audio/music/athens.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.45
+  },
+  "agora": {
+   "file": "audio/music/agora.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "summit": {
+   "file": "audio/music/summit.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.45
+  },
+  "comic": {
+   "file": "audio/music/comic.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.3
+  },
+  "mycenae": {
+   "file": "audio/music/mycenae.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "knossos": {
+   "file": "audio/music/knossos.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "troy": {
+   "file": "audio/music/troy.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "sparta": {
+   "file": "audio/music/sparta.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "academy": {
+   "file": "audio/music/academy.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.42
+  },
+  "journey": {
+   "file": "audio/music/journey.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.5
+  },
+  "finale": {
+   "file": "audio/music/finale.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.55
+  },
+  "minigame": {
+   "file": "audio/music/minigame.mp3",
+   "type": "music",
+   "loop": true,
+   "volume": 0.4
+  },
+  "owl-hoot-1": {
+   "file": "audio/sfx/owl-hoot-1.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "owl-hoot-2": {
+   "file": "audio/sfx/owl-hoot-2.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "owl-flap": {
+   "file": "audio/sfx/owl-flap.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "coin-pickup": {
+   "file": "audio/sfx/coin-pickup.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "coin-purchase": {
+   "file": "audio/sfx/coin-purchase.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "feather-chime": {
+   "file": "audio/sfx/feather-chime.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "badge-fanfare": {
+   "file": "audio/sfx/badge-fanfare.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "quiz-correct": {
+   "file": "audio/sfx/quiz-correct.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "quiz-wrong": {
+   "file": "audio/sfx/quiz-wrong.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "page-turn": {
+   "file": "audio/sfx/page-turn.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "panel-whoosh": {
+   "file": "audio/sfx/panel-whoosh.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.6
+  },
+  "menu-tap": {
+   "file": "audio/sfx/menu-tap.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "skate-roll": {
+   "file": "audio/sfx/skate-roll.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.5
+  },
+  "skate-push": {
+   "file": "audio/sfx/skate-push.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.6
+  },
+  "skate-clack": {
+   "file": "audio/sfx/skate-clack.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "guard-whistle": {
+   "file": "audio/sfx/guard-whistle.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "cat-meow-1": {
+   "file": "audio/sfx/cat-meow-1.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "cat-meow-2": {
+   "file": "audio/sfx/cat-meow-2.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "cat-purr": {
+   "file": "audio/sfx/cat-purr.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.6
+  },
+  "donkey-clop": {
+   "file": "audio/sfx/donkey-clop.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.6
+  },
+  "donkey-heehaw": {
+   "file": "audio/sfx/donkey-heehaw.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "chariot-rumble": {
+   "file": "audio/sfx/chariot-rumble.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.55
+  },
+  "goat-bleat": {
+   "file": "audio/sfx/goat-bleat.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "tortoise-munch": {
+   "file": "audio/sfx/tortoise-munch.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "sea-waves": {
+   "file": "audio/sfx/sea-waves.mp3",
+   "type": "ambient",
+   "loop": true,
+   "volume": 0.35
+  },
+  "cicadas": {
+   "file": "audio/sfx/cicadas.mp3",
+   "type": "ambient",
+   "loop": true,
+   "volume": 0.3
+  },
+  "agora-crowd": {
+   "file": "audio/sfx/agora-crowd.mp3",
+   "type": "ambient",
+   "loop": true,
+   "volume": 0.35
+  },
+  "summit-wind": {
+   "file": "audio/sfx/summit-wind.mp3",
+   "type": "ambient",
+   "loop": true,
+   "volume": 0.3
+  },
+  "fire-crackle": {
+   "file": "audio/sfx/fire-crackle.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.5
+  },
+  "boom": {
+   "file": "audio/sfx/boom.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.9
+  },
+  "splash": {
+   "file": "audio/sfx/splash.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "sword-clang": {
+   "file": "audio/sfx/sword-clang.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "stone-grind": {
+   "file": "audio/sfx/stone-grind.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "bull-roar": {
+   "file": "audio/sfx/bull-roar.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  },
+  "minotaur-breath": {
+   "file": "audio/sfx/minotaur-breath.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "sphinx-shriek": {
+   "file": "audio/sfx/sphinx-shriek.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "crowd-gasp": {
+   "file": "audio/sfx/crowd-gasp.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.7
+  },
+  "thunder": {
+   "file": "audio/sfx/thunder.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.85
+  },
+  "lyre-flourish": {
+   "file": "audio/sfx/lyre-flourish.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "heartbeat": {
+   "file": "audio/sfx/heartbeat.mp3",
+   "type": "sfx",
+   "loop": true,
+   "volume": 0.7
+  },
+  "sad-sting": {
+   "file": "audio/sfx/sad-sting.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.75
+  },
+  "triumph-sting": {
+   "file": "audio/sfx/triumph-sting.mp3",
+   "type": "sfx",
+   "loop": false,
+   "volume": 0.8
+  }
+ },
+ "clips": []
+}

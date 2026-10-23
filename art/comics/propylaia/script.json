@@ -1,0 +1,54 @@
+{
+ "story": "propylaia",
+ "title": "The Gateway",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The great gateway of the Acropolis, the Propylaia, with its white columns and a steep ramp of steps, Glauka the owl flying through",
+   "caption": "The Propylaia, the great gateway to the Acropolis. Begun in 437 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of a wall block with a stone knob sticking out, ropes looped around it, workers hoisting",
+   "caption": "The builders left knobs so ropes could be looped round for lifting.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A mason with a chisel looking up at a row of knobs, thinking of the plan to chisel them all off",
+   "caption": "Later they meant to chisel every knob off.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The gateway in 432 BC: tools dropped, workers leaving, messengers on horseback shouting 'War with Sparta!', the knobs still on the blocks",
+   "caption": "In 432 BC war with Sparta was coming and the work stopped. The knobs are still there.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Never finished."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

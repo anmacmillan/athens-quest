@@ -1,0 +1,51 @@
+{
+ "story": "troy-real",
+ "title": "Was Troy Real?",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The mound of Hisarlik in a field in Turkey, with layers of ruins cut in a trench, Glauka flying over",
+   "caption": "Troy was a real city, at a place we now call Hisarlik, in Turkey.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Schliemann in the trench holding up a cross-section drawing with nine layered cities, one burning red",
+   "caption": "Schliemann found nine cities, each built on top of the one before. One layer burned around 1180 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A great siege: ten years of tents around a wall, a question mark over a queen's silhouette (Helen)",
+   "caption": "Did a Greek army really besiege it for ten years over a queen called Helen? Nobody knows.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Gold jewellery and cups piled in a basket labelled PRIAM'S TREASURE, Schliemann smuggling a box out under a coat; a Russian museum shown in a thought bubble",
+   "caption": "Schliemann smuggled the gold out of Turkey. It is now in a museum in Moscow.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

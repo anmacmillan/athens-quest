@@ -1,0 +1,110 @@
+{
+ "story": "philo-plato",
+ "title": "Plato and the Perfect Circle",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "plato",
+   "girl_red",
+   "girl_lilac"
+  ],
+  [
+   "plato"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Plato (broad-shouldered wrestler, neat beard, rich cloak) and two girls in white chitons (red bow and lilac bow) kneeling in the sand in the Academy grove each drawing a circle with a stick, concentrating",
+   "caption": "Draw me a perfect circle.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "Draw me a perfect circle."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of three wobbly circles drawn in the sand, each a little lumpy, the stick, footprints, a comic sweat drop",
+   "caption": "Every circle is a little wobbly.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "You cannot."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Plato pointing upwards: in the golden sky a perfect shining glowing circle, with a bright halo, the girls gazing up amazed with mouths open",
+   "caption": "Yet you know exactly what a perfect circle is.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "So where is it?"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A cave-like picture: prisoners of the cave watching flickering shadows on the wall, while above, a bright shining perfect circle, a triangle and a heart glow in a sunlit opening; Plato's hand pointing",
+   "caption": "The Forms are above. Everything we see is only a shadow.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "Everything we see is a shadow of the Forms."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Students in the Academy grove with compasses, triangles and diagrams scratched in the sand, a lively geometry lesson",
+   "caption": "Plato loved geometry.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Plato holding a drawn perfect triangle that glows above his hand, students looking amazed, thought bubble of a shining shape",
+   "caption": "Perfect shapes you can only think, never touch.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "It trains the mind to see past the shadows."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A sign over the door of a school reading LET NO ONE IGNORANT OF GEOMETRY ENTER, a student reading it with a gulp",
+   "caption": "A story says a sign over the door read this.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "A long shelf of dusty old books with a timeline arrow showing 900 years, a very late writer holding a quill, and Plato with a raised eyebrow",
+   "caption": "Nobody mentions it until about nine hundred years after he died.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "A good story."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

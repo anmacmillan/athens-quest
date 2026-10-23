@@ -1,0 +1,477 @@
+{
+ "id": "procrustes",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "caption",
+   "text": "On the road to Athens there lived a man called Procrustes.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2111
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1200,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "road",
+     "camera": [
+      260,
+      185
+     ],
+     "zoom": 1.4
+    },
+    {
+     "t": "actor.spawn",
+     "id": "bed",
+     "sprite": "p_bed",
+     "x": 318,
+     "y": 190,
+     "anchor": [
+      23,
+      21
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.spawn",
+     "id": "proc",
+     "sprite": "c_procrustes_0",
+     "x": 344,
+     "y": 186,
+     "anchor": [
+      18,
+      57
+     ],
+     "walk": [
+      "c_procrustes_1",
+      "c_procrustes_0",
+      "c_procrustes_2",
+      "c_procrustes_0"
+     ],
+     "shadow": 18
+    },
+    {
+     "t": "actor.spawn",
+     "id": "trav",
+     "sprite": "c_traveller_0",
+     "x": 70,
+     "y": 186,
+     "anchor": [
+      14,
+      45
+     ],
+     "walk": [
+      "c_traveller_1",
+      "c_traveller_0",
+      "c_traveller_2",
+      "c_traveller_0"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "caption",
+   "text": "He kept a bed and offered travellers a place to sleep for the night.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    300,
+    182
+   ],
+   "ms": 1800,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "trav",
+   "to": [
+    250,
+    190
+   ],
+   "speed": 55,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2388
+  },
+  {
+   "t": "caption",
+   "text": "It was a strange kind of hospitality.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "proc",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "trav",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1927
+  },
+  {
+   "t": "actor.move",
+   "id": "trav",
+   "to": [
+    306,
+    196
+   ],
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "If a guest was too short for the bed, Procrustes stretched him until he fit.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.sprite",
+   "id": "trav",
+   "sprite": "c_traveller_lie"
+  },
+  {
+   "t": "actor.place",
+   "id": "trav",
+   "x": 318,
+   "y": 196
+  },
+  {
+   "t": "actor.move",
+   "id": "proc",
+   "to": [
+    332,
+    192
+   ],
+   "ms": 500
+  },
+  {
+   "t": "actor.jump",
+   "id": "proc",
+   "height": 4,
+   "ms": 300
+  },
+  {
+   "t": "actor.emote",
+   "id": "trav",
+   "emote": "exclaim",
+   "ms": 1600
+  },
+  {
+   "t": "wait",
+   "ms": 1011
+  },
+  {
+   "t": "actor.move",
+   "id": "trav",
+   "to": [
+    318,
+    196
+   ],
+   "ms": 1400,
+   "scale": [
+    1,
+    1.35
+   ],
+   "face": false
+  },
+  {
+   "t": "caption",
+   "text": "If a guest was too tall, he chopped off his legs.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 2
+  },
+  {
+   "t": "actor.move",
+   "id": "trav",
+   "to": [
+    318,
+    196
+   ],
+   "ms": 700,
+   "scale": [
+    1.35,
+    0.75
+   ],
+   "face": false
+  },
+  {
+   "t": "wait",
+   "ms": 1261
+  },
+  {
+   "t": "caption",
+   "text": "Either way, the guest fit the bed. Nobody ever left in the morning.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "trav",
+   "ms": 1400
+  },
+  {
+   "t": "wait",
+   "ms": 2870
+  },
+  {
+   "t": "actor.spawn",
+   "id": "theseus",
+   "sprite": "c_theseus_0",
+   "x": 40,
+   "y": 190,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_theseus_1",
+    "c_theseus_0",
+    "c_theseus_2",
+    "c_theseus_0"
+   ],
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    230,
+    184
+   ],
+   "ms": 1700,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Then Theseus came down the road.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    280,
+    192
+   ],
+   "speed": 60,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "proc",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    316,
+    194
+   ],
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He made Procrustes lie on his own bed.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.move",
+   "id": "proc",
+   "to": [
+    318,
+    194
+   ],
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "proc",
+   "sprite": "c_procrustes_lie"
+  },
+  {
+   "t": "wait",
+   "ms": 755
+  },
+  {
+   "t": "still",
+   "image": "art/stills/procrustes_bed.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "shake": 2,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Then he gave him the same treatment he had given all those travellers. The road to Athens was quiet after that.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 900,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "proc"
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    450,
+    196
+   ],
+   "speed": 45,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 583
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    360,
+    185
+   ],
+   "ms": 2000,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "We still say a Procrustean bed when someone forces everything to fit one rule, however badly it fits.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "PROCRUSTEAN",
+   "x": 290,
+   "y": 120,
+   "per": 140,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 3105
+  },
+  {
+   "t": "caption",
+   "text": "The man is gone. The phrase stayed.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1672
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1000,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      269,
+      306
+     ]
+    }
+   ]
+  },
+  {
+   "t": "badge",
+   "flag": "history"
+  },
+  {
+   "t": "wait",
+   "ms": 2500
+  }
+ ]
+}

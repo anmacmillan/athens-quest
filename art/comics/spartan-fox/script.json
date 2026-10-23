@@ -1,0 +1,51 @@
+{
+ "story": "spartan-fox",
+ "title": "The Spartan Boy and the Fox",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "spartan_boy"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Spartan boys of seven taken from their mothers by a stern soldier, a mother's hand letting go, a crowd of little boys in cloaks",
+   "caption": "In Sparta, boys were taken from their families at seven to train as soldiers. The system was called the agoge.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Hungry Spartan boys in a dim barracks with thin bowls of porridge, rumbling bellies, determined faces",
+   "caption": "The boys were kept hungry on purpose.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A boy sneaking up on a market stall to steal an apple, a soldier hiding behind a pillar to watch",
+   "caption": "They were encouraged to steal food. A boy caught was beaten: for being caught, not for stealing.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A Spartan boy standing perfectly still and silent with a cloak over a bulge, a fox's tail peeking out, sweat on his face, a soldier questioning him; no injury shown",
+   "caption": "Plutarch tells of a boy who hid a stolen fox cub under his cloak and said nothing rather than be found out.",
+   "speech": null,
+   "sfx": null,
+   "tag": "PLUTARCH"
+  }
+ ]
+}

@@ -1,0 +1,516 @@
+{
+ "items": [
+  {
+   "id": "chiton_sunset",
+   "name": "Sunset chiton",
+   "slot": "chiton",
+   "price": 12,
+   "color": "#ff9a5a"
+  },
+  {
+   "id": "chiton_sea",
+   "name": "Sea-blue chiton",
+   "slot": "chiton",
+   "price": 12,
+   "color": "#3aa0c8"
+  },
+  {
+   "id": "chiton_royal",
+   "name": "Royal purple chiton",
+   "slot": "chiton",
+   "price": 18,
+   "color": "#7a3ac8"
+  },
+  {
+   "id": "chiton_gold",
+   "name": "Golden chiton",
+   "slot": "chiton",
+   "price": 24,
+   "color": "#e8b83a"
+  },
+  {
+   "id": "chiton_olive",
+   "name": "Olive-green chiton",
+   "slot": "chiton",
+   "price": 12,
+   "color": "#8aa04c"
+  },
+  {
+   "id": "pat_meander",
+   "name": "Greek key border",
+   "slot": "pattern",
+   "price": 16,
+   "layer": "shop_pat_meander"
+  },
+  {
+   "id": "pat_stars",
+   "name": "Starry dress",
+   "slot": "pattern",
+   "price": 20,
+   "layer": "shop_pat_stars"
+  },
+  {
+   "id": "pat_dots",
+   "name": "Polka-dot dress",
+   "slot": "pattern",
+   "price": 14,
+   "layer": "shop_pat_dots"
+  },
+  {
+   "id": "hair_ginger",
+   "name": "Ginger hair",
+   "slot": "hair",
+   "price": 10,
+   "color": "#c8641e"
+  },
+  {
+   "id": "hair_midnight",
+   "name": "Midnight hair",
+   "slot": "hair",
+   "price": 10,
+   "color": "#1a1a3a"
+  },
+  {
+   "id": "hair_silver",
+   "name": "Silver hair",
+   "slot": "hair",
+   "price": 16,
+   "color": "#c8ccd8"
+  },
+  {
+   "id": "hair_teal",
+   "name": "Sea-green hair",
+   "slot": "hair",
+   "price": 16,
+   "color": "#2fa58a"
+  },
+  {
+   "id": "ribbon_gold",
+   "name": "Golden bow",
+   "slot": "ribbon",
+   "price": 8,
+   "color": "#f5c542"
+  },
+  {
+   "id": "ribbon_teal",
+   "name": "Teal bow",
+   "slot": "ribbon",
+   "price": 8,
+   "color": "#2fb8b0"
+  },
+  {
+   "id": "ribbon_white",
+   "name": "White bow",
+   "slot": "ribbon",
+   "price": 8,
+   "color": "#ffffff"
+  },
+  {
+   "id": "sandals_gold",
+   "name": "Golden sandals",
+   "slot": "sandals",
+   "price": 14,
+   "color": "#f5c542"
+  },
+  {
+   "id": "sandals_red",
+   "name": "Red sandals",
+   "slot": "sandals",
+   "price": 10,
+   "color": "#d8453c"
+  },
+  {
+   "id": "sandals_winged",
+   "name": "Winged sandals",
+   "slot": "sandals",
+   "price": 28,
+   "color": "#f5c542",
+   "layer": "shop_sandals_winged"
+  },
+  {
+   "id": "necklace_gold",
+   "name": "Gold necklace",
+   "slot": "jewellery",
+   "price": 18,
+   "layer": "shop_necklace_gold"
+  },
+  {
+   "id": "necklace_turq",
+   "name": "Turquoise necklace",
+   "slot": "jewellery",
+   "price": 18,
+   "layer": "shop_necklace_turq"
+  },
+  {
+   "id": "bangles",
+   "name": "Golden bangles",
+   "slot": "jewellery",
+   "price": 14,
+   "layer": "shop_bangles"
+  },
+  {
+   "id": "cape_red",
+   "name": "Red cloak",
+   "slot": "back",
+   "price": 24,
+   "layer": "shop_cape_red",
+   "behind": true
+  },
+  {
+   "id": "cape_blue",
+   "name": "Blue cloak",
+   "slot": "back",
+   "price": 24,
+   "layer": "shop_cape_blue",
+   "behind": true
+  },
+  {
+   "id": "wings_small",
+   "name": "Little white wings",
+   "slot": "back",
+   "price": 36,
+   "layer": "shop_wings_small",
+   "behind": true
+  },
+  {
+   "id": "hat_petasos",
+   "name": "Traveller hat",
+   "slot": "hat",
+   "price": 20,
+   "layer": "shop_hat_petasos"
+  },
+  {
+   "id": "hat_flowers",
+   "name": "Flower crown",
+   "slot": "hat",
+   "price": 16,
+   "layer": "shop_hat_flowers"
+  },
+  {
+   "id": "hat_crown",
+   "name": "Golden crown",
+   "slot": "hat",
+   "price": 48,
+   "layer": "shop_hat_crown"
+  },
+  {
+   "id": "pet_cat",
+   "name": "Cat",
+   "slot": "pet",
+   "price": 24,
+   "pet": "cat"
+  },
+  {
+   "id": "pet_tortoise",
+   "name": "Tortoise",
+   "slot": "pet",
+   "price": 20,
+   "pet": "tortoise"
+  },
+  {
+   "id": "pet_little_owl",
+   "name": "Little owl",
+   "slot": "pet",
+   "price": 28,
+   "pet": "little_owl"
+  },
+  {
+   "id": "pet_goat",
+   "name": "Goat",
+   "slot": "pet",
+   "price": 32,
+   "pet": "goat"
+  },
+  {
+   "id": "pet_donkey",
+   "name": "Donkey",
+   "slot": "pet",
+   "price": 40,
+   "pet": "donkey"
+  },
+  {
+   "id": "glauka_bow",
+   "name": "Glauka: pink bow",
+   "slot": "glauka",
+   "price": 12
+  },
+  {
+   "id": "glauka_helmet",
+   "name": "Glauka: tiny helmet",
+   "slot": "glauka",
+   "price": 22
+  },
+  {
+   "id": "glauka_scarf",
+   "name": "Glauka: red scarf",
+   "slot": "glauka",
+   "price": 16
+  },
+  {
+   "id": "donkey_cart",
+   "name": "Donkey cart",
+   "slot": "ride",
+   "price": 60,
+   "ride": "donkey_cart",
+   "desc": "Ride between the Agora, Plaka, the Theatre and Monastiraki."
+  },
+  {
+   "id": "olives",
+   "name": "Olives (to feed pets)",
+   "slot": "food",
+   "price": 2,
+   "consumable": true,
+   "desc": "Feed a pet: a happy hop with hearts, and it follows closer for a while."
+  },
+  {
+   "id": "minotaur_horns",
+   "name": "Minotaur horns",
+   "slot": "hat",
+   "price": 0,
+   "layer": "shop_minotaur_horns",
+   "unlock": {
+    "stories": [
+     "tribute",
+     "labyrinth",
+     "naxos",
+     "aegeus"
+    ]
+   },
+   "hint": "Finish the Theseus quest: Aegeus, the tribute, the Labyrinth and Naxos."
+  },
+  {
+   "id": "spartan_shield",
+   "name": "Spartan shield",
+   "slot": "back",
+   "price": 0,
+   "layer": "shop_spartan_shield",
+   "unlock": {
+    "stories": [
+     "spartan-fox",
+     "spartan-shield",
+     "lycurgus",
+     "thermopylae"
+    ]
+   },
+   "hint": "Finish the Sparta stories: the fox, the shield, Lycurgus and Thermopylae."
+  },
+  {
+   "id": "sphinx_wings",
+   "name": "Sphinx wings",
+   "slot": "back",
+   "price": 0,
+   "layer": "shop_sphinx_wings",
+   "behind": true,
+   "unlock": {
+    "badge": "trail:Riddle Solver"
+   },
+   "hint": "Solve the riddle of the Sphinx."
+  },
+  {
+   "id": "philosopher_scroll_beard",
+   "name": "Philosopher beard and scroll",
+   "slot": "jewellery",
+   "price": 0,
+   "layer": "shop_philosopher_scroll_beard",
+   "unlock": {
+    "badge": "trail:philosophers"
+   },
+   "hint": "Complete the Philosophers trail."
+  },
+  {
+   "id": "feather_cape",
+   "name": "Owl-feather cape",
+   "slot": "back",
+   "price": 0,
+   "layer": "shop_feather_cape",
+   "behind": true,
+   "unlock": {
+    "feathers": 25
+   },
+   "hint": "Find all 25 hidden owl feathers."
+  },
+  {
+   "id": "athena_helmet",
+   "name": "Athena's helmet",
+   "slot": "hat",
+   "price": 0,
+   "layer": "shop_athena_helmet",
+   "unlock": {
+    "main": true
+   },
+   "hint": "Complete the Main Quest."
+  },
+  {
+   "id": "chariot",
+   "name": "Chariot",
+   "slot": "ride",
+   "price": 0,
+   "ride": "chariot",
+   "unlock": {
+    "stories": [
+     "cyclopes",
+     "lion-gate",
+     "atreus-dinner",
+     "iphigenia",
+     "clytemnestra",
+     "mask"
+    ]
+   },
+   "hint": "Finish the Mycenae stories."
+  },
+  {
+   "id": "deck_meander",
+   "name": "Board deck: Greek key",
+   "slot": "board",
+   "price": 24,
+   "deck": "meander"
+  },
+  {
+   "id": "deck_owl",
+   "name": "Board deck: owl",
+   "slot": "board",
+   "price": 28,
+   "deck": "owl"
+  },
+  {
+   "id": "deck_medusa",
+   "name": "Board deck: Medusa",
+   "slot": "board",
+   "price": 32,
+   "deck": "medusa"
+  },
+  {
+   "id": "deck_parthenon",
+   "name": "Board deck: Parthenon",
+   "slot": "board",
+   "price": 30,
+   "deck": "parthenon"
+  },
+  {
+   "id": "pat_olive",
+   "name": "Olive-leaf border",
+   "slot": "pattern",
+   "price": 14
+  },
+  {
+   "id": "belt_lilac",
+   "name": "Lilac sash",
+   "slot": "belt",
+   "price": 6
+  },
+  {
+   "id": "belt_blue",
+   "name": "Blue sash",
+   "slot": "belt",
+   "price": 6
+  },
+  {
+   "id": "belt_leather",
+   "name": "Leather belt",
+   "slot": "belt",
+   "price": 8
+  },
+  {
+   "id": "belt_gold",
+   "name": "Golden belt",
+   "slot": "belt",
+   "price": 14
+  },
+  {
+   "id": "earrings_gold",
+   "name": "Gold earrings",
+   "slot": "earrings",
+   "price": 12
+  },
+  {
+   "id": "necklace_beads",
+   "name": "Bead necklace",
+   "slot": "jewellery",
+   "price": 12
+  },
+  {
+   "id": "hat_laurel",
+   "name": "Laurel wreath",
+   "slot": "hat",
+   "price": 16
+  },
+  {
+   "id": "owl_backpack",
+   "name": "Owl backpack",
+   "slot": "back",
+   "price": 30
+  }
+ ],
+ "stall": {
+  "near": "socrates",
+  "offset": [
+   -70,
+   40
+  ],
+  "label": "Costume stall",
+  "greeting": [
+   "Welcome! Chitons, cloaks, bows and pets. Everything for a young explorer.",
+   "Pay in owls, little owl. Good ones only!"
+  ]
+ },
+ "stops": [
+  {
+   "id": "agora",
+   "label": "The Agora",
+   "lat": 37.9745,
+   "lon": 23.7218
+  },
+  {
+   "id": "plaka",
+   "label": "Plaka",
+   "lat": 37.9726,
+   "lon": 23.7292
+  },
+  {
+   "id": "theatre",
+   "label": "The Theatre of Dionysus",
+   "lat": 37.9706,
+   "lon": 23.7276
+  },
+  {
+   "id": "monastiraki",
+   "label": "Monastiraki",
+   "lat": 37.9761,
+   "lon": 23.7256
+  }
+ ],
+ "slots": [
+  "chiton",
+  "pattern",
+  "hair",
+  "ribbon",
+  "sandals",
+  "belt",
+  "earrings",
+  "jewellery",
+  "back",
+  "hat",
+  "pet",
+  "glauka",
+  "board",
+  "ride",
+  "food"
+ ],
+ "slotNames": {
+  "chiton": "Dress",
+  "pattern": "Pattern",
+  "hair": "Hair",
+  "ribbon": "Bow",
+  "sandals": "Sandals",
+  "jewellery": "Jewellery",
+  "back": "Back",
+  "hat": "Hat",
+  "pet": "Pets",
+  "glauka": "Glauka",
+  "ride": "Rides",
+  "food": "Food",
+  "board": "Board decks",
+  "belt": "Belt",
+  "earrings": "Earrings"
+ }
+}

@@ -1,0 +1,506 @@
+{
+ "id": "naxos",
+ "speaker": "ariadne",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "caption",
+   "text": "We sailed away from Crete together, Theseus and I.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1788
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1200,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "naxos",
+     "camera": [
+      200,
+      180
+     ],
+     "zoom": 1.4
+    },
+    {
+     "t": "actor.spawn",
+     "id": "ship",
+     "sprite": "ship_5_0",
+     "x": 470,
+     "y": 150,
+     "anchor": [
+      35,
+      48
+     ],
+     "scale": 0.6,
+     "smooth": true,
+     "wake": true,
+     "shadow": 0,
+     "z": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "ship",
+     "frames": [
+      "ship_5_0",
+      "ship_5_1",
+      "ship_5_2",
+      "ship_5_1"
+     ],
+     "fps": 3,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    232,
+    188
+   ],
+   "ms": 6500,
+   "ease": "eio",
+   "scale": [
+    0.6,
+    0.55
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "I had saved his life, and I thought that was the end of the story.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    220,
+    186
+   ],
+   "ms": 3000,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2133
+  },
+  {
+   "t": "caption",
+   "text": "It was not.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 805
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ariadne",
+   "sprite": "c_ariadne_lie",
+   "x": 104,
+   "y": 214,
+   "anchor": [
+    20,
+    19
+   ],
+   "walk": [
+    "c_ariadne_1",
+    "c_ariadne_0",
+    "c_ariadne_2",
+    "c_ariadne_0"
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ariadne",
+   "sprite": "c_ariadne_lie"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "theseus",
+   "sprite": "c_theseus_0",
+   "x": 128,
+   "y": 204,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_theseus_1",
+    "c_theseus_0",
+    "c_theseus_2",
+    "c_theseus_0"
+   ],
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    150,
+    200
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "On the island of Naxos he left me asleep on the beach and sailed on without me.",
+   "hold": 600,
+   "cps": 34,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "dots",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.move",
+   "id": "theseus",
+   "to": [
+    206,
+    192
+   ],
+   "speed": 36,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "actor.remove",
+   "id": "theseus",
+   "ms": 600
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    330,
+    160
+   ],
+   "ms": 3800,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ariadne",
+   "sprite": "c_ariadne_sad"
+  },
+  {
+   "t": "actor.place",
+   "id": "ariadne",
+   "x": 108,
+   "y": 210
+  },
+  {
+   "t": "still",
+   "image": "art/stills/ariadne_alone.png",
+   "ms": 2800,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   },
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "I woke up alone with the sea in front of me.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 600
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "sad",
+   "ms": 3600
+  },
+  {
+   "t": "wait",
+   "ms": 2494
+  },
+  {
+   "t": "actor.move",
+   "id": "ship",
+   "to": [
+    460,
+    110
+   ],
+   "ms": 5000,
+   "scale": [
+    0.55,
+    0.35
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dio",
+   "sprite": "c_dionysus_0",
+   "x": 64,
+   "y": 190,
+   "anchor": [
+    11,
+    46
+   ],
+   "walk": [
+    "c_dionysus_1",
+    "c_dionysus_0",
+    "c_dionysus_2",
+    "c_dionysus_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Then the god Dionysus found me and married me.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.move",
+   "id": "dio",
+   "to": [
+    92,
+    206
+   ],
+   "speed": 30,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "dio",
+   "emote": "heart",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 377
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ariadne",
+   "sprite": "c_ariadne_0"
+  },
+  {
+   "t": "caption",
+   "text": "That part is kinder.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "actor.jump",
+   "id": "ariadne",
+   "height": 6,
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 1055
+  },
+  {
+   "t": "caption",
+   "text": "But Theseus was already far away.",
+   "hold": 600,
+   "cps": 36,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    260,
+    150
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ariadne",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1616
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "dio"
+    },
+    {
+     "t": "actor.remove",
+     "id": "ariadne"
+    },
+    {
+     "t": "stage",
+     "set": "sea",
+     "camera": [
+      240,
+      150
+     ],
+     "zoom": 1.2
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ship2",
+   "sprite": "ship_5_0",
+   "x": 60,
+   "y": 220,
+   "anchor": [
+    35,
+    48
+   ],
+   "scale": 0.5,
+   "smooth": true,
+   "wake": true,
+   "shadow": 0,
+   "z": 0
+  },
+  {
+   "t": "actor.anim",
+   "id": "ship2",
+   "frames": [
+    "ship_5_0",
+    "ship_5_1",
+    "ship_5_2",
+    "ship_5_1"
+   ],
+   "fps": 3,
+   "loop": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ship2",
+   "to": [
+    380,
+    160
+   ],
+   "ms": 9500,
+   "ease": "eio",
+   "scale": [
+    0.5,
+    0.9
+   ],
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "He sailed home to Athens and forgot to change the black sails to white.",
+   "hold": 600,
+   "cps": 36,
+   "flag": "myth",
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    150
+   ],
+   "ms": 2000,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2372
+  },
+  {
+   "t": "caption",
+   "text": "His father Aegeus watched from the cliff, saw the black sails, and believed his son was dead.",
+   "hold": 600,
+   "cps": 34,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3635
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1000,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      464,
+      430
+     ]
+    }
+   ]
+  },
+  {
+   "t": "badge",
+   "flag": "myth"
+  },
+  {
+   "t": "wait",
+   "ms": 2500
+  }
+ ]
+}

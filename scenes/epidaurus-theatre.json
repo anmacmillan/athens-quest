@@ -1,0 +1,369 @@
+{
+ "id": "epidaurus-theatre",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 240,
+   "y": 236,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 262,
+   "y": 234,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    240,
+    180
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Stand in the middle of the circle. Look up. All those seats.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    170
+   ],
+   "ms": 2400,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen_0",
+   "x": 140,
+   "y": 190,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c2",
+   "sprite": "c_citizen3_0",
+   "x": 340,
+   "y": 190,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c3",
+   "sprite": "c_citizen2_0",
+   "x": 200,
+   "y": 150,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c4",
+   "sprite": "c_citizen_0",
+   "x": 290,
+   "y": 140,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c5",
+   "sprite": "c_citizen3_0",
+   "x": 240,
+   "y": 112,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Fourteen thousand people could sit there, listening to one voice."
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c2",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c3",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c4",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 3000
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Say something. Quietly. Somebody at the very top might hear.",
+   "flag": "history"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "actor",
+   "sprite": "c_plato_0",
+   "x": 240,
+   "y": 226,
+   "anchor": [
+    13,
+    42
+   ],
+   "walk": [
+    "c_plato_1",
+    "c_plato_0",
+    "c_plato_2",
+    "c_plato_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "abs": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.3,
+   "ms": 900,
+   "at": [
+    240,
+    190
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "actor.sprite",
+   "id": "actor",
+   "sprite": "c_plato_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "actor",
+   "emote": "exclaim",
+   "ms": 2500
+  },
+  {
+   "t": "sfx",
+   "name": "hoot"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    130
+   ],
+   "ms": 2600,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "c5",
+   "emote": "star",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 3200
+  },
+  {
+   "t": "actor.sprite",
+   "id": "actor",
+   "sprite": "c_plato_0"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    200
+   ],
+   "ms": 1400,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "coin",
+   "sprite": "p_coin",
+   "x": 240,
+   "y": 160,
+   "anchor": [
+    6,
+    11
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.move",
+   "id": "coin",
+   "to": [
+    240,
+    232
+   ],
+   "ms": 900,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "sfx",
+   "name": "coin"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    130
+   ],
+   "ms": 1200,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "c5",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.emote",
+   "id": "girl",
+   "emote": "question",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 2500
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1200,
+   "at": [
+    240,
+    190
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "happy",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 3200
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you how the stone does it.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

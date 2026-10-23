@@ -1,0 +1,880 @@
+{
+ "id": "theatre",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   8.0,
+   20.0
+  ],
+  "owl": [
+   56.0,
+   16.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  20.0,
+  80.0
+ ],
+ "origin": {
+  "x": 2584,
+  "y": 2290
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    20.0,
+    80.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Hoo! Sit down on the stone. Theatre was born on this slope.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    36.0,
+    164.0
+   ],
+   "ms": 2600,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aes",
+   "sprite": "c_playwright_0",
+   "x": -20.0,
+   "y": 256.0,
+   "anchor": [
+    10,
+    41
+   ],
+   "walk": [
+    "c_playwright_1",
+    "c_playwright_0",
+    "c_playwright_2",
+    "c_playwright_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "sop",
+   "sprite": "c_citizen2_0",
+   "x": 36.0,
+   "y": 268.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "eur",
+   "sprite": "c_solon_0",
+   "x": 92.0,
+   "y": 256.0,
+   "anchor": [
+    14,
+    46
+   ],
+   "walk": [
+    "c_solon_1",
+    "c_solon_0",
+    "c_solon_2",
+    "c_solon_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Aeschylus, Sophocles and Euripides first put their plays on here."
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a0",
+   "sprite": "c_citizen_0",
+   "x": -84.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a1",
+   "sprite": "c_citizen2_0",
+   "x": -38.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a2",
+   "sprite": "c_citizen3_0",
+   "x": 2.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a3",
+   "sprite": "c_citizen_0",
+   "x": 56.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a4",
+   "sprite": "c_citizen2_0",
+   "x": 96.0,
+   "y": 132.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a5",
+   "sprite": "c_citizen3_0",
+   "x": -62.0,
+   "y": 152.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a6",
+   "sprite": "c_citizen_0",
+   "x": -22.0,
+   "y": 152.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a7",
+   "sprite": "c_citizen2_0",
+   "x": 20.0,
+   "y": 152.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a8",
+   "sprite": "c_citizen3_0",
+   "x": 64.0,
+   "y": 152.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a9",
+   "sprite": "c_citizen_0",
+   "x": 108.0,
+   "y": 152.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a10",
+   "sprite": "c_citizen2_0",
+   "x": -80.0,
+   "y": 172.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a11",
+   "sprite": "c_citizen3_0",
+   "x": -34.0,
+   "y": 172.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a12",
+   "sprite": "c_citizen_0",
+   "x": 6.0,
+   "y": 172.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a13",
+   "sprite": "c_citizen2_0",
+   "x": 58.0,
+   "y": 172.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a14",
+   "sprite": "c_citizen3_0",
+   "x": 102.0,
+   "y": 172.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a15",
+   "sprite": "c_citizen_0",
+   "x": -68.0,
+   "y": 192.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a16",
+   "sprite": "c_citizen2_0",
+   "x": -22.0,
+   "y": 192.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a17",
+   "sprite": "c_citizen3_0",
+   "x": 28.0,
+   "y": 192.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a18",
+   "sprite": "c_citizen_0",
+   "x": 72.0,
+   "y": 192.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "a19",
+   "sprite": "c_citizen2_0",
+   "x": 112.0,
+   "y": 192.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "shadow": 8,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.2,
+   "ms": 1800,
+   "at": [
+    20.0,
+    172.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "actor.jump",
+   "id": "a0",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a2",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a4",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a6",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a8",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a10",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a12",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a14",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a16",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a18",
+   "height": 5,
+   "ms": 380,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "a1",
+   "height": 5,
+   "ms": 380
+  },
+  {
+   "t": "sfx",
+   "name": "win"
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Up to sixteen thousand people sat on this hill to watch."
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "still",
+   "image": "art/stills/theatre_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    36.0,
+    236.0
+   ],
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    36.0,
+    236.0
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Backstage, a man picked up a mask with a woman's face.",
+   "flag": "history"
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.remove",
+   "id": "aes",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "sop",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "eur",
+   "ms": 300
+  },
+  {
+   "t": "actor.spawn",
+   "id": "q",
+   "sprite": "c_queen_mask_0",
+   "x": 36.0,
+   "y": 260.0,
+   "anchor": [
+    12,
+    43
+   ],
+   "walk": [
+    "c_queen_mask_1",
+    "c_queen_mask_0",
+    "c_queen_mask_2",
+    "c_queen_mask_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "actor.spawn",
+   "id": "mask",
+   "sprite": "p_mask",
+   "x": 40.0,
+   "y": 200.0,
+   "anchor": [
+    8,
+    11
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.emote",
+   "id": "q",
+   "emote": "sad",
+   "ms": 2800
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 600,
+   "at": [
+    36.0,
+    240.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "q",
+   "to": [
+    12.0,
+    264.0
+   ],
+   "ms": 900
+  },
+  {
+   "t": "actor.move",
+   "id": "q",
+   "to": [
+    60.0,
+    264.0
+   ],
+   "ms": 1300
+  },
+  {
+   "t": "actor.sprite",
+   "id": "q",
+   "sprite": "c_queen_mask_up"
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "still",
+   "image": "art/stills/theatre_b3.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "actor.remove",
+   "id": "q",
+   "ms": 400
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    36.0,
+    196.0
+   ],
+   "ms": 1400,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.6,
+   "ms": 1400,
+   "at": [
+    36.0,
+    196.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "throne",
+   "sprite": "p_throne",
+   "x": 36.0,
+   "y": 204.0,
+   "anchor": [
+    13,
+    23
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "priest",
+   "sprite": "c_priest_0",
+   "x": 36.0,
+   "y": 224.0,
+   "anchor": [
+    11,
+    40
+   ],
+   "walk": [
+    "c_priest_1",
+    "c_priest_0",
+    "c_priest_2",
+    "c_priest_0"
+   ],
+   "ghost": true,
+   "ms": 1000
+  },
+  {
+   "t": "actor.move",
+   "id": "priest",
+   "to": [
+    36.0,
+    206.0
+   ],
+   "ms": 1200
+  },
+  {
+   "t": "actor.emote",
+   "id": "priest",
+   "emote": "star",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you who he became.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

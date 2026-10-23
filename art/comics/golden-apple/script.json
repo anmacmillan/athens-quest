@@ -1,0 +1,155 @@
+{
+ "story": "golden-apple",
+ "title": "The Golden Apple",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "narr_voice": "glauka",
+ "refs": [
+  [
+   "eris",
+   "hera",
+   "athena",
+   "aphrodite",
+   "zeus",
+   "hermes"
+  ],
+  [
+   "paris",
+   "hera",
+   "athena",
+   "aphrodite",
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "A grand wedding feast in a marble hall: guests in tunics at long tables turn to the doorway, where Eris, goddess of strife (wild black hair, dark ragged cloak, sly grin), tosses a shining golden apple across the floor",
+   "caption": "Eris, goddess of strife, was not invited to the wedding.",
+   "speech": {
+    "speaker": "Eris",
+    "text": "I brought a present."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Eris, goddess of strife, was not invited to the wedding.",
+   "voice_speech": {
+    "speaker": "Eris",
+    "text": "I brought a present."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Close-up of the golden apple rolling on the marble floor, a Greek-style inscription band on it, startled feet around, speed lines",
+   "caption": "She rolled in a golden apple: 'For the fairest.'",
+   "speech": null,
+   "sfx": "RRRRR",
+   "tag": "MYTH",
+   "narr": "She rolled in a golden apple: 'For the fairest.'",
+   "voice_speech": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Three goddesses all grabbing for the golden apple at once: Hera (regal, purple gown, diadem), Athena (crested helmet, spear, white chiton), Aphrodite (flowing pink gown, long golden hair), manga rivalry faces with sparks between their eyes",
+   "caption": "Hera, Athena and Aphrodite each claimed it.",
+   "speech": {
+    "speaker": "Aphrodite",
+    "text": "Obviously mine."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Hera, Athena and Aphrodite each claimed it.",
+   "voice_speech": {
+    "speaker": "Aphrodite",
+    "text": "Obviously mine."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Zeus on his throne, thunderbolt on his knee, holds both hands up refusing, sweating; Hermes (winged hat, winged sandals, caduceus) beside him pointing out of the hall, the three goddesses glaring in the background",
+   "caption": "Zeus would not choose between them.",
+   "speech": {
+    "speaker": "Zeus",
+    "text": "Not me. Ask him."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Zeus would not choose between them.",
+   "voice_speech": {
+    "speaker": "Zeus",
+    "text": "Not me. Ask him."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Mount Ida in the sun: Hermes leads the three goddesses up a rocky path, and Paris, a handsome young shepherd-prince in a red Phrygian cap with a crook, sheep around him, looks up bewildered",
+   "caption": "Hermes led them to Paris, a shepherd-prince on Mount Ida.",
+   "speech": {
+    "speaker": "Paris",
+    "text": "Me?"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Hermes led them to Paris, a shepherd-prince on Mount Ida.",
+   "voice_speech": {
+    "speaker": "Paris",
+    "text": "Me?"
+   }
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Paris in the middle looking dizzy while the three goddesses lean in, each making her pitch: Hera holds out a gold crown of tiny cities, Athena stands before a vision of armies and a victory wreath, Aphrodite whispers, a dreamy thought bubble behind her of a beautiful woman (Helen)",
+   "caption": "Hera offered power. Athena offered victory. Aphrodite offered Helen.",
+   "speech": {
+    "speaker": "Aphrodite",
+    "text": "The most beautiful woman in the world."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Hera offered power. Athena offered victory. Aphrodite offered Helen.",
+   "voice_speech": {
+    "speaker": "Aphrodite",
+    "text": "The most beautiful woman in the world."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Paris smiling nervously handing the golden apple to a delighted Aphrodite, while Hera and Athena behind them are furious, steaming, fists clenched, dark storm clouds",
+   "caption": "Paris chose Aphrodite.",
+   "speech": {
+    "speaker": "Paris",
+    "text": "Sorry, you two."
+   },
+   "sfx": "GRRR",
+   "tag": null,
+   "narr": "Paris chose Aphrodite.",
+   "voice_speech": {
+    "speaker": "Paris",
+    "text": "Sorry, you two."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Glauka the little owl perched on a rock on the south slope of the Acropolis, the golden apple beside her, a huge ghostly Athena glowering from a cloud above, a tiny fleet of ships far on the sea behind",
+   "caption": "That's a myth. Helen was already married, and Athena never forgave him.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "That's a myth. Helen was already married, and Athena never forgave him.",
+   "voice_speech": null
+  }
+ ],
+ "notes": [
+  "Captions are Glauka (third person); characters speak only in bubbles. p2.4 caption combines the card coda: Helen married; Athena sided against Troy."
+ ]
+}

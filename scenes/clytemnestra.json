@@ -1,0 +1,629 @@
+{
+ "id": "clytemnestra",
+ "speaker": "glauka",
+ "flag": "myth",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 360,
+   "y": 208,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 384,
+   "y": 206,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    380,
+    176
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "A king drove home through this gate after ten years at war.",
+   "flag": "myth"
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    386,
+    166
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "aga",
+   "sprite": "c_agamemnon_0",
+   "x": 350,
+   "y": 190,
+   "anchor": [
+    12,
+    43
+   ],
+   "walk": [
+    "c_agamemnon_1",
+    "c_agamemnon_0",
+    "c_agamemnon_2",
+    "c_agamemnon_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cly",
+   "sprite": "c_clytemnestra_0",
+   "x": 430,
+   "y": 168,
+   "anchor": [
+    11,
+    42
+   ],
+   "walk": [
+    "c_clytemnestra_1",
+    "c_clytemnestra_0",
+    "c_clytemnestra_2",
+    "c_clytemnestra_0"
+   ],
+   "ghost": true,
+   "ms": 1300,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "aga",
+   "to": [
+    372,
+    172
+   ],
+   "ms": 2200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Welcome home, husband.",
+   "speaker": "clytemnestra"
+  },
+  {
+   "t": "actor.emote",
+   "id": "cly",
+   "emote": "dots",
+   "ms": 2500
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Her smile was perfect. Watch her eyes, not her smile."
+  },
+  {
+   "t": "actor.emote",
+   "id": "aga",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "bath",
+   "sprite": "p_bath",
+   "x": 392,
+   "y": 174,
+   "anchor": [
+    19,
+    23
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "aga",
+   "to": [
+    392,
+    168
+   ],
+   "ms": 1100,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "cly",
+   "to": [
+    410,
+    170
+   ],
+   "ms": 1400,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "net",
+   "sprite": "p_net",
+   "x": 392,
+   "y": 130,
+   "anchor": [
+    18,
+    27
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "cly",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "net",
+   "to": [
+    392,
+    168
+   ],
+   "ms": 700,
+   "face": false,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 3
+  },
+  {
+   "t": "still",
+   "image": "art/stills/clytemnestra_net.png",
+   "ms": 3000,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 3
+  },
+  {
+   "t": "still",
+   "image": "art/stills/clytemnestra_b2.png",
+   "ms": 2200,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.35,
+   "ms": 800,
+   "color": "120,0,10",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.remove",
+   "id": "aga",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "net",
+   "ms": 900
+  },
+  {
+   "t": "actor.remove",
+   "id": "bath",
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "cly",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 900
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ore",
+   "sprite": "c_orestes_0",
+   "x": 330,
+   "y": 196,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_orestes_1",
+    "c_orestes_0",
+    "c_orestes_2",
+    "c_orestes_0"
+   ],
+   "ghost": true,
+   "ms": 1200,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ore",
+   "to": [
+    392,
+    188
+   ],
+   "ms": 2200,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ore",
+   "sprite": "c_orestes_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "ore",
+   "emote": "exclaim",
+   "ms": 1500
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "f1",
+   "sprite": "c_fury_0",
+   "x": 440,
+   "y": 140,
+   "anchor": [
+    18,
+    42
+   ],
+   "walk": [
+    "c_fury_1",
+    "c_fury_0",
+    "c_fury_2",
+    "c_fury_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "f2",
+   "sprite": "c_fury_0",
+   "x": 462,
+   "y": 156,
+   "anchor": [
+    18,
+    42
+   ],
+   "walk": [
+    "c_fury_1",
+    "c_fury_0",
+    "c_fury_2",
+    "c_fury_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ore",
+   "sprite": "c_orestes_0"
+  },
+  {
+   "t": "actor.move",
+   "id": "f1",
+   "to": [
+    400,
+    170
+   ],
+   "ms": 1400,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "f2",
+   "to": [
+    420,
+    180
+   ],
+   "ms": 1400,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "ore",
+   "emote": "sad",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1500
+  },
+  {
+   "t": "actor.move",
+   "id": "ore",
+   "to": [
+    250,
+    196
+   ],
+   "ms": 3000,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "f1",
+   "to": [
+    270,
+    180
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "f2",
+   "to": [
+    290,
+    190
+   ],
+   "ms": 3200,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    300,
+    180
+   ],
+   "ms": 3000,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "f1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "f2"
+    },
+    {
+     "t": "actor.place",
+     "id": "ore",
+     "x": 240,
+     "y": 200,
+     "abs": true
+    },
+    {
+     "t": "actor.sprite",
+     "id": "ore",
+     "sprite": "c_orestes_sad"
+    },
+    {
+     "t": "camera.set",
+     "to": [
+      240,
+      190
+     ],
+     "zoom": 1.4,
+     "abs": true
+    }
+   ]
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j1",
+   "sprite": "c_citizen_0",
+   "x": 190,
+   "y": 180,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j2",
+   "sprite": "c_citizen2_0",
+   "x": 215,
+   "y": 170,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j3",
+   "sprite": "c_citizen3_0",
+   "x": 265,
+   "y": 170,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "j4",
+   "sprite": "c_citizen_0",
+   "x": 290,
+   "y": 180,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "textWrite",
+   "text": "THE AREOPAGUS",
+   "x": 150,
+   "y": 112,
+   "per": 140,
+   "scale": 2,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ath",
+   "sprite": "c_athena_0",
+   "x": 240,
+   "y": 150,
+   "anchor": [
+    16,
+    52
+   ],
+   "walk": [
+    "c_athena_1",
+    "c_athena_0",
+    "c_athena_2",
+    "c_athena_0"
+   ],
+   "ghost": true,
+   "ms": 1500,
+   "abs": true
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ath",
+   "sprite": "c_athena_up"
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 900
+  },
+  {
+   "t": "actor.sprite",
+   "id": "ore",
+   "sprite": "c_orestes_0"
+  },
+  {
+   "t": "actor.emote",
+   "id": "ore",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "actor.emote",
+   "id": "j2",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what she had ready for him.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

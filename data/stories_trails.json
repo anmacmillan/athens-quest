@@ -1,0 +1,470 @@
+[
+ {
+  "id": "simon-shop",
+  "title": "Simon's Shoe Shop",
+  "area": "Agora",
+  "speaker": "socrates",
+  "pages": [
+   [
+    "history",
+    "I am Socrates. I never wrote a single word down. Most of what you know about me comes from my pupils, Plato and Xenophon, who wrote about me after I died."
+   ],
+   [
+    "history",
+    "I liked to talk with young men at a shoe shop by the Agora. Simon the shoemaker worked there, and he let me sit and argue with whoever came in."
+   ],
+   [
+    "history",
+    "Archaeologists dug up a building on the edge of the Agora. They found iron hobnails and bone eyelets for boots, and the base of a cup with SIMONOS scratched on it. That means 'Simon's'. They think this was his shop."
+   ],
+   [
+    "history",
+    "I never answered a question straight. I asked another question back, and another, until you found the answer yourself. People found that maddening."
+   ]
+  ],
+  "q": "What did archaeologists find in the shoemaker's building by the Agora?",
+  "opts": [
+   "Iron hobnails, bone eyelets, and a cup base scratched SIMONOS",
+   "A marble statue of Socrates",
+   "A leather boot with Plato's name on it"
+  ],
+  "mission": "In the south-west corner of the Agora, near the round building called the Tholos, find the spot marked as Simon's house."
+ },
+ {
+  "id": "diogenes-jar",
+  "title": "Diogenes in His Jar",
+  "area": "Agora",
+  "speaker": "diogenes",
+  "pages": [
+   [
+    "legend",
+    "I am Diogenes. I live in a big clay jar, a pithos, here in the Agora. It is big enough to lie down inside. I own a cloak, a stick and a bag, and that is all."
+   ],
+   [
+    "legend",
+    "One day I saw a boy scoop up water in his hands and drink. So I threw away my drinking cup. The boy did not need one, and neither did I."
+   ],
+   [
+    "legend",
+    "Alexander the Great came to see me and stood over my jar. He offered me anything I wanted. I said: 'Stand a little out of my sunlight.'"
+   ],
+   [
+    "history",
+    "People called me the dog, because I snapped and begged and slept in the street. My followers were called Cynics, from the Greek word for dog-like."
+   ]
+  ],
+  "q": "What did Diogenes say to Alexander the Great?",
+  "opts": [
+   "Stand a little out of my sunlight",
+   "Give me half your kingdom",
+   "Bring me a new drinking cup"
+  ],
+  "mission": "On the west side of the Agora, find the Metroon, the temple of the Mother of the Gods: that is where the story puts his jar."
+ },
+ {
+  "id": "zeno-porch",
+  "title": "Zeno and the Painted Porch",
+  "area": "Agora",
+  "speaker": "zeno",
+  "pages": [
+   [
+    "legend",
+    "I am Zeno. I came from Cyprus as a merchant, carrying a cargo of purple dye. My ship was wrecked and I lost everything."
+   ],
+   [
+    "legend",
+    "In Athens I sat in a bookshop and read about Socrates. I asked the bookseller where I could find men like that. He pointed at a philosopher walking past."
+   ],
+   [
+    "history",
+    "I taught in the Stoa Poikile, the Painted Porch, a long walkway decorated with battle paintings. My followers were called Stoics after the stoa. We taught that you cannot control what happens to you, only how you respond."
+   ],
+   [
+    "legend",
+    "Later there was a Stoic called Epictetus, born a slave. His master twisted his leg until it broke. Epictetus said calmly: 'You will break it.' Then he said: 'Did I not tell you?'"
+   ]
+  ],
+  "q": "Where did Zeno teach in Athens?",
+  "opts": [
+   "In the Stoa Poikile, the Painted Porch",
+   "In a cave on the side of the Acropolis",
+   "In the grove of the hero Akademos"
+  ],
+  "mission": "Walk along Adrianou Street on the north edge of the Agora and look over the railings at the dig: that is the Painted Porch."
+ },
+ {
+  "id": "plato-academy",
+  "title": "Plato's Academy",
+  "area": "Academy",
+  "speaker": "plato",
+  "pages": [
+   [
+    "history",
+    "I am Plato. I was Socrates' pupil. Around 387 BC I started a school in a grove outside the city walls, sacred to a hero named Akademos. So people called it the Academy."
+   ],
+   [
+    "history",
+    "Every academy in the world since then is named after that grove. It is about two kilometres north-west of the Agora. Today it is a park with ruins, in the middle of a city neighbourhood."
+   ],
+   [
+    "legend",
+    "My real name may have been Aristocles. Platon means broad. Some say it came from my shoulders, because I wrestled. Nobody wrote that down at the time."
+   ],
+   [
+    "legend",
+    "A sign over the door of the school was said to read: 'Let no one ignorant of geometry enter.' Nobody mentioned that sign until centuries later."
+   ]
+  ],
+  "q": "Why was Plato's school called the Academy?",
+  "opts": [
+   "It stood in a grove sacred to the hero Akademos",
+   "It was named after Plato's teacher",
+   "It was paid for by a rich man called Akademos"
+  ],
+  "mission": "If you get there, find the Academy park and stand where Plato's school once stood."
+ },
+ {
+  "id": "hypatia",
+  "title": "Hypatia of Alexandria",
+  "area": "Academy",
+  "speaker": "hypatia",
+  "pages": [
+   [
+    "history",
+    "I am Hypatia. I lived and taught in Alexandria, in Egypt. Not here in Athens. I want that clear before we start."
+   ],
+   [
+    "history",
+    "Around AD 400 I taught mathematics, astronomy and Plato's philosophy. Students came from far away to hear me. I drove my own chariot and lectured in public."
+   ],
+   [
+    "history",
+    "In AD 415 I was caught in a power struggle between the city's governor and its bishop. A Christian mob dragged me from my chariot into a church and killed me with broken pottery shards. A Christian historian, Socrates Scholasticus, wrote about it and condemned it."
+   ],
+   [
+    "history",
+    "The Greek word for those shards is ostraka, the same word as the voting shards in the Agora here. Some say I studied in Athens, but nobody knows. At the same time a woman philosopher named Asclepigenia taught here, at the school that carried on Plato's ideas. In AD 529 the emperor Justinian stopped pagan philosophers teaching, and the last Athenian philosophers left for Persia."
+   ]
+  ],
+  "q": "Where did Hypatia teach?",
+  "opts": [
+   "In Alexandria, in Egypt",
+   "In Athens, at the Academy",
+   "In Rome, near the forum"
+  ],
+  "mission": "Find the Academy park and think about Hypatia and Asclepigenia."
+ },
+ {
+  "id": "aristotle-lyceum",
+  "title": "Aristotle's Lyceum",
+  "area": "Lyceum",
+  "speaker": "aristotle",
+  "pages": [
+   [
+    "history",
+    "I am Aristotle. I came from the north of Greece. I studied at Plato's Academy for about twenty years, and I tutored the young Alexander the Great."
+   ],
+   [
+    "history",
+    "Around 335 BC I opened my own school in the Lyceum. It was a gymnasium sacred to Apollo Lykeios, outside the city to the east."
+   ],
+   [
+    "legend",
+    "People say I taught while walking up and down the covered walkways. That is why my followers were called Peripatetics, the walkers-about. The walking may be a story."
+   ],
+   [
+    "history",
+    "I collected and studied animals and plants. I also collected the laws of 158 Greek cities. The ruins of the Lyceum were only found in 1996, when builders dug for a new museum."
+   ]
+  ],
+  "q": "What were Aristotle's followers called?",
+  "opts": [
+   "Peripatetics, the walkers-about",
+   "Stoics, after the painted porch",
+   "Cynics, after the dog"
+  ],
+  "mission": "Find the Lyceum ruins on Rigillis Street."
+ },
+ {
+  "id": "arrephoroi",
+  "title": "The Secret Basket Girls",
+  "area": "Acropolis north side",
+  "speaker": "arrephoros",
+  "pages": [
+   [
+    "history",
+    "I am an arrephoros. Every year two girls were chosen from noble families to live on the Acropolis for a year. Some say four were chosen. We were between seven and eleven years old."
+   ],
+   [
+    "history",
+    "We helped start the weaving of the peplos, the new robe for Athena's statue. Our house stood on the north side of the Acropolis."
+   ],
+   [
+    "legend",
+    "Once a year, at night, we carried closed baskets on our heads down a hidden passage to a garden below. We did not know what was inside them. We came back up with other things, wrapped up."
+   ]
+  ],
+  "q": "What did the arrephoroi carry down the hidden passage?",
+  "opts": [
+   "Closed baskets on their heads",
+   "The new robe for Athena",
+   "Jars of water from the fountain"
+  ],
+  "mission": "From the lanes of Anafiotika, look up at the north side of the Acropolis: the girls' house stood up there."
+ },
+ {
+  "id": "priestess",
+  "title": "The Priestess of Athena",
+  "area": "Erechtheion",
+  "speaker": "priestess",
+  "pages": [
+   [
+    "history",
+    "I am the priestess of Athena Polias. Mine was the most important religious office in Athens, and a woman held it for life."
+   ],
+   [
+    "history",
+    "One priestess, Lysimache, served for sixty-four years. Women in Athens could not vote, could not own much property, and usually did not go about alone. Girls were often married at about fourteen."
+   ],
+   [
+    "history",
+    "The priestess was one of the few women whose name was carved on monuments. Mine was. Most women's names were never written down anywhere at all."
+   ]
+  ],
+  "q": "How long did the priestess Lysimache serve?",
+  "opts": [
+   "Sixty-four years",
+   "Four years",
+   "Twenty years"
+  ],
+  "mission": "Find the Erechtheion on the Acropolis, where the priestess of Athena served."
+ },
+ {
+  "id": "lysistrata",
+  "title": "Lysistrata Takes the Acropolis",
+  "area": "Theatre of Dionysus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 411 BC, in the middle of the long war with Sparta, Aristophanes put on a comedy called Lysistrata. It was performed here, in the Theatre of Dionysus."
+   ],
+   [
+    "history",
+    "In the play, the women of Athens and Sparta seize the Acropolis and its treasury. They do it to force the men to make peace."
+   ],
+   [
+    "history",
+    "Every part was played by men in masks, including Lysistrata. It was a comedy: real Athenian women had no say in the war at all. The heroine's name may echo a real priestess, Lysimache."
+   ]
+  ],
+  "q": "Who played Lysistrata in 411 BC?",
+  "opts": [
+   "A man in a mask",
+   "A girl of eleven",
+   "The priestess of Athena"
+  ],
+  "mission": "Find the Theatre of Dionysus and picture the audience watching Lysistrata."
+ },
+ {
+  "id": "athena-birth",
+  "title": "Born from a Headache",
+  "area": "Parthenon east end",
+  "speaker": "athena",
+  "pages": [
+   [
+    "myth",
+    "I am Athena. My father Zeus swallowed my mother Metis while she was pregnant with me. A prophecy said her child would overthrow him."
+   ],
+   [
+    "myth",
+    "Then Zeus got a terrible headache. He could not bear it. He called Hephaestus, who split his skull open with an axe. Out I sprang, fully grown, in armour, shouting a war cry."
+   ],
+   [
+    "history",
+    "This scene was carved on the east pediment of the Parthenon, above the entrance at the far end. Most of the carving is lost now. Only a few figures survive."
+   ]
+  ],
+  "q": "How was Athena born, in the myth?",
+  "opts": [
+   "From the head of Zeus, after Hephaestus split it with an axe",
+   "From the sea, like Aphrodite",
+   "From a golden egg"
+  ],
+  "mission": "Find the east end of the Parthenon and look up at the pediment."
+ },
+ {
+  "id": "golden-apple",
+  "title": "The Golden Apple",
+  "area": "Plaka",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "There was a wedding, and Eris, the goddess of strife, was not invited. So she rolled a golden apple into the hall. On it were the words: 'For the fairest.'"
+   ],
+   [
+    "myth",
+    "Hera, Athena and Aphrodite each claimed the apple for herself. Zeus would not choose between them, so he sent them to a Trojan prince called Paris."
+   ],
+   [
+    "myth",
+    "Hera offered Paris power. Athena offered him victory in war. Aphrodite offered him the most beautiful woman in the world, Helen. Paris chose Aphrodite."
+   ],
+   [
+    "myth",
+    "Helen was already married, so taking her started the Trojan War. Athena lost the contest, and she sided against Troy. That is how an apple at a wedding led to a war."
+   ]
+  ],
+  "q": "What did Aphrodite offer Paris?",
+  "opts": [
+   "The most beautiful woman in the world, Helen",
+   "Victory in war",
+   "Power over many cities"
+  ],
+  "mission": "Walk through Plaka, the old quarter under the Acropolis, and buy an apple."
+ },
+ {
+  "id": "water-girls",
+  "title": "The Water Girls",
+  "area": "Agora fountain house",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Houses in Athens had no taps. If you wanted water, you went out and fetched it. Women and girls did most of that work, and many of them were enslaved."
+   ],
+   [
+    "history",
+    "They carried big jars called hydriai from the public fountain houses. Vase paintings show them queuing and chatting, with the jars balanced on their heads."
+   ],
+   [
+    "history",
+    "The fountain was one of the few places where women met outside the home. The Southeast Fountain House stood at the corner of the Agora."
+   ]
+  ],
+  "q": "What were the water jars called?",
+  "opts": [
+   "Hydriai",
+   "Pithoi",
+   "Kraters"
+  ],
+  "mission": "Find the Southeast Fountain House in the Agora and see where the queues formed."
+ },
+ {
+  "id": "tribute-lottery",
+  "title": "The Tribute to Crete",
+  "area": "Agora",
+  "speaker": "minos",
+  "pages": [
+   [
+    "myth",
+    "I am Minos, king of Crete. I blamed Athens for the death of my son Androgeos, and I made the city pay for it."
+   ],
+   [
+    "myth",
+    "Every nine years Athens had to send me seven boys and seven girls, chosen by lot. I shut them in the Labyrinth, and the Minotaur ate them."
+   ],
+   [
+    "myth",
+    "The ship that carried them sailed with black sails. Prince Theseus, son of the king, volunteered to go as one of the seven."
+   ]
+  ],
+  "q": "How many boys and girls did Athens send to Crete each time?",
+  "opts": [
+   "Seven boys and seven girls",
+   "Three boys and three girls",
+   "Twelve boys and twelve girls"
+  ],
+  "mission": "Find the Agora and imagine the black-sailed ship leaving for Crete."
+ },
+ {
+  "id": "labyrinth",
+  "title": "Ariadne's Thread",
+  "area": "Labyrinth",
+  "speaker": "ariadne",
+  "pages": [
+   [
+    "myth",
+    "I am Ariadne, daughter of King Minos. Daedalus built the Labyrinth so cleverly that nobody could find the way out. Once you were inside, you were lost."
+   ],
+   [
+    "myth",
+    "I fell in love with Theseus. I gave him a ball of thread to unroll as he went in, so that he could follow it back out."
+   ],
+   [
+    "myth",
+    "He killed the Minotaur and followed the thread out of the Labyrinth. We sailed away together. I thought we were going home to Athens."
+   ],
+   [
+    "myth",
+    "Then Theseus left me asleep on the island of Naxos. The god Dionysus found me there and married me. That is the end of my story."
+   ]
+  ],
+  "q": "What did Ariadne give Theseus?",
+  "opts": [
+   "A ball of thread",
+   "A bronze sword",
+   "A map drawn on a shield"
+  ],
+  "mission": "Play the Labyrinth game and follow the thread all the way out."
+ },
+ {
+  "id": "theseus-ship",
+  "title": "The Ship of Theseus",
+  "area": "Agora near the prison",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "The Athenians kept a ship and sailed it to the island of Delos every year for a festival. The voyage was real. It happened every year."
+   ],
+   [
+    "legend",
+    "They said it was the very ship Theseus had sailed in, with the same planks. That part is a story. Nobody could prove it either way."
+   ],
+   [
+    "history",
+    "As the planks rotted, they replaced them, one by one, until none of the original wood was left. Was it still the same ship? Plutarch says philosophers argued about it. It is still a famous puzzle, with no single right answer."
+   ],
+   [
+    "history",
+    "Socrates had to wait for that ship. No execution could take place while it was away, so he spent about a month in prison, talking with his friends. When it came back, he drank the hemlock."
+   ]
+  ],
+  "q": "If every plank of a ship is replaced, is it still the same ship?",
+  "opts": [
+   "There is no single right answer",
+   "No, it is a different ship once every plank is new",
+   "Yes, it is the same ship as long as the name stays the same"
+  ],
+  "mission": "In the Agora, find the prison where Socrates waited for the ship to come home."
+ },
+ {
+  "id": "theseion",
+  "title": "Not Theseus's Temple",
+  "area": "Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "tourist",
+    "For centuries people called the Temple of Hephaestus the Theseion. They thought Theseus was buried there. Guides still say it. It is a good story."
+   ],
+   [
+    "history",
+    "It was really a temple for Hephaestus, the blacksmith god, and for Athena. The neighbourhood and the metro station nearby are still called Thiseio."
+   ],
+   [
+    "legend",
+    "Around 475 BC the general Cimon claimed he had found Theseus's giant bones on an island. He brought them back to Athens. That is what the Athenians were told."
+   ]
+  ],
+  "q": "Who was the Temple of Hephaestus really for?",
+  "opts": [
+   "Hephaestus, the blacksmith god, and Athena",
+   "Theseus, the hero of Athens",
+   "Zeus and Hera"
+  ],
+  "mission": "Find the Temple of Hephaestus and the Thiseio metro station beside it."
+ }
+]

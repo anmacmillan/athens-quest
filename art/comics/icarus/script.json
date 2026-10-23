@@ -1,0 +1,54 @@
+{
+ "story": "icarus",
+ "title": "Daedalus and Icarus",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Daedalus (an elderly inventor with a beard) locked in a stone tower with his son Icarus, Glauka on the window sill",
+   "caption": "King Minos locked Daedalus in a tower with his son Icarus.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Daedalus stitching feathers with thread and wax into huge wings, the boy trying them on",
+   "caption": "Daedalus made two pairs of wings from feathers, thread and wax.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Daedalus warning Icarus with a finger, a diagram of a path between the sea spray and the sun",
+   "caption": "Not too low. Not too high. Fly the middle path.",
+   "speech": {
+    "speaker": "Daedalus",
+    "text": "The middle path!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Icarus soaring too near the sun laughing, wax running like tears, feathers loosening, a small figure falling toward a blue sea far below; no gore",
+   "caption": "Icarus forgot the middle path. That sea is still called the Icarian Sea.",
+   "speech": null,
+   "sfx": "HYUUU",
+   "tag": null
+  }
+ ]
+}

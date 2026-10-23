@@ -1,0 +1,745 @@
+{
+ "id": "xerxes-fire",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   -60.0,
+   60.0
+  ],
+  "owl": [
+   -16.0,
+   56.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  40.0,
+  40.0
+ ],
+ "origin": {
+  "x": 2355,
+  "y": 1711
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    40.0,
+    40.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "caption",
+   "text": "In 480 BC the Persian king Xerxes captured Athens.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "xerxes",
+   "sprite": "c_cyrus_0",
+   "x": 120.0,
+   "y": 28.0,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_cyrus_1",
+    "c_cyrus_0",
+    "c_cyrus_2",
+    "c_cyrus_0"
+   ],
+   "ghost": true,
+   "ms": 1200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p1",
+   "sprite": "c_persian_0",
+   "x": 160.0,
+   "y": 52.0,
+   "anchor": [
+    14,
+    52
+   ],
+   "walk": [
+    "c_persian_1",
+    "c_persian_0",
+    "c_persian_2",
+    "c_persian_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "p2",
+   "sprite": "c_persian_0",
+   "x": 172.0,
+   "y": 80.0,
+   "anchor": [
+    14,
+    52
+   ],
+   "walk": [
+    "c_persian_1",
+    "c_persian_0",
+    "c_persian_2",
+    "c_persian_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "actor.emote",
+   "id": "xerxes",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "text": "Most Athenians had fled to the island of Salamis.",
+   "hold": 1400,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "caption",
+   "text": "The few defenders left up here were killed.",
+   "hold": 1400,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "d1",
+   "sprite": "c_soldier_0",
+   "x": 0.0,
+   "y": 44.0,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "d2",
+   "sprite": "c_soldier_0",
+   "x": 24.0,
+   "y": 72.0,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "actor.move",
+   "id": "p1",
+   "to": [
+    40.0,
+    48.0
+   ],
+   "ms": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "p2",
+   "to": [
+    48.0,
+    72.0
+   ],
+   "ms": 1600
+  },
+  {
+   "t": "fx",
+   "type": "shake",
+   "ms": 500,
+   "amp": 2
+  },
+  {
+   "t": "sfx",
+   "name": "whoosh"
+  },
+  {
+   "t": "actor.remove",
+   "id": "d1",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 900
+  },
+  {
+   "t": "caption",
+   "text": "Some jumped from the walls.",
+   "hold": 1500,
+   "par": false
+  },
+  {
+   "t": "caption",
+   "text": "Then the Persians burnt the temples."
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1500,
+   "at": [
+    20.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "d2",
+   "height": 8,
+   "ms": 400
+  },
+  {
+   "t": "actor.move",
+   "id": "d2",
+   "to": [
+    0.0,
+    140.0
+   ],
+   "ms": 900
+  },
+  {
+   "t": "actor.remove",
+   "id": "d2",
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "fx",
+   "type": "flash",
+   "ms": 900,
+   "mid": [
+    {
+     "t": "actor.spawn",
+     "id": "f0",
+     "sprite": "p_fire_0",
+     "x": -40.0,
+     "y": 32.0,
+     "anchor": [
+      7,
+      17
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f0",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f1",
+     "sprite": "p_fire_0",
+     "x": -8.0,
+     "y": 20.0,
+     "anchor": [
+      7,
+      17
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f1",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f2",
+     "sprite": "p_fire_0",
+     "x": 28.0,
+     "y": 28.0,
+     "anchor": [
+      7,
+      17
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f2",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f3",
+     "sprite": "p_fire_0",
+     "x": 60.0,
+     "y": 20.0,
+     "anchor": [
+      7,
+      17
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f3",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    },
+    {
+     "t": "actor.spawn",
+     "id": "f4",
+     "sprite": "p_fire_0",
+     "x": 0.0,
+     "y": 60.0,
+     "anchor": [
+      7,
+      17
+     ],
+     "shadow": 0
+    },
+    {
+     "t": "actor.anim",
+     "id": "f4",
+     "frames": [
+      "p_fire_0",
+      "p_fire_1",
+      "p_fire_2",
+      "p_fire_1"
+     ],
+     "fps": 9,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "t": "still",
+   "image": "art/stills/xerxes_fire.png",
+   "ms": 3000,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": 3
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.28,
+   "ms": 1000,
+   "color": "200,60,20",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "actor.remove",
+   "id": "xerxes",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "p1",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "p2",
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f0",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f1",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f2",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f3",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f4",
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Herodotus says that the day after the burning, a new shoot a forearm long had already grown from the burnt sacred olive tree.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "stump",
+   "sprite": "p_logs",
+   "x": 28.0,
+   "y": 48.0,
+   "anchor": [
+    7,
+    9
+   ],
+   "scale": 1.6,
+   "shadow": 0
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.7,
+   "ms": 1200,
+   "at": [
+    28.0,
+    40.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "actor.spawn",
+   "id": "shoot",
+   "sprite": "p_olive_sapling",
+   "x": 28.0,
+   "y": 40.0,
+   "anchor": [
+    8,
+    19
+   ],
+   "scale": 0.3,
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "shoot",
+   "to": [
+    28.0,
+    40.0
+   ],
+   "ms": 2000,
+   "face": false,
+   "scale": [
+    0.3,
+    1.5
+   ]
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "star",
+   "ms": 2400
+  },
+  {
+   "t": "caption",
+   "text": "He wrote it down as a wonder.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 900,
+   "at": [
+    40.0,
+    20.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "stump"
+  },
+  {
+   "t": "actor.remove",
+   "id": "shoot"
+  },
+  {
+   "t": "caption",
+   "text": "When the Athenians came back, they built the burnt column drums of the old temple into the north wall.",
+   "hold": 1400,
+   "flag": "history",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c0",
+   "sprite": "c_citizen_0",
+   "x": -100.0,
+   "y": 48.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen2_0",
+   "x": -100.0,
+   "y": 64.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c2",
+   "sprite": "c_citizen3_0",
+   "x": -100.0,
+   "y": 80.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 500,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dr0",
+   "sprite": "p_boulder",
+   "x": -80.0,
+   "y": 40.0,
+   "anchor": [
+    18,
+    25
+   ],
+   "scale": 0.6,
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dr1",
+   "sprite": "p_boulder",
+   "x": -80.0,
+   "y": 56.0,
+   "anchor": [
+    18,
+    25
+   ],
+   "scale": 0.6,
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dr2",
+   "sprite": "p_boulder",
+   "x": -80.0,
+   "y": 72.0,
+   "anchor": [
+    18,
+    25
+   ],
+   "scale": 0.6,
+   "shadow": 0
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "actor.move",
+   "id": "c0",
+   "to": [
+    60.0,
+    12.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dr0",
+   "to": [
+    80.0,
+    8.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "c1",
+   "to": [
+    88.0,
+    12.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dr1",
+   "to": [
+    108.0,
+    8.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "c2",
+   "to": [
+    116.0,
+    12.0
+   ],
+   "ms": 2400,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dr2",
+   "to": [
+    136.0,
+    8.0
+   ],
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "caption",
+   "text": "They put them where the whole city could see them.",
+   "hold": 1500,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "happy",
+   "ms": 2200
+  },
+  {
+   "t": "actor.jump",
+   "id": "c0",
+   "height": 6,
+   "ms": 400
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

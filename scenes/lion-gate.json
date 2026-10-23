@@ -1,0 +1,242 @@
+{
+ "id": "lion-gate",
+ "speaker": "glauka",
+ "flag": "history",
+ "party": {
+  "girl": [
+   0,
+   0
+  ],
+  "owl": [
+   26,
+   1
+  ],
+  "girlFacing": "r"
+ },
+ "beats": [
+  {
+   "t": "actor.place",
+   "id": "girl",
+   "x": 190,
+   "y": 196,
+   "abs": true
+  },
+  {
+   "t": "actor.place",
+   "id": "owl",
+   "x": 214,
+   "y": 194,
+   "abs": true
+  },
+  {
+   "t": "camera.set",
+   "to": [
+    200,
+    170
+   ],
+   "zoom": 1,
+   "abs": true
+  },
+  {
+   "t": "caption",
+   "text": "Stop. Right here, in the gateway.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    112
+   ],
+   "ms": 2400,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.7,
+   "ms": 2400,
+   "at": [
+    240,
+    92
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "Two stone lions have guarded this gate for over three thousand years."
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.emote",
+   "id": "girl",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 800
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "But look up. Something is missing from both of them.",
+   "flag": "history"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "h1",
+   "sprite": "p_lion_head",
+   "x": 214,
+   "y": 40,
+   "anchor": [
+    9,
+    15
+   ],
+   "ghost": true,
+   "ms": 1400,
+   "shadow": 0,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "h2",
+   "sprite": "p_lion_head",
+   "x": 258,
+   "y": 40,
+   "anchor": [
+    9,
+    15
+   ],
+   "ghost": true,
+   "ms": 1400,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1600
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1300,
+   "mid": [
+    {
+     "t": "actor.remove",
+     "id": "h1"
+    },
+    {
+     "t": "actor.remove",
+     "id": "h2"
+    }
+   ]
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "question",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1200,
+   "at": [
+    240,
+    150
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "camera.pan",
+   "to": [
+    240,
+    150
+   ],
+   "ms": 1600,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "actor.spawn",
+   "id": "ch",
+   "sprite": "p_chariot",
+   "x": 150,
+   "y": 160,
+   "anchor": [
+    24,
+    27
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "ch",
+   "to": [
+    240,
+    148
+   ],
+   "ms": 3200,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3300
+  },
+  {
+   "t": "actor.move",
+   "id": "ch",
+   "to": [
+    330,
+    160
+   ],
+   "ms": 3000,
+   "face": false,
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "owl",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  },
+  {
+   "t": "caption",
+   "text": "Let me show you what happened to them.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2600
+  }
+ ]
+}

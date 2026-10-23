@@ -1,0 +1,159 @@
+{
+ "story": "clytemnestra",
+ "title": "Murder in the Bath",
+ "flag": "myth",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "agamemnon",
+   "clytemnestra"
+  ],
+  [
+   "clytemnestra",
+   "agamemnon"
+  ],
+  [
+   "clytemnestra",
+   "athena"
+  ]
+ ],
+ "notes": [
+  "p1.4: two bubbles from one speaker ('Welcome home.' and 'Welcome home, husband.'). Patch out the first. The voice says one line (voice_speech).",
+  "p1.1: the city has medieval crenellated towers. Cosmetic.",
+  "p2.3: the lettered caption 'The bath.' is a dead caption; narration carries the panel (servants outside the door).",
+  "p3.1: a classical columned temple stands on the citadel behind Orestes; Mycenae had a palace. Narration does not mention the building.",
+  "p3.3: two Furies are drawn (the script asked for three). Narration does not count them.",
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "King Agamemnon (dark hair, short beard, red cloak, bronze armour) riding home in a chariot to Mycenae with treasure carts behind him, crowds cheering",
+   "caption": "Ten years later Agamemnon came home from Troy, victorious and rich.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Agamemnon came home to Mycenae after ten years at war in Troy. He rode in a chariot, with carts full of treasure behind him. The crowds cheered. Almost everyone did."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Clytemnestra in the palace doorway watching in stern silence, her fists tightly clenched, a flash of anger in her eyes",
+   "caption": "His wife Clytemnestra had never forgiven him for Iphigenia.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "His wife Clytemnestra did not cheer. She had never forgiven him for Iphigenia, the daughter he sacrificed so that his ships could sail."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A small inset memory of a white-veiled girl, Iphigenia, at an altar, in a soft ghostly frame",
+   "caption": "She had been waiting a long time.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "That's Iphigenia, at the altar. Her mother had waited ten years for this day. Ten years is a long time to stay angry."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Clytemnestra welcoming Agamemnon with a perfect false smile, red carpet beneath his feet, cold eyes",
+   "caption": null,
+   "speech": {
+    "speaker": "Clytemnestra",
+    "text": "Welcome home, husband."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "She laid a red carpet from his chariot to the door. That was a welcome for a god, not a man. He walked on it anyway.",
+   "voice_speech": {
+    "speaker": "Clytemnestra",
+    "text": "Welcome home, husband. Your bath is ready."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Mycenae palace bath chamber: steam, a bath, Agamemnon rising from it",
+   "caption": "As he stepped out of his bath.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Ten years at war. All he wanted was a hot bath. Fair enough. He stood up to step out."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A heavy net thrown over King Agamemnon, his silhouette struggling under it, Clytemnestra in silhouette with blazing red eyes, an axe raised against a red burst, no wound shown",
+   "caption": "She threw a net over him.",
+   "speech": null,
+   "sfx": "BASHA",
+   "tag": null,
+   "narr": "She threw a net over him, so he could not move. Then the axe."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "The palace corridor with a red glow under the door, servants frozen in fear, silent",
+   "caption": "The bath.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Out in the corridor, the servants heard everything through the door. Nobody went in. Not one of them said a word."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Clytemnestra's face lit from below in red, determined, the axe's shadow on the wall",
+   "caption": "She had waited ten years.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "She had waited ten years. Now the king of Mycenae was dead, killed by his own wife, in his own bath."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Young Orestes (a teenager with dark curly hair, travelling cloak) returning to Mycenae in a dust-storm, a grim hand on a sword",
+   "caption": "Years later their son Orestes came back.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "But the curse on this family was not finished. Years later their son Orestes came back, with a sword."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Orestes standing over his mother with his sword lowered, her stern face, deep shadows, no blow shown",
+   "caption": "He killed his mother to avenge his father.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "He killed his mother to avenge his father. In this family that is how the curse works: every killing asks for another."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Three Furies (winged women with snakes in their hair and red eyes) chasing Orestes across a stormy landscape",
+   "caption": "Then the Furies hunted him across the world.",
+   "speech": null,
+   "sfx": "SHAAA",
+   "tag": null,
+   "narr": "Then the Furies came for him: women with snakes in their hair, who hunt anyone who kills their own family. They chased him across the world."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Athena standing in white light on the Areopagus rock with a pebble raised and Orestes kneeling in front of her, relieved",
+   "caption": "Athena herself cast the deciding vote and set him free.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "On the Areopagus, Athena herself cast the deciding vote and set him free. That's a myth: a story the Greeks told, not a thing that happened. But that rock is real. Climb it."
+  }
+ ]
+}

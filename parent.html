@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="icon" href="icon-180.png">
+<title>Owl Quest: parent page</title>
+<style>
+body{margin:0;background:#f7ead0;color:#3d2a1f;font:17px/1.45 ui-rounded,"Trebuchet MS",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:24px;margin:8px 0}h2{margin:0 0 4px;font-size:22px}
+.card{background:#fffaf0;border:3px solid #b57c4e;border-radius:14px;padding:14px 16px;margin:14px 0}
+.sum{display:grid;grid-template-columns:1fr auto;gap:2px 14px;margin:8px 0;font-size:18px}.sum b{text-align:right}
+.owed{font-size:22px;font-weight:800;color:#8a3fd0}
+button{font:inherit;font-weight:700;padding:10px 16px;border-radius:10px;border:3px solid #b57c4e;background:#f0d7a8;color:#3d2a1f;cursor:pointer}
+button:disabled{opacity:.5}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}td{padding:4px 6px;border-bottom:1px solid #e3cfa5;vertical-align:top}td.d{white-space:nowrap;color:#7a6455}td.e{text-align:right;white-space:nowrap}
+details summary{cursor:pointer;font-weight:700}.note{font-size:14px;color:#7a6455}.err{color:#b3261e;font-weight:700}
+input{font:inherit;padding:6px 8px;border:2px solid #b57c4e;border-radius:8px;width:90px}
+</style></head><body><main>
+<h1>Owl Quest: pocket money</h1>
+<p class="note" id="meta">Loading...</p>
+<div id="out"></div>
+<p class="note">EUR 1 per story badge. Trail badges are for glory and are not counted. &quot;Paid so far&quot; is kept online with the badges.</p>
+</main>
+<script type="module">
+import { fetchFamily, putPaid, cleanCode } from './js/store.js';
+import { CONFIG } from './js/config.js';
+const q = new URLSearchParams(location.search);
+const code = cleanCode(q.get('f') || q.get('code')) || CONFIG.DEFAULT_FAMILY;
+const $ = id => document.getElementById(id);
+const fmt = n => '€' + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
+let titles = {};
+try { const r = await fetch('data/stories.json'); (await r.json()).forEach(s => titles[s.id] = s.title); } catch (e) { }
+const date = t => new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+async function load() {
+  try {
+    const { players, paid } = await fetchFamily(code);
+    $('meta').textContent = `Family code ${code}. Updated ${new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}.`;
+    const out = $('out'); out.replaceChildren();
+    const ids = Object.keys(players);
+    if (!ids.length) out.innerHTML = '<p>No players yet. Once a player has earned a badge on an iPad with this family code, they appear here.</p>';
+    let tot = 0, totPaid = 0;
+    for (const id of ids) {
+      const p = players[id], all = Object.entries(p.badges || {}).sort((a, b) => b[1] - a[1]);
+      const story = all.filter(([k]) => !k.startsWith('trail:')), earned = story.length * CONFIG.EURO_PER_STORY, pd = Number(paid[id]) || 0, bal = earned - pd;
+      tot += earned; totPaid += pd;
+      const card = document.createElement('div'); card.className = 'card';
+      card.innerHTML = `<h2></h2><div class="sum"><span>Story badges</span><b>${story.length}</b><span>Earned</span><b>${fmt(earned)}</b><span>Paid so far</span><b>${fmt(pd)}</b><span class="owed">Owed</span><b class="owed">${fmt(bal)}</b></div>`;
+      card.querySelector('h2').textContent = p.name;
+      const row = document.createElement('p'), b = document.createElement('button'); b.textContent = `Mark ${fmt(Math.max(0, bal))} paid`; b.disabled = bal <= 0;
+      b.onclick = async () => { b.disabled = true; try { await putPaid(id, pd + bal); await load(); } catch (e) { alert('Could not save: ' + e.message); b.disabled = false; } };
+      const adj = document.createElement('input'); adj.type = 'number'; adj.step = '0.5'; adj.placeholder = 'Set paid'; const set = document.createElement('button'); set.textContent = 'Set';
+      set.onclick = async () => { if (adj.value === '') return; try { await putPaid(id, Number(adj.value)); await load(); } catch (e) { alert('Could not save: ' + e.message); } };
+      row.append(b, ' ', adj, ' ', set); card.append(row);
+      const d = document.createElement('details'); d.innerHTML = `<summary>Badges (${all.length})</summary>`;
+      const t = document.createElement('table');
+      for (const [k, ts] of all) { const tr = document.createElement('tr'); const tr_ = k.startsWith('trail:'); tr.innerHTML = `<td class="d">${date(ts)}</td><td></td><td class="e">${tr_ ? 'trail' : fmt(CONFIG.EURO_PER_STORY)}</td>`; tr.children[1].textContent = tr_ ? 'Trail: ' + k.slice(6) : (titles[k] || k); t.append(tr); }
+      d.append(t); card.append(d);
+      const seen = Object.keys(p.seen || {}); if (seen.length) { const s = document.createElement('p'); s.className = 'note'; s.textContent = 'Seen in Athens: ' + seen.map(k => titles[k] || k).join(', '); card.append(s); }
+      out.append(card);
+    }
+    if (ids.length > 1) { const s = document.createElement('p'); s.innerHTML = `<b>Total owed: ${fmt(tot - totPaid)}</b> (earned ${fmt(tot)}, paid ${fmt(totPaid)})`; out.append(s); }
+  } catch (e) { $('meta').innerHTML = '<span class="err">Could not read the online scoreboard (' + e.message + '). It may not be switched on yet: see the README.</span>'; }
+}
+load();
+</script></body></html>

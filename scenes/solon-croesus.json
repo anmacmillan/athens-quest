@@ -1,0 +1,886 @@
+{
+ "id": "solon-croesus",
+ "speaker": "solon",
+ "flag": "legend",
+ "party": {
+  "girl": [
+   -52.0,
+   28.0
+  ],
+  "owl": [
+   -8.0,
+   24.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  32.0,
+  20.0
+ ],
+ "origin": {
+  "x": 272,
+  "y": 2034
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    32.0,
+    20.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "solon",
+   "sprite": "c_solon_0",
+   "x": 44.0,
+   "y": 48.0,
+   "anchor": [
+    14,
+    46
+   ],
+   "walk": [
+    "c_solon_1",
+    "c_solon_0",
+    "c_solon_2",
+    "c_solon_0"
+   ],
+   "ghost": true,
+   "ms": 1300
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Sit, children. From this hill you can see the whole city.",
+   "flag": "history"
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    44.0,
+    36.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.emote",
+   "id": "solon",
+   "emote": "star",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "Meet Solon. Long ago, Athens asked him to mend its laws.",
+   "speaker": "glauka"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s1",
+   "sprite": "c_boy_0",
+   "x": 100.0,
+   "y": 60.0,
+   "anchor": [
+    8,
+    32
+   ],
+   "walk": [
+    "c_boy_1",
+    "c_boy_0",
+    "c_boy_2",
+    "c_boy_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "s2",
+   "sprite": "c_girl_0",
+   "x": 128.0,
+   "y": 68.0,
+   "anchor": [
+    8,
+    36
+   ],
+   "walk": [
+    "c_girl_1",
+    "c_girl_0",
+    "c_girl_2",
+    "c_girl_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "actor.emote",
+   "id": "s1",
+   "emote": "sad",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.jump",
+   "id": "s1",
+   "height": 8,
+   "ms": 400,
+   "par": true
+  },
+  {
+   "t": "actor.jump",
+   "id": "s2",
+   "height": 8,
+   "ms": 400
+  },
+  {
+   "t": "actor.emote",
+   "id": "s1",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "s2",
+   "emote": "heart",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 1400
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 800,
+   "at": [
+    40.0,
+    28.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "s1",
+   "ms": 400,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "s2",
+   "ms": 400
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "They needed it. Poor men were being sold for their debts.",
+   "flag": "legend"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cab",
+   "sprite": "p_cabbage",
+   "x": 116.0,
+   "y": 68.0,
+   "anchor": [
+    6,
+    12
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.spawn",
+   "id": "thief",
+   "sprite": "c_citizen2_0",
+   "x": 140.0,
+   "y": 56.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 700
+  },
+  {
+   "t": "actor.spawn",
+   "id": "draco",
+   "sprite": "c_atreus_0",
+   "x": 180.0,
+   "y": 72.0,
+   "anchor": [
+    12,
+    42
+   ],
+   "walk": [
+    "c_atreus_1",
+    "c_atreus_0",
+    "c_atreus_2",
+    "c_atreus_0"
+   ],
+   "ghost": true,
+   "ms": 800
+  },
+  {
+   "t": "actor.emote",
+   "id": "thief",
+   "emote": "exclaim",
+   "ms": 1800
+  },
+  {
+   "t": "wait",
+   "ms": 1000
+  },
+  {
+   "t": "caption",
+   "par": true,
+   "text": "And the old laws? A man could die for a cabbage."
+  },
+  {
+   "t": "actor.emote",
+   "id": "draco",
+   "emote": "exclaim",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.25,
+   "ms": 1000,
+   "color": "168,40,40",
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2200
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "thief",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "draco",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "cab"
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "crete",
+     "camera": [
+      240,
+      170
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.place",
+   "id": "solon",
+   "x": 200,
+   "y": 200,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "croesus",
+   "sprite": "c_croesus_0",
+   "x": 280,
+   "y": 190,
+   "anchor": [
+    14,
+    42
+   ],
+   "walk": [
+    "c_croesus_1",
+    "c_croesus_0",
+    "c_croesus_2",
+    "c_croesus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g0",
+   "sprite": "p_gold",
+   "x": 230,
+   "y": 232,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g1",
+   "sprite": "p_gold",
+   "x": 246,
+   "y": 236,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g2",
+   "sprite": "p_gold",
+   "x": 262,
+   "y": 232,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g3",
+   "sprite": "p_gold",
+   "x": 238,
+   "y": 244,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "g4",
+   "sprite": "p_gold",
+   "x": 254,
+   "y": 246,
+   "anchor": [
+    6,
+    10
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "croesus",
+   "emote": "star",
+   "ms": 2000
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1200,
+   "at": [
+    240,
+    200
+   ],
+   "abs": true,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hero",
+   "sprite": "c_soldier_0",
+   "x": 160,
+   "y": 214,
+   "anchor": [
+    17,
+    52
+   ],
+   "walk": [
+    "c_soldier_1",
+    "c_soldier_0",
+    "c_soldier_2",
+    "c_soldier_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "actor.sprite",
+   "id": "hero",
+   "sprite": "c_soldier_up"
+  },
+  {
+   "t": "actor.emote",
+   "id": "croesus",
+   "emote": "sad",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "solon",
+   "emote": "dots",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 3000
+  },
+  {
+   "t": "still",
+   "image": "art/stills/solon-croesus_b2.png",
+   "ms": 2600,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "road",
+     "camera": [
+      240,
+      200
+     ],
+     "zoom": 1.0
+    }
+   ]
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.4,
+   "ms": 1,
+   "at": [
+    240,
+    200
+   ],
+   "abs": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "croesus"
+  },
+  {
+   "t": "actor.remove",
+   "id": "solon"
+  },
+  {
+   "t": "actor.remove",
+   "id": "hero"
+  },
+  {
+   "t": "actor.remove",
+   "id": "g0"
+  },
+  {
+   "t": "actor.remove",
+   "id": "g1"
+  },
+  {
+   "t": "actor.remove",
+   "id": "g2"
+  },
+  {
+   "t": "actor.remove",
+   "id": "g3"
+  },
+  {
+   "t": "actor.remove",
+   "id": "g4"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "pyre",
+   "sprite": "p_logs",
+   "x": 240,
+   "y": 206,
+   "anchor": [
+    7,
+    9
+   ],
+   "scale": 2.6,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "croesus2",
+   "sprite": "c_croesus_0",
+   "x": 240,
+   "y": 196,
+   "anchor": [
+    14,
+    42
+   ],
+   "walk": [
+    "c_croesus_1",
+    "c_croesus_0",
+    "c_croesus_2",
+    "c_croesus_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "abs": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "f0",
+   "sprite": "p_fire_0",
+   "x": 226,
+   "y": 210,
+   "anchor": [
+    7,
+    17
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.anim",
+   "id": "f0",
+   "frames": [
+    "p_fire_0",
+    "p_fire_1",
+    "p_fire_2",
+    "p_fire_1"
+   ],
+   "fps": 9,
+   "loop": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "f1",
+   "sprite": "p_fire_0",
+   "x": 240,
+   "y": 210,
+   "anchor": [
+    7,
+    17
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.anim",
+   "id": "f1",
+   "frames": [
+    "p_fire_0",
+    "p_fire_1",
+    "p_fire_2",
+    "p_fire_1"
+   ],
+   "fps": 9,
+   "loop": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "f2",
+   "sprite": "p_fire_0",
+   "x": 254,
+   "y": 210,
+   "anchor": [
+    7,
+    17
+   ],
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.anim",
+   "id": "f2",
+   "frames": [
+    "p_fire_0",
+    "p_fire_1",
+    "p_fire_2",
+    "p_fire_1"
+   ],
+   "fps": 9,
+   "loop": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cyrus",
+   "sprite": "c_cyrus_0",
+   "x": 300,
+   "y": 218,
+   "anchor": [
+    14,
+    45
+   ],
+   "walk": [
+    "c_cyrus_1",
+    "c_cyrus_0",
+    "c_cyrus_2",
+    "c_cyrus_0"
+   ],
+   "ghost": true,
+   "ms": 900,
+   "abs": true
+  },
+  {
+   "t": "wait",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "croesus2",
+   "emote": "exclaim",
+   "ms": 700
+  },
+  {
+   "t": "actor.jump",
+   "id": "croesus2",
+   "height": 6,
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "croesus2",
+   "emote": "exclaim",
+   "ms": 700
+  },
+  {
+   "t": "actor.jump",
+   "id": "croesus2",
+   "height": 6,
+   "ms": 500
+  },
+  {
+   "t": "actor.emote",
+   "id": "croesus2",
+   "emote": "exclaim",
+   "ms": 700
+  },
+  {
+   "t": "actor.jump",
+   "id": "croesus2",
+   "height": 6,
+   "ms": 500
+  },
+  {
+   "t": "wait",
+   "ms": 500
+  },
+  {
+   "t": "actor.move",
+   "id": "cyrus",
+   "to": [
+    540.0,
+    428.0
+   ],
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "cyrus",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.spawn",
+   "id": "cloud",
+   "sprite": "p_cloud",
+   "x": 200,
+   "y": 150,
+   "anchor": [
+    15,
+    15
+   ],
+   "scale": 2.4,
+   "shadow": 0,
+   "abs": true
+  },
+  {
+   "t": "actor.move",
+   "id": "cloud",
+   "to": [
+    240,
+    160
+   ],
+   "ms": 2400,
+   "abs": true
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0.35,
+   "ms": 1400,
+   "color": "40,60,110",
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "splash",
+   "x": 240,
+   "y": 210,
+   "ms": 2400,
+   "abs": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f0",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f1",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "f2",
+   "ms": 900,
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 3400
+  },
+  {
+   "t": "fx",
+   "type": "wash",
+   "alpha": 0,
+   "ms": 800,
+   "par": true
+  },
+  {
+   "t": "fx",
+   "type": "shimmer",
+   "ms": 1400,
+   "mid": [
+    {
+     "t": "stage",
+     "set": "live",
+     "camera": [
+      32.0,
+      20.0
+     ]
+    }
+   ]
+  },
+  {
+   "t": "actor.remove",
+   "id": "cloud"
+  },
+  {
+   "t": "actor.remove",
+   "id": "pyre"
+  },
+  {
+   "t": "actor.remove",
+   "id": "croesus2"
+  },
+  {
+   "t": "actor.remove",
+   "id": "cyrus"
+  },
+  {
+   "t": "actor.spawn",
+   "id": "solon2",
+   "sprite": "c_solon_0",
+   "x": 44.0,
+   "y": 48.0,
+   "anchor": [
+    14,
+    46
+   ],
+   "walk": [
+    "c_solon_1",
+    "c_solon_0",
+    "c_solon_2",
+    "c_solon_0"
+   ],
+   "ghost": true,
+   "ms": 800
+  },
+  {
+   "t": "actor.emote",
+   "id": "solon2",
+   "emote": "question",
+   "ms": 2600
+  },
+  {
+   "t": "wait",
+   "ms": 3000
+  },
+  {
+   "t": "still",
+   "image": "art/stills/solon-croesus_b3.png",
+   "ms": 2400,
+   "optional": true,
+   "kenBurns": {
+    "from": 1.0,
+    "to": 1.1
+   }
+  },
+  {
+   "t": "caption",
+   "text": "Now let me tell you about the richest man in the world.",
+   "extra": true
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

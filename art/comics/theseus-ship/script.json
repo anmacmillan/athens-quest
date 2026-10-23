@@ -1,0 +1,52 @@
+{
+ "story": "theseus-ship",
+ "title": "The Ship of Theseus",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "socrates",
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The Athenians' annual sacred ship setting sail for Delos with garlands, crowds on the harbour waving",
+   "caption": "Every year the Athenians sailed a ship to the island of Delos for a festival.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Carpenters replacing old rotten planks with new ones, a pile of old planks beside the ship",
+   "caption": "As the planks rotted, they replaced them, one by one.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A ship with all new planks and a pile of old planks on the shore, a pair of philosophers scratching their heads, a big question mark",
+   "caption": "Was it still the same ship? Philosophers argued about it.",
+   "speech": null,
+   "sfx": null,
+   "tag": "PUZZLE"
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Socrates in prison watching a harbour through the bars, waiting; a faint ship on the sea in the distance",
+   "caption": "No execution could take place while the ship was away. Socrates waited about a month.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

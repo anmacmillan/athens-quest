@@ -1,0 +1,99 @@
+{
+ "story": "labyrinth",
+ "title": "Into the Labyrinth",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "ariadne",
+   "theseus"
+  ],
+  [
+   "theseus",
+   "minotaur",
+   "ariadne"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Ariadne in the maze-like palace corridors, young, clever, holding a ball of red thread, Daedalus the inventor in the background",
+   "caption": "Daedalus built the Labyrinth so cleverly that once inside you could not find the way out.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Ariadne handing Theseus a ball of red thread at the door of the Labyrinth, whispering",
+   "caption": "Ariadne loved Theseus, and gave him a ball of thread.",
+   "speech": {
+    "speaker": "Ariadne",
+    "text": "Tie the end at the door."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Theseus walking into the dark winding corridors, red thread unrolling behind him through the dark, torch in hand",
+   "caption": "He tied the end at the door and let it unroll as he walked deeper in.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A bird's-eye view of a maze with a single red line winding through it, a tiny hero at the centre",
+   "caption": "Not even Daedalus was sure he could find the way out.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Deep in the dark Labyrinth: the Minotaur, a massive bull-headed giant with bloodshot glowing eyes, flared steaming nostrils, nose ring, looms out of the blackness; in the foreground Theseus seen from behind, sword in hand, a red thread trailing",
+   "caption": "Follow the thread.",
+   "speech": null,
+   "sfx": "HHHRRRR",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "The Minotaur charging at Theseus, speed lines, stone walls cracking, Theseus ready with a sword, dust cloud hiding the clash; no gore",
+   "caption": "He found the Minotaur in the dark and killed it.",
+   "speech": null,
+   "sfx": "DOOOOM",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Two small inset pictures side by side: Theseus with his bare hands, and Theseus with a sword; a big question mark between them",
+   "caption": "With his bare hands, or with a sword. The stories disagree.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Theseus following the red thread back out of the Labyrinth to a bright doorway, Ariadne waiting with open arms in the light",
+   "caption": "Then he followed the thread back out to the light.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
+ ]
+}

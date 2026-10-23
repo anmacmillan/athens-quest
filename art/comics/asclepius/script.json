@@ -1,0 +1,54 @@
+{
+ "story": "asclepius",
+ "title": "The Sleep Hospital",
+ "flag": "history",
+ "main": false,
+ "layout": "2x2",
+ "pages": 1,
+ "refs": [
+  [
+   "glauka"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "The sanctuary of Asclepius at Epidaurus: marble temples among pines, sick people arriving on mules and carried on stretchers",
+   "caption": "Epidaurus was the most famous sanctuary of Asclepius, the god of healing.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A long hall with rows of beds where patients sleep, moonlight, a faint dream bubble of a robed god with a staff",
+   "caption": "They slept in a special hall, hoping the god would visit them in a dream.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Harmless little snakes slithering around the sanctuary floor, children leaning out in fear and wonder, Glauka watching",
+   "caption": "Harmless snakes slithered around the sanctuary.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "A snake coiled round a staff, the symbol of medicine, and a stone tablet with writing: priests chiselling a list of cures",
+   "caption": "The snake on a staff is still the symbol of medicine. Stone tablets list the cures people claimed.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Some are impossible."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ]
+}

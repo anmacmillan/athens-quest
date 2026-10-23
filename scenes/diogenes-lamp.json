@@ -1,0 +1,386 @@
+{
+ "id": "diogenes-lamp",
+ "speaker": "diogenes",
+ "flag": "legend",
+ "party": {
+  "girl": [
+   -60.0,
+   40.0
+  ],
+  "owl": [
+   -16.0,
+   36.0
+  ],
+  "girlFacing": "r"
+ },
+ "camera": [
+  60.0,
+  40.0
+ ],
+ "origin": {
+  "x": 1148,
+  "y": 731
+ },
+ "beats": [
+  {
+   "t": "camera.set",
+   "to": [
+    60.0,
+    40.0
+   ],
+   "zoom": 1
+  },
+  {
+   "t": "actor.spawn",
+   "id": "dio",
+   "sprite": "c_diogenes_0",
+   "x": 60.0,
+   "y": 60.0,
+   "anchor": [
+    15,
+    42
+   ],
+   "walk": [
+    "c_diogenes_1",
+    "c_diogenes_0",
+    "c_diogenes_2",
+    "c_diogenes_0"
+   ],
+   "ghost": true,
+   "ms": 1300
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c0",
+   "sprite": "c_citizen_0",
+   "x": 120.0,
+   "y": 40.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen_1",
+    "c_citizen_0",
+    "c_citizen_2",
+    "c_citizen_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c1",
+   "sprite": "c_citizen2_0",
+   "x": 148.0,
+   "y": 72.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen2_1",
+    "c_citizen2_0",
+    "c_citizen2_2",
+    "c_citizen2_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "c2",
+   "sprite": "c_citizen3_0",
+   "x": -20.0,
+   "y": 80.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_citizen3_1",
+    "c_citizen3_0",
+    "c_citizen3_2",
+    "c_citizen3_0"
+   ],
+   "ghost": true,
+   "ms": 600,
+   "par": true
+  },
+  {
+   "t": "caption",
+   "text": "I am Diogenes.",
+   "hold": 1400,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1400,
+   "at": [
+    60.0,
+    52.0
+   ],
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dio",
+   "to": [
+    100.0,
+    68.0
+   ],
+   "ms": 1800
+  },
+  {
+   "t": "actor.move",
+   "id": "dio",
+   "to": [
+    52.0,
+    80.0
+   ],
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "c0",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c1",
+   "emote": "question",
+   "ms": 2000
+  },
+  {
+   "t": "caption",
+   "text": "I walked through the Agora in broad daylight carrying a lit lamp.",
+   "hold": 1600,
+   "par": false
+  },
+  {
+   "t": "caption",
+   "text": "When people asked why, I said I was looking for an honest man."
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "actor.emote",
+   "id": "dio",
+   "emote": "dots",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "c2",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.0,
+   "ms": 800,
+   "at": [
+    60.0,
+    48.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1200
+  },
+  {
+   "t": "actor.remove",
+   "id": "c0",
+   "ms": 300,
+   "par": true
+  },
+  {
+   "t": "actor.remove",
+   "id": "c1",
+   "ms": 300
+  },
+  {
+   "t": "actor.remove",
+   "id": "c2",
+   "ms": 300
+  },
+  {
+   "t": "caption",
+   "text": "Plato described a human being as a featherless biped, a two-legged animal without feathers.",
+   "hold": 1500,
+   "flag": "legend",
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "plato",
+   "sprite": "c_plato_0",
+   "x": 160.0,
+   "y": 60.0,
+   "anchor": [
+    13,
+    42
+   ],
+   "walk": [
+    "c_plato_1",
+    "c_plato_0",
+    "c_plato_2",
+    "c_plato_0"
+   ],
+   "ghost": true,
+   "ms": 900
+  },
+  {
+   "t": "actor.emote",
+   "id": "plato",
+   "emote": "star",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "caption",
+   "text": "I plucked a chicken, brought it to his school and said: here is Plato's human.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "hen",
+   "sprite": "p_chicken",
+   "x": 80.0,
+   "y": 88.0,
+   "anchor": [
+    8,
+    13
+   ],
+   "scale": 1.5,
+   "shadow": 0
+  },
+  {
+   "t": "actor.move",
+   "id": "dio",
+   "to": [
+    124.0,
+    72.0
+   ],
+   "ms": 1800
+  },
+  {
+   "t": "actor.emote",
+   "id": "dio",
+   "emote": "happy",
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "plato",
+   "emote": "exclaim",
+   "ms": 2000
+  },
+  {
+   "t": "camera.zoom",
+   "scale": 1.5,
+   "ms": 1200,
+   "at": [
+    120.0,
+    68.0
+   ],
+   "par": true
+  },
+  {
+   "t": "wait",
+   "ms": 1800
+  },
+  {
+   "t": "caption",
+   "text": "Plato added with broad flat nails to his definition.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "tab",
+   "sprite": "p_tablet",
+   "x": 184.0,
+   "y": 44.0,
+   "anchor": [
+    10,
+    15
+   ],
+   "shadow": 0
+  },
+  {
+   "t": "actor.emote",
+   "id": "plato",
+   "emote": "dots",
+   "ms": 2200
+  },
+  {
+   "t": "wait",
+   "ms": 2800
+  },
+  {
+   "t": "caption",
+   "text": "I begged from statues, to practise being refused.",
+   "hold": 1600,
+   "par": true
+  },
+  {
+   "t": "actor.spawn",
+   "id": "statue",
+   "sprite": "c_caryatid_0",
+   "x": 0.0,
+   "y": 88.0,
+   "anchor": [
+    10,
+    40
+   ],
+   "walk": [
+    "c_caryatid_1",
+    "c_caryatid_0",
+    "c_caryatid_2",
+    "c_caryatid_0"
+   ],
+   "ghost": true,
+   "ms": 700,
+   "par": true
+  },
+  {
+   "t": "actor.move",
+   "id": "dio",
+   "to": [
+    16.0,
+    92.0
+   ],
+   "ms": 2000
+  },
+  {
+   "t": "actor.emote",
+   "id": "dio",
+   "emote": "dots",
+   "ms": 2400
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  },
+  {
+   "t": "badge"
+  },
+  {
+   "t": "wait",
+   "ms": 2400
+  }
+ ]
+}

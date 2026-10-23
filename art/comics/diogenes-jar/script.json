@@ -1,0 +1,107 @@
+{
+ "story": "diogenes-jar",
+ "title": "Diogenes in His Jar",
+ "flag": "legend",
+ "main": false,
+ "layout": "2x2",
+ "pages": 2,
+ "refs": [
+  [
+   "diogenes",
+   "plato"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Diogenes lying in a huge clay jar (pithos) in the Agora, a cloak, a stick and a bag beside him, a scruffy dog at his feet",
+   "caption": "Diogenes lived in a big clay jar. He owned a cloak, a stick and a bag.",
+   "speech": {
+    "speaker": "Diogenes",
+    "text": "That is plenty."
+   },
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A boy scooping water in his cupped hands from a fountain and drinking, Diogenes watching",
+   "caption": "One day he saw a boy scoop up water in his hands and drink.",
+   "speech": {
+    "speaker": "Diogenes",
+    "text": "Even my cup is too much."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Alexander the Great (young, golden armour and a purple cape) standing over Diogenes' jar with soldiers behind him, the sun behind him",
+   "caption": "Alexander the Great offered him anything he wanted.",
+   "speech": {
+    "speaker": "Diogenes",
+    "text": "Stand a little out of my sunlight."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Diogenes' dog barking at a crowd while Diogenes grins and begs in the street, a comic scene",
+   "caption": "People called him the dog. His followers were Cynics, from the Greek for dog-like.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Diogenes walking through the busy Agora in broad daylight holding a lit lamp, shopkeepers staring",
+   "caption": "Diogenes walked through the Agora in broad daylight carrying a lit lamp.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Diogenes peering with his lamp into the face of a puzzled Athenian merchant, big eyes",
+   "caption": "He held the lamp up to every face.",
+   "speech": {
+    "speaker": "Diogenes",
+    "text": "Looking for an honest man."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Plato at the board of his school drawing a two-legged stick figure 'a featherless biped', students nodding",
+   "caption": "Plato described a human being as a featherless biped.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Diogenes holding up a plucked chicken in front of Plato's school, students laughing, Plato shocked",
+   "caption": "Diogenes held up a plucked chicken outside Plato's school.",
+   "speech": {
+    "speaker": "Diogenes",
+    "text": "Here is Plato's human!"
+   },
+   "sfx": "BAWK",
+   "tag": null
+  }
+ ],
+ "notes": [
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1, 2] regenerated",
+  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1, 2] regenerated"
+ ]
+}

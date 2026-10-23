@@ -1,0 +1,155 @@
+{
+ "story": "epidaurus-theatre",
+ "title": "The Theatre That Whispers",
+ "flag": "history",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "glauka"
+  ],
+  [
+   "glauka"
+  ],
+  [
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p1.4: 'Listen closely.' is lettered twice in two bubbles. Patch out one. The voice says it once.",
+  "p2: all-caps lettering, unlike pages 1 and 3. Cosmetic.",
+  "p3.1: the 'scientists' are drawn as ancient Greeks in robes with a scroll and set square. Narration says so ('modern ones, not those two in robes')."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Wide sunlit view of the ancient theatre at Epidaurus: perfectly curved stone rows rising up a green hillside, pine trees, a circular stage",
+   "caption": "Built around 340 BC.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Hoo! Welcome to Epidaurus. Sick people came to this valley to ask the god Asclepius to heal them. This theatre was built here around 340 BC."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "A full crowd of 14,000 spectators sitting on the rows, tiny dots for faces",
+   "caption": "It seats about 14,000 people.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "It seats about 14,000 people. Fill every seat. Now imagine you're in the very last row, and one man down there starts to speak."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "A modern performance in the same theatre: actors in masks on the circular stage, evening lights",
+   "caption": "It is still used for plays today.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "It is still used for plays today. Actors stand in that same circle. The whole hillside listens."
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Glauka the owl flying over the rows with a proud expression",
+   "caption": "Its acoustics are famous.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Listen closely."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Its acoustics are famous. That's the grown-up word for how sound travels in a place like this."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "An actor at the centre circle speaking in a normal calm voice, small sound-wave rings spreading out",
+   "caption": "An actor speaking in a normal voice at the centre...",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Here's the test. An actor stands in the centre and speaks in a normal voice. No shouting, no microphone."
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "The very top row, tiny spectators leaning forward and hearing him perfectly, wavy sound lines reaching them",
+   "caption": "...can be heard in the top rows, without any microphone.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "And right up in the top rows, the people at the very back can hear him. Every word."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A coin dropping on the stage with a tiny 'tink' sound-effect and a hand cupped behind an ear at the top",
+   "caption": "Guides say you can hear a coin drop or a match struck.",
+   "speech": null,
+   "sfx": "tink",
+   "tag": null,
+   "narr": "Guides go further. They say you can hear a coin drop, or a match struck, from the very top. Listen."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Glauka at the top of the rows hand-to-ear-feather, eyes closed with a little smile",
+   "caption": "Try it and see.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "From the very top row."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Is that true, or just a guide's favourite story? Don't take anyone's word for it. Not even mine. Try it and see."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Scientists in a diagram-like drawing: sound waves coming from the stage, bouncing off the stone steps, rows of seats drawn as a ribbed surface",
+   "caption": "Scientists think the rows of seats filter out the low background noise.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Modern scientists, not those two in robes, think the rows of seats filter out the low background noise."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Low rumbles of background noise shown as grey wavy lines being stopped by the rows of stone",
+   "caption": "The low noise is filtered away.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Wind in the pines, shuffling feet, somebody's tummy rumbling: the low noises hit the stone steps and get filtered away."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "The voice shown as crisp bright lines passing through the stone steps, clean and clear",
+   "caption": "So the voice comes through clean.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "So the voice comes through clean, like a bright thread pulled all the way up to the top row."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Glauka tapping a stone seat with one claw, a small ring of sound",
+   "caption": "The stone does some of the work.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Now you try."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "The stone does some of the work. That's history: it happened, and here's how we know. You can test it today, with one coin and one sister."
+  }
+ ]
+}

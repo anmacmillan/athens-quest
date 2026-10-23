@@ -1,0 +1,2864 @@
+[
+ {
+  "id": "propylaia",
+  "title": "The Gateway",
+  "area": "Acropolis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "This is the Propylaia, the great gateway to the Acropolis. The architect Mnesicles began building it in 437 BC. Everyone who climbed up here walked through these columns."
+   ],
+   [
+    "history",
+    "Look closely at the blocks and you will see stone knobs sticking out. The builders left them so ropes could be looped round for lifting. Later they meant to chisel every knob off."
+   ],
+   [
+    "history",
+    "In 432 BC war with Sparta was coming and the work stopped. The knobs are still there. The gateway was never finished. Nobody came back to smooth them away."
+   ]
+  ],
+  "q": "Why are there stone knobs still sticking out of the blocks of the Propylaia?",
+  "opts": [
+   "Builders left them for lifting ropes, and the work stopped in 432 BC before they were chiselled off",
+   "They were carved as decoration for a festival",
+   "They hold the columns together"
+  ],
+  "mission": "Find a block with a lifting knob still sticking out of it.",
+  "pos": {
+   "lat": 37.971736,
+   "lon": 23.725197
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "nike",
+  "title": "Wingless Victory",
+  "area": "Acropolis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "On your right as you climb stands a small temple on a high bastion. It belongs to Athena Nike, the goddess of victory. It was built around 420 BC."
+   ],
+   [
+    "history",
+    "Nike is the goddess of victory and she normally has wings. Wings let her fly from one winner to the next. Here in Athens she was shown without them."
+   ],
+   [
+    "legend",
+    "Pausanias was a travel writer who came here six hundred years later. He called the statue Wingless Victory. He said the Athenians made her wingless so that Victory could never fly away from Athens."
+   ],
+   [
+    "history",
+    "Athens lost the war with Sparta anyway. Victory did fly away in the end. The little temple stayed on its bastion above the steps."
+   ]
+  ],
+  "q": "What did the travel writer Pausanias say about the statue of Athena Nike?",
+  "opts": [
+   "The Athenians made her wingless so that Victory could never fly away from Athens",
+   "She was carved with two pairs of wings",
+   "She was standing on the prow of a ship"
+  ],
+  "mission": "Spot the little temple on its bastion before you climb the steps.",
+  "pos": {
+   "lat": 37.971449,
+   "lon": 23.724943
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "aegeus",
+  "title": "Aegeus's Leap",
+  "area": "Acropolis (Nike bastion)",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Every nine years Athens sent fourteen young people to Crete, to be fed to the Minotaur. This time the king's own son, Theseus, went to kill it."
+   ],
+   [
+    "myth",
+    "The ship sailed under black sails. If Theseus lived, he would come home under white. Every day the old king climbed this rock and watched the sea."
+   ],
+   [
+    "myth",
+    "Theseus killed the Minotaur, then forgot the sails. Aegeus saw black sails coming home. He believed his son was dead and threw himself off the rock."
+   ],
+   [
+    "myth",
+    "Theseus came ashore with good news to a city mourning its king. The sea kept the old man's name: the Aegean."
+   ],
+   [
+    "myth",
+    "Pausanias wrote that it was this spot, by the Nike temple; guides at Sounion say otherwise. That's a myth: a story the Greeks told, not a thing that happened. But look south-west: that's his sea."
+   ]
+  ],
+  "q": "Why did Aegeus throw himself off the rock?",
+  "opts": [
+   "He saw black sails and believed his son Theseus was dead",
+   "He had lost a war against Sparta",
+   "He was pushed by Medea"
+  ],
+  "mission": "On a clear day, look south-west from the edge and see if you can spot the sea.",
+  "pos": {
+   "lat": 37.971369,
+   "lon": 23.724883
+  },
+  "flag": "myth",
+  "scene": "scenes/aegeus.json",
+  "main": true
+ },
+ {
+  "id": "parthenon",
+  "title": "The Parthenon",
+  "area": "Acropolis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "legend",
+    "Phidias stood accused of stealing gold from Athena. He had made her: twelve metres of gold and ivory, inside the brand-new Parthenon."
+   ],
+   [
+    "legend",
+    "His real crime was being Pericles' friend. Pericles led Athens, and his enemies could not touch him, so they went for the man who built his temple."
+   ],
+   [
+    "history",
+    "Phidias was in charge of the whole building, built from 447 to 432 BC. Its carvings were painted bright colours, and the floor and columns curve so that from afar it looks straight."
+   ],
+   [
+    "legend",
+    "But Phidias had built the statue so the gold could be lifted off. They took it down and weighed it. Every scrap was there."
+   ],
+   [
+    "legend",
+    "His enemies found another charge; Plutarch says Phidias died in prison. That's a legend: a real man, and a story that grew around him. His curves are still there."
+   ]
+  ],
+  "q": "How did Phidias prove he had not stolen the gold?",
+  "opts": [
+   "He had built the statue so the gold could be lifted off and weighed",
+   "Pericles swore in court that he was honest",
+   "The gold turned out to be painted bronze"
+  ],
+  "mission": "Crouch at a corner and look along the steps: do they curve up in the middle?",
+  "pos": {
+   "lat": 37.971383,
+   "lon": 23.726618
+  },
+  "flag": "history",
+  "main": true,
+  "scene": "scenes/parthenon.json"
+ },
+ {
+  "id": "explosion-1687",
+  "title": "The Big Bang of 1687",
+  "area": "Acropolis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 1687 the Ottoman Turks held this rock, and a Venetian army under Morosini had them trapped. The Ottomans needed a safe place for their gunpowder. They chose the Parthenon."
+   ],
+   [
+    "history",
+    "It seemed the strongest building up here. For two thousand years it had stood almost whole: a temple, then a church, then a mosque."
+   ],
+   [
+    "history",
+    "On 26 September 1687 a Venetian mortar shell came through the roof. It fell among the barrels. The middle of the building blew apart."
+   ],
+   [
+    "history",
+    "About three hundred people died. That's history: it happened, and the proof is the gap in each long side. The Parthenon is a ruin because of an explosion, not old age."
+   ]
+  ],
+  "q": "Why is the Parthenon a ruin?",
+  "opts": [
+   "A Venetian mortar shell hit gunpowder stored inside it in 1687",
+   "An earthquake flattened it in the Middle Ages",
+   "Lord Elgin's men pulled it down"
+  ],
+  "mission": "Look at the middle of the long sides, where columns are missing or rebuilt.",
+  "pos": {
+   "lat": 37.971503,
+   "lon": 23.727118
+  },
+  "flag": "history",
+  "scene": "scenes/explosion-1687.json",
+  "main": true
+ },
+ {
+  "id": "athena-poseidon",
+  "title": "The Contest for Athens",
+  "area": "Acropolis (Erechtheion)",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Athena and Poseidon both wanted this city, and the best gift would win it. Poseidon struck the rock with his trident and a spring gushed out. The water was salty: nobody could drink it."
+   ],
+   [
+    "myth",
+    "Athena knelt and planted an olive tree. The people chose the olive, so the city was named for her: Athens."
+   ],
+   [
+    "myth",
+    "Poseidon lost, and in his rage he flooded the plain to the west. Athena has been the city's goddess from that day on."
+   ],
+   [
+    "myth",
+    "The Athenians said Poseidon's trident made the marks under the Erechtheion's north porch. That's a myth: a story the Greeks told, not a thing that happened. But the marks are real."
+   ]
+  ],
+  "q": "Why did the people choose Athena's gift?",
+  "opts": [
+   "Her olive tree was useful, and his spring was too salty to drink",
+   "She beat Poseidon in a sword fight",
+   "Zeus told them to, because she was his favourite"
+  ],
+  "mission": "Find the olive tree beside the Erechtheion. Then find the north porch and look up for the hole in its roof.",
+  "pos": {
+   "lat": 37.97214,
+   "lon": 23.726358
+  },
+  "flag": "myth",
+  "scene": "scenes/athena-poseidon.json",
+  "main": true,
+  "trail": "olympians"
+ },
+ {
+  "id": "xerxes-fire",
+  "title": "The Persians Burn the Acropolis",
+  "area": "Acropolis north wall",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 480 BC the Persian king Xerxes captured Athens. Most Athenians had fled to the island of Salamis. The few defenders left up here were killed. Some jumped from the walls. Then the Persians burnt the temples."
+   ],
+   [
+    "legend",
+    "Herodotus says that the day after the burning, a new shoot a forearm long had already grown from the burnt sacred olive tree. He wrote it down as a wonder."
+   ],
+   [
+    "history",
+    "When the Athenians came back, they built the burnt column drums of the old temple into the north wall. They put them where the whole city could see them."
+   ]
+  ],
+  "q": "What did the Athenians do with the burnt column drums of the old temple?",
+  "opts": [
+   "They built them into the north wall where the whole city could see them",
+   "They threw them into the sea",
+   "They used them to rebuild the Parthenon"
+  ],
+  "mission": "From Anafiotika, look up at the north wall and find the row of round column drums.",
+  "pos": {
+   "lat": 37.97245,
+   "lon": 23.7268
+  },
+  "flag": "history",
+  "scene": "scenes/xerxes-fire.json",
+  "main": false
+ },
+ {
+  "id": "caryatids",
+  "title": "The Stone Maidens",
+  "area": "Erechtheion",
+  "speaker": "caryatid",
+  "pages": [
+   [
+    "history",
+    "Look up. Six of us held up the roof of this porch on our heads, for a very long time. I am a Caryatid, and they are my sisters."
+   ],
+   [
+    "history",
+    "Five of us are in the Acropolis Museum now, safe from the weather, and the maidens outside are copies. I do not mind. Much."
+   ],
+   [
+    "history",
+    "Our sixth sister was taken to London by Lord Elgin's men around 1801. She is still there. In the museum, her place beside us is empty."
+   ],
+   [
+    "history",
+    "That's history: it happened, and you can visit her in the British Museum today. In the Acropolis Museum, find the gap where she should stand.",
+    "glauka"
+   ]
+  ],
+  "q": "Why is there an empty space in the museum's row of maidens?",
+  "opts": [
+   "Their sixth sister was taken to London by Lord Elgin's men around 1801",
+   "She was smashed when the Parthenon blew up in 1687",
+   "She is still outside on the porch, holding up the roof"
+  ],
+  "mission": "In the museum, find the empty space where the sixth maiden should stand.",
+  "pos": {
+   "lat": 37.97206,
+   "lon": 23.726518
+  },
+  "flag": "history",
+  "main": true,
+  "scene": "scenes/caryatids.json"
+ },
+ {
+  "id": "flag-1941",
+  "title": "The Flag at the Edge",
+  "area": "Acropolis east end",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In April 1941 the German army took Athens. They raised the Nazi flag up here on the Acropolis. It flew above the temples. The city was under occupation."
+   ],
+   [
+    "history",
+    "On the night of 30 May 1941 two students climbed up. Their names were Manolis Glezos and Apostolos Santas. They tore the flag down and took it away."
+   ],
+   [
+    "legend",
+    "A story says that when the Germans arrived, a young guard called Konstantinos Koukidis wrapped himself in the Greek flag and jumped rather than hand it over. Historians are not sure it happened."
+   ]
+  ],
+  "q": "What did Glezos and Santas do on the night of 30 May 1941?",
+  "opts": [
+   "They climbed the Acropolis and tore down the Nazi flag",
+   "They hid the Greek flag in a cave",
+   "They raised the Greek flag over the Parthenon"
+  ],
+  "mission": "Find the Greek flag and count its stripes. There should be nine.",
+  "pos": {
+   "lat": 37.97165,
+   "lon": 23.72885
+  },
+  "flag": "history",
+  "scene": "scenes/flag-1941.json",
+  "main": false
+ },
+ {
+  "id": "theatre",
+  "title": "Theatre of Dionysus",
+  "area": "south slope",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Theatre was born on this slope. Up to about sixteen thousand people sat in rows up the hill. Backstage, a man was holding a queen's face in his hands."
+   ],
+   [
+    "history",
+    "Aeschylus, Sophocles and Euripides first put on their plays here. All the actors were men. So that man had a job: make thousands of people believe he was a queen."
+   ],
+   [
+    "history",
+    "He put on the mask and became Hecuba, queen of Troy. Euripides' Hecuba was performed here around 424 BC. In the play her city has fallen and her children are taken one by one."
+   ],
+   [
+    "history",
+    "The mask wept. Thousands of people watched a queen grieve. No woman stood on this stage: not one."
+   ],
+   [
+    "history",
+    "Every queen, mother and goddess on this stage was a man in a mask. The saddest woman in Troy was played by a man."
+   ],
+   [
+    "history",
+    "That's history: it happened, and here's how we know: Euripides' play survives, and so does the marble throne of the priest of Dionysus, front row, middle. Best view in the house."
+   ]
+  ],
+  "q": "Who played Queen Hecuba on this stage?",
+  "opts": [
+   "A man wearing a queen's mask",
+   "The priest of Dionysus",
+   "A famous Athenian actress"
+  ],
+  "mission": "Find the priest's marble throne in the front row, in the middle. Then climb a few rows, look down at the stage and picture a man in a queen's mask.",
+  "pos": {
+   "lat": 37.970586,
+   "lon": 23.727629
+  },
+  "flag": "history",
+  "main": true,
+  "scene": "scenes/theatre.json"
+ },
+ {
+  "id": "tortoise",
+  "title": "The Eagle and the Tortoise",
+  "area": "south slope",
+  "speaker": "tortoise",
+  "pages": [
+   [
+    "history",
+    "I am a tortoise. Aeschylus, the first great writer of tragedies, died in Sicily around 456 BC. He wrote plays that were performed on this slope."
+   ],
+   [
+    "legend",
+    "The story goes that an eagle was carrying a tortoise, one of my ancestors, high over Sicily. It looked down, mistook the old man's bald head for a rock, and dropped the tortoise to crack its shell."
+   ],
+   [
+    "legend",
+    "Some birds of prey really do drop tortoises on rocks to break them open. A bald playwright, though? Almost certainly made up. Take it as a story, not a report."
+   ]
+  ],
+  "q": "How does the story say Aeschylus died?",
+  "opts": [
+   "An eagle dropped a tortoise on his head",
+   "He was killed in a battle in Sicily",
+   "He fell from the theatre steps"
+  ],
+  "mission": "Tortoises really live in the Ancient Agora: keep an eye out for one.",
+  "pos": {
+   "lat": 37.970486,
+   "lon": 23.728029
+  },
+  "flag": "legend",
+  "scene": "scenes/tortoise.json",
+  "main": false
+ },
+ {
+  "id": "odeon",
+  "title": "Odeon of Herodes Atticus",
+  "area": "south slope",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "This is the Odeon of Herodes Atticus, a music hall for about five thousand people. Herodes Atticus built it around AD 161. He was the richest man in Greece. Concerts are still held here on summer nights."
+   ],
+   [
+    "history",
+    "He built it in memory of his wife Regilla. She died while pregnant after one of his servants kicked her in the stomach. Her brother accused Herodes of ordering it. He was tried in Rome and let off."
+   ]
+  ],
+  "q": "Who did Herodes Atticus build the Odeon for?",
+  "opts": [
+   "His wife Regilla, who had died",
+   "The emperor Hadrian",
+   "The priest of Dionysus"
+  ],
+  "mission": "From the path above, count the arches in the tall wall.",
+  "pos": {
+   "lat": 37.970819,
+   "lon": 23.724546
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "areopagus",
+  "title": "The Rock of Ares",
+  "area": "Areopagus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Stand on the Rock of Ares. The god of war once stood here, on trial. Ares had killed a son of Poseidon, so the other gods sat on this stone and judged him."
+   ],
+   [
+    "myth",
+    "Much later, Orestes was tried on this same rock. He had killed his own mother, Clytemnestra, to avenge his father. If the jury said guilty, he would die."
+   ],
+   [
+    "myth",
+    "The jury of Athenians dropped their pebbles into the urns, black and white. Then they counted. The votes came out exactly even: half for death, half for freedom."
+   ],
+   [
+    "myth",
+    "Athena herself stepped in and cast the deciding vote. Her pebble was white. From that day, a tied vote on this rock set the prisoner free."
+   ],
+   [
+    "myth",
+    "Orestes walked free. At last the Furies, who had hunted him since the killing, let him go. The curse on his family stopped on this rock."
+   ],
+   [
+    "history",
+    "That's a myth: a story the Greeks told, not a thing that happened. Saint Paul's visit in AD 51 is history: his speech is on the bronze plaque at the foot of the steps."
+   ]
+  ],
+  "q": "Why did Orestes walk free?",
+  "opts": [
+   "The votes were even and Athena's white pebble saved him",
+   "The Furies forgave him and flew away",
+   "Saint Paul spoke up for him"
+  ],
+  "mission": "Find the bronze plaque at the foot of the steps. Then climb carefully, because the rock is polished smooth and slippery, and stand where the gods sat in judgement.",
+  "pos": {
+   "lat": 37.972247,
+   "lon": 23.723349
+  },
+  "flag": "myth",
+  "main": true,
+  "scene": "scenes/areopagus.json",
+  "trail": "olympians"
+ },
+ {
+  "id": "socrates",
+  "title": "The Death of Socrates",
+  "area": "Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 399 BC, a barefoot old man named Socrates was asking awkward questions in this Agora. He wanted to know what words like justice really meant. People did not always like the answers."
+   ],
+   [
+    "history",
+    "He was accused of disrespecting the gods and corrupting the young. Five hundred and one citizens sat as the jury. Most of them found him guilty: the sentence was death."
+   ],
+   [
+    "history",
+    "His friend Crito offered to help him escape from the city. Socrates refused. He had lived his whole life by the laws of Athens: he would not run from them now."
+   ],
+   [
+    "history",
+    "The poison was hemlock, made from a plant. He drank the cup calmly. Then his friends wept."
+   ],
+   [
+    "history",
+    "He lay down, and the numbness crept up from his legs. His last words were to Crito: \"We owe a rooster to Asclepius: pay it.\" Then he was still."
+   ],
+   [
+    "history",
+    "That's history: it happened, and here's how we know: Plato wrote it down, from friends who were there. Clay medicine bottles found in the Agora's south-west corner may mark his prison."
+   ]
+  ],
+  "q": "Why did Socrates stay and drink the hemlock when his friends could get him out?",
+  "opts": [
+   "He would not break the laws of Athens he had lived by",
+   "The guards watched him day and night",
+   "Plato told him to stay"
+  ],
+  "mission": "Find the building in the south-west corner of the Agora that may have been the prison, and look for where the clay medicine bottles were found.",
+  "pos": {
+   "lat": 37.97445,
+   "lon": 23.72125
+  },
+  "flag": "history",
+  "scene": "scenes/socrates.json",
+  "main": true
+ },
+ {
+  "id": "medea-cup",
+  "title": "The Poisoned Cup",
+  "area": "Acropolis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Before any temple stood here, this rock held a palace. Old King Aegeus lived in it. He had no son to be king after him, and a new wife: Medea, a sorceress.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "Medea had come to Athens on the run. In Euripides' play she had killed her own children in Corinth to punish their father. Now she had a little son with Aegeus, and she wanted him to be king.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "But years before, far away in Troezen, Aegeus had fathered a son nobody knew about. He hid a sword and sandals under a huge rock: when the boy could lift it, he should come to Athens.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "That boy was Theseus. At sixteen he lifted the rock and walked to Athens, beating every bandit on the road. He arrived famous, and told nobody who his father was.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "Aegeus looked at the famous stranger and wondered: had he come for the throne? Medea said he had. She handed the old king a cup of poison, and he was frightened enough to agree.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "Theseus drew his sword to cut his meat, so his father would see it. Aegeus knew that sword. He knocked the cup flying. 'My son!' Medea snatched her boy and fled.",
+    "glauka"
+   ],
+   [
+    "myth",
+    "That's a myth: a story the Greeks told, not a thing that happened. Plutarch tells it. You'll meet this old king again, on the edge of this rock, watching for sails.",
+    "glauka"
+   ]
+  ],
+  "q": "Why did Medea want the stranger dead?",
+  "opts": [
+   "She wanted her own son to be the next king",
+   "He had stolen her magic cup",
+   "He had insulted the king"
+  ],
+  "mission": "Stand on the north side of the Acropolis, where the old palace stood, and imagine the feast.",
+  "pos": {
+   "lat": 37.972,
+   "lon": 23.726078
+  },
+  "flag": "myth",
+  "scene": "scenes/medea-cup.json",
+  "main": false,
+  "sources": "Plutarch, Theseus 6 and 12; Euripides, Medea; Apollodorus, Epitome 1.5-6 (Medus)"
+ },
+ {
+  "id": "tribute",
+  "title": "The Tribute to Crete",
+  "area": "Agora (stage)",
+  "speaker": "minos",
+  "pages": [
+   [
+    "myth",
+    "I am King Minos of Crete. My son Androgeos died in Athens, and I hold that city to blame. So I set a price on them, and the price was children."
+   ],
+   [
+    "myth",
+    "Every nine years Athens must send me seven boys and seven girls. They are chosen by lot. I shut them in the Labyrinth, and the Minotaur takes them. He is half man and half bull, and he is always hungry."
+   ],
+   [
+    "myth",
+    "Their ship sails under black sails. That is how everyone knows what it carries. No one has ever come back to change them to white."
+   ]
+  ],
+  "q": "How many boys and girls did Athens have to send to Crete every nine years?",
+  "opts": [
+   "Seven boys and seven girls",
+   "Three boys and three girls",
+   "Twelve boys and twelve girls"
+  ],
+  "mission": "In the Agora, picture the names being drawn by lot.",
+  "pos": {
+   "lat": 37.97471,
+   "lon": 23.722493
+  },
+  "flag": "myth",
+  "scene": "scenes/tribute.json",
+  "main": true
+ },
+ {
+  "id": "arrephoroi",
+  "title": "The Secret Basket Girls",
+  "area": "Acropolis north side",
+  "speaker": "arrephoros",
+  "pages": [
+   [
+    "history",
+    "I am an arrephoros. Every year two girls were chosen from noble families to live on the Acropolis for a year. Some say four were chosen. We were between seven and eleven years old."
+   ],
+   [
+    "history",
+    "We helped start the weaving of the peplos, the new robe for Athena's statue. Our house stood on the north side of the Acropolis."
+   ],
+   [
+    "legend",
+    "Once a year, at night, we carried closed baskets on our heads down a hidden passage to a garden below. We did not know what was inside them. We came back up with other things, wrapped up."
+   ]
+  ],
+  "q": "What did the arrephoroi carry down the hidden passage?",
+  "opts": [
+   "Closed baskets on their heads",
+   "The new robe for Athena",
+   "Jars of water from the fountain"
+  ],
+  "mission": "From the lanes of Anafiotika, look up at the north side of the Acropolis: the girls' house stood up there.",
+  "pos": {
+   "lat": 37.972198,
+   "lon": 23.725897
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "priestess",
+  "title": "The Priestess of Athena",
+  "area": "Erechtheion",
+  "speaker": "priestess",
+  "pages": [
+   [
+    "history",
+    "I am the priestess of Athena Polias. Mine was the most important religious office in Athens, and a woman held it for life."
+   ],
+   [
+    "history",
+    "One priestess, Lysimache, served for sixty-four years. Women in Athens could not vote, could not own much property, and usually did not go about alone. Girls were often married at about fourteen."
+   ],
+   [
+    "history",
+    "The priestess was one of the few women whose name was carved on monuments. Mine was. Most women's names were never written down anywhere at all."
+   ]
+  ],
+  "q": "How long did the priestess Lysimache serve?",
+  "opts": [
+   "Sixty-four years",
+   "Four years",
+   "Twenty years"
+  ],
+  "mission": "Find the Erechtheion on the Acropolis, where the priestess of Athena served.",
+  "pos": {
+   "lat": 37.97212,
+   "lon": 23.726728
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "golden-apple",
+  "title": "The Golden Apple",
+  "area": "South slope, by the shrine of Aphrodite",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "There was a wedding, and Eris, the goddess of strife, was not invited. So she rolled a golden apple into the hall. On it were the words: 'For the fairest.'"
+   ],
+   [
+    "myth",
+    "Hera, Athena and Aphrodite each claimed the apple for herself. Zeus would not choose between them, so he sent them to a Trojan prince called Paris."
+   ],
+   [
+    "myth",
+    "Hera offered Paris power. Athena offered him victory in war. Aphrodite offered him the most beautiful woman in the world, Helen. Paris chose Aphrodite."
+   ],
+   [
+    "myth",
+    "Helen was already married, so taking her started the Trojan War. Athena lost the contest, and she sided against Troy. That is how an apple at a wedding led to a war."
+   ]
+  ],
+  "q": "What did Aphrodite offer Paris?",
+  "opts": [
+   "The most beautiful woman in the world, Helen",
+   "Victory in war",
+   "Power over many cities"
+  ],
+  "mission": "On the south slope path, look for the low ruins of a little shrine to Aphrodite, and decide who you would have given the apple to.",
+  "pos": {
+   "lat": 37.971069,
+   "lon": 23.725279
+  },
+  "flag": "myth",
+  "scene": "scenes/golden-apple.json",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "procrustes",
+  "title": "Procrustes and His Bed",
+  "area": "Road to Athens (stage set)",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "On the road to Athens there lived a man called Procrustes. He kept a bed and offered travellers a place to sleep for the night. It was a strange kind of hospitality."
+   ],
+   [
+    "myth",
+    "If a guest was too short for the bed, Procrustes stretched him until he fit. If a guest was too tall, he chopped off his legs. Either way, the guest fit the bed. Nobody ever left in the morning."
+   ],
+   [
+    "myth",
+    "Then Theseus came down the road. He made Procrustes lie on his own bed. Then he gave him the same treatment he had given all those travellers. The road to Athens was quiet after that."
+   ],
+   [
+    "history",
+    "We still say a Procrustean bed when someone forces everything to fit one rule, however badly it fits. The man is gone. The phrase stayed."
+   ]
+  ],
+  "q": "What did Procrustes do to travellers who were too tall for his bed?",
+  "opts": [
+   "He chopped off their legs",
+   "He gave them a longer bed",
+   "He sent them away"
+  ],
+  "mission": "On Wednesday's drive you cross the Corinth Canal: Theseus walked this way to Athens.",
+  "pos": {
+   "zone": "greece",
+   "lat": 38.041,
+   "lon": 23.541
+  },
+  "flag": "myth",
+  "scene": "scenes/procrustes.json",
+  "main": false
+ },
+ {
+  "id": "labyrinth",
+  "title": "Into the Labyrinth",
+  "area": "Knossos, Crete (stage)",
+  "speaker": "ariadne",
+  "pages": [
+   [
+    "myth",
+    "I am Ariadne, daughter of Minos. Daedalus built the Labyrinth for my father, and he built it so cleverly that once you were inside you could not find the way out. Not even Daedalus was sure he could."
+   ],
+   [
+    "myth",
+    "Theseus came from Athens as one of the seven. I loved him, and I gave him a ball of thread. He tied the end at the door and let it unroll as he walked deeper in."
+   ],
+   [
+    "myth",
+    "He found the Minotaur in the dark and killed it, with his bare hands, or with a sword. The stories disagree. Then he followed the thread back out to the light."
+   ],
+   [
+    "legend",
+    "There was a real palace at Knossos, a maze of rooms with bulls painted on the walls. Perhaps that is where the story came from. Nobody knows for certain."
+   ]
+  ],
+  "q": "What did Ariadne give Theseus to help him get out?",
+  "opts": [
+   "A ball of thread",
+   "A sword",
+   "A lamp"
+  ],
+  "mission": "Walk a real maze or a winding path and keep one hand on the wall the whole way.",
+  "pos": {
+   "zone": "knossos",
+   "lat": 35.298,
+   "lon": 25.1631
+  },
+  "flag": "myth",
+  "scene": "scenes/labyrinth.json",
+  "main": true,
+  "minigame": "labyrinth-maze"
+ },
+ {
+  "id": "naxos",
+  "title": "Left on Naxos",
+  "area": "Naxos (stage)",
+  "speaker": "ariadne",
+  "pages": [
+   [
+    "myth",
+    "We sailed away from Crete together, Theseus and I. I had saved his life, and I thought that was the end of the story. It was not."
+   ],
+   [
+    "myth",
+    "On the island of Naxos he left me asleep on the beach and sailed on without me. I woke up alone with the sea in front of me."
+   ],
+   [
+    "myth",
+    "Then the god Dionysus found me and married me. That part is kinder. But Theseus was already far away."
+   ],
+   [
+    "myth",
+    "He sailed home to Athens and forgot to change the black sails to white. His father Aegeus watched from the cliff, saw the black sails, and believed his son was dead."
+   ]
+  ],
+  "q": "What did Theseus forget to do on the way home?",
+  "opts": [
+   "Change the black sails to white",
+   "Bring Ariadne with him",
+   "Thank the gods"
+  ],
+  "mission": "Watch for a sail on the water and guess what colour it is from far away.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.1101,
+   "lon": 25.3727
+  },
+  "flag": "myth",
+  "scene": "scenes/naxos.json",
+  "main": true
+ },
+ {
+  "id": "cyclopes",
+  "title": "Walls of the Cyclopes",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Stand by the walls of Mycenae and put your hand on a stone. Some of these boulders weigh several tonnes, so push as hard as you like."
+   ],
+   [
+    "myth",
+    "Later Greeks looked at these stones and decided no ordinary person could have lifted them. So they said the Cyclopes did it: one-eyed giants as strong as hills."
+   ],
+   [
+    "history",
+    "The name stuck. Archaeologists still call this kind of wall Cyclopean, even though they know exactly who built it."
+   ],
+   [
+    "history",
+    "Real people built these walls about 3,300 years ago. They dragged the stones up ramps on ropes, then tipped them into place with long wooden levers."
+   ],
+   [
+    "history",
+    "It took a great deal of muscle. Every stone in front of you was hauled here by a team of people, not lifted by a giant."
+   ],
+   [
+    "history",
+    "That's history: it happened, and here's how we know. The walls are still standing: you can touch them. No giants were involved."
+   ]
+  ],
+  "q": "Why did later Greeks say giants built these walls?",
+  "opts": [
+   "The stones looked too heavy for ordinary people to lift",
+   "They had watched the Cyclopes at work",
+   "Theseus told them so"
+  ],
+  "mission": "Stand by the wall and measure a stone against your own height. Then guess how many people it took to move it.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.731,
+   "lon": 22.7568
+  },
+  "flag": "history",
+  "scene": "scenes/cyclopes.json",
+  "main": true
+ },
+ {
+  "id": "lion-gate",
+  "title": "The Lion Gate",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "About 1,800 years ago, the travel-writer Pausanias stood here and wrote that lions stand over the gate. They still do. This is the main gate of Mycenae, built around 1250 BC."
+   ],
+   [
+    "history",
+    "Two lions stand either side of a column, carved in stone. It is the oldest large sculpture still standing in Europe. Chariots rolled in under them."
+   ],
+   [
+    "history",
+    "But look closer. The lions' heads were made separately and fitted on. Somewhere in the centuries, they came off."
+   ],
+   [
+    "history",
+    "Nobody has found them. What you see is the bodies, and an empty space where the heads should be."
+   ],
+   [
+    "history",
+    "Now look down at the threshold. The grooves in the stone show where the great doors swung open, and where chariot wheels rolled through."
+   ],
+   [
+    "history",
+    "That's history: it happened, and here's how we know. The grooves are under your feet and the lions are over your head. Only the heads are missing."
+   ]
+  ],
+  "q": "Why do the Lion Gate lions have no heads?",
+  "opts": [
+   "The heads were made separately, and they have been lost",
+   "The sculptor never finished them",
+   "Pausanias carried them off"
+  ],
+  "mission": "Stand in the gate and look up at the lions: where would their heads have been? Then find the grooves with your feet.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.7308,
+   "lon": 22.7561
+  },
+  "flag": "history",
+  "main": true,
+  "scene": "scenes/lion-gate.json"
+ },
+ {
+  "id": "atreus-dinner",
+  "title": "The Dinner of Atreus",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Up on this hill lived two brothers who hated each other. Atreus and Thyestes both wanted to be king of Mycenae. Atreus won, and drove his brother out."
+   ],
+   [
+    "myth",
+    "Then Atreus learned that Thyestes had stolen his wife. So he smiled, pretended to make peace, and invited his brother home to a feast."
+   ],
+   [
+    "myth",
+    "He served Thyestes a stew, and Thyestes ate every spoonful. He did not know it was made from his own sons."
+   ],
+   [
+    "myth",
+    "Then Atreus showed him the platter with their heads and hands on it. “More stew, brother?”"
+   ],
+   [
+    "myth",
+    "The sun was so horrified that it turned back in the sky. Thyestes cursed the whole family, and the curse ran down from father to son to son."
+   ],
+   [
+    "myth",
+    "That's a myth: a story the Greeks told, not a thing that happened. But the palace was real. Its ruins are at the top of this hill."
+   ]
+  ],
+  "q": "Why did Thyestes curse the whole family?",
+  "opts": [
+   "Atreus had tricked him into eating his own sons",
+   "Atreus had stolen his wife",
+   "The sun turned back in the sky"
+  ],
+  "mission": "At the top of Mycenae, find the ruins of the palace where the feast would have been.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.7311,
+   "lon": 22.7575
+  },
+  "flag": "myth",
+  "scene": "scenes/atreus-dinner.json",
+  "main": true
+ },
+ {
+  "id": "iphigenia",
+  "title": "Agamemnon's Choice",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Agamemnon was the son of Atreus and king of Mycenae. He led the Greek army against Troy, to bring back Helen."
+   ],
+   [
+    "myth",
+    "The ships were stuck at Aulis with no wind at all. Agamemnon had angered the goddess Artemis, and she held the fleet where it sat."
+   ],
+   [
+    "myth",
+    "A seer told him the wind would come only if he sacrificed his daughter Iphigenia. He tricked her into coming by pretending she would marry the hero Achilles. Then he sacrificed her."
+   ],
+   [
+    "myth",
+    "In some versions of the story, Artemis swapped her for a deer at the last moment and carried her away. The wind blew, and the ships sailed for Troy."
+   ]
+  ],
+  "q": "Why was the Greek fleet stuck at Aulis?",
+  "opts": [
+   "There was no wind, because Agamemnon had angered Artemis",
+   "The ships were broken",
+   "The men refused to sail"
+  ],
+  "mission": "Look for a deer on the trip, real or painted, and remember the version where Iphigenia was saved.",
+  "pos": {
+   "zone": "greece",
+   "lat": 38.4339,
+   "lon": 23.5928
+  },
+  "flag": "myth",
+  "scene": "scenes/iphigenia.json",
+  "main": false
+ },
+ {
+  "id": "clytemnestra",
+  "title": "Murder in the Bath",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Agamemnon came home to Mycenae after ten years at Troy, victorious and rich. The crowds cheered. His wife Clytemnestra did not, because she had never forgiven him for Iphigenia."
+   ],
+   [
+    "myth",
+    "She laid a red carpet for him, smiled, and said: “Welcome home, husband. Your bath is ready.”"
+   ],
+   [
+    "myth",
+    "As he stepped out of his bath she threw a net over him, so he could not move. Then she killed him with an axe."
+   ],
+   [
+    "myth",
+    "But the curse on the family was not finished. Years later their son Orestes came back and killed his mother to avenge his father."
+   ],
+   [
+    "myth",
+    "Then the Furies hunted Orestes across the world, until he fled to Athens. On the Areopagus, Athena herself cast the deciding vote and set him free."
+   ],
+   [
+    "myth",
+    "That's a myth: a story the Greeks told, not a thing that happened. But the Areopagus is real: a rocky hill just below the Acropolis."
+   ]
+  ],
+  "q": "Why did Clytemnestra kill Agamemnon?",
+  "opts": [
+   "She had never forgiven him for sacrificing Iphigenia",
+   "He came home from Troy without any treasure",
+   "Athena told her to"
+  ],
+  "mission": "Back in Athens, climb the Areopagus, the rocky hill below the Acropolis, where this story ends.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.7313,
+   "lon": 22.758
+  },
+  "flag": "myth",
+  "scene": "scenes/clytemnestra.json",
+  "main": true
+ },
+ {
+  "id": "mask",
+  "title": "The Mask of Agamemnon",
+  "area": "Mycenae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 1876 the archaeologist Heinrich Schliemann dug up royal graves here at Mycenae. They were full of gold, and among the gold were face masks beaten from thin sheets of metal."
+   ],
+   [
+    "tourist",
+    "Schliemann believed one of them was the face of Agamemnon himself. He is often quoted as saying, I have gazed upon the face of Agamemnon."
+   ],
+   [
+    "history",
+    "The mask is about 300 years older than any Trojan War could have been. It is not Agamemnon. It sits in the National Archaeological Museum in Athens."
+   ],
+   [
+    "legend",
+    "As for the famous sentence, there is no proof he ever said it. It may have been invented later to make a better story."
+   ]
+  ],
+  "q": "Why is the gold mask not the face of Agamemnon?",
+  "opts": [
+   "It is about 300 years older than any Trojan War",
+   "It is made of bronze",
+   "It was found in Crete"
+  ],
+  "mission": "At Mycenae, find Grave Circle A, the ring of stones where the masks were found.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.7306,
+   "lon": 22.7563
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "epidaurus-theatre",
+  "title": "The Theatre That Whispers",
+  "area": "Epidaurus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Sick people came to Epidaurus to ask the god Asclepius to heal them. Around 340 BC a theatre was built here, with seats for about 14,000 people."
+   ],
+   [
+    "history",
+    "Picture yourself in the very top row. Far below, an actor speaks in a normal voice, but you hear every word without any microphone at all."
+   ],
+   [
+    "tourist",
+    "Guides go further. They say you can hear a coin drop or a match struck from the very top. Don't believe them until you've tried it."
+   ],
+   [
+    "history",
+    "Scientists think the rows of seats filter out the low background noise, so the voice comes through clean."
+   ],
+   [
+    "history",
+    "The wind, the shuffling feet and the rumbling tummies get filtered away by the steps. The stone does some of the work."
+   ],
+   [
+    "history",
+    "That's history: it happened, and here's how we know. It is still used for plays today. Test it yourself with one coin."
+   ]
+  ],
+  "q": "Why can people in the top row hear a quiet voice?",
+  "opts": [
+   "The stone rows filter out the low background noise",
+   "There are hidden speakers in the seats",
+   "The actors shout as loudly as they can"
+  ],
+  "mission": "One of you stands in the centre and drops a coin while the other listens from the top. Then swap.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.5961,
+   "lon": 23.0793
+  },
+  "flag": "history",
+  "main": true,
+  "scene": "scenes/epidaurus-theatre.json"
+ },
+ {
+  "id": "asclepius",
+  "title": "The Sleep Hospital",
+  "area": "Epidaurus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Epidaurus was the most famous sanctuary of Asclepius, the god of healing. People came from all over Greece when they were sick."
+   ],
+   [
+    "history",
+    "They slept in a special hall, hoping the god would visit them in a dream. In the dream he might heal them, or tell them what cure to use."
+   ],
+   [
+    "history",
+    "Harmless snakes slithered around the sanctuary. The snake on a staff is still the symbol of medicine today."
+   ],
+   [
+    "history",
+    "Stone tablets list the cures people claimed. Some of them are impossible, and the priests wrote them down anyway."
+   ]
+  ],
+  "q": "What did sick people do at the sanctuary of Asclepius?",
+  "opts": [
+   "Slept in a hall, hoping the god would visit them in a dream",
+   "Bought medicine from a priest",
+   "Bathed in the sea"
+  ],
+  "mission": "Look for the snake-and-staff symbol on a chemist's sign in Greece.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.5995,
+   "lon": 23.0745
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "kapodistrias",
+  "title": "The Bullet in the Wall",
+  "area": "Nafplio",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Nafplio was the first capital of modern Greece after the country won its independence. For a few years, this small town ran the whole nation."
+   ],
+   [
+    "history",
+    "Its first head of state was Ioannis Kapodistrias. On 9 October 1831 he was shot and stabbed to death outside the church of Saint Spyridon by two men from a rival family."
+   ],
+   [
+    "history",
+    "A bullet hole is still in the church wall, behind glass. It has been there for nearly two hundred years."
+   ]
+  ],
+  "q": "Who killed Ioannis Kapodistrias?",
+  "opts": [
+   "Two men from a rival family",
+   "A foreign soldier",
+   "A pirate"
+  ],
+  "mission": "Find the church of Saint Spyridon and the bullet hole.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.5664,
+   "lon": 22.803
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "palamidi",
+  "title": "The 999 Steps",
+  "area": "Nafplio",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "The Palamidi fortress sits on the cliff above Nafplio. The Venetians built it between about 1711 and 1714, and it looks down on the whole bay."
+   ],
+   [
+    "tourist",
+    "Everyone says there are 999 steps up to it. It is a good number, and it sounds like a lot, so people repeat it."
+   ],
+   [
+    "history",
+    "People who have actually counted get different numbers. Usually somewhere between about 850 and 1,000, depending on where you start and stop."
+   ]
+  ],
+  "q": "How many steps are there really up to Palamidi?",
+  "opts": [
+   "People count different numbers, usually between about 850 and 1,000",
+   "Exactly 999",
+   "Exactly 500"
+  ],
+  "mission": "Count the steps you can see, or estimate them.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.5615,
+   "lon": 22.8094
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "solon-croesus",
+  "title": "Call No Man Happy",
+  "area": "Pnyx",
+  "speaker": "solon",
+  "pages": [
+   [
+    "history",
+    "Around 594 BC, Athens chose me, Solon, to fix its laws. Poor Athenians were being sold as slaves for their debts. I cancelled most of the old laws and set them free.",
+    "solon"
+   ],
+   [
+    "legend",
+    "Before me, Athens used the laws of Draco. Steal a cabbage and you could be put to death. People said they were written in blood: we still call harsh rules draconian.",
+    "solon"
+   ],
+   [
+    "legend",
+    "Then I travelled. Herodotus says I visited Croesus, king of Lydia, the richest man in the world. He showed me his treasure and asked who the happiest man alive was.",
+    "solon"
+   ],
+   [
+    "legend",
+    "He was waiting for his own name. I named Tellus, an ordinary Athenian with fine sons, who died bravely in battle. Call no man happy until he is dead.",
+    "solon"
+   ],
+   [
+    "legend",
+    "Years later the Persian king Cyrus took his kingdom and put Croesus on a burning pyre. Croesus cried out my name three times. Cyrus asked why, heard the story, and ordered the fire put out.",
+    "solon"
+   ],
+   [
+    "legend",
+    "The flames were too strong, until Croesus prayed to Apollo and rain fell. That's a legend: a real person, and a story that grew around him. The dates don't fit: they may never have met.",
+    "glauka"
+   ]
+  ],
+  "q": "Why did Croesus cry out Solon's name on the pyre?",
+  "opts": [
+   "He remembered Solon's warning: call no man happy until he is dead",
+   "He hoped Solon would come and save him",
+   "He was praying to Apollo"
+  ],
+  "mission": "Stand on the Pnyx and say \"Call no man happy until he is dead\" to the city.",
+  "pos": {
+   "lat": 37.971543,
+   "lon": 23.719381
+  },
+  "flag": "legend",
+  "scene": "scenes/solon-croesus.json",
+  "main": true
+ },
+ {
+  "id": "pericles",
+  "title": "Pericles and His Helmet",
+  "area": "Pnyx",
+  "speaker": "pericles",
+  "pages": [
+   [
+    "history",
+    "I am Pericles. For about thirty years, from 461 to 429 BC, I was the leading man of Athens. I won the arguments on the Pnyx, where the citizens voted. I persuaded Athens to build the Parthenon and the Propylaia."
+   ],
+   [
+    "legend",
+    "My statues always show me wearing a helmet. Comic poets joked that the helmet was there to hide my strangely long head. They called me onion-head."
+   ],
+   [
+    "history",
+    "In 431 BC the war with Sparta began. I gave a famous speech praising the Athenians who had died in the war. Thucydides wrote it down."
+   ],
+   [
+    "history",
+    "In 430 BC a terrible plague struck the crowded city. People died in the streets and in the temples, so many that the bodies were piled up. Thucydides caught it himself and survived. My two sons died of it, and in 429 BC so did I."
+   ]
+  ],
+  "q": "What did Pericles persuade Athens to build?",
+  "opts": [
+   "The Parthenon and the Propylaia",
+   "The walls of Sparta",
+   "A great fleet of triremes"
+  ],
+  "mission": "On the Acropolis, remember that the man who built the Parthenon never saw the war end.",
+  "pos": {
+   "lat": 37.971743,
+   "lon": 23.719681
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "socrates-face",
+  "title": "The Ugliest Man in Athens",
+  "area": "Agora",
+  "speaker": "socrates",
+  "pages": [
+   [
+    "history",
+    "I am Socrates. My friends said I looked like a satyr: snub nose, bulging eyes, thick lips, a big belly. I walked barefoot, even in winter, in the same old cloak. I was a stonemason's son and I fought as a soldier for Athens."
+   ],
+   [
+    "history",
+    "The oracle at Delphi said no one was wiser than me. I decided it meant I was wise only because I knew that I knew nothing."
+   ],
+   [
+    "history",
+    "So I went round asking people what courage, justice and beauty were. I showed them they did not know either. It made me very annoying."
+   ]
+  ],
+  "q": "What did the oracle at Delphi say about Socrates?",
+  "opts": [
+   "No one was wiser than him",
+   "He was the strongest man in Athens",
+   "He knew everything"
+  ],
+  "mission": "Ask someone a question and answer every reply with another question.",
+  "pos": {
+   "lat": 37.9747,
+   "lon": 23.7219
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "diogenes-lamp",
+  "title": "Diogenes and the Lamp",
+  "area": "Agora",
+  "speaker": "diogenes",
+  "pages": [
+   [
+    "legend",
+    "I am Diogenes. I walked through the Agora in broad daylight carrying a lit lamp. When people asked why, I said I was looking for an honest man."
+   ],
+   [
+    "legend",
+    "Plato described a human being as a featherless biped, a two-legged animal without feathers. I plucked a chicken, brought it to his school and said: here is Plato's human. Plato added with broad flat nails to his definition. I begged from statues, to practise being refused."
+   ]
+  ],
+  "q": "What did Diogenes say he was looking for with his lamp?",
+  "opts": [
+   "An honest man",
+   "A lost coin",
+   "A clever teacher"
+  ],
+  "mission": "Say whether a plucked chicken is a human, and why not.",
+  "pos": {
+   "lat": 37.9752,
+   "lon": 23.7225
+  },
+  "flag": "legend",
+  "scene": "scenes/diogenes-lamp.json",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "diogenes-jar",
+  "title": "Diogenes in His Jar",
+  "area": "Agora",
+  "speaker": "diogenes",
+  "pages": [
+   [
+    "legend",
+    "I am Diogenes. I live in a big clay jar, a pithos, here in the Agora. It is big enough to lie down inside. I own a cloak, a stick and a bag, and that is all."
+   ],
+   [
+    "legend",
+    "One day I saw a boy scoop up water in his hands and drink. So I threw away my drinking cup. The boy did not need one, and neither did I."
+   ],
+   [
+    "legend",
+    "Alexander the Great came to see me and stood over my jar. He offered me anything I wanted. I said: 'Stand a little out of my sunlight.'"
+   ],
+   [
+    "history",
+    "People called me the dog, because I snapped and begged and slept in the street. My followers were called Cynics, from the Greek word for dog-like."
+   ]
+  ],
+  "q": "What did Diogenes say to Alexander the Great?",
+  "opts": [
+   "Stand a little out of my sunlight",
+   "Give me half your kingdom",
+   "Bring me a new drinking cup"
+  ],
+  "mission": "On the west side of the Agora, find the Metroon, the temple of the Mother of the Gods: that is where the story puts his jar.",
+  "pos": {
+   "lat": 37.975,
+   "lon": 23.7216
+  },
+  "flag": "legend",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "simon-shop",
+  "title": "Simon's Shoe Shop",
+  "area": "Agora",
+  "speaker": "socrates",
+  "pages": [
+   [
+    "history",
+    "I am Socrates. I never wrote a single word down. Most of what you know about me comes from my pupils, Plato and Xenophon, who wrote about me after I died."
+   ],
+   [
+    "history",
+    "I liked to talk with young men at a shoe shop by the Agora. Simon the shoemaker worked there, and he let me sit and argue with whoever came in."
+   ],
+   [
+    "history",
+    "Archaeologists dug up a building on the edge of the Agora. They found iron hobnails and bone eyelets for boots, and the base of a cup with SIMONOS scratched on it. That means 'Simon's'. They think this was his shop."
+   ],
+   [
+    "history",
+    "I never answered a question straight. I asked another question back, and another, until you found the answer yourself. People found that maddening."
+   ]
+  ],
+  "q": "What did archaeologists find in the shoemaker's building by the Agora?",
+  "opts": [
+   "Iron hobnails, bone eyelets, and a cup base scratched SIMONOS",
+   "A marble statue of Socrates",
+   "A leather boot with Plato's name on it"
+  ],
+  "mission": "In the south-west corner of the Agora, near the round building called the Tholos, find the spot marked as Simon's house.",
+  "pos": {
+   "lat": 37.97452,
+   "lon": 23.72145
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "zeno-porch",
+  "title": "Zeno and the Painted Porch",
+  "area": "Agora",
+  "speaker": "zeno",
+  "pages": [
+   [
+    "legend",
+    "I am Zeno. I came from Cyprus as a merchant, carrying a cargo of purple dye. My ship was wrecked and I lost everything."
+   ],
+   [
+    "legend",
+    "In Athens I sat in a bookshop and read about Socrates. I asked the bookseller where I could find men like that. He pointed at a philosopher walking past."
+   ],
+   [
+    "history",
+    "I taught in the Stoa Poikile, the Painted Porch, a long walkway decorated with battle paintings. My followers were called Stoics after the stoa. We taught that you cannot control what happens to you, only how you respond."
+   ],
+   [
+    "legend",
+    "Later there was a Stoic called Epictetus, born a slave. His master twisted his leg until it broke. Epictetus said calmly: 'You will break it.' Then he said: 'Did I not tell you?'"
+   ]
+  ],
+  "q": "Where did Zeno teach in Athens?",
+  "opts": [
+   "In the Stoa Poikile, the Painted Porch",
+   "In a cave on the side of the Acropolis",
+   "In the grove of the hero Akademos"
+  ],
+  "mission": "Walk along Adrianou Street on the north edge of the Agora and look over the railings at the dig: that is the Painted Porch.",
+  "pos": {
+   "lat": 37.976414,
+   "lon": 23.722617
+  },
+  "flag": "legend",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "theseus-ship",
+  "title": "The Ship of Theseus",
+  "area": "Agora near the prison",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "The Athenians kept a ship and sailed it to the island of Delos every year for a festival. The voyage was real. It happened every year."
+   ],
+   [
+    "legend",
+    "They said it was the very ship Theseus had sailed in, with the same planks. That part is a story. Nobody could prove it either way."
+   ],
+   [
+    "history",
+    "As the planks rotted, they replaced them, one by one, until none of the original wood was left. Was it still the same ship? Plutarch says philosophers argued about it. It is still a famous puzzle, with no single right answer."
+   ],
+   [
+    "history",
+    "Socrates had to wait for that ship. No execution could take place while it was away, so he spent about a month in prison, talking with his friends. When it came back, he drank the hemlock."
+   ]
+  ],
+  "q": "If every plank of a ship is replaced, is it still the same ship?",
+  "opts": [
+   "There is no single right answer",
+   "No, it is a different ship once every plank is new",
+   "Yes, it is the same ship as long as the name stays the same"
+  ],
+  "mission": "In the Agora, find the prison where Socrates waited for the ship to come home.",
+  "pos": {
+   "lat": 37.9744,
+   "lon": 23.72135
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "plato-academy",
+  "title": "Plato's Academy",
+  "area": "Academy",
+  "speaker": "plato",
+  "pages": [
+   [
+    "history",
+    "I am Plato. I was Socrates' pupil. Around 387 BC I started a school in a grove outside the city walls, sacred to a hero named Akademos. So people called it the Academy."
+   ],
+   [
+    "history",
+    "Every academy in the world since then is named after that grove. It is about two kilometres north-west of the Agora. Today it is a park with ruins, in the middle of a city neighbourhood."
+   ],
+   [
+    "legend",
+    "My real name may have been Aristocles. Platon means broad. Some say it came from my shoulders, because I wrestled. Nobody wrote that down at the time."
+   ],
+   [
+    "legend",
+    "A sign over the door of the school was said to read: 'Let no one ignorant of geometry enter.' Nobody mentioned that sign until centuries later."
+   ]
+  ],
+  "q": "Why was Plato's school called the Academy?",
+  "opts": [
+   "It stood in a grove sacred to the hero Akademos",
+   "It was named after Plato's teacher",
+   "It was paid for by a rich man called Akademos"
+  ],
+  "mission": "If you get there, find the Academy park and stand where Plato's school once stood.",
+  "pos": {
+   "zone": "academy",
+   "lat": 37.9913682,
+   "lon": 23.7083807
+  },
+  "flag": "legend",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "hypatia",
+  "title": "Hypatia of Alexandria",
+  "area": "Academy",
+  "speaker": "hypatia",
+  "pages": [
+   [
+    "history",
+    "I am Hypatia. I lived and taught in Alexandria, in Egypt. Not here in Athens. I want that clear before we start."
+   ],
+   [
+    "history",
+    "Around AD 400 I taught mathematics, astronomy and Plato's philosophy. Students came from far away to hear me. I drove my own chariot and lectured in public."
+   ],
+   [
+    "history",
+    "In AD 415 I was caught in a power struggle between the city's governor and its bishop. A Christian mob dragged me from my chariot into a church and killed me with broken pottery shards. A Christian historian, Socrates Scholasticus, wrote about it and condemned it."
+   ],
+   [
+    "history",
+    "The Greek word for those shards is ostraka, the same word as the voting shards in the Agora here. Some say I studied in Athens, but nobody knows. At the same time a woman philosopher named Asclepigenia taught here, at the school that carried on Plato's ideas. In AD 529 the emperor Justinian stopped pagan philosophers teaching, and the last Athenian philosophers left for Persia."
+   ]
+  ],
+  "q": "Where did Hypatia teach?",
+  "opts": [
+   "In Alexandria, in Egypt",
+   "In Athens, at the Academy",
+   "In Rome, near the forum"
+  ],
+  "mission": "Find the Academy park and think about Hypatia and Asclepigenia.",
+  "pos": {
+   "zone": "academy",
+   "lat": 37.9916682,
+   "lon": 23.7087807
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "aristotle-lyceum",
+  "title": "Aristotle's Lyceum",
+  "area": "Lyceum",
+  "speaker": "aristotle",
+  "pages": [
+   [
+    "history",
+    "I am Aristotle. I came from the north of Greece. I studied at Plato's Academy for about twenty years, and I tutored the young Alexander the Great."
+   ],
+   [
+    "history",
+    "Around 335 BC I opened my own school in the Lyceum. It was a gymnasium sacred to Apollo Lykeios, outside the city to the east."
+   ],
+   [
+    "legend",
+    "People say I taught while walking up and down the covered walkways. That is why my followers were called Peripatetics, the walkers-about. The walking may be a story."
+   ],
+   [
+    "history",
+    "I collected and studied animals and plants. I also collected the laws of 158 Greek cities. The ruins of the Lyceum were only found in 1996, when builders dug for a new museum."
+   ]
+  ],
+  "q": "What were Aristotle's followers called?",
+  "opts": [
+   "Peripatetics, the walkers-about",
+   "Stoics, after the painted porch",
+   "Cynics, after the dog"
+  ],
+  "mission": "Find the Lyceum ruins on Rigillis Street.",
+  "pos": {
+   "zone": "lyceum",
+   "lat": 37.9738716,
+   "lon": 23.7433616
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "aristotle-dandy",
+  "title": "Aristotle the Dandy",
+  "area": "Lyceum",
+  "speaker": "aristotle",
+  "pages": [
+   [
+    "legend",
+    "I am Aristotle. Writers said I had thin legs and small eyes. I spoke with a lisp. I wore fine clothes and rings, and had a fashionable haircut."
+   ],
+   [
+    "history",
+    "I studied everything: animals, plants, the stars, poetry, politics, how arguments work. I cut open animals to see how they worked and described hundreds of them."
+   ],
+   [
+    "history",
+    "I made a few mistakes too. I thought women had fewer teeth than men. I never checked. I wrote it down in my books."
+   ]
+  ],
+  "q": "What did Aristotle get wrong?",
+  "opts": [
+   "He thought women had fewer teeth than men",
+   "He thought women had more teeth than men",
+   "He thought teeth never fall out"
+  ],
+  "mission": "Count your teeth and prove Aristotle wrong.",
+  "pos": {
+   "zone": "lyceum",
+   "lat": 37.9740716,
+   "lon": 23.7430616
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "spartan-fox",
+  "title": "The Spartan Boy and the Fox",
+  "area": "Sparta",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In Sparta, boys were taken from their families at seven to train as soldiers. The system was called the agoge. The boys were kept hungry on purpose."
+   ],
+   [
+    "history",
+    "They were encouraged to steal food. A boy caught stealing was beaten: for being caught, not for stealing. Xenophon and Plutarch both wrote it down."
+   ],
+   [
+    "legend",
+    "Plutarch tells of a boy who stole a fox cub and hid it under his cloak. Rather than be found out, he let the cub tear at his stomach with its teeth and claws until he fell dead."
+   ]
+  ],
+  "q": "Why was a Spartan boy beaten for stealing?",
+  "opts": [
+   "For being caught, not for stealing",
+   "For stealing, not for being caught",
+   "For refusing to steal"
+  ],
+  "mission": "On the Greece map, find Sparta, south of Mycenae.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.0755,
+   "lon": 22.4303
+  },
+  "flag": "history",
+  "scene": "scenes/spartan-fox.json",
+  "main": false
+ },
+ {
+  "id": "spartan-shield",
+  "title": "With Your Shield, or On It",
+  "area": "Sparta",
+  "speaker": "spartan_mother",
+  "pages": [
+   [
+    "legend",
+    "I am a Spartan mother. When my son goes to war, I hand him his shield and say: come back with this, or on it. Win, or be carried home dead on it. Never throw it away to run."
+   ],
+   [
+    "history",
+    "Spartan girls are not like Athenian girls. We run races, we wrestle, we are taught to be strong. Spartan women can own land, and we run the estates while the men are at war."
+   ]
+  ],
+  "q": "What did Spartan mothers say as their sons went to war?",
+  "opts": [
+   "Come back with this, or on it",
+   "Come back with gold, or not at all",
+   "Come back before nightfall"
+  ],
+  "mission": "Compare: who had more freedom, a girl in Athens or a girl in Sparta?",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.079,
+   "lon": 22.425
+  },
+  "flag": "legend",
+  "main": false
+ },
+ {
+  "id": "thermopylae",
+  "title": "The Three Hundred",
+  "area": "Thermopylae",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In 480 BC the Persian king Xerxes invaded Greece with a huge army. At the narrow pass of Thermopylae, King Leonidas of Sparta with three hundred Spartans and a few thousand other Greeks held them off for three days."
+   ],
+   [
+    "legend",
+    "The Persians told the Greeks to hand over their weapons. Leonidas is said to have answered: come and take them. Plutarch wrote that answer down."
+   ],
+   [
+    "history",
+    "A local man, Ephialtes, showed the Persians a mountain path round behind them. Leonidas and the three hundred fought to the death. The Persians then marched on and burnt Athens and the Acropolis."
+   ]
+  ],
+  "q": "Who showed the Persians the path round behind the Greeks?",
+  "opts": [
+   "Ephialtes, a local man",
+   "Leonidas",
+   "A Spartan boy"
+  ],
+  "mission": "Find Thermopylae on the Greece map, then find the burnt column drums in the Acropolis wall.",
+  "pos": {
+   "zone": "greece",
+   "lat": 38.7967,
+   "lon": 22.5367
+  },
+  "flag": "history",
+  "scene": "scenes/thermopylae.json",
+  "main": false
+ },
+ {
+  "id": "bull-leapers",
+  "title": "The Bull-Leapers",
+  "area": "Knossos",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "I am Glauka, an owl, and I have flown over Crete for a long time. Knossos was the biggest palace of the Minoans, about three thousand five hundred years ago. More than a thousand rooms, all tangled together."
+   ],
+   [
+    "legend",
+    "All those rooms made a maze you could get lost in for days. People say that maze is where the story of the Labyrinth came from. That part is legend: an old story, maybe true, maybe not. I have never found the middle of it myself."
+   ],
+   [
+    "history",
+    "On the palace walls are paintings of young men and women. They run at a charging bull, grab its horns, and somersault right over its back. Nobody knows if it was a sport, a religious ritual, or both. The bull was very real."
+   ]
+  ],
+  "q": "What do the bull-leapers in the paintings do?",
+  "opts": [
+   "Grab the bull's horns and somersault over its back",
+   "Ride the bull around the palace",
+   "Feed the bull honey cakes"
+  ],
+  "mission": "In the Archaeological Museum in Athens, or online, find a picture of a bull-leaper.",
+  "pos": {
+   "zone": "knossos",
+   "lat": 35.298,
+   "lon": 25.1631
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "icarus",
+  "title": "Daedalus and Icarus",
+  "area": "Knossos",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "King Minos wanted the secret of the Labyrinth kept forever. So he locked Daedalus, the man who built it, in a tower. Daedalus's son Icarus was locked in with him. I perched on the window and watched."
+   ],
+   [
+    "myth",
+    "Daedalus was clever with his hands. He gathered feathers and stitched them with thread and wax into two pairs of wings. One pair for himself, one for the boy. He showed Icarus how to strap them on."
+   ],
+   [
+    "myth",
+    "Then he gave his warning. Not too low, he said, or the sea spray will soak the feathers and drag you down. Not too high, or the sun will melt the wax. Fly the middle path, between the two."
+   ],
+   [
+    "myth",
+    "Icarus forgot the middle path. He climbed higher and higher, laughing, until the wax ran like tears down his shoulders. The feathers came loose and he fell into the sea and drowned. That sea is still called the Icarian Sea."
+   ]
+  ],
+  "q": "What would happen if Icarus flew too high?",
+  "opts": [
+   "The sun would melt the wax",
+   "The sea spray would soak the feathers",
+   "He would lose his way"
+  ],
+  "mission": "On the plane home, look down at the sea and imagine flying with wax wings.",
+  "pos": {
+   "zone": "knossos",
+   "lat": 35.299,
+   "lon": 25.164
+  },
+  "flag": "myth",
+  "scene": "scenes/icarus.json",
+  "main": false
+ },
+ {
+  "id": "troy-real",
+  "title": "Was Troy Real?",
+  "area": "Troy",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Troy was a real city. It stood at a place we now call Hisarlik, in Turkey, near the mouth of the Dardanelles. People lived there for thousands of years. I have flown over the ruins: a mound in a field."
+   ],
+   [
+    "history",
+    "Heinrich Schliemann dug there in the eighteen seventies. He was the same man who dug at Mycenae. He found the ruins of nine cities, each built on top of the one before. One layer had been destroyed by fire around eleven hundred and eighty BC."
+   ],
+   [
+    "legend",
+    "So Troy burned. But did a Greek army really besiege it for ten years over a queen called Helen? Nobody knows. That part is legend: an old story that may or may not be true. Homer sang it, and I have heard the song many times."
+   ],
+   [
+    "history",
+    "Schliemann found a hoard of gold at Troy and called it Priam's Treasure. He smuggled it out of Turkey. It is now in a museum in Moscow. I have never seen so much gold in one place."
+   ]
+  ],
+  "q": "How many cities did Schliemann find built one on top of another at Troy?",
+  "opts": [
+   "Nine",
+   "Three",
+   "Twelve"
+  ],
+  "mission": "Find Troy on a map of Turkey.",
+  "pos": {
+   "zone": "troy",
+   "lat": 39.9575,
+   "lon": 26.2389
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "achilles",
+  "title": "Achilles and Hector",
+  "area": "Troy",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Achilles was the greatest Greek warrior at Troy. The Trojan prince Hector killed his best friend Patroclus. Achilles went out to meet Hector in single combat outside the walls. Hector died."
+   ],
+   [
+    "myth",
+    "Then Achilles tied Hector's body to his chariot by the ankles. He dragged it round the walls of Troy, round and round, for days. Hector's parents stood on the battlements and watched. Nobody stopped him."
+   ],
+   [
+    "myth",
+    "One night Hector's old father, King Priam, crept into the Greek camp. He knelt and begged Achilles for his son's body. Achilles wept with him. Then he gave Hector back."
+   ]
+  ],
+  "q": "What did Achilles do with Hector's body?",
+  "opts": [
+   "Tied it to his chariot and dragged it round the walls",
+   "Buried it with honour at once",
+   "Sent it straight home to Troy"
+  ],
+  "mission": "Draw the chariot dragging round the walls of Troy.",
+  "pos": {
+   "zone": "troy",
+   "lat": 39.958,
+   "lon": 26.238
+  },
+  "flag": "myth",
+  "scene": "scenes/achilles.json",
+  "main": false
+ },
+ {
+  "id": "achilles-heel",
+  "title": "Achilles' Heel",
+  "area": "Troy",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "When Achilles was a baby, his mother dipped him in the River Styx. The water made him impossible to wound. She held him by the heel, so the heel stayed dry. Later writers added this part: Homer never told it."
+   ],
+   [
+    "myth",
+    "Paris was the prince who started the war by taking Helen. He shot an arrow at Achilles. The god Apollo guided it into that one heel. Achilles died."
+   ],
+   [
+    "history",
+    "We still call a weak spot an Achilles heel. The tendon at the back of your ankle is the Achilles tendon. Both phrases are real, and they come from this old story."
+   ]
+  ],
+  "q": "Where did the arrow hit Achilles?",
+  "opts": [
+   "In his heel",
+   "In his shoulder",
+   "In his eye"
+  ],
+  "mission": "Find your own Achilles tendon.",
+  "pos": {
+   "zone": "troy",
+   "lat": 39.957,
+   "lon": 26.2395
+  },
+  "flag": "myth",
+  "main": false
+ },
+ {
+  "id": "wooden-horse",
+  "title": "The Wooden Horse",
+  "area": "Troy",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "After ten years the Greeks pretended to give up. They sailed away and left a giant wooden horse on the beach. It was a gift, they said. The Trojans came out to look at it."
+   ],
+   [
+    "myth",
+    "Cassandra, a Trojan princess, warned them it would destroy the city. Nobody ever believed Cassandra. A priest called Laocoön warned them too. Two sea serpents rose out of the sea and strangled him and his sons."
+   ],
+   [
+    "myth",
+    "The Trojans dragged the horse inside the walls. That night Greek soldiers climbed out of its belly. They opened the gates and burnt Troy. Odysseus had thought of the trick."
+   ],
+   [
+    "history",
+    "A Trojan horse is also what we call a computer virus. It looks like something harmless, a gift. You open it, and the soldiers come out. The phrase is still in use today."
+   ]
+  ],
+  "q": "Who warned the Trojans about the horse?",
+  "opts": [
+   "Cassandra and Laocoön",
+   "Helen and Paris",
+   "Odysseus and Achilles"
+  ],
+  "mission": "Draw your own wooden horse and hide some soldiers inside it.",
+  "pos": {
+   "zone": "troy",
+   "lat": 39.9565,
+   "lon": 26.2385
+  },
+  "flag": "myth",
+  "scene": "scenes/wooden-horse.json",
+  "main": false
+ },
+ {
+  "id": "phaedra",
+  "title": "Two Phaedras",
+  "area": "Theatre of Dionysus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Years after Naxos, Theseus married Ariadne's younger sister, Phaedra. He already had a grown son, Hippolytus, who loved hunting and the goddess Artemis. Hippolytus had no time at all for Aphrodite, goddess of love. That was a mistake."
+   ],
+   [
+    "myth",
+    "Aphrodite took her revenge. She made Phaedra fall desperately in love with her own stepson. Hippolytus was disgusted and refused her. Phaedra hanged herself, and left a letter blaming him for something terrible he had not done."
+   ],
+   [
+    "myth",
+    "Theseus believed the letter and cursed his son with a wish Poseidon had promised him. As Hippolytus drove his chariot along the shore, a monstrous bull burst out of the waves. The horses bolted, the chariot smashed on the rocks, and Hippolytus, tangled in the reins, was dragged over the stones."
+   ],
+   [
+    "myth",
+    "They carried him back to his father, broken and dying. The goddess Artemis appeared and told Theseus the truth. Father and son forgave each other, and then Hippolytus died. Theseus had learned the truth too late, again."
+   ],
+   [
+    "history",
+    "Euripides' play Hippolytus was first performed here in 428 BC and won first prize. In Paris in 1677 Jean Racine retold it as Phèdre, with Phaedra as the heroine, eaten up by guilt: in his version she takes poison. It became the most famous tragedy in French."
+   ]
+  ],
+  "q": "Who did Aphrodite make Phaedra fall in love with?",
+  "opts": [
+   "Her stepson Hippolytus",
+   "Achilles",
+   "The god Dionysus"
+  ],
+  "mission": "At the Theatre of Dionysus, picture the bull bursting from the sea as the messenger told it on this stage.",
+  "pos": {
+   "lat": 37.970666,
+   "lon": 23.727329
+  },
+  "flag": "myth",
+  "scene": "scenes/phaedra.json",
+  "main": false
+ },
+ {
+  "id": "oedipus",
+  "title": "The Riddle of the Sphinx",
+  "area": "Colonus, by Plato's Academy",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "An oracle told the king and queen of Thebes that their baby son would kill his father and marry his mother. So they had the baby left on a mountainside to die, his ankles pinned together. A shepherd saved him. He grew up far away as Oedipus, which means swollen foot."
+   ],
+   [
+    "myth",
+    "Years later, on a narrow road, an old man in a chariot pushed him aside. In a rage Oedipus killed him, not knowing it was his real father, King Laius. Then he came to Thebes, where the Sphinx, a monster with a lion's body and a woman's face, ate everyone who could not answer her riddle."
+   ],
+   [
+    "myth",
+    "What walks on four legs in the morning, two at noon and three in the evening? Oedipus answered: a human being, who crawls as a baby, walks as a grown-up, and uses a stick when old. The Sphinx threw herself off her rock. Thebes made Oedipus king, and he married the widowed queen, Jocasta, not knowing she was his own mother."
+   ],
+   [
+    "myth",
+    "When the truth came out, Jocasta hanged herself. Oedipus tore the brooches from her dress and blinded himself with them. He wandered for years, led by his daughter Antigone, until he came here, to Colonus, and died in a sacred grove."
+   ],
+   [
+    "history",
+    "The playwright Sophocles was born here at Colonus. His Oedipus the King was performed at the Theatre of Dionysus around 429 BC. When he was about 90 he wrote Oedipus at Colonus, about his own village. It was staged after he died."
+   ]
+  ],
+  "q": "What was the answer to the Sphinx's riddle?",
+  "opts": [
+   "A human being",
+   "A horse",
+   "A spider"
+  ],
+  "mission": "If you visit Plato's Academy, look east for the low hill of Colonus, where the play says Oedipus died.",
+  "pos": {
+   "zone": "academy",
+   "lat": 37.9928,
+   "lon": 23.7135
+  },
+  "flag": "myth",
+  "scene": "scenes/oedipus.json",
+  "main": false,
+  "minigame": "sphinx-riddle"
+ },
+ {
+  "id": "philo-socrates",
+  "title": "Socrates and the Sophists",
+  "area": "Agora",
+  "speaker": "socrates",
+  "pages": [
+   [
+    "history",
+    "In my day, clever men called sophists travelled from city to city teaching young men to win arguments, for money. Protagoras was said to charge a hundred minas for a course: a fortune. Evenus charged five. I charged nothing, and I had nothing."
+   ],
+   [
+    "history",
+    "I would ask a sophist a simple question: what is justice? What is courage? He would answer confidently. Then I would ask another question, and another, until he contradicted himself in front of everyone. They did not enjoy it. The young men watching did."
+   ],
+   [
+    "legend",
+    "People say I said: I know that I know nothing. What I really said was this: the oracle called me the wisest man in Athens, and the only reason could be that I did not think I knew what I did not know. Everyone else did."
+   ],
+   [
+    "history",
+    "I once asked young Euthydemus: is deceiving always wrong? He said yes. Then what about a general who tricks the enemy? A father who tricks his sick son into taking medicine? Or a man who takes away a desperate friend's sword so he cannot kill himself? Euthydemus had to think again."
+   ]
+  ],
+  "q": "What did Socrates charge for his teaching?",
+  "opts": [
+   "Nothing",
+   "A hundred minas",
+   "Five minas"
+  ],
+  "mission": "In the Agora, ask your sister a question, then answer every reply with another question.",
+  "pos": {
+   "lat": 37.9748,
+   "lon": 23.72215
+  },
+  "flag": "history",
+  "main": false,
+  "minigame": "socratic-questions",
+  "trail": "philosophers"
+ },
+ {
+  "id": "philo-plato",
+  "title": "Plato and the Perfect Circle",
+  "area": "Plato's Academy",
+  "speaker": "plato",
+  "pages": [
+   [
+    "history",
+    "I am Plato. Draw me a perfect circle. You cannot. Every circle anyone draws is a little wobbly. There is no perfect circle anywhere in nature. Yet you know exactly what a perfect circle is."
+   ],
+   [
+    "history",
+    "So where is it? I believed the perfect circle, and perfect justice, and perfect beauty, are real, but not in this world. They are Forms, or Ideas. Everything we see is only a shadow of them. Philosophers call this idealism."
+   ],
+   [
+    "history",
+    "That is why I loved geometry. Geometry is about perfect shapes you can only think, never touch. It trains the mind to see past the shadows."
+   ],
+   [
+    "legend",
+    "A story says a sign over my school's door read: let no one ignorant of geometry enter. It is a good story. Nobody mentions it until about nine hundred years after I died."
+   ]
+  ],
+  "q": "Where did Plato think the perfect circle exists?",
+  "opts": [
+   "As an Idea, not in nature",
+   "In the sand at the Academy",
+   "On the Parthenon"
+  ],
+  "mission": "Try to draw a perfect circle in the sand or on paper. How close can you get?",
+  "pos": {
+   "zone": "academy",
+   "lat": 37.9915,
+   "lon": 23.7087
+  },
+  "flag": "history",
+  "main": false,
+  "minigame": "perfect-circle",
+  "trail": "philosophers"
+ },
+ {
+  "id": "philo-aristotle",
+  "title": "Aristotle and the Falling Balls",
+  "area": "Aristotle's Lyceum",
+  "speaker": "aristotle",
+  "pages": [
+   [
+    "history",
+    "I am Aristotle, Plato's pupil for twenty years, and I disagreed with him. If you want to understand cats, do not dream of the perfect cat. Watch real cats. Count, compare, take them apart. I studied everything this way: animals, plants, weather, politics."
+   ],
+   [
+    "history",
+    "I wrote a book on how to live a good life, the Nicomachean Ethics, named after my son Nicomachus, or perhaps my father, who had the same name. The goal of life, I said, is eudaimonia: flourishing, living well by being good at being human."
+   ],
+   [
+    "history",
+    "People thought me so clever that for over a thousand years they simply believed what I wrote. I wrote that heavy things fall faster than light ones. A lead ball should beat a wooden ball to the ground. It sounds right. Almost nobody tested it."
+   ],
+   [
+    "history",
+    "In 1586 a Flemish engineer from Bruges, Simon Stevin, dropped two lead balls, one ten times heavier than the other, from a church tower in Delft. They hit the ground together. A thousand years earlier John Philoponus had already doubted me."
+   ],
+   [
+    "legend",
+    "The famous story of Galileo dropping balls from the Leaning Tower of Pisa comes from his pupil, writing long after. It may never have happened. Galileo did prove the point with balls rolling down slopes."
+   ]
+  ],
+  "q": "Who dropped two lead balls from a tower in 1586 to test Aristotle?",
+  "opts": [
+   "Simon Stevin",
+   "Socrates",
+   "Pericles"
+  ],
+  "mission": "Drop a heavy and a light object (not glass) at the same moment from the same height. Which lands first?",
+  "pos": {
+   "zone": "lyceum",
+   "lat": 37.9736716,
+   "lon": 23.7436616
+  },
+  "flag": "history",
+  "main": false,
+  "minigame": "ball-drop",
+  "trail": "philosophers"
+ },
+ {
+  "id": "pyrrho",
+  "title": "Pyrrho and the Calm Pig",
+  "area": "Elis",
+  "speaker": "pyrrho",
+  "pages": [
+   [
+    "history",
+    "I am Pyrrho of Elis. I marched with Alexander the Great all the way to India, where I met wise men who sat naked and perfectly calm. I came home with one idea: we can never be sure of anything."
+   ],
+   [
+    "history",
+    "So I suspended judgement. Is honey sweet? It seems sweet to me. That is all I can say. Once I stopped insisting I knew, I stopped worrying. My followers called that calm ataraxia: peace of mind. They were the Sceptics."
+   ],
+   [
+    "legend",
+    "Stories say I was so unsure of everything that I walked towards cliffs and carts, and my friends had to pull me back. Another says that in a storm at sea, while everyone panicked, I pointed at a pig calmly eating on deck: be like the pig."
+   ],
+   [
+    "legend",
+    "Other old writers said I lived quite sensibly and the cliff stories were jokes. I cannot be sure. Neither can you."
+   ]
+  ],
+  "q": "What did Pyrrho think we can be sure of?",
+  "opts": [
+   "Nothing",
+   "Everything Plato said",
+   "Only geometry"
+  ],
+  "mission": "Find something that seems one way but might not be: a stick that looks bent in water, or a mirage on the road.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.891,
+   "lon": 21.375
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "stoics-marcus",
+  "title": "The Emperor Who Was a Stoic",
+  "area": "Roman Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Five hundred years after Zeno, the Stoic idea reached the top of the world. Marcus Aurelius, emperor of Rome, wrote notes to himself in Greek, night after night. We call them the Meditations."
+   ],
+   [
+    "history",
+    "He reminded himself: you cannot control what others do, only what you do. On mornings when he dreaded the day, he told himself to get up: he was made to work with others, like hands and feet."
+   ],
+   [
+    "history",
+    "In AD 176 he visited Athens and paid for four professors of philosophy: one each for the followers of Plato, of Aristotle, of the Stoics and of Epicurus. Athens was still the university of the world."
+   ]
+  ],
+  "q": "Which language did Marcus Aurelius write his Meditations in?",
+  "opts": [
+   "Greek",
+   "Latin",
+   "Persian"
+  ],
+  "mission": "Before bed, write one sentence to yourself, the way Marcus Aurelius did.",
+  "pos": {
+   "lat": 37.9744035,
+   "lon": 23.7261311
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "lycurgus",
+  "title": "Two Men Called Lycurgus",
+  "area": "Sparta",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "legend",
+    "Lycurgus is said to have given Sparta its laws: the hard training of boys, meals eaten together, and money made of heavy iron bars so that nobody could get rich. Historians are not sure he ever existed."
+   ],
+   [
+    "legend",
+    "Plutarch says a rich young man, furious at the new laws, struck Lycurgus with a stick and knocked out his eye. Lycurgus did not punish him. He took him into his house, and the young man became his most loyal follower."
+   ],
+   [
+    "legend",
+    "Then he made the Spartans swear to keep his laws unchanged until he came back. He went to Delphi and never returned. Some say he starved himself to death abroad, so that the oath would hold forever."
+   ],
+   [
+    "history",
+    "Athens had its own Lycurgus, a real one, about 330 BC. He rebuilt the Theatre of Dionysus in stone and had official copies made of the plays of Aeschylus, Sophocles and Euripides, so that actors could no longer change the words. Don't mix them up."
+   ]
+  ],
+  "q": "Why did the Spartan Lycurgus never come home?",
+  "opts": [
+   "So his oath would keep the laws unchanged forever",
+   "He was lost at sea",
+   "He became king of Athens"
+  ],
+  "mission": "At the Theatre of Dionysus, the stone seats you sit on are the Athenian Lycurgus's rebuilding.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.0745,
+   "lon": 22.4335
+  },
+  "flag": "legend",
+  "main": false
+ },
+ {
+  "id": "epicurus",
+  "title": "Epicurus and the Garden",
+  "area": "Road to the Academy",
+  "speaker": "epicurus",
+  "pages": [
+   [
+    "history",
+    "I am Epicurus. Around 306 BC I bought a garden just outside Athens and taught there. Anyone could join: men, women, even slaves. My follower Leontion wrote books of philosophy, and my slave Mys studied with us. Nobody knows exactly where the Garden was."
+   ],
+   [
+    "history",
+    "I taught that the goal of life is pleasure. Not feasts: pleasure means no pain in the body and no fear in the mind. Bread and water make me happy. I once wrote to a friend: send me a little pot of cheese, so that I can have a feast."
+   ],
+   [
+    "history",
+    "Do not fear the gods: they do not meddle with us. Do not fear death: everything is made of tiny atoms, and when we die they simply scatter. Where death is, I am not. Where I am, death is not."
+   ],
+   [
+    "history",
+    "My enemies hated that women and slaves were welcome. They spread rumours that I was a glutton who overate till I was sick, and a rival Stoic forged fifty rude letters in my name. The insult stuck: today an epicure means someone who loves rich food. I lived on bread and water."
+   ],
+   [
+    "history",
+    "Seneca says a sign on the Garden gate read: stranger, you will do well to stay here; here our highest good is pleasure. I died in 270 BC in great pain from kidney stones, writing to a friend that remembering our conversations made it a happy day."
+   ]
+  ],
+  "q": "What did Epicurus mean by pleasure?",
+  "opts": [
+   "No pain in the body and no fear in the mind",
+   "Rich feasts every night",
+   "Winning arguments"
+  ],
+  "mission": "Have the simplest snack you can find, bread or an apple, and decide whether it makes you happy.",
+  "pos": {
+   "lat": 37.9768,
+   "lon": 23.7196
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "philosophers"
+ },
+ {
+  "id": "slavery-athens",
+  "title": "The People Without a Vote",
+  "area": "Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "In classical Athens a large share of the people were enslaved: perhaps a third, though nobody knows the exact number. Many were captives of war, or bought from slave traders in other lands."
+   ],
+   [
+    "history",
+    "Some worked in houses, shops and workshops, fetched water or kept accounts. The worst fate was the silver mines at Laurion, south of Athens, where thousands worked in cramped tunnels underground, often until they died."
+   ],
+   [
+    "history",
+    "Laurion's silver paid for the warships that beat the Persians at Salamis in 480 BC, and for the owl coins. Athens' democracy and its glory rested partly on people who had no vote and no freedom."
+   ]
+  ],
+  "q": "Where were the silver mines that paid for Athens' fleet?",
+  "opts": [
+   "Laurion",
+   "Delphi",
+   "Crete"
+  ],
+  "mission": "On the Greece map, find Laurion near the southern tip of Attica.",
+  "pos": {
+   "lat": 37.97431,
+   "lon": 23.723093
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "paidagogos",
+  "title": "The Child-Leader",
+  "area": "Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Rich Athenian boys did not walk to school alone. An enslaved man called a paidagogos, a child-leader, walked beside them, carried their writing tablets and kept them out of trouble."
+   ],
+   [
+    "history",
+    "He sat in on lessons, made the boys behave, and sometimes punished them. Many boys spent more time with their paidagogos than with their own fathers."
+   ],
+   [
+    "history",
+    "Our word pedagogue, a teacher, comes from him. Most Athenian girls did not go to school at all: they learned at home, if they learned to read."
+   ]
+  ],
+  "q": "Which English word comes from the paidagogos?",
+  "opts": [
+   "Pedagogue",
+   "Pedal",
+   "Paddle"
+  ],
+  "mission": "Tell your teacher at school that her job title comes from an Athenian slave who walked boys to class.",
+  "pos": {
+   "lat": 37.97501,
+   "lon": 23.722693
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "evzones",
+  "title": "The Guards with Pompom Shoes",
+  "area": "Syntagma",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "Outside the Parliament, two soldiers stand as still as statues by the Tomb of the Unknown Soldier. They are evzones, the Presidential Guard. They wear pleated kilts, red caps with long tassels, and shoes with big black pompoms."
+   ],
+   [
+    "history",
+    "Every hour they change places in a slow march: legs swing high, feet stamp down, and they move as if time has slowed. Each wooden-soled shoe has dozens of iron nails, so you hear them coming."
+   ],
+   [
+    "legend",
+    "People say the kilt has 400 pleats, one for each year that Greece was ruled by the Ottoman Empire. It makes a good story. The guards are too busy standing still to count."
+   ],
+   [
+    "history",
+    "On Sunday mornings at eleven the whole guard marches up with a band. Whatever the weather, they do not move, smile or chat. Tourists try to make them laugh. Nobody wins."
+   ]
+  ],
+  "q": "What is special about the evzones' shoes?",
+  "opts": [
+   "Big black pompoms and iron nails",
+   "They are made of gold",
+   "They have no soles"
+  ],
+  "mission": "Watch the changing of the guard at Syntagma, on the hour, and copy the slow march (quietly).",
+  "pos": {
+   "zone": "syntagma",
+   "lat": 37.9754,
+   "lon": 23.737
+  },
+  "flag": "history",
+  "main": false
+ },
+ {
+  "id": "zeus-cronus",
+  "title": "The Baby and the Stone",
+  "area": "Temple of Olympian Zeus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "This temple was built for Zeus, king of the gods. It took about 650 years to finish. Zeus had a rough start: his own father tried to eat him."
+   ],
+   [
+    "myth",
+    "Cronus, king of the Titans, was warned that one of his children would overthrow him. So every time his wife Rhea had a baby, he swallowed it whole."
+   ],
+   [
+    "myth",
+    "When Zeus was born, Rhea wrapped a stone in baby clothes. Cronus gulped it down without looking. The real Zeus grew up in secret, in a cave on Crete."
+   ],
+   [
+    "myth",
+    "Grown up, Zeus made his father throw up the stone and all his brothers and sisters, still alive. Together they fought the Titans for ten years, and won."
+   ],
+   [
+    "history",
+    "That's a myth: a story the Greeks told, not a thing that happened. The temple is real. Fifteen of its columns still stand."
+   ]
+  ],
+  "q": "What did Rhea give Cronus instead of baby Zeus?",
+  "opts": [
+   "A stone wrapped in baby clothes",
+   "A goat",
+   "A golden apple"
+  ],
+  "mission": "At the Temple of Olympian Zeus, find the column that a storm knocked down in 1852.",
+  "pos": {
+   "lat": 37.969637,
+   "lon": 23.732796
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "hephaestus-throne",
+  "title": "The Golden Throne",
+  "area": "Temple of Hephaestus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "history",
+    "This is the best-kept ancient temple in Athens, and it belongs to Hephaestus, the blacksmith god. Around it, the Athenians had real metal workshops."
+   ],
+   [
+    "myth",
+    "When Hephaestus was born, his mother Hera thought he was ugly and threw him off Mount Olympus. He fell into the sea, and sea nymphs brought him up."
+   ],
+   [
+    "myth",
+    "He never forgot. He sent Hera a beautiful golden throne. She sat down, and invisible chains held her fast. Only Hephaestus could set her free."
+   ],
+   [
+    "myth",
+    "In the end Dionysus got him drunk, sat him on a donkey and led him back to Olympus to free his mother. That's a myth. The workshops were history."
+   ]
+  ],
+  "q": "How did Hephaestus trap his mother?",
+  "opts": [
+   "With a golden throne and invisible chains",
+   "With a net in her bath",
+   "With a poisoned cup"
+  ],
+  "mission": "Walk round the Temple of Hephaestus and count the columns along one long side (there are thirteen).",
+  "pos": {
+   "lat": 37.975404,
+   "lon": 23.721612
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "dionysus-pirates",
+  "title": "The Pirates Who Became Dolphins",
+  "area": "Theatre of Dionysus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "This theatre belonged to Dionysus, god of wine, plays and wild parties. Once, some pirates made a very big mistake about him."
+   ],
+   [
+    "myth",
+    "They saw a handsome young man on a beach, decided he was a rich prince, and dragged him aboard to sell him. The ropes they tied him with kept falling off."
+   ],
+   [
+    "myth",
+    "Then wine flowed across the deck, vines climbed the mast, and the young man turned into a roaring lion. The pirates leapt overboard in terror."
+   ],
+   [
+    "myth",
+    "As they hit the water, they turned into dolphins. Only the helmsman, who had warned them, was spared. That's a myth, from an old Greek hymn. Next time you see a dolphin, check whether it looks guilty."
+   ]
+  ],
+  "q": "What did the pirates turn into?",
+  "opts": [
+   "Dolphins",
+   "Lions",
+   "Vines"
+  ],
+  "mission": "On the stage front of the theatre, look for the carved scenes from Dionysus's stories.",
+  "pos": {
+   "lat": 37.970636,
+   "lon": 23.727979
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "hermes-herms",
+  "title": "The Night of the Smashed Faces",
+  "area": "Agora",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Hermes was the messenger god, with winged sandals: god of travellers, traders and thieves."
+   ],
+   [
+    "history",
+    "All over Athens stood herms: square stone pillars with Hermes's head on top, at front doors and crossroads. One night in 415 BC, just before a great fleet sailed to attack Sicily, someone smashed the faces of almost all of them."
+   ],
+   [
+    "history",
+    "The city panicked: it looked like a terrible omen, or a plot. People were arrested on rumours. The young general Alcibiades was accused of mocking the sacred Mysteries, and he fled to Sparta, Athens' enemy."
+   ],
+   [
+    "history",
+    "The fleet sailed anyway and was destroyed in Sicily. Who smashed the herms? It was never proved. That's history: Thucydides wrote it down."
+   ]
+  ],
+  "q": "What happened to the herms one night in 415 BC?",
+  "opts": [
+   "Their faces were smashed",
+   "They were painted gold",
+   "Spartans stole them"
+  ],
+  "mission": "In the Agora, look for a herm: a square stone pillar with a head on top.",
+  "pos": {
+   "lat": 37.97491,
+   "lon": 23.722893
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "apollo-delphi",
+  "title": "The Oracle's Trick Answer",
+  "area": "Delphi",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "The Greeks said Zeus let two eagles fly from opposite ends of the earth, and they met at Delphi: the centre of the world. There Apollo killed a giant serpent, the Python, and took the place for himself."
+   ],
+   [
+    "history",
+    "Apollo's priestess, the Pythia, sat on a tall tripod and gave the god's answers to anyone who asked. Kings and cities sent questions for about a thousand years."
+   ],
+   [
+    "legend",
+    "King Croesus asked whether he should attack Persia. The answer: if you do, you will destroy a great empire. He attacked. The great empire he destroyed was his own."
+   ],
+   [
+    "legend",
+    "That story comes from Herodotus, so it may have been polished in the telling. Croesus should have listened to Solon."
+   ]
+  ],
+  "q": "What did the oracle tell Croesus?",
+  "opts": [
+   "If you attack, you will destroy a great empire",
+   "You will rule the whole world",
+   "Stay at home"
+  ],
+  "mission": "Find Delphi on the Greece map, in the mountains west of Athens.",
+  "pos": {
+   "zone": "greece",
+   "lat": 38.4824,
+   "lon": 22.501
+  },
+  "flag": "legend",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "artemis-bears",
+  "title": "The Little Bears",
+  "area": "Brauron",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Artemis was the goddess of wild animals, hunting and girls growing up. Her sanctuary at Brauron, on the coast east of Athens, had a special job for Athenian girls."
+   ],
+   [
+    "history",
+    "Girls of about your age went there to serve the goddess for a while. They were called the little bears. They ran races and danced, some in saffron-yellow robes."
+   ],
+   [
+    "legend",
+    "The reason, the story goes: long ago a tame bear at Brauron scratched a girl, and her brothers killed it. Artemis was furious. To make peace, Athenian girls would play the bear for her ever after."
+   ],
+   [
+    "history",
+    "The little bears were real: archaeologists found their small statues and pots painted with girls running. That's history, with a legend to explain it."
+   ]
+  ],
+  "q": "What were the girls who served Artemis at Brauron called?",
+  "opts": [
+   "The little bears",
+   "The little owls",
+   "The little foxes"
+  ],
+  "mission": "Decide which animal you would be for a goddess, and why.",
+  "pos": {
+   "zone": "greece",
+   "lat": 37.9255,
+   "lon": 24.008
+  },
+  "flag": "history",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "persephone-eleusis",
+  "title": "The Pomegranate Seeds",
+  "area": "Eleusis",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Demeter was goddess of the harvest. Her daughter Persephone was picking flowers when the ground split open and Hades, god of the dead, carried her off underground."
+   ],
+   [
+    "myth",
+    "Demeter searched the world with a torch, and in her grief nothing grew. People began to starve. At Eleusis, near Athens, she sat down by a well and wept."
+   ],
+   [
+    "myth",
+    "Zeus ordered Hades to give her back. But Persephone had eaten pomegranate seeds in the underworld, and whoever eats there must return. So she spends part of each year below: that is winter."
+   ],
+   [
+    "history",
+    "At Eleusis the Athenians held secret ceremonies, the Mysteries, for about a thousand years. Telling the secret could mean death. Nobody told: we still don't know what happened inside."
+   ]
+  ],
+  "q": "Why did Persephone have to go back underground every year?",
+  "opts": [
+   "She had eaten pomegranate seeds there",
+   "She preferred it there",
+   "Zeus was punishing her"
+  ],
+  "mission": "Find a pomegranate at a market stall. How many seeds would you risk?",
+  "pos": {
+   "zone": "greece",
+   "lat": 38.0412,
+   "lon": 23.5384
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "hera-peacock",
+  "title": "The Hundred Eyes",
+  "area": "Mount Olympus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Hera, queen of the gods, kept a close watch on her husband Zeus, who was always in trouble. She had the perfect guard: Argus, a giant with a hundred eyes, who never closed them all at once."
+   ],
+   [
+    "myth",
+    "Zeus sent Hermes to rescue a girl Argus was guarding. Hermes played sleepy music on his pipes and told dull stories until, one by one, all hundred eyes closed. Then he cut off Argus's head."
+   ],
+   [
+    "myth",
+    "Hera took the hundred eyes and set them in the tail of her favourite bird. That's a myth. But look at a peacock's tail: the eyes are still there."
+   ]
+  ],
+  "q": "Where did Hera put Argus's hundred eyes?",
+  "opts": [
+   "In the peacock's tail",
+   "In the night sky",
+   "In her crown"
+  ],
+  "mission": "Next time you see a peacock, count the eyes on one feather.",
+  "pos": {
+   "zone": "greece",
+   "lat": 40.0856,
+   "lon": 22.3586
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ },
+ {
+  "id": "aphrodite-foam",
+  "title": "Born from the Foam",
+  "area": "Kythera",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Aphrodite, goddess of love, was not born like the other gods. The Greeks said she rose fully grown out of the foam of the sea, and the wind carried her ashore."
+   ],
+   [
+    "myth",
+    "The islands of Kythera and Cyprus both claimed she had landed on their beach. They argued about it for centuries."
+   ],
+   [
+    "myth",
+    "She was married to Hephaestus, the sooty blacksmith, and was not a faithful wife. She also started the Trojan War, by promising Paris the most beautiful woman in the world."
+   ],
+   [
+    "history",
+    "That's a myth. The most famous picture of her rising from the sea was painted in Florence about two thousand years later, by Botticelli."
+   ]
+  ],
+  "q": "What did the Greeks say Aphrodite was born from?",
+  "opts": [
+   "The foam of the sea",
+   "A golden egg",
+   "The head of Zeus"
+  ],
+  "mission": "At the seaside, look at the foam on the waves and decide whether a goddess could come out of it.",
+  "pos": {
+   "zone": "greece",
+   "lat": 36.15,
+   "lon": 22.99
+  },
+  "flag": "myth",
+  "main": false,
+  "trail": "olympians"
+ }
+]

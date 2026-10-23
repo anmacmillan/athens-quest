@@ -1,0 +1,164 @@
+{
+ "story": "athena-poseidon",
+ "title": "The Contest for Athens",
+ "flag": "myth",
+ "main": true,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "athena",
+   "poseidon"
+  ],
+  [
+   "athena",
+   "poseidon"
+  ],
+  [
+   "athena",
+   "glauka"
+  ]
+ ],
+ "notes": [
+  "p2.4 and p3.2: classical temples appear behind Athena at the moment of the contest, centuries too early. Narration says the temples came later ('her temples went up on this rock').",
+  "p3.3: the tag is lettered LEGEND?. Card and coda say MYTH. Patch the tag to MYTH.",
+  "p3.4: Glauka is drawn under a roofed porch while the caption says the roof was left open. Minor; narration and her bubble ('Look up. No roof.') carry it.",
+  "p3.2: the caption 'She has been its goddess ever since' uses a banned phrase. It is lettered, so it stays; narration paraphrases."
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Wide view of the bare rock of the Acropolis in ancient times with a small village around it, Athena and Poseidon standing on opposite sides facing each other, sparks of rivalry between their eyes",
+   "caption": "Athena and Poseidon both wanted this city.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH",
+   "narr": "Hoo. Back then this rock was bare, with a few huts round the bottom. Athena and Poseidon both wanted this city. Look at them glaring."
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Poseidon raising his trident high, muscles bulging, sea-green hair whipping",
+   "caption": "Poseidon struck the rock with his trident.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "The rule was simple: give the people the best gift, and the city is yours. Poseidon went first, of course. He struck the rock with his trident."
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The rock cracking open and a jet of water bursting upward in jagged white spray; astonished villagers",
+   "caption": "A spring gushed out.",
+   "speech": null,
+   "sfx": "KRAKOOM",
+   "tag": null,
+   "narr": "A spring gushed out of solid rock, right up here on the dry hilltop. The villagers stared. Water from nowhere: what a gift.",
+   "voice_speech": {
+    "speaker": "Poseidon",
+    "text": "Water! From a rock! Beat that."
+   }
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "An Athenian cupping the water and tasting it, tongue sticking out in disgust, comic sweat drop",
+   "caption": "The water was salty. Nobody could drink it.",
+   "speech": {
+    "speaker": "Villager",
+    "text": "Yuck! Salt!"
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Then somebody tasted it. The water was salty. He's the god of the sea: what did they expect? Nobody could drink it."
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Athena kneeling calmly on the rock pressing a small olive sapling into the soil, owl Glauka on her shoulder",
+   "caption": "Athena planted an olive tree.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Athena didn't shout. She knelt down and planted an olive tree. I was sitting on her shoulder, so I saw it all.",
+   "voice_speech": {
+    "speaker": "Athena",
+    "text": "I will. Quietly."
+   }
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "The olive sapling bursting into a full tree in golden light, leaves flying, villagers gazing up in awe",
+   "caption": "A gift.",
+   "speech": null,
+   "sfx": "PAAAH",
+   "tag": null,
+   "narr": "The little tree shot up into a full olive tree, there and then. Olives to eat, oil for the lamps. A gift that comes back every single year."
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A crowd of Athenian men and women raising their hands to vote, olive branches in hands, Poseidon sulking in the corner",
+   "caption": "The people chose the olive.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Then the whole village voted. Salt water you can't drink, or a tree that feeds you for ever? Up went the hands. The people chose the olive."
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Athena, crested helmet pushed back, giving a small victorious smile; behind her the new city called Athens glows in light",
+   "caption": "The city was named for Athena.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "So the city was named for Athena: Athens. She didn't cheer. Just a small smile, the way you smile when you knew all along."
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Poseidon stomping away into the sea with waves rolling, grumbling expression, trident dragging",
+   "caption": "Poseidon lost the contest.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Poseidon lost the contest. He did not lose quietly: he stormed back into the sea and, in his rage, flooded the plain to the west."
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Athena and her olive tree on the Acropolis, calm and regal, a temple rising in the background",
+   "caption": "She has been its goddess ever since.",
+   "speech": null,
+   "sfx": null,
+   "tag": null,
+   "narr": "Athena kept the city. She has been its goddess from that day to this, and later her temples went up on this very rock."
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Close-up of marks in a rock floor, three trident-shaped holes, a hand pointing at them, an open roof above showing the sky",
+   "caption": "Under the north porch of the Erechtheion there are marks in the rock.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?",
+   "narr": "Now walk to the north porch of the Erechtheion. Under it there are marks in the rock. The Athenians told it like this: Poseidon's trident made them."
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Glauka the owl peering at the trident marks with a monocle-like gleam",
+   "caption": "People said Poseidon's trident made them. The roof above was left open to the sky.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Look up. No roof."
+   },
+   "sfx": null,
+   "tag": null,
+   "narr": "Above them, the roof was left open to the sky. That's a myth: a story the Greeks told, not a thing that happened. But the marks are real. Go and find them."
+  }
+ ]
+}
