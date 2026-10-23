@@ -7,6 +7,7 @@ import { me } from './store.js';
 import { sfx } from './audio.js';
 import { Scene } from './scene.js';
 import * as ui from './ui.js';
+import { tocaHas, tocaPose } from './toca.js';
 
 const j = u => fetch(u).then(r => r.ok ? r.json() : null).catch(() => null);
 
@@ -116,7 +117,9 @@ export class Characters {
     for (const c of this.list) {
       if (c.world !== W.id || this.hidden(c) || Math.abs(c.x - cx) > 460 || Math.abs(c.y - cy) > 340) continue;
       const parts = [...c.parts];
-      out.push({ y: c.y, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); this.drawFigure(c, t, c); if (c.owner && !c.statue) this.mark(c, t); } });
+      const tp = !c.statue && c.who && tocaHas(c.who) && tocaPose(c.who, 'f', false, t);
+      if (tp) { tp.x = c.x; tp.y = c.y; c.top = tp.h; out.push({ y: c.y, toca: tp, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); shadowAt(c.x, c.y, 15, .3); } }); out.push({ y: c.y + .5, draw: () => { if (c.owner) this.mark(c, t); } }); }
+      else out.push({ y: c.y, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); this.drawFigure(c, t, c); if (c.owner && !c.statue) this.mark(c, t); } });
       for (const p of parts) {
         if (p.prop) out.push({ y: p.y + (p.front ? 1 : -1), draw: () => this.drawProp(p, t) });
         else out.push({ y: p.y, draw: () => this.drawFigure(p, t, c) });
