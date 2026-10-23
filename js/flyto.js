@@ -87,7 +87,7 @@ export class FlyTo {
     const d = dist(p.x, p.y, q.x, q.y), dur = clamp(1.6 + d / 900, 2, 4);
     G.busy = true; input.enabled = false; ui.setPrompt(null); ui.hud(false); G.nearest = null; p.moving = false; if (G.skate) { G.skate.vx = G.skate.vy = 0; }
     const o = G.owl;
-    this.f = { a: { x: p.x, y: p.y }, b: q, d, dur, grab: .55, land: .6, t: 0, z0: G.cam.z, zm: Math.min(G.cam.z, .8), H: 60 + Math.min(d / 12, 140), x: p.x, y: p.y, alt: 0, o0: { x: o.x, y: o.y - (o.alt || 0) }, ph: 'grab', whoosh: false, face: q.x >= p.x ? 'r' : 'l' };
+    this.f = { then: dest.then || null, a: { x: p.x, y: p.y }, b: q, d, dur, grab: .55, land: .6, t: 0, z0: G.cam.z, zm: Math.min(G.cam.z, .8), H: 60 + Math.min(d / 12, 140), x: p.x, y: p.y, alt: 0, o0: { x: o.x, y: o.y - (o.alt || 0) }, ph: 'grab', whoosh: false, face: q.x >= p.x ? 'r' : 'l' };
     sfx.hoot(); return true;
   }
   step(dt) {
@@ -108,7 +108,8 @@ export class FlyTo {
     const G = this.G, f = this.f, p = G.player, o = G.owl; this.f = null;
     p.x = f.b.x; p.y = f.b.y; p.facing = 'f'; p.moving = false; o.x = p.x - 18; o.y = p.y - 4; o.alt = 0; o.perched = false;
     G.cam.z = 1; G.guide.zt = 1; G.guide.path = null; G.busy = false; input.enabled = true; ui.hud(true); sfx.hoot();
-    G.cam.x = p.x; G.cam.y = p.y - 6; clampCam(G.cam, G.world.w, G.world.h);
+    G.cam.x = p.x; G.cam.y = p.y - 6; clampCam(G.cam, G.world.w, G.world.h); G.panHold = false;
+    if (f.then) f.then();
   }
   draw() {   // the girl dangling from Glauka's talons, y-sorted above everything
     const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt;

@@ -27,6 +27,9 @@ import { Gods } from './gods.js';
 import { Evzones } from './evzones.js';
 import { FlyTo } from './flyto.js';
 import { Edges } from './edges.js';
+import { Passport } from './passport.js';
+import { TitleCard } from './titlecard.js';
+import { astar } from './companions.js';
 
 const SPEED = { live: 100, map: 80, stage: 58 };
 export class Game {
@@ -34,12 +37,12 @@ export class Game {
     this.worlds = Worlds; this.world = Worlds.athens; this.time = 0; this.mode = 'play';
     this.player = { x: 0, y: 0, facing: 'f', moving: false, walkT: 0, goto: null }; this.owl = { x: 0, y: 0 };
     this.cam = { x: 0, y: 0, z: 1 }; this.scene = null; this.busy = false; this.nearest = null; this.stories = []; this.spots = []; this.target = null; this.heading = null; this.gps = null;
-    this.comp = new Companions(this); this.guide = new Guide(this); this.marks = new Marks(this); this.fog = new Fog(this); this.extras = new Extras(this); this.chars = new Characters(this); this.gods = new Gods(this); this.vis = new Visions(this); this.evz = new Evzones(this); this.fly = new FlyTo(this); this.edges = new Edges(this); this.skate = new Skate(this); this.opening = new Opening(this); this.trans = null; this.flight = null; this.sceneCache = {}; this.saved = {};
+    this.comp = new Companions(this); this.guide = new Guide(this); this.marks = new Marks(this); this.fog = new Fog(this); this.extras = new Extras(this); this.chars = new Characters(this); this.gods = new Gods(this); this.vis = new Visions(this); this.evz = new Evzones(this); this.fly = new FlyTo(this); this.edges = new Edges(this); this.skate = new Skate(this); this.opening = new Opening(this); this.passport = new Passport(this); this.title = new TitleCard(this); this.trans = null; this.flight = null; this.sceneCache = {}; this.saved = {};
   }
   // ------------------------------------------------------------ setup
   async init(stories) {
-    this.stories = stories; this.buildSpots();
-    await this.marks.init(); await this.fog.init(this.worlds.athens); this.worlds.athens.fog = this.fog;   // high-res markers and names, and the light fog of discovery
+    this.stories = stories; this.buildSpots(); await this.passport.init();
+    await this.marks.init(); this.title.bind(this.marks.landmarks); await this.fog.init(this.worlds.athens); this.worlds.athens.fog = this.fog;   // high-res markers and names, and the light fog of discovery
     this.theseus = new Theseus(this);
     try { this.anchors = await (await fetch('data/cast_anchors.json')).json(); } catch (e) { this.anchors = {}; }
     const A = this.worlds.athens, prop = this.spotById('propylaia'), p0 = prop ? A.clearSpot(prop.x + 8, prop.y + 38) : A.nearestWalkable(A.w / 2, A.h / 2);
@@ -58,7 +61,8 @@ export class Game {
     this.nudgeSpots(); await this.comp.init().catch(e => console.error(e)); await this.extras.init().catch(e => console.error(e)); await this.chars.init().catch(e => console.error(e)); await this.gods.init().catch(e => console.error(e)); await this.vis.init().catch(e => console.error(e)); this.evz.init(); await this.edges.init(); await this.skate.init().catch(e => console.error(e)); await this.opening.init().catch(e => console.error(e));
     this.enterWorld(startZone, false);
     input.onLong = v => this.fly.long(v); input.onZoom = d => this.guide.zoomStep(d); input.onWheel = (dy, c) => this.guide.onWheel(dy, c); this.guide.init();
-    input.onTap = (v, blocked) => this.onTap(v, blocked); input.onA = () => this.onA();
+    input.onTap = (v, blocked) => this.onTap(v, blocked); input.onA = () => this.onA(); input.onDoubleTap = v => this.onDoubleTap(v);
+    input.panMode = () => this.world.kind === 'live' && this.cam.z < .6 && this.mode === 'play' && !this.busy && !this.scene; input.onPan = (dx, dy) => { this.panHold = true; this.cam.x -= dx / this.cam.z; this.cam.y -= dy / this.cam.z; clampCam(this.cam, this.world.w, this.world.h); };
     window.__game = this;
   }
   // the hotel's front door in Syntagma (a few steps south of it, on the pavement)
@@ -106,7 +110,7 @@ export class Game {
   // ------------------------------------------------------------ entities
   spotEntities(wid) {
     const out = [], t = this.time, id = wid || (this.scene ? this.scene.world.id : this.world.id), W = this.worlds[id];
-    for (const s of this.spots) if (s.world === id) out.push({ y: s.y, draw: () => this.drawSpot(s, t) });
+    for (const s of this.spots) if (s.world === id) { const dr = this.passport.drawDoor(s, t); if (dr) out.push({ y: s.y - 30, draw: () => dr(g) }); out.push({ y: s.y, draw: () => this.drawSpot(s, t) }); }
     for (const s of W.signposts) out.push({ y: s.y, draw: () => this.drawSign(s, W) });
     out.push(...this.comp.ents(W)); out.push(...this.extras.ents(W)); out.push(...this.chars.ents(W)); out.push(...this.gods.ents(W));
     if (this.gps && this.gps.world === id) out.push({ y: this.gps.y, draw: () => { const r = 3 + Math.sin(t * 4); g.fillStyle = 'rgba(60,130,255,.35)'; g.beginPath(); g.arc(this.gps.x, this.gps.y, r + 5, 0, 7); g.fill(); g.fillStyle = '#3d7fd6'; g.beginPath(); g.arc(this.gps.x, this.gps.y, 3, 0, 7); g.fill(); } });
@@ -150,14 +154,15 @@ export class Game {
     if (this.flight) this.updateFlight(dt);
     if (this.trans) { this.trans.t += dt; if (this.trans.t >= this.trans.dur) { const r = this.trans.res; this.trans = null; r && r(); } }
     if (this.mode === 'play' && !this.scene && !this.trans && !this.busy && !this.flight) {
-      this.movePlayer(dt); this.updateOwl(dt);
+      this.movePlayer(dt); this.updateOwl(dt); this.passport.update(); this.title.update(dt);
       const W = this.world, p = this.player, rr = W.kind === 'map' ? 17 : 40; let best = null, bd = 1e9;
       for (const s of this.spots) if (s.world === W.id) { const d = dist(p.x, p.y, s.x, s.y); if (d < rr && d < bd) { bd = d; best = { kind: 'spot', ref: s }; } }
       for (const s of W.signposts) { const d = dist(p.x, p.y, s.x, s.y); if (d < (W.kind === 'map' ? 15 : 36) && d < bd) { bd = d; best = { kind: 'sign', ref: s }; } }
       const stl = this.comp.nearStall(); if (stl && dist(p.x, p.y, stl.ref.x, stl.ref.y) < bd) best = stl;
       if (!best !== !this.nearest || (best && this.nearest && best.ref !== this.nearest.ref)) { this.nearest = best; ui.setPrompt(best); }
+      if (this.panHold && (p.moving || this.cam.z >= .6)) this.panHold = false;
       const fo = this.focus && this.focus.until > this.time ? this.focus : null;   // a tapped cluster pulls the camera to it while zooming in
-      this.cam.x += ((fo ? fo.x : p.x) - this.cam.x) * Math.min(1, dt * 6); this.cam.y += ((fo ? fo.y : p.y - 6) - this.cam.y) * Math.min(1, dt * 6);
+      if (!this.panHold) this.cam.x += ((fo ? fo.x : p.x) - this.cam.x) * Math.min(1, dt * 6); if (!this.panHold) this.cam.y += ((fo ? fo.y : p.y - 6) - this.cam.y) * Math.min(1, dt * 6);
       clampCam(this.cam, W.w, W.h);
       this.posT = (this.posT || 0) + dt; if (this.posT > 3 && (W.id === 'athens' || W.id === 'syntagma')) { this.posT = 0; this.saved[W.id] = { x: p.x, y: p.y }; lsSet('owlq.pos2', { athens: this.saved.athens, syntagma: this.saved.syntagma, zone: W.id }); }
     } else if (this.nearest) { this.nearest = null; ui.setPrompt(null); }
@@ -165,8 +170,8 @@ export class Game {
   }
   movePlayer(dt) {
     const p = this.player, W = this.world; let [dx, dy] = pollDir();
-    if (dx || dy) p.goto = null;
-    else if (p.goto) { const d = dist(p.x, p.y, p.goto.x, p.goto.y); if (d < 3) { p.goto = null; if (this.pendingAct) { const a = this.pendingAct; this.pendingAct = null; this.activate(a); } } else { dx = (p.goto.x - p.x) / d; dy = (p.goto.y - p.y) / d; } }
+    if (dx || dy) { if (p.goto || p.route) this.pendingAct = null; p.goto = null; p.route = null; }
+    else if (p.goto) { const d = dist(p.x, p.y, p.goto.x, p.goto.y); if (d < 3 && p.route && p.route.length) { p.goto = p.route.shift(); } else if (d < 3) { p.goto = null; p.route = null; if (this.pendingAct) { const a = this.pendingAct; this.pendingAct = null; this.activate(a); } } else { dx = (p.goto.x - p.x) / d; dy = (p.goto.y - p.y) / d; } }
     if (this.skate.drive(dt, dx, dy)) return;   // rolling on the board: momentum, twice the speed
     p.skating = false;
     const sp = (SPEED[W.kind] || 58) * this.comp.speedMul() * Math.min(1, Math.hypot(dx, dy));
@@ -176,7 +181,7 @@ export class Game {
       const ok = (x, y) => W.kind === 'map' ? !W.solid(x, y) : !(W.solid(x - 4, y) || W.solid(x + 4, y) || W.solid(x, y + 1) || W.solid(x, y - 3));
       let moved = false;
       if (ok(nx, ny)) { p.x = nx; p.y = ny; moved = true; } else if (ok(nx, p.y)) { p.x = nx; moved = true; } else if (ok(p.x, ny)) { p.y = ny; moved = true; }
-      if (!moved && p.goto) p.goto = null;
+      if (!moved && p.goto) { p.goto = null; p.route = null; if (this.pendingAct) { const a = this.pendingAct; this.pendingAct = null; if (a.ref && dist(p.x, p.y, a.ref.x, a.ref.y) < 60) this.activate(a); } }
       p.facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'r' : 'l') : (dy > 0 ? 'f' : 'b'); p.walkT += dt;
     }
   }
@@ -292,8 +297,44 @@ export class Game {
     if (best) {
       const s = best.ref;
       if (W.kind === 'map') { this.player.goto = { x: s.x, y: s.y + 6 }; this.pendingAct = best; return; }
-      if (dist(this.player.x, this.player.y, s.x, s.y) < 44) this.activate(best); else { ui.toast('Walk closer.'); sfx.tap(); }
+      if (dist(this.player.x, this.player.y, s.x, s.y) < 44) this.activate(best); else { sfx.tap(); this.walkTo(s.x, s.y + 6, best); }
     } else if (W.kind === 'map') { if (!W.solid(w.x, w.y)) { this.player.goto = { x: w.x, y: w.y }; this.pendingAct = null; } }
+  }
+  // double-tap a building or flag: Glauka flies her to its doorway, the title slams in, then the host steps out
+  onDoubleTap(v) {
+    if (this.scene || this.busy || this.trans || this.flight || this.mode !== 'play' || this.world.kind !== 'live') return;
+    const W = this.world, w = toWorld(this.cam, v.x, v.y), z = this.cam.z; let target = null, bd = Math.max(120, 70 / z);
+    const P = this.passport.stamps || [];
+    for (const st of P) if (st.spot.world === W.id) { const d = dist(w.x, w.y, st.spot.x, st.spot.y - 20); if (d < bd) { bd = d; target = st.spot; } }
+    if (this.marks && this.marks.landmarks) for (const l of this.marks.landmarks) { const d = dist(w.x, w.y, l.x * W.ws, l.y * W.ws); if (d < 50 / Math.min(1, z)) { let b2 = 400, s2 = null; for (const st of P) if (st.spot.world === W.id) { const e = dist(l.x * W.ws, l.y * W.ws, st.spot.x, st.spot.y); if (e < b2) { b2 = e; s2 = st.spot; } } if (s2) { target = s2; break; } } }
+    if (!target) { const h = this.fly.hitAt(w, 26 / Math.min(1, z)); if (h && h.kind === 'spot') target = h.ref; }
+    this.player.goto = null; this.player.route = null; this.pendingAct = null; this.fly.closeCard();
+    if (target) {
+      if (!this.fly.known(target)) { ui.toast('Not discovered yet, explore!', 2200); return; }
+      if (dist(this.player.x, this.player.y, target.x, target.y) < 60) { this.arrive(target); return; }
+      this.fly.fly({ x: target.x, y: target.y, then: () => this.arrive(target) });
+    } else {
+      const q = W.solid(w.x, w.y) ? W.nearestWalkable(w.x, w.y, 12) : w; this.fly.fly({ x: q.x, y: q.y - 16 });
+    }
+  }
+  // landed at a place: its title, a beat, then its story (if not done yet)
+  arrive(spot) {
+    const W = this.world; let best = null, bd = 420;
+    if (this.marks && this.marks.landmarks) for (const l of this.marks.landmarks) { const d = dist(spot.x, spot.y, l.x * W.ws, l.y * W.ws); if (d < bd) { bd = d; best = l; } }
+    if (best && W.id === 'athens') { this.title.away.delete(best.id); this.title.show(best); }
+    const st = spot.stamp; if (st) this.passport.cool.add(st.id);
+    if (this.collected(spot.id)) return;
+    this.busy = true; input.enabled = false;
+    setTimeout(() => { this.busy = false; input.enabled = true; if (!this.scene && this.mode === 'play') this.playStory(spot); }, best ? 1700 : 300);
+  }
+  // walk along a real path (A* over the tile grid) and do `act` on arrival
+  walkTo(x, y, act) {
+    const W = this.world, p = this.player; let path = null;
+    if (W.kind === 'live' && W.solid(x, y)) { const q = W.nearestWalkable(x, y); x = q.x; y = q.y; }
+    if (W.kind === 'live') { try { path = astar(W, { x: p.x, y: p.y }, { x, y }); } catch (e) { path = null; } }
+    p.route = path && path.length > 1 ? path.slice(1).map(q => ({ x: q.x, y: q.y })) : [{ x, y }];
+    if (p.route.length) { const last = p.route[p.route.length - 1]; if (dist(last.x, last.y, x, y) > 4) p.route.push({ x, y }); }
+    p.goto = p.route.shift(); this.pendingAct = act || null;
   }
   activate(n) { if (n.kind === 'spot' && n.ref.id === 'parthenon' && this.collected('parthenon') && this.vis.cfg) { this.vis.play('parthenos'); return; } if (n.kind === 'stall') { sfx.tap(); this.comp.openStall(); return; } if (n.kind === 'sign') { sfx.tap(); if (!n.ref.to) this.edges.bounce(n.ref); else this.flyTo(n.ref.to, n.ref); } else this.playStory(n.ref); }
   onA() {
@@ -316,11 +357,11 @@ export class Game {
       beats: story.pages.map((p, i) => ({ t: 'caption', speaker: p[2] || story.speaker, text: p[1], flag: p[0], wait: 'tap', audio: `${story.id}-${i + 1}` })) };
   }
   async playStory(spot, opts = {}) {
-    if (this.busy) return; this.busy = true; input.enabled = false; ui.setPrompt(null); ui.hud(false);
+    if (this.busy) return; this.busy = true; input.enabled = false; ui.setPrompt(null); ui.hud(false); this.pendingAct = null; this.player.goto = null; this.player.route = null; this.player.moving = false; this.title.hide();
     const wasDone = this.collected(spot.story.id);
     const story = spot.story, comic = window.__noComic ? null : await loadComic(story.id).catch(() => null), found = await this.loadScene(story);
     await this.intro(story, found);   // (1) the owning character steps out and says hello (not for Glauka's own stories)
-    const sceneData = found || (comic ? null : this.cardScene(story));   // scene first, then the comic; neither = story cards
+    const sceneData = comic ? null : (found || this.cardScene(story));   // one telling: the comic; a puppet scene only where no comic exists yet
     if (sceneData) {
       const onMap = this.world.kind === 'map';
       if (onMap) await this.zoomTo(spot.x, spot.y, 8);
@@ -338,7 +379,7 @@ export class Game {
     await runMini();   // before the quiz if the comic did not stop for it
     if (!opts.replay && !this.collected(story.id)) {
       const ok = await ui.quiz(story, this);
-      if (ok) { if (ok === 'first') earnOwls(REWARDS.quizFirst, 'first try'); award(story.id); sfx.win(); await ui.earned(story, this); this.checkTrails(); }
+      if (ok) { if (ok === 'first') earnOwls(REWARDS.quizFirst, 'first try'); award(story.id); const gift = this.passport.reward(story); sfx.win(); await ui.earned(story, this, gift); this.checkTrails(); }
     }
     // overlays opened while busy (quiz, badge) leave mode at 'ui'; hand control back explicitly
     ui.closeOverlay && ui.closeOverlay();
@@ -347,18 +388,26 @@ export class Game {
   }
   // in-world greeting: the story's speaker appears beside the player as a sprite and speaks one or two lines, with their portrait beside the caption
   async intro(story, sceneData) {
-    const sp = story.speaker; if (!sp || sp === 'glauka' || (sceneData && sceneData.intro === false)) return;
+    const st = this.passport.ofStory(story.id), sp = (st && st.host) || story.speaker;
+    if (!sp || sp === 'glauka' || (sceneData && sceneData.intro === false && !st)) return;
     if (this.greet === undefined) { try { this.greet = await (await fetch('data/greetings.json')).json(); } catch (e) { this.greet = {}; } }
-    const lines = story.greeting || this.greet[story.id] || this.greet[sp] || this.greet.default; if (!lines || !lines.length || !(IM['c_' + sp + '_0'] || (this.chars && this.chars.has(story.id)))) return;
-    const W = this.world, p = this.player, sx = p.x + 30, sy = p.y + 2;
-    const standing = this.chars && this.chars.has(story.id);   // already standing at the flag: greet from there, no second sprite
+    const lines = st && st.hello ? [st.hello] : (story.greeting || this.greet[story.id] || this.greet[sp] || this.greet.default);
+    if (!lines || !lines.length || !(IM['c_' + sp + '_0'] || (this.chars && this.chars.has(story.id)))) return;
+    const p = this.player, sx = p.x + 30, sy = p.y + 2;
+    const standing = this.chars && this.chars.has(story.id) && (!st || st.host === story.speaker);   // already standing at the flag: greet from there, no second sprite
     const beats = standing ? [] : [{ t: 'actor.spawn', id: sp, sprite: 'c_' + sp + '_0', x: sx, y: sy, abs: true, ghost: true, ms: 900, shadow: 12, anchor: this.anchorOf(sp) }];
-    lines.slice(0, 2).forEach((l, i) => beats.push({ t: 'caption', speaker: sp, actor: sp, text: l, hold: 1500, mood: 'neutral', audio: `intro-${sp}-${i + 1}` }));
+    lines.slice(0, st ? 1 : 2).forEach((l, i) => beats.push({ t: 'caption', speaker: sp, actor: sp, text: l, hold: 1500, mood: 'neutral', audio: `intro-${sp}-${i + 1}` }));
+    if (st && st.feature) {   // one thing to look for, with a close-up in a bubble
+      if (st.image) beats.push({ t: 'bubble', image: st.image, label: 'Look!', par: true });
+      beats.push({ t: 'caption', speaker: sp, actor: sp, text: st.feature, wait: 'tap', mood: 'neutral', audio: `feature-${st.id}` });
+      if (st.image) beats.push({ t: 'bubble', off: true });
+    }
     if (!standing) beats.push({ t: 'actor.remove', id: sp, ms: 500 });
     const sc = new Scene(this, { id: 'intro-' + sp, speaker: sp, bars: false, startDelay: 100, beats }, { interactive: true }); this.scene = sc;
+    setTimeout(() => { if (this.scene === sc && !sc.skipping) this.title.showChar(sp); }, standing ? 150 : 650);
     ui.showSkip(() => sc.skip());
     try { await sc.run(); } catch (e) { console.error(e); }
-    ui.hideSkip(); this.scene = null;
+    sc.bubbleOff && sc.bubbleOff(); ui.hideSkip(); this.scene = null;
   }
   anchorOf(sp) { const im = IM['c_' + sp + '_0'], a = (this.anchors || {})['c_' + sp + '_0']; return a || [im.width / 2, im.height - 1]; }
   checkTrails() {
@@ -373,7 +422,8 @@ export class Game {
       { id: 'trail:greece', title: 'Aegean Traveller', set: S.filter(s => s.pos && s.pos.zone && s.pos.zone !== 'athens') },
     ];
     for (const t of trails) { if (t.set.length < 2 || p.badges[t.id]) continue; if (t.set.every(s => p.badges[s.id])) { award(t.id); ui.toast('Trail badge: ' + t.title + '!', 3500); if (t.id === 'trail:main') { sfx.triumph(); const rel = music.hold('finale'); setTimeout(rel, 45000); } } }
-    if (p.badges['trail:main'] && this.vis && this.vis.cfg && !this.vis.seen(this.vis.cfg.finale.sticker)) this.vis.pending = true;   // the finale vision plays once, when free
+    if (this.passport.complete('athens') && !p.badges['trail:passport']) { award('trail:passport'); ui.toast('Passport complete! Every building in Athens.', 4000); sfx.triumph(); }
+    if ((p.badges['trail:main'] || p.badges['trail:passport']) && this.vis && this.vis.cfg && !this.vis.seen(this.vis.cfg.finale.sticker)) this.vis.pending = true;   // the finale vision plays once, when free
   }
   goTo(spot) {
     this.world = this.worlds[spot.world]; this.player.x = spot.x; this.player.y = spot.y + 14;

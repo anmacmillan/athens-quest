@@ -8,6 +8,7 @@ import { IM, M } from './render.js';
 import { CONFIG } from './config.js';
 import { earnOwls, REWARDS } from './economy.js';
 import { trackerEl } from './theseus.js';
+import { giftView } from './passport.js';
 
 let G = null, overlayEl = null, skipFn = null, toastT = 0, compassOn = false;
 const icon = n => el('img', { src: M['icon_' + n].f, class: 'ico', alt: '' });
@@ -23,12 +24,14 @@ export function init(game) {
   $('skip').addEventListener('click', () => skipFn && skipFn());
   $('bBook').prepend(icon('book')); $('bMap').prepend(icon('map')); $('bBoard').prepend(icon('trophy'));
   $('btnA').append(el('img', { src: M.btn_a.f, alt: 'A' }));
-  $('cnt').before(el('img', { src: M.coin.f, class: 'coin', alt: '' }));
+  $('cnt').before(el('img', { src: 'art/ui/passport.png', class: 'coin pass', alt: 'Passport', onerror: e => { e.target.src = M.coin.f; } }));
+  $('counter').addEventListener('click', () => { unlock(); sfx.tap(); G.passport && G.passport.open(); }); $('counter').style.cursor = 'pointer';
   onChange(refresh); refresh();
 }
 export function refresh() {
   if (!G) return; const p = me(), total = G.stories.length, n = p ? G.stories.filter(s => p.badges[s.id]).length : 0;
-  $('cnt').textContent = `${n} / ${total}`;
+  const pp = G.passport && G.passport.stamps ? G.passport.progress('athens') : null;
+  $('cnt').textContent = pp ? `${pp.n} / ${pp.total}` : `${n} / ${total}`;
   const snd = $('bSound'); snd.textContent = ''; snd.append(icon(sound.on ? 'sound' : 'mute'));
   $('sync').className = 'sync ' + store.status; $('sync').title = { online: 'Saved online', local: 'Saved on this iPad', offline: 'Offline: will sync later', refused: 'Saved on this iPad only' }[store.status];
   $('who').textContent = p ? p.name : '';
@@ -54,6 +57,7 @@ function open(title, body, opts = {}) {
 export { open as openOverlay };
 const theseusTracker = () => trackerEl();
 export function closeOverlay() { if (overlayEl) { overlayEl.remove(); overlayEl = null; } if (G) { G.mode = 'play'; if (!G.busy) hud(true); } }   // mode always returns to play (busy still gates movement), so no flow can leave the girl frozen
+export function button(label, fn, cls = '') { return btn(label, fn, cls); }
 const btn = (label, fn, cls = '') => el('button', { class: 'btn ' + cls, text: label, onclick: e => { unlock(); sfx.tap(); fn(e); } });
 const flagChip = f => el('span', { class: 'chip', style: `--c:${FLAGS[f].color}`, text: FLAGS[f].name });
 
@@ -108,14 +112,14 @@ export function quiz(story) {
   });
 }
 function closeOverlayKeep() { if (overlayEl) { overlayEl.remove(); overlayEl = null; } }
-export function earned(story) {
+export function earned(story, G_, gift) {
   return new Promise(resolve => {
     const p = me(), n = badgeCount(p), msgs = [];
     const core = G.mainStories(), all = core.every(s => p.badges[s.id]);
     const stories = G.stories.filter(s => p.badges[s.id]).length;
     if (stories === 5) msgs.push('New costume piece: the laurel wreath!'); if (stories === 10) msgs.push('New costume piece: the owl-feather cape!'); if (all) msgs.push("Main Quest complete! New costume piece: Athena's helmet!");
     const coin = el('img', { src: M.coin.f, class: 'bigcoin', alt: '' });
-    const body = el('div', { class: 'earned' }, coin, el('h2', { text: 'Owl coin!' }), el('p', { text: `${story.title}: badge earned. +€${CONFIG.EURO_PER_STORY}` }), ...msgs.map(m => el('p', { class: 'unlock', text: m })), el('p', { text: `${stories} / ${G.stories.length}` }),
+    const body = el('div', { class: 'earned' }, coin, el('h2', { text: 'Owl coin!' }), el('p', { text: `${story.title}: badge earned. +€${CONFIG.EURO_PER_STORY}` }), ...giftView(gift), ...msgs.map(m => el('p', { class: 'unlock', text: m })),
       btn('Hoot!', () => { closeOverlayKeep(); resolve(); }, 'go'));
     open(null, body, { noClose: true, cls: 'earnedp' }); sfx.win(); refresh();
   });

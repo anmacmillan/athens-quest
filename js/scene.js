@@ -113,7 +113,7 @@ export class Scene {
     if (this.skipping || dur <= 0) { fn(1); return Promise.resolve(); }
     return new Promise(res => this.tweens.push({ t0: this.t, dur: dur / 1000, fn, res }));
   }
-  skip() { this.skipping = true; this.flushAll(); }
+  skip() { this.skipping = true; this.bubbleOff(); this.flushAll(); }
   destroy() { if (this.capEl) { this.capEl.remove(); this.capEl = null; } }
   flushAll() {
     if (this.caption && !this.caption.finished) { const c = this.caption; c.finished = true; c.res(); }
@@ -171,6 +171,7 @@ export class Scene {
       case 'camera.zoom': return this.doZoom(b);
       case 'fx': return this.doFx(b);
       case 'still': return this.doStill(b);
+      case 'bubble': return this.doBubble(b);
       case 'badge': return this.doBadge(b);
       case 'stage': return this.doStage(b);
       case 'bars': this.barTarget = b.on === false ? 0 : 1; return null;
@@ -252,6 +253,16 @@ export class Scene {
     this.cam.x = sp.x; this.cam.y = sp.y; this.cam.z = b.zoom || 1; this.follow = null;
     return null;
   }
+  // a close-up in a comic bubble (DOM, crisp at any size) that pops up beside the speaker while the caption runs
+  doBubble(b) {
+    if (b.off) { this.bubbleOff(); return null; }
+    let e = document.getElementById('featbubble');
+    if (!e) { e = document.createElement('div'); e.id = 'featbubble'; e.innerHTML = '<img alt=""><span></span>'; document.body.append(e); }
+    const im = e.querySelector('img'); im.src = b.image; e.querySelector('span').textContent = b.label || '';
+    e.classList.remove('in'); void e.offsetWidth; requestAnimationFrame(() => e.classList.add('in')); sfx.pop && sfx.pop();
+    this.bubbleOn = true; return null;
+  }
+  bubbleOff() { const e = document.getElementById('featbubble'); if (e) e.classList.remove('in'); this.bubbleOn = false; }
   doBadge(b) { this.badge = { t0: this.t, flag: b.flag || this.flag || 'myth' }; sfx.win(); return null; }
   doStill(b) {
     return new Promise(async res => {
