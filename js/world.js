@@ -37,7 +37,7 @@ export class LiveWorld extends World {
     return { x: (xm - this.ox) / 5 * 16 * this.ws, y: (ym - this.oy) / 5 * 16 * this.ws };
   }
   code(x, y) { const r = this.grid[Math.floor(y / this.T)]; return r ? r[Math.floor(x / this.T)] : undefined; }
-  solid(x, y) { const c = this.code(x, y); return c === undefined || this.solidCodes.includes(c); }
+  solid(x, y) { const c = this.code(x, y); if (c === undefined || this.solidCodes.includes(c)) return true; if (this.under) { const tx = Math.floor(x / this.T), ty = Math.floor(y / this.T); if (this.under[ty * this.cols + tx]) return true; } return false; }
   walkable(x, y) { return !this.solid(x, y); }
   nearestWalkable(x, y, maxR = 24) {
     if (this.walkable(x, y)) return { x, y };
@@ -63,6 +63,21 @@ export class LiveWorld extends World {
     this.objCell = CELL; this.objNx = nx; this.objGrid = new Map();
     this.objs.forEach((o, i) => { for (let cy = Math.floor(o.y / CELL); cy <= Math.floor((o.y + o.h) / CELL); cy++) for (let cx = Math.floor(o.x / CELL); cx <= Math.floor((o.x + o.w) / CELL); cx++) { const k = cy * nx + cx; (this.objGrid.get(k) || this.objGrid.set(k, []).get(k)).push(i); } });
     this.objects = d.objects.length;
+    this.buildUnder();
+  }
+  // the ground hidden behind a big monument (the picture is bigger than its real footprint) is not walkable,
+  // so nobody gets lost inside the Odeon; the Acropolis summit ('P') stays open, you walk behind temples there
+  buildUnder() {
+    const T = this.T, cols = this.cols, rows = this.rows, k = this.ws, u = new Uint8Array(cols * rows); let n = 0;
+    for (const o of this.objs) {
+      if (o.sw < 80 || o.sh < 90) continue;
+      for (let ty = Math.floor(o.y / T); ty <= Math.floor(o.base / T); ty++) for (let tx = Math.floor(o.x / T); tx <= Math.floor((o.x + o.w) / T); tx++) {
+        if (tx < 0 || ty < 0 || tx >= cols || ty >= rows) continue;
+        const cx = tx * T + T / 2, cy = ty * T + T / 2; if (!(o.x < cx - 4 && o.x + o.w > cx + 4 && o.y < cy - 6 && o.base > cy + 10)) continue;
+        const c = this.code(cx, cy); if (c === 'P' || u[ty * cols + tx]) continue; u[ty * cols + tx] = 1; n++;
+      }
+    }
+    this.under = u; this.underN = n;
   }
   // would a character standing here be hidden behind scenery (an object whose base line lies south of her)?
   hiddenBehind(x, y) {

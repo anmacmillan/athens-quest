@@ -154,6 +154,7 @@ export class Game {
     if (this.flight) this.updateFlight(dt);
     if (this.trans) { this.trans.t += dt; if (this.trans.t >= this.trans.dur) { const r = this.trans.res; this.trans = null; r && r(); } }
     if (this.mode === 'play' && !this.scene && !this.trans && !this.busy && !this.flight) {
+      this.unstick();
       this.movePlayer(dt); this.updateOwl(dt); this.passport.update(); this.title.update(dt);
       const W = this.world, p = this.player, rr = W.kind === 'map' ? 17 : 40; let best = null, bd = 1e9;
       for (const s of this.spots) if (s.world === W.id) { const d = dist(p.x, p.y, s.x, s.y); if (d < rr && d < bd) { bd = d; best = { kind: 'spot', ref: s }; } }
@@ -327,6 +328,11 @@ export class Game {
     if (this.collected(spot.id)) return;
     this.busy = true; input.enabled = false;
     setTimeout(() => { this.busy = false; input.enabled = true; if (!this.scene && this.mode === 'play') this.playStory(spot); }, best ? 1700 : 300);
+  }
+  unstick() {
+    const W = this.world, p = this.player; if (W.kind !== 'live') return;
+    if (!W.solid(p.x, p.y) && !W.solid(p.x - 4, p.y) && !W.solid(p.x + 4, p.y)) return;
+    const q = W.clearSpot ? W.clearSpot(p.x, p.y + 20, 20) : W.nearestWalkable(p.x, p.y); if (q) { p.x = q.x; p.y = q.y; p.goto = null; p.route = null; }
   }
   // walk along a real path (A* over the tile grid) and do `act` on arrival
   walkTo(x, y, act) {
