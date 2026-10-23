@@ -38,6 +38,8 @@ export class Characters {
     for (const spot of G.spots) {
       const W = G.worlds[spot.world]; if (!W || W.kind === 'map') continue; const st = spot.story; if ((D.skip || []).includes(spot.id)) continue;
       let cfg = (D.stories || {})[spot.id]; if (!cfg && st.speaker && st.speaker !== 'glauka' && IM['c_' + st.speaker + '_0']) cfg = { who: st.speaker };
+      const host = spot.stamp && spot.stamp.host;   // a passport building: its host stands at the door (the wandering gods have their own module)
+      if (host && !['zeus', 'hephaestus', 'dionysus'].includes(host) && IM['c_' + host + '_0'] && (!cfg || !cfg.who || cfg.who !== host)) cfg = Object.assign({}, cfg && cfg.who === null ? {} : (cfg || {}), { who: host, dx: (cfg && cfg.dx) ?? 26, dy: (cfg && cfg.dy) ?? 6 });
       if (!cfg) continue;
       const c = mk(W, spot, cfg, true); if (!c) { console.warn('no place for', spot.id); continue; }
       for (const pr of cfg.props || []) c.parts.push({ prop: pr.prop, x: c.x + pr.dx - (cfg.dx ?? -26), y: c.y + pr.dy - (cfg.dy ?? 8), front: !!pr.front });
@@ -117,7 +119,7 @@ export class Characters {
     for (const c of this.list) {
       if (c.world !== W.id || this.hidden(c) || Math.abs(c.x - cx) > 460 || Math.abs(c.y - cy) > 340) continue;
       const parts = [...c.parts];
-      const tp = !c.statue && c.who && tocaHas(c.who) && tocaPose(c.who, 'f', false, t);
+      const tp = c.who && tocaHas(c.who) && tocaPose(c.who, 'f', false, t);
       if (tp) { tp.x = c.x; tp.y = c.y; c.top = tp.h; out.push({ y: c.y, toca: tp, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); shadowAt(c.x, c.y, 15, .3); } }); out.push({ y: c.y + .5, draw: () => { if (c.owner) this.mark(c, t); } }); }
       else out.push({ y: c.y, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); this.drawFigure(c, t, c); if (c.owner && !c.statue) this.mark(c, t); } });
       for (const p of parts) {

@@ -9,6 +9,7 @@ import { aiAssets } from './scene.js';
 import { drawPlayer } from './player.js';
 import { input } from './input.js';
 import * as ui from './ui.js';
+import { TOCA, tocaPose, tocaOwl } from './toca.js';
 
 export class FlyTo {
   constructor(G) { this.G = G; this.f = null; this.seen = new Set(); this.pid = null; this.card = null; this.t = 0; this.dirty = false; window.__fly = this; }
@@ -118,16 +119,30 @@ export class FlyTo {
     G.cam.x = p.x; G.cam.y = p.y - 6; clampCam(G.cam, G.world.w, G.world.h); G.panHold = false;
     if (f.then) f.then();
   }
-  draw() {   // the girl dangling from Glauka's talons, y-sorted above everything
+  draw() { this.drawGirl(); this.drawOwl(); }
+  // the cartoon girl hanging under Glauka (pilot): pose and feet position for toca.js
+  tocaGirl() {
+    const f = this.f; if (!f) return null; const t = this.G.time;
+    const pose = tocaPose('girl', f.ph === 'glide' ? f.face : 'f', f.ph === 'glide', t); if (!pose) return null;
+    pose.x = f.x; pose.y = f.y - f.alt; return pose;
+  }
+  tocaOwlPose() {   // cartoon Glauka above the cartoon girl's head, wings beating
+    const f = this.f; if (!f) return null; const t = this.G.time, a = f.alt, grabU = f.ph === 'grab' ? eio(clamp(f.t / f.grab)) : 1;
+    const pose = tocaOwl(f.ph === 'glide' ? 'side' : 'front', f.face, Math.floor(t * (f.ph === 'glide' ? 10 : 7)) % 2 === 0); if (!pose) return null;
+    pose.x = lerp(f.o0.x, f.x, grabU); pose.y = lerp(f.o0.y + 6, f.y - a - 56, grabU); return pose;
+  }
+  drawGirl() {   // shadow and the pixel girl dangling from Glauka's talons
     const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt;
-    const grabU = f.ph === 'grab' ? eio(clamp(f.t / f.grab)) : 1, ox = lerp(f.o0.x, f.x, grabU), oy = lerp(f.o0.y, f.y - 36 - a, grabU);
     shadowAt(f.x, f.y, 14 - Math.min(5, a / 20), .3 * (1 - Math.min(a, 150) / 190));
-    const flap = Math.floor(t * (f.ph === 'glide' ? 12 : 8)) % 2 === 1, sheet = G.sheet();
-    // wind streaks behind her while gliding
     if (f.ph === 'glide') for (let i = 0; i < 6; i++) { const k = (t * 3 + i * .37) % 1, dx = (f.face === 'r' ? -1 : 1) * (14 + k * 34), yy = f.y - a - 8 - i * 7 - 6; px(f.x + dx, yy, 8 + i % 3 * 3, 1, '#ffffff', (1 - k) * .55); }
-    drawPlayer(g, sheet, f.x, f.y - a + (f.ph === 'grab' ? 0 : 0), f.ph === 'glide' ? f.face : 'f', f.ph === 'glide' ? 1 + (Math.floor(t * 6) % 2) : 0);   // legs dangle and kick
+    if (TOCA && this.tocaGirl()) return;   // drawn smooth on the screen canvas by the renderer
+    drawPlayer(g, G.sheet(), f.x, f.y - a, f.ph === 'glide' ? f.face : 'f', f.ph === 'glide' ? 1 + (Math.floor(t * 6) % 2) : 0);   // legs dangle and kick
+  }
+  drawOwl() {   // Glauka on top, talons gripping the girl's shoulders (higher for the taller cartoon girl)
+    const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt, big = TOCA && this.tocaGirl(), sh = big ? 42 : 30, up = big ? 52 : 36;
+    const grabU = f.ph === 'grab' ? eio(clamp(f.t / f.grab)) : 1, ox = lerp(f.o0.x, f.x, grabU), oy = lerp(f.o0.y, f.y - up - a, grabU);
+    const flap = Math.floor(t * (f.ph === 'glide' ? 12 : 8)) % 2 === 1;
     const im = G.comp.owlImg(flap); g.drawImage(im, R(ox - 9), R(oy - 14));
-    // talons gripping her shoulders
-    if (grabU > .85) { g.fillStyle = '#3a2c4c'; g.fillRect(R(f.x) - 6, R(f.y - a) - 30, 1, 5); g.fillRect(R(f.x) + 5, R(f.y - a) - 30, 1, 5); g.fillStyle = '#f0993c'; g.fillRect(R(f.x) - 7, R(f.y - a) - 30, 3, 1); g.fillRect(R(f.x) + 4, R(f.y - a) - 30, 3, 1); }
+    if (grabU > .85) { g.fillStyle = '#3a2c4c'; g.fillRect(R(f.x) - 6, R(f.y - a) - sh, 1, 5); g.fillRect(R(f.x) + 5, R(f.y - a) - sh, 1, 5); g.fillStyle = '#f0993c'; g.fillRect(R(f.x) - 7, R(f.y - a) - sh, 3, 1); g.fillRect(R(f.x) + 4, R(f.y - a) - sh, 3, 1); }
   }
 }

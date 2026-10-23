@@ -2,6 +2,7 @@
 // They ignore the player until within `near` tiles, then face her and say a rotating one-liner in a DOM speech bubble (never blocks movement). Talking to one 3+ times within 60 s
 // triggers its harmless pester effect. Everything draws on the Athens map at player scale.
 import { g, IM, shadowAt, px } from './render.js';
+import { tocaHas, tocaPose } from './toca.js';
 import { R, dist, el, rnd, SPEAKERS } from './util.js';
 import { sfx } from './audio.js';
 import { aiAssets } from './scene.js';
@@ -122,7 +123,12 @@ export class Gods {
   ents(W) {
     if (!this.ready || W.id !== 'athens') return [];
     const G = this.G, t = G.time, cx = G.cam.x, cy = G.cam.y, out = [], near = (x, y, r) => Math.abs(x - cx) < r && Math.abs(y - cy) < r;
-    for (const o of this.list) if (near(o.x, o.y, 480)) out.push({ y: o.y, box: { x0: o.x - 14, y0: o.y - 42, x1: o.x + 14, y1: o.y + 2 }, draw: () => this.drawGod(o, t) });
+    for (const o of this.list) if (near(o.x, o.y, 480)) {
+      const tp = tocaHas(o.d.sprite) && tocaPose(o.d.sprite, o.moving ? (o.face < 0 ? 'l' : 'r') : 'f', o.moving, t);
+      if (tp) { tp.x = o.x; tp.y = o.y; out.push({ y: o.y, box: { x0: o.x - 16, y0: o.y - 66, x1: o.x + 16, y1: o.y + 2 }, toca: tp, draw: () => { shadowAt(o.x, o.y, 15, .26); g.save(); g.globalCompositeOperation = 'lighter'; g.globalAlpha = .35 + .15 * Math.sin(t * 2 + o.seed); g.fillStyle = `rgb(${o.d.glow})`; g.beginPath(); g.ellipse(o.x, o.y - 30, 22, 36, 0, 0, 7); g.fill(); g.restore(); } });
+        if (o.talking) out.push({ y: o.y + .5, draw: () => { const e = IM.emote_exclaim; e && g.drawImage(e, R(o.x - 8), R(o.y - 86 + Math.sin(t * 5))); } }); continue; }
+      out.push({ y: o.y, box: { x0: o.x - 14, y0: o.y - 42, x1: o.x + 14, y1: o.y + 2 }, draw: () => this.drawGod(o, t) });
+    }
     for (const f of this.fxs) out.push({ y: (f.o ? f.o.y : f.y) + (f.type === 'vines' || f.type === 'bolt' ? 2 : 40), draw: () => this.drawFx(f, t) });
     if (this.wet > 0) out.push({ y: G.player.y + 1, draw: () => this.drawWet(t) });
     return out;

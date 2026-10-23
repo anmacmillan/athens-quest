@@ -28,7 +28,7 @@ import { Evzones } from './evzones.js';
 import { FlyTo } from './flyto.js';
 import { Edges } from './edges.js';
 import { arrivalCard } from './arrival.js';
-import { TOCA, tocaHas, tocaPose, tocaDraw } from './toca.js';
+import { TOCA, tocaHas, tocaPose, tocaDraw, tocaOwl } from './toca.js';
 import { Tour } from './tour.js';
 import { Passport } from './passport.js';
 import { TitleCard } from './titlecard.js';
@@ -142,6 +142,8 @@ export class Game {
     } else {
       if (TOCA && !pp && !p.skating && !(this.comp.ride)) { const pose = tocaPose('girl', p.facing || 'f', p.moving, t); if (pose) { pose.x = p.x; pose.y = p.y; out.push({ y: p.y, box: { x0: p.x - 14, y0: p.y - 64, x1: p.x + 14, y1: p.y + 2 }, toca: pose, draw: () => shadowAt(p.x, p.y, 16, .3) }); } else out.push({ y: p.y, draw: () => { } }); } else
       out.push({ y: p.y, box: { x0: p.x - 12, y0: p.y - 44, x1: p.x + 12, y1: p.y + 2 }, draw: () => { const fr = p.moving ? 1 + (Math.floor((p.walkT || 0) * 7) % 2) : 0; if ((!pp && this.comp.drawRider(p, this.sheet(), fr)) || this.skate.draw(p, this.sheet(), fr, !!pp)) return; shadowAt(p.x, p.y, 14, .3); drawPlayer(g, this.sheet(), p.x, p.y, p.facing || 'f', fr); } });
+      const op = TOCA && !pp && tocaOwl(p.moving || (o.alt || 0) > 1 ? 'front' : 'sit', p.facing, Math.floor(t * 5) % 2 === 0);
+      if (op) { const al = o.alt || 0; op.x = o.x; op.y = o.y + 6 - al + (o.perched ? 0 : Math.sin(t * 3) * 1.5); out.push({ y: o.y + 6, toca: op, draw: () => shadowAt(o.x, o.y + 12, 8 - Math.min(3, al / 8), .2) }); } else
       out.push({ y: o.y + 6, box: { x0: o.x - 10, y0: o.y - 16, x1: o.x + 10, y1: o.y + 10 }, draw: () => { const fl = Math.floor(t * 5) % 2 && p.moving; const al = o.alt || 0, fl2 = o.flap !== undefined && al > 1 ? o.flap : fl; shadowAt(o.x, o.y + 12, 8 - Math.min(3, al / 8), .2); g.drawImage(this.comp.owlImg(fl2), R(o.x - 9), R(o.y - 14 - al + (o.perched ? 0 : Math.sin(t * 3) * 1.5))); } });
     }
     return out;
@@ -219,7 +221,7 @@ export class Game {
       for (; i < ents.length; i++) ents[i].draw();
     }
     if (!sc && !far && !TOCA && W.hiddenBehind && W.kind === 'live' && !(this.fly && this.fly.f)) { const p = this.player; if (W.hiddenBehind(p.x, p.y)) { const fr = p.moving ? 1 + (Math.floor((p.walkT || 0) * 7) % 2) : 0; drawPlayer(g, this.sheet(), p.x, p.y, p.facing || 'f', fr, .55); } }
-    if (!sc) { this.fly.draw(); }
+    if (!sc) { const tg = TOCA && this.fly.f && this.fly.tocaGirl(); if (tg) { this.fly.drawGirl(); endWorld(); present(); tocaDraw(mainCx, cam, V, { toca: tg }); const ow = this.fly.tocaOwlPose(); if (ow) tocaDraw(mainCx, cam, V, { toca: ow }); g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, V.W, V.H); g.restore(); beginWorld(cam); if (!ow) this.fly.drawOwl(); } else this.fly.draw(); }
     if (W.drawOccluders) { const gi = sc ? sc.actors.get('girl') : this.player; W.drawOccluders(rect, gi ? gi.y : 0); }
     if (sc) sc.drawWorldFx();
     endWorld();

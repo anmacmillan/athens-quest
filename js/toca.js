@@ -6,7 +6,7 @@ import { lsGet, lsSet } from './util.js';
 const q = new URLSearchParams(location.search).get('toca');
 if (q !== null) lsSet('owlq.toca', q === '1');
 export const TOCA = !!lsGet('owlq.toca', false);
-const CAST = { girl: 64, socrates: 66, phidias: 64, nike: 68 };   // height in art pixels (the pixel girl is 44)
+const CAST = { girl: 64, socrates: 66, phidias: 66, nike: 68, pericles: 66, caryatid: 66, dionysus: 66, playwright: 66, paul: 62, hephaestus: 68, solon: 66, marcus: 66, zeus: 72, plato: 68, aristotle: 66, evzone: 70, glauka: 21 };   // height in art pixels (the pixel girl is 44)
 const IMG = {};
 if (TOCA) for (const id in CAST) for (const p of ['f', 'fw', 's', 'sw', 'b']) { const i = new Image(); i.src = `art/toca/${id}_${p}.png`; IMG[id + '_' + p] = i; }
 export const tocaHas = id => TOCA && id in CAST;
@@ -24,4 +24,9 @@ export function tocaDraw(k, cam, V, e) {
   k.save(); k.imageSmoothingEnabled = true; k.imageSmoothingQuality = 'high'; if (pose.alpha) k.globalAlpha = pose.alpha;
   if (pose.flip) { k.translate(sx, 0); k.scale(-1, 1); k.drawImage(pose.im, -w / 2, sy - h, w, h); } else k.drawImage(pose.im, sx - w / 2, sy - h, w, h);
   k.restore();
+}
+// Glauka's poses (her sheet: f sitting, fw / s front flying wings up / down, sw / b side flying wings up / down, facing right)
+export function tocaOwl(mode, face, flapUp) {
+  const p = mode === 'sit' ? 'f' : mode === 'side' ? (flapUp ? 'sw' : 'b') : (flapUp ? 'fw' : 's');
+  const im = IMG['glauka_' + p]; return im && im.complete && im.naturalWidth ? { im, flip: mode === 'side' && face === 'l', h: mode === 'sit' ? CAST.glauka : CAST.glauka + 6 } : null;
 }
