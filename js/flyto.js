@@ -40,7 +40,14 @@ export class FlyTo {
   }
   tap(v, w) {   // zoomed-out street view: everything tappable; a tap on empty ground does nothing (long-press sets a waypoint)
     const G = this.G; if (G.world.kind !== 'live' || G.cam.z >= .6) return false;
-    const h = this.hitAt(w, 14 / G.cam.z); if (h) this.showCard(h); return true;
+    const h = this.hitAt(w, 14 / G.cam.z);
+    if (h && h.kind === 'spot') { if (!this.known(h.ref)) { ui.toast('Not discovered yet, explore!', 2200); return true; } G.goPlace(h.ref); return true; }   // zoomed out: one tap flies her there
+    if (h) { this.showCard(h); return true; }
+    const lm = G.marks && G.marks.landmarks, W = G.world; if (lm && W.id === 'athens') {   // a tap on a building name: its passport doorway
+      let best = null, bd = 60 / G.cam.z; for (const l of lm) { const d = Math.hypot(w.x - l.x * W.ws, w.y - l.y * W.ws); if (d < bd) { bd = d; best = l; } }
+      if (best) { const s2 = G.stampNear(best); if (s2) G.goPlace(s2); else G.goLandmark(best); return true; }
+    }
+    return true;
   }
   long(v) {
     const G = this.G; if (G.world.kind !== 'live' || G.cam.z >= .6 || G.busy || G.scene || G.mode !== 'play') return;
@@ -68,7 +75,7 @@ export class FlyTo {
     if (it.kind === 'spot' && !this.known(it.ref)) { ui.toast('Not discovered yet, explore!', 2200); return; }
     const sp = it.kind === 'spot', s = it.ref, title = sp ? s.story.title : s.label, flag = sp ? FLAGS[s.story.flag] : null, done = sp && G.collected(s.id);
     const can = W.kind === 'live' && !G.busy && !G.scene;
-    const fly = el('button', { class: 'btn small', text: 'Fly there', onclick: e => { e.stopPropagation(); this.closeCard(); ui.closeOverlay(); this.fly({ x: s.x, y: s.y, sign: !sp }); } });
+    const fly = el('button', { class: 'btn small', text: 'Fly there', onclick: e => { e.stopPropagation(); this.closeCard(); ui.closeOverlay(); if (sp) G.goPlace(s); else this.fly({ x: s.x, y: s.y, sign: true }); } });
     if (!can) fly.disabled = true;
     const body = el('div', { class: 'fcbody' }, el('div', { class: 'fctitle', text: title }),
       sp ? el('span', { class: 'chip', style: `--c:${flag.color}`, text: flag.name }) : el('span', { class: 'chip', style: '--c:#8a5fd0', text: 'Signpost' }),

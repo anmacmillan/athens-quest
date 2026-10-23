@@ -43,11 +43,24 @@ export class Marks {
   }
   // ------------------------------------------------------------ geometry
   scr(x, y) { const G = this.G, cam = G.cam, S = V.S; return [((x - cam.x) * cam.z + V.W / 2) * S, ((y - cam.y) * cam.z + V.H / 2) * S]; }
+  // text sizes follow the art-pixel scale (V.S / 3 = one art px is 3 css px), so names grow with the world even when the browser is zoomed out
+  u() { return Math.max(V.dpr || 1, (V.S || 3) / 3); }
+  plate(txt, x, y, size, sub, subSize) {   // a big name plate: dark rounded panel, gold rim, name over a smaller subtitle; (x, y) = bottom centre
+    const k = mainCx, u = this.u(); k.font = `800 ${Math.round(size * u)}px ${FONT}`; let w = k.measureText(txt).width;
+    if (sub) { k.font = `700 ${Math.round(subSize * u)}px ${FONT}`; w = Math.max(w, k.measureText(sub).width); }
+    const pw = w + 22 * u, ph = (size + (sub ? subSize + 4 : 0) + 14) * u, x0 = x - pw / 2, y0 = y - ph, r = 9 * u;
+    k.fillStyle = 'rgba(34,20,50,.88)'; k.strokeStyle = '#f5c542'; k.lineWidth = 2.5 * u;
+    k.beginPath(); k.roundRect ? k.roundRect(x0, y0, pw, ph, r) : k.rect(x0, y0, pw, ph); k.fill(); k.stroke();
+    k.beginPath(); k.moveTo(x - 7 * u, y); k.lineTo(x, y + 8 * u); k.lineTo(x + 7 * u, y); k.fill();
+    k.textAlign = 'center'; k.textBaseline = 'alphabetic'; k.font = `800 ${Math.round(size * u)}px ${FONT}`; k.fillStyle = '#fff4d6'; k.fillText(txt, x, y0 + (size + 6) * u);
+    if (sub) { k.font = `700 ${Math.round(subSize * u)}px ${FONT}`; k.fillStyle = '#f5c542'; k.fillText(sub, x, y0 + (size + subSize + 9) * u); }
+    return { x: x0, y: y0, w: pw, h: ph + 8 * u };
+  }
   lines(txt, x, y, col, size, halo, align = 'center', w = 4) {
-    const k = mainCx, u = V.dpr || 1; k.font = `800 ${Math.round(size * u)}px ${FONT}`; k.textAlign = align; k.textBaseline = 'alphabetic'; k.lineJoin = 'round';
+    const k = mainCx, u = this.u(); k.font = `800 ${Math.round(size * u)}px ${FONT}`; k.textAlign = align; k.textBaseline = 'alphabetic'; k.lineJoin = 'round';
     k.lineWidth = w * u; k.strokeStyle = halo; k.strokeText(txt, x, y); k.fillStyle = col; k.fillText(txt, x, y);
   }
-  textRect(txt, x, y, size, above = true) { const k = mainCx, u = V.dpr || 1; k.font = `800 ${Math.round(size * u)}px ${FONT}`; const w = k.measureText(txt).width + 8 * u, h = (size + 4) * u; return { x: x - w / 2, y: above ? y - h : y, w, h }; }
+  textRect(txt, x, y, size, above = true) { const k = mainCx, u = this.u(); k.font = `800 ${Math.round(size * u)}px ${FONT}`; const w = k.measureText(txt).width + 8 * u, h = (size + 4) * u; return { x: x - w / 2, y: above ? y - h : y, w, h }; }
   hitRect(a, b) { return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y; }
   // ------------------------------------------------------------ frame
   draw() {
@@ -69,15 +82,16 @@ export class Marks {
     const tg = G.guide && G.guide.target && G.guide.target(); const list = [];
     if (tg && tg.story) list.push([tg, 2]); for (const s of near) if (!tg || s !== tg) list.push([s, 1]);
     for (const [s, pr] of list.sort((a, b) => b[1] - a[1])) {
-      const [x, y] = this.scr(s.x, s.y - 54), txt = this.name(s), r = this.textRect(txt, x, y, 13); if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
-      const al = clamp(1 - (dist(p.x, p.y, s.x, s.y) - T * 6) / (T * 3)); k.globalAlpha = pr === 2 ? 1 : al; this.lines(txt, x, y, pr === 2 ? '#ffe9a0' : '#fff4d6', 13, 'rgba(40,24,60,.92)'); k.globalAlpha = 1;
+      const [x, y] = this.scr(s.x, s.y - 54), txt = this.name(s), r = this.textRect(txt, x, y, 17); if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
+      const al = clamp(1 - (dist(p.x, p.y, s.x, s.y) - T * 6) / (T * 3)); k.globalAlpha = pr === 2 ? 1 : al; this.lines(txt, x, y, pr === 2 ? '#ffe9a0' : '#fff4d6', 17, 'rgba(40,24,60,.92)', 'center', 5); k.globalAlpha = 1;
     }
     // landmark names with a smaller, lighter subtitle: within about 10 tiles, fading out beyond, at most 3 at once
-    const lm = this.landmarks.map(l => ({ l, x: l.x * W.ws, y: l.y * W.ws })).map(o => Object.assign(o, { d: dist(p.x, p.y, o.x, o.y) })).filter(o => o.d < T * 10).sort((a, b) => a.d - b.d).slice(0, 3);
+    const lm = (W.id === 'athens' ? this.landmarks : []).map(l => ({ l, x: l.x * W.ws, y: l.y * W.ws })).map(o => Object.assign(o, { d: dist(p.x, p.y, o.x, o.y) })).filter(o => o.d < T * 12).sort((a, b) => a.d - b.d).slice(0, 2);
     for (const o of lm) {
-      const al = clamp((T * 10 - o.d) / (T * 3)), [x, y] = this.scr(o.x, o.y - 70), r = this.textRect(o.l.name, x, y - (o.l.subtitle ? 14 * u : 0), 16); if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
-      k.globalAlpha = al; this.lines(o.l.name, x, y - (o.l.subtitle ? 12 * u : 0), '#fffaf0', 16, 'rgba(30,18,44,.92)', 'center', 5);
-      if (o.l.subtitle) this.lines(o.l.subtitle, x, y + 4 * u, '#e8d9b8', 11, 'rgba(30,18,44,.85)', 'center', 3.5); k.globalAlpha = 1;
+      const al = clamp((T * 12 - o.d) / (T * 3)), [x, y0_] = this.scr(o.x, o.y - 70), y = clamp(y0_, 190 * this.u(), mainCx.canvas.height - 120 * this.u());
+      const nm = o.l.name.toUpperCase(); k.font = `800 ${Math.round(22 * this.u())}px ${FONT}`; const w = k.measureText(nm).width + 22 * this.u(), h = 52 * this.u();
+      const r = { x: x - w / 2, y: y - h, w, h }; if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
+      k.globalAlpha = al; this.plate(nm, x, y, 22, o.l.subtitle || '', 14); k.globalAlpha = 1;
     }
   }
   // ---- zoomed out
@@ -128,8 +142,8 @@ export class Marks {
       if (tries >= 4 && (rects.some(q => this.hitRect(q, r)) || placed.some(q => this.hitRect(q, r)))) return false; placed.push(r); this.lines(txt, x, y + size * u, col, size, 'rgba(255,248,230,.95)', 'center', w); return true;
     };
     const z = G.cam.z, ws = W.ws, al = clamp((.6 - z) / .1); k.globalAlpha = al;
-    for (const l of this.landmarks) { if (!(l.big || z < .3)) continue; const [x, y] = this.scr(l.x * ws, l.y * ws); if (x < -100 || y < -30 || x > cw + 100 || y > ch + 30) continue; place(l.big ? l.name : l.short, x, y - 8 * u, l.big ? 17 : 13, l.big ? '#6a3e0c' : '#4a2c1c', l.big ? 5 : 4); }
-    for (const c of cl) if (c.list.length === 1) { const a = c.list[0]; if (!a.main || a.got) continue; place(a.unk ? '?' : this.name(a.s), a.x, a.y + 3 * u, 12, '#3a2250', 4); }
+    for (const l of (W.id === 'athens' ? this.landmarks : [])) {  const [x, y] = this.scr(l.x * ws, l.y * ws); if (x < -100 || y < -30 || x > cw + 100 || y > ch + 30) continue; place(l.big ? l.name : (z < .3 ? l.short : l.name), x, y - 8 * u, l.big ? 22 : 16, l.big ? '#6a3e0c' : '#4a2c1c', l.big ? 6 : 5); }
+    for (const c of cl) if (c.list.length === 1) { const a = c.list[0]; if (!a.main || a.got) continue; place(a.unk ? '?' : this.name(a.s), a.x, a.y + 3 * u, 16, '#3a2250', 5); }
     k.globalAlpha = 1;
   }
   drop(k, x, y, h, col) {   // plain teardrop pin, tip at (x, y)

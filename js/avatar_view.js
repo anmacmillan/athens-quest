@@ -29,7 +29,7 @@ export async function createAvatarView(container, opts = {}) {
   function draw(now) {
     if (!alive) return; raf = requestAnimationFrame(draw); size(); if (!sheet) return;
     const t = (now - t0) / 1000; ctx.clearRect(0, 0, W, H); ctx.imageSmoothingEnabled = false;
-    const fc = ORDER[facing], fr = frameNo(t), s = Math.max(2, Math.min(Math.round(dpr * 9), Math.floor(Math.min(H * .86 / 44, W * .8 / 30))));
+    const fc = ORDER[facing], fr = frameNo(t), s = Math.max(2, Math.min(Math.round(dpr * 3.5), Math.floor(Math.min(H * .86 / 44, W * .8 / 30))));
     const cx = Math.round(W / 2), foot = Math.round(H * .9 - (portrait.dataset.s ? 0 : 0));
     // floor shadow
     ctx.fillStyle = 'rgba(70,50,70,.28)'; ctx.beginPath(); ctx.ellipse(cx, foot, 9 * s, 2.2 * s, 0, 0, 7); ctx.fill();

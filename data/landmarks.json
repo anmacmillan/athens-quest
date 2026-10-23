@@ -43,7 +43,8 @@
   "x": 2304,
   "y": 1702,
   "big": true,
-  "reveal": 640
+  "reveal": 640,
+  "note": "The high city. Every building up here has a glowing doorway: find them all."
  },
  {
   "id": "theatre",
@@ -72,7 +73,8 @@
   "subtitle": "",
   "x": 2088,
   "y": 2356,
-  "big": false
+  "big": false,
+  "note": "A stoa is a long covered walkway, for shade and gossip. The Stoics took their name from a different one, the Painted Stoa in the Agora. Zeno's flag is there, and Marcus Aurelius waits at the Tower of the Winds."
  },
  {
   "id": "areopagus",
@@ -110,7 +112,8 @@
   "subtitle": "shopping arcade, now a museum",
   "x": 1630,
   "y": 745,
-  "big": false
+  "big": false,
+  "note": "A king of Pergamon gave Athens this shopping arcade. It was rebuilt in the 1950s, and today it is the Agora museum. Go and look at the voting machines."
  },
  {
   "id": "winds",
@@ -128,7 +131,8 @@
   "subtitle": "",
   "x": 2224,
   "y": 1051,
-  "big": false
+  "big": false,
+  "note": "The Romans' market square. Look for the Gate of Athena, still standing. The Tower of the Winds is at the far end."
  },
  {
   "id": "hadrian_arch",
@@ -137,7 +141,8 @@
   "subtitle": "the emperor's gate",
   "x": 3819,
   "y": 2517,
-  "big": false
+  "big": false,
+  "note": "Emperor Hadrian built this gate. One side says: This is Athens, the old city of Theseus. The other side says: This is the city of Hadrian, not of Theseus."
  },
  {
   "id": "olympieion",
@@ -156,7 +161,8 @@
   "subtitle": "the treasures inside",
   "x": 2824,
   "y": 3106,
-  "big": false
+  "big": false,
+  "note": "The Acropolis Museum. The real Caryatids live inside, and the glass floor shows a Roman street underneath."
  },
  {
   "id": "philopappos",
@@ -166,7 +172,8 @@
   "x": 830,
   "y": 3523,
   "big": true,
-  "reveal": 420
+  "reveal": 420,
+  "note": "The tomb of a Roman prince who loved Athens. Best view of the Acropolis from up here."
  },
  {
   "id": "pnyx",
@@ -185,7 +192,8 @@
   "subtitle": "",
   "x": 2908,
   "y": 2234,
-  "big": false
+  "big": false,
+  "note": "A rich man won a prize for a play and built this little tower to show off his trophy."
  },
  {
   "id": "anafiotika",
@@ -194,7 +202,8 @@
   "subtitle": "",
   "x": 2752,
   "y": 1594,
-  "big": false
+  "big": false,
+  "note": "A tiny village of white houses built by islanders from Anafi, who came to build the king's palace."
  },
  {
   "id": "plaka",
@@ -204,7 +213,8 @@
   "x": 3264,
   "y": 1664,
   "big": true,
-  "reveal": 380
+  "reveal": 380,
+  "note": "The oldest streets of modern Athens: shops, cats and tavernas."
  },
  {
   "id": "epicurus",
@@ -213,7 +223,8 @@
   "subtitle": "",
   "x": 333,
   "y": 161,
-  "big": false
+  "big": false,
+  "note": "Epicurus taught in a garden here. Happiness, he said, means friends, bread and no fear."
  },
  {
   "id": "kerameikos",
@@ -222,6 +233,7 @@
   "subtitle": "",
   "x": -54,
   "y": -492,
-  "big": false
+  "big": false,
+  "note": "The potters' quarter and the old cemetery, just outside the city wall."
  }
 ]

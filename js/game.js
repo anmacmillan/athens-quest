@@ -27,6 +27,8 @@ import { Gods } from './gods.js';
 import { Evzones } from './evzones.js';
 import { FlyTo } from './flyto.js';
 import { Edges } from './edges.js';
+import { arrivalCard } from './arrival.js';
+import { Tour } from './tour.js';
 import { Passport } from './passport.js';
 import { TitleCard } from './titlecard.js';
 import { astar } from './companions.js';
@@ -37,11 +39,11 @@ export class Game {
     this.worlds = Worlds; this.world = Worlds.athens; this.time = 0; this.mode = 'play';
     this.player = { x: 0, y: 0, facing: 'f', moving: false, walkT: 0, goto: null }; this.owl = { x: 0, y: 0 };
     this.cam = { x: 0, y: 0, z: 1 }; this.scene = null; this.busy = false; this.nearest = null; this.stories = []; this.spots = []; this.target = null; this.heading = null; this.gps = null;
-    this.comp = new Companions(this); this.guide = new Guide(this); this.marks = new Marks(this); this.fog = new Fog(this); this.extras = new Extras(this); this.chars = new Characters(this); this.gods = new Gods(this); this.vis = new Visions(this); this.evz = new Evzones(this); this.fly = new FlyTo(this); this.edges = new Edges(this); this.skate = new Skate(this); this.opening = new Opening(this); this.passport = new Passport(this); this.title = new TitleCard(this); this.trans = null; this.flight = null; this.sceneCache = {}; this.saved = {};
+    this.comp = new Companions(this); this.guide = new Guide(this); this.marks = new Marks(this); this.fog = new Fog(this); this.extras = new Extras(this); this.chars = new Characters(this); this.gods = new Gods(this); this.vis = new Visions(this); this.evz = new Evzones(this); this.fly = new FlyTo(this); this.edges = new Edges(this); this.skate = new Skate(this); this.opening = new Opening(this); this.passport = new Passport(this); this.title = new TitleCard(this); this.tour = new Tour(this); this.trans = null; this.flight = null; this.sceneCache = {}; this.saved = {};
   }
   // ------------------------------------------------------------ setup
   async init(stories) {
-    this.stories = stories; this.buildSpots(); await this.passport.init();
+    this.stories = stories; this.buildSpots(); await this.passport.init(); this.tour.init();
     await this.marks.init(); this.title.bind(this.marks.landmarks); await this.fog.init(this.worlds.athens); this.worlds.athens.fog = this.fog;   // high-res markers and names, and the light fog of discovery
     this.theseus = new Theseus(this);
     try { this.anchors = await (await fetch('data/cast_anchors.json')).json(); } catch (e) { this.anchors = {}; }
@@ -308,26 +310,42 @@ export class Game {
     const W = this.world, w = toWorld(this.cam, v.x, v.y), z = this.cam.z; let target = null, bd = Math.max(120, 70 / z);
     const P = this.passport.stamps || [];
     for (const st of P) if (st.spot.world === W.id) { const d = dist(w.x, w.y, st.spot.x, st.spot.y - 20); if (d < bd) { bd = d; target = st.spot; } }
-    if (this.marks && this.marks.landmarks) for (const l of this.marks.landmarks) { const d = dist(w.x, w.y, l.x * W.ws, l.y * W.ws); if (d < 50 / Math.min(1, z)) { let b2 = 400, s2 = null; for (const st of P) if (st.spot.world === W.id) { const e = dist(l.x * W.ws, l.y * W.ws, st.spot.x, st.spot.y); if (e < b2) { b2 = e; s2 = st.spot; } } if (s2) { target = s2; break; } } }
+    if (this.marks && this.marks.landmarks && W.id === 'athens') for (const l of this.marks.landmarks) { const d = dist(w.x, w.y, l.x * W.ws, l.y * W.ws); if (d < 50 / Math.min(1, z)) { const s2 = this.stampNear(l); if (s2) { target = s2; break; } this.goLandmark(l); return; } }
     if (!target) { const h = this.fly.hitAt(w, 26 / Math.min(1, z)); if (h && h.kind === 'spot') target = h.ref; }
     this.player.goto = null; this.player.route = null; this.pendingAct = null; this.fly.closeCard();
     if (target) {
       if (!this.fly.known(target)) { ui.toast('Not discovered yet, explore!', 2200); return; }
-      if (dist(this.player.x, this.player.y, target.x, target.y) < 60) { this.arrive(target); return; }
-      this.fly.fly({ x: target.x, y: target.y, then: () => this.arrive(target) });
+      this.goPlace(target);
     } else {
       const q = W.solid(w.x, w.y) ? W.nearestWalkable(w.x, w.y, 12) : w; this.fly.fly({ x: q.x, y: q.y - 16 });
     }
   }
-  // landed at a place: its title, a beat, then its story (if not done yet)
+  // go to a place from anywhere: Glauka flies her there (across zones too, e.g. the Academy and the Lyceum), then arrive
+  async goPlace(spot) {
+    if (!spot || this.busy || this.scene || this.flight || this.trans) return;
+    ui.closeOverlay && ui.closeOverlay(); this.fly.closeCard(); this.player.goto = null; this.player.route = null; this.pendingAct = null;
+    if (spot.world !== this.world.id) {
+      const B = this.worlds[spot.world]; if (!B) return; const q = B.kind === 'live' ? B.nearestWalkable(spot.x, spot.y + 16) : { x: spot.x, y: spot.y + 12 };
+      await this.flyTo(spot.world, null, q); this.arrive(spot); return;
+    }
+    if (dist(this.player.x, this.player.y, spot.x, spot.y) < 60 || this.world.kind !== 'live') { if (this.world.kind !== 'live') { this.player.goto = { x: spot.x, y: spot.y + 6 }; this.pendingAct = { kind: 'spot', ref: spot }; return; } this.arrive(spot); return; }
+    this.fly.fly({ x: spot.x, y: spot.y, then: () => this.arrive(spot) });
+  }
+  stampNear(l) { const W = this.worlds.athens; let b2 = 260, s2 = null; for (const st of (this.passport.stamps || [])) if (st.spot.world === 'athens') { const e = dist(l.x * W.ws, l.y * W.ws, st.spot.x, st.spot.y); if (e < b2) { b2 = e; s2 = st.spot; } } return s2; }
+  // a named place with no story of its own: fly there, show its title, and Glauka says what it is (and where the related story is)
+  goLandmark(l) {
+    const W = this.world, x = l.x * W.ws, y = l.y * W.ws, q = W.solid(x, y + 30) ? W.nearestWalkable(x, y + 30, 20) : { x, y: y + 30 };
+    const show = () => { this.title.away.delete(l.id); this.title.show(l); };
+    ui.closeOverlay && ui.closeOverlay(); this.fly.closeCard();
+    if (dist(this.player.x, this.player.y, q.x, q.y) < 60) show(); else this.fly.fly({ x: q.x, y: q.y - 16, then: show });
+  }
+  // landed at a place: an unstamped building opens its arrival card straight away; anywhere else shows the place title
   arrive(spot) {
-    const W = this.world; let best = null, bd = 420;
-    if (this.marks && this.marks.landmarks) for (const l of this.marks.landmarks) { const d = dist(spot.x, spot.y, l.x * W.ws, l.y * W.ws); if (d < bd) { bd = d; best = l; } }
-    if (best && W.id === 'athens') { this.title.away.delete(best.id); this.title.show(best); }
     const st = spot.stamp; if (st) this.passport.cool.add(st.id);
-    if (this.collected(spot.id)) return;
-    this.busy = true; input.enabled = false;
-    setTimeout(() => { this.busy = false; input.enabled = true; if (!this.scene && this.mode === 'play') this.playStory(spot); }, best ? 1700 : 300);
+    if (!this.collected(spot.id)) { if (!this.scene && this.mode === 'play' && !window.__noDoor) this.playStory(spot); return; }
+    const W = this.world; let best = null, bd = 420;
+    if (this.marks && this.marks.landmarks && W.id === 'athens') for (const l of this.marks.landmarks) { const d = dist(spot.x, spot.y, l.x * W.ws, l.y * W.ws); if (d < bd) { bd = d; best = l; } }
+    if (best) { this.title.away.delete(best.id); this.title.show(best); } else if (st) this.title.show({ id: 'stamp:' + st.id, name: st.name, subtitle: st.sub || '' });
   }
   unstick() {
     const W = this.world, p = this.player; if (W.kind !== 'live') return;
@@ -366,8 +384,14 @@ export class Game {
   async playStory(spot, opts = {}) {
     if (this.busy) return; this.busy = true; input.enabled = false; ui.setPrompt(null); ui.hud(false); this.pendingAct = null; this.player.goto = null; this.player.route = null; this.player.moving = false; this.title.hide();
     const wasDone = this.collected(spot.story.id);
-    const story = spot.story, comic = window.__noComic ? null : await loadComic(story.id).catch(() => null), found = await this.loadScene(story);
-    await this.intro(story, found);   // (1) the owning character steps out and says hello (not for Glauka's own stories)
+    const story = spot.story, comicP = window.__noComic ? Promise.resolve(null) : loadComic(story.id).catch(() => null), foundP = this.loadScene(story);
+    const st0 = !opts.replay && this.passport.ofStory(story.id);
+    if (st0 && !this.collected(story.id)) {   // an unstamped building: the arrival card (place, host, look-for), the comic loads behind it
+      const r = await arrivalCard(st0);
+      if (r !== 'go') { this.busy = false; this.mode = 'play'; input.enabled = true; ui.hud(true); return; }
+    }
+    const comic = await comicP, found = await foundP;
+    if (!st0 || this.collected(story.id)) await this.intro(story, found);   // other stories: the owning character steps out and says hello
     const sceneData = comic ? null : (found || this.cardScene(story));   // one telling: the comic; a puppet scene only where no comic exists yet
     if (sceneData) {
       const onMap = this.world.kind === 'map';

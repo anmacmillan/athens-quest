@@ -29,9 +29,9 @@ export function drawPlayer(ctx, sheet, x, y, facing, frame, alpha = 1) {
 }
 // a small preview for menus (css canvas): the standing figure, front view, cropped to the figure
 export function previewCanvas(costume, un, scale = 4) {
-  const c = document.createElement('canvas'); c.width = 28 * scale; c.height = 42 * scale; c.className = 'pv';
+  const c = document.createElement('canvas'); c.width = 28 * scale; c.height = 46 * scale; c.className = 'pv';
   const k = c.getContext('2d'); k.imageSmoothingEnabled = false;
-  const draw = () => { const s = avatarSheet(costume); if (!s) return false; k.clearRect(0, 0, c.width, c.height); k.drawImage(s, 2, 9, 28, 42, 0, 0, c.width, c.height); return true; };
+  const draw = () => { const s = avatarSheet(costume); if (!s) return false; k.clearRect(0, 0, c.width, c.height); k.drawImage(s, 2, 5, 28, 46, 0, 0, c.width, c.height); return true; };
   if (!draw()) { let n = 0; const iv = setInterval(() => { if (draw() || ++n > 60) clearInterval(iv); }, 150); }
   return c;
 }

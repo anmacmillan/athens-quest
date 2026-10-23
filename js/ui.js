@@ -35,6 +35,7 @@ export function refresh() {
   const snd = $('bSound'); snd.textContent = ''; snd.append(icon(sound.on ? 'sound' : 'mute'));
   $('sync').className = 'sync ' + store.status; $('sync').title = { online: 'Saved online', local: 'Saved on this iPad', offline: 'Offline: will sync later', refused: 'Saved on this iPad only' }[store.status];
   $('who').textContent = p ? p.name : '';
+  G.tour && G.tour.refresh();
 }
 export function hud(on) { document.body.classList.toggle('nohud', !on); }
 export function setPrompt(n) {
@@ -191,7 +192,7 @@ export function mapScreen() {
     const pl = G.player; k.fillStyle = '#fff'; k.beginPath(); k.arc(pl.x * f, pl.y * f, 8, 0, 7); k.fill(); k.fillStyle = '#e5484d'; k.beginPath(); k.arc(pl.x * f, pl.y * f, 5.5, 0, 7); k.fill();
     if (G.gps && G.gps.world === W.id) { k.fillStyle = '#3d7fd6'; k.beginPath(); k.arc(G.gps.x * f, G.gps.y * f, 6, 0, 7); k.fill(); k.strokeStyle = '#fff'; k.lineWidth = 2; k.stroke(); }
   };
-  cvs.addEventListener('click', e => { const r = cvs.getBoundingClientRect(), x = (e.clientX - r.left) * cvs.width / r.width, y = (e.clientY - r.top) * cvs.height / r.height; const h = hits.find(h => Math.hypot(h.x - x, h.y - y) < (h.r || 26)); if (h && h.spot) { G.fly.showCard({ kind: 'spot', ref: h.spot }, true); return; } if (h) { sfx.tap(); closeOverlay(); G.flyTo(h.s.to, h.s); } });
+  cvs.addEventListener('click', e => { const r = cvs.getBoundingClientRect(), x = (e.clientX - r.left) * cvs.width / r.width, y = (e.clientY - r.top) * cvs.height / r.height; const h = hits.find(h => Math.hypot(h.x - x, h.y - y) < (h.r || 26)); if (h && h.spot) { if (!G.fly.known(h.spot)) { toast('Not discovered yet, explore!'); return; } sfx.tap(); closeOverlay(); G.goPlace(h.spot); return; } if (h) { sfx.tap(); closeOverlay(); G.flyTo(h.s.to, h.s); } });
   draw(); window.__mapRedraw = draw;
 }
 function locate() {

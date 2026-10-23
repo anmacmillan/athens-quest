@@ -59,7 +59,7 @@ function centred(c, n, mid) {
 function medianIdx(counts) { const tot = counts.reduce((a, b) => a + b, 0); let acc = 0; for (let i = 0; i < counts.length; i++) { acc += counts[i]; if (acc >= tot / 2) return i; } return 0; }
 function colours(look) {
   const skin = hex(SKIN_TONES[look.skin]), hair = hex(HAIR_COLOURS[look.hair]), chi = hex(DRESS_COLOURS[look.chiton]);
-  return { skin, hair, chi, belt: look.belt ? hex(BELT_COLOURS[look.belt]) : chi, sand: look.sandals ? hex(SANDAL_COLOURS[look.sandals]) : null, eye: mix(hex(EYE_COLOURS[look.eyec]), [20, 10, 20], .5) };
+  return { skin, hair, chi, belt: look.belt ? hex(BELT_COLOURS[look.belt]) : chi, sand: look.sandals ? hex(SANDAL_COLOURS[look.sandals]) : null, eye: lum(skin) < .4 ? mix(hex(EYE_COLOURS[look.eyec]), [6, 2, 8], .8) : mix(hex(EYE_COLOURS[look.eyec]), [20, 10, 20], .5) };   // on the darkest skins the eyes go near-black, or they vanish
 }
 export function recolour(base, look) {
   const D = base.data, W = D.cw * 5, H = D.ch * 4, cv = makeCanvas(W, H), g = cv.getContext('2d'), R = D.ramps;

@@ -1946,63 +1946,63 @@
 },
 "c_phidias_0": {
 "f": "art/c_phidias_0.png",
-"w": 24,
-"h": 39
+"w": 27,
+"h": 45
 },
 "c_phidias_1": {
 "f": "art/c_phidias_1.png",
-"w": 24,
-"h": 39
+"w": 27,
+"h": 45
 },
 "c_phidias_2": {
 "f": "art/c_phidias_2.png",
-"w": 24,
-"h": 39
+"w": 27,
+"h": 45
 },
 "c_phidias_up": {
 "f": "art/c_phidias_up.png",
-"w": 24,
-"h": 39
+"w": 27,
+"h": 45
 },
 "c_phidias_sad": {
 "f": "art/c_phidias_sad.png",
-"w": 24,
-"h": 39
+"w": 27,
+"h": 45
 },
 "c_phidias_lie": {
 "f": "art/c_phidias_lie.png",
-"w": 39,
-"h": 24
+"w": 45,
+"h": 27
 },
 "c_paul_0": {
 "f": "art/c_paul_0.png",
-"w": 24,
-"h": 39
+"w": 26,
+"h": 42
 },
 "c_paul_1": {
 "f": "art/c_paul_1.png",
-"w": 24,
-"h": 39
+"w": 26,
+"h": 42
 },
 "c_paul_2": {
 "f": "art/c_paul_2.png",
-"w": 24,
-"h": 39
+"w": 26,
+"h": 42
 },
 "c_paul_up": {
 "f": "art/c_paul_up.png",
-"w": 24,
-"h": 39
+"w": 26,
+"h": 42
 },
 "c_paul_sad": {
 "f": "art/c_paul_sad.png",
-"w": 24,
-"h": 39
+"w": 26,
+"h": 42
 },
 "c_paul_lie": {
 "f": "art/c_paul_lie.png",
-"w": 39,
-"h": 24
+"w": 42,
+"h": 26
 },
 "c_ottoman_0": {
 "f": "art/c_ottoman_0.png",
@@ -2306,33 +2306,33 @@
 },
 "c_playwright_0": {
 "f": "art/c_playwright_0.png",
-"w": 24,
-"h": 41
+"w": 29,
+"h": 45
 },
 "c_playwright_1": {
 "f": "art/c_playwright_1.png",
-"w": 24,
-"h": 41
+"w": 29,
+"h": 45
 },
 "c_playwright_2": {
 "f": "art/c_playwright_2.png",
-"w": 24,
-"h": 41
+"w": 29,
+"h": 45
 },
 "c_playwright_up": {
 "f": "art/c_playwright_up.png",
-"w": 24,
-"h": 41
+"w": 29,
+"h": 45
 },
 "c_playwright_sad": {
 "f": "art/c_playwright_sad.png",
-"w": 24,
-"h": 41
+"w": 29,
+"h": 45
 },
 "c_playwright_lie": {
 "f": "art/c_playwright_lie.png",
-"w": 41,
-"h": 24
+"w": 45,
+"h": 29
 },
 "c_queen_mask_0": {
 "f": "art/c_queen_mask_0.png",
@@ -3476,33 +3476,33 @@
 },
 "c_evzone_0": {
 "f": "art/c_evzone_0.png",
-"w": 21,
-"h": 45
+"w": 25,
+"h": 48
 },
 "c_evzone_1": {
 "f": "art/c_evzone_1.png",
-"w": 21,
-"h": 45
+"w": 25,
+"h": 48
 },
 "c_evzone_2": {
 "f": "art/c_evzone_2.png",
-"w": 21,
-"h": 45
+"w": 25,
+"h": 48
 },
 "c_evzone_up": {
 "f": "art/c_evzone_up.png",
-"w": 21,
-"h": 45
+"w": 25,
+"h": 48
 },
 "c_evzone_sad": {
 "f": "art/c_evzone_sad.png",
-"w": 21,
-"h": 45
+"w": 25,
+"h": 48
 },
 "c_evzone_lie": {
 "f": "art/c_evzone_lie.png",
-"w": 45,
-"h": 21
+"w": 48,
+"h": 25
 },
 "c_tourist_0_0": {
 "f": "art/c_tourist_0_0.png",
@@ -5213,5 +5213,25 @@
 "f": "art/c_ares_marble.png",
 "w": 39,
 "h": 57
+},
+"c_phidias_marble": {
+"f": "art/c_phidias_marble.png",
+"w": 27,
+"h": 45
+},
+"c_paul_marble": {
+"f": "art/c_paul_marble.png",
+"w": 26,
+"h": 42
+},
+"c_playwright_marble": {
+"f": "art/c_playwright_marble.png",
+"w": 29,
+"h": 45
+},
+"c_evzone_marble": {
+"f": "art/c_evzone_marble.png",
+"w": 25,
+"h": 48
 }
 }

@@ -2,6 +2,7 @@
 // with the subtitle underneath. Never blocks play. Shows again only after you have walked well away and come back.
 import { dist } from './util.js';
 import { sfx } from './audio.js';
+import * as ui from './ui.js';
 
 export class TitleCard {
   constructor(G) { this.G = G; this.away = new Set(); this.cur = null; this.el = null; this.t = 0; this.cool = 0; }
@@ -27,6 +28,7 @@ export class TitleCard {
     e.classList.remove('in', 'out'); void e.offsetWidth; e.classList.add('in'); sfx.whoosh && sfx.whoosh();
     clearTimeout(this.tm); this.tm = setTimeout(() => { e.classList.add('out'); }, 2300);
     this.cool = 1; this.shownAt = this.G.time;
+    clearTimeout(this.ntm); if (l.note) this.ntm = setTimeout(() => ui.toast('Glauka: ' + l.note, 9000), 1500);   // a place with no story of its own: what it is
   }
   // a character's name card, when a host or story character steps out
   async showChar(sp) {
@@ -34,6 +36,10 @@ export class TitleCard {
     const t = this.ep[sp]; if (!t) return;
     if (!this.cel) { this.cel = document.createElement('div'); this.cel.id = 'charcard'; this.cel.innerHTML = '<div class="cc-band"></div><div class="cc-name"></div><div class="cc-sub"></div>'; document.body.append(this.cel); }
     const e = this.cel; e.querySelector('.cc-name').textContent = t[0]; e.querySelector('.cc-sub').textContent = t[1];
+    let im = e.querySelector('.cc-port'); if (!im) { im = document.createElement('img'); im.className = 'cc-port'; im.alt = ''; e.prepend(im); }
+    e.classList.remove('hasport'); im.style.display = 'none';
+    im.onload = () => { im.style.display = ''; e.classList.add('hasport'); }; im.onerror = () => { if (!im.dataset.f) { im.dataset.f = 1; im.src = `art/portraits/${sp}_neutral.jpeg`; } };
+    im.dataset.f = ''; im.src = `art/web/portraits/${sp}_neutral.jpeg`;
     e.classList.remove('in', 'out'); void e.offsetWidth; e.classList.add('in'); sfx.flourish && sfx.flourish();
     clearTimeout(this.ctm); this.ctm = setTimeout(() => e.classList.add('out'), 2600);
   }

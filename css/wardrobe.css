@@ -5,7 +5,7 @@
 .wd-left { flex: 0 0 42%; display: flex; flex-direction: column; min-width: 0; gap: 6px; }
 .wd-view { flex: 1; min-height: 0; border: 4px solid var(--edge); border-radius: 14px; overflow: hidden; background: linear-gradient(#bfe0f5, #f9ecd2 70%, #f3dfb6); position: relative; }
 .wd-view canvas { position: absolute; inset: 0; image-rendering: pixelated; }
-.wd-portrait { position: absolute; left: 8px; top: 8px; width: min(34%, 150px); aspect-ratio: 1; object-fit: cover; border: 3px solid var(--edge); border-radius: 12px; background: #f6ecd6; image-rendering: auto; box-shadow: 0 2px 0 rgba(0,0,0,.15); visibility: hidden; }
+.wd-portrait { position: absolute; left: 8px; top: 8px; width: min(52%, 240px); aspect-ratio: 1; object-fit: cover; border: 3px solid var(--edge); border-radius: 12px; background: #f6ecd6; image-rendering: auto; box-shadow: 0 2px 0 rgba(0,0,0,.15); visibility: hidden; }
 .wd-err { padding: 20px; text-align: center; }
 .wd-turn { display: flex; gap: 8px; justify-content: center; flex: none; }
 .wd-side { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }

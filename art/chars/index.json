@@ -882,5 +882,73 @@
    56
   ],
   "src": "ares_a.jpeg"
+ },
+ "phidias": {
+  "cell": [
+   27,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   44
+  ],
+  "src": "phidias_a.jpeg"
+ },
+ "paul": {
+  "cell": [
+   26,
+   42
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   13,
+   41
+  ],
+  "src": "paul_a.jpeg"
+ },
+ "playwright": {
+  "cell": [
+   29,
+   45
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   14,
+   44
+  ],
+  "src": "playwright_a.jpeg"
+ },
+ "evzone": {
+  "cell": [
+   25,
+   48
+  ],
+  "frames": [
+   "front0",
+   "front1",
+   "side_r",
+   "back"
+  ],
+  "anchor": [
+   12,
+   47
+  ],
+  "src": "evzone_a.jpeg"
  }
 }
