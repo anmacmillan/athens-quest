@@ -58,7 +58,7 @@ export class Game {
     if (sv && sv.athens && A.walkable(sv.athens.x, sv.athens.y)) this.saved.athens = sv.athens;
     const SY = this.worlds.syntagma; let startZone = 'athens';
     if (SY) { const d = this.hotelDoor(); this.saved.syntagma = d; if (sv && sv.zone === 'syntagma' && sv.syntagma && SY.walkable(sv.syntagma.x, sv.syntagma.y)) { this.saved.syntagma = sv.syntagma; startZone = 'syntagma'; } }
-    this.nudgeSpots(); await this.comp.init().catch(e => console.error(e)); await this.extras.init().catch(e => console.error(e)); await this.chars.init().catch(e => console.error(e)); await this.gods.init().catch(e => console.error(e)); await this.vis.init().catch(e => console.error(e)); this.evz.init(); await this.edges.init(); await this.skate.init().catch(e => console.error(e)); await this.opening.init().catch(e => console.error(e));
+    this.nudgeSpots(); this.frontDoors(); await this.comp.init().catch(e => console.error(e)); await this.extras.init().catch(e => console.error(e)); await this.chars.init().catch(e => console.error(e)); await this.gods.init().catch(e => console.error(e)); await this.vis.init().catch(e => console.error(e)); this.evz.init(); await this.edges.init(); await this.skate.init().catch(e => console.error(e)); await this.opening.init().catch(e => console.error(e));
     this.enterWorld(startZone, false);
     input.onLong = v => this.fly.long(v); input.onZoom = d => this.guide.zoomStep(d); input.onWheel = (dy, c) => this.guide.onWheel(dy, c); this.guide.init();
     input.onTap = (v, blocked) => this.onTap(v, blocked); input.onA = () => this.onA(); input.onDoubleTap = v => this.onDoubleTap(v);
@@ -202,6 +202,7 @@ export class Game {
     if (W.objectEntities) { const boxes = ents.filter(e => e.box).map(e => Object.assign({ fy: e.y }, e.box)); ents.push(...W.objectEntities(boxes)); }
     ents.sort((a, b) => a.y - b.y);
     for (const e of ents) e.draw();
+    if (!sc && !far && W.hiddenBehind && W.kind === 'live' && !(this.fly && this.fly.f)) { const p = this.player; if (W.hiddenBehind(p.x, p.y)) { const fr = p.moving ? 1 + (Math.floor((p.walkT || 0) * 7) % 2) : 0; drawPlayer(g, this.sheet(), p.x, p.y, p.facing || 'f', fr, .55); } }
     if (!sc) { this.fly.draw(); }
     if (W.drawOccluders) { const gi = sc ? sc.actors.get('girl') : this.player; W.drawOccluders(rect, gi ? gi.y : 0); }
     if (sc) sc.drawWorldFx();
@@ -459,6 +460,17 @@ export class Game {
       const A = this.worlds[zone]; if (A.kind !== 'live') continue; const T = A.T, seen = this.reachSet(zone), cols = A.cols, rows = A.rows;
       const near = (x, y, lim) => { let best = null, bd = lim; for (let ty = Math.max(0, Math.floor((y - lim) / T)); ty <= Math.min(rows - 1, Math.floor((y + lim) / T)); ty++) for (let tx = Math.max(0, Math.floor((x - lim) / T)); tx <= Math.min(cols - 1, Math.floor((x + lim) / T)); tx++) if (seen[ty * cols + tx]) { const d = dist(tx * T + T / 2, ty * T + T / 2, x, y); if (d < bd) { bd = d; best = { x: tx * T + T / 2, y: ty * T + T / 2 }; } } return best; };
       for (const s of [...this.spots.filter(s => s.world === zone), ...A.signposts]) { if (near(s.x, s.y, 30 + A.T / 2 - 2)) continue; const q = near(s.x, s.y, 220 * A.ws); if (q) { s.moved = dist(s.x, s.y, q.x, q.y); s.x = q.x; s.y = q.y - 6; } }
+    }
+  }
+  // a flag hidden behind a building (a monument sprite whose base is south of it) moves to the open ground in front of that building
+  frontDoors() {
+    for (const s of this.spots) {
+      const W = this.worlds[s.world]; if (!W || W.kind !== 'live' || !W.objs || !W.hiddenBehind(s.x, s.y)) continue;
+      const c = new Set(); W.objectsIn(s.x - 8, s.y - 34, s.x + 8, s.y, c); let o = null;
+      for (const i of c) { const q = W.objs[i]; if (q.base > s.y + 1 && q.x < s.x + 8 && q.x + q.w > s.x - 8 && q.y < s.y && q.y + q.h > s.y - 34 && (!o || q.base > o.base)) o = q; }
+      if (!o) continue;
+      const x = clamp(s.x, o.x + 16, o.x + o.w - 16), q = W.clearSpot(x, o.base + 18, 10);
+      if (q && !W.hiddenBehind(q.x, q.y)) { s.moved = dist(s.x, s.y, q.x, q.y); s.x = q.x; s.y = q.y; }
     }
   }
   checkReach(zone = 'athens') {
