@@ -82,16 +82,16 @@ export class Marks {
     const tg = G.guide && G.guide.target && G.guide.target(); const list = [];
     if (tg && tg.story) list.push([tg, 2]); for (const s of near) if (!tg || s !== tg) list.push([s, 1]);
     for (const [s, pr] of list.sort((a, b) => b[1] - a[1])) {
-      const [x, y] = this.scr(s.x, s.y - 54), txt = this.name(s), r = this.textRect(txt, x, y, 17); if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
-      const al = clamp(1 - (dist(p.x, p.y, s.x, s.y) - T * 6) / (T * 3)); k.globalAlpha = pr === 2 ? 1 : al; this.lines(txt, x, y, pr === 2 ? '#ffe9a0' : '#fff4d6', 17, 'rgba(40,24,60,.92)', 'center', 5); k.globalAlpha = 1;
+      const [x, y] = this.scr(s.x, s.y - 54), txt = this.name(s), r = this.textRect(txt, x, y, 24); if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
+      const al = clamp(1 - (dist(p.x, p.y, s.x, s.y) - T * 6) / (T * 3)); k.globalAlpha = pr === 2 ? 1 : al; this.lines(txt, x, y, pr === 2 ? '#ffe9a0' : '#fff4d6', 24, 'rgba(40,24,60,.92)', 'center', 6); k.globalAlpha = 1;
     }
     // landmark names with a smaller, lighter subtitle: within about 10 tiles, fading out beyond, at most 3 at once
     const lm = (W.id === 'athens' ? this.landmarks : []).map(l => ({ l, x: l.x * W.ws, y: l.y * W.ws })).map(o => Object.assign(o, { d: dist(p.x, p.y, o.x, o.y) })).filter(o => o.d < T * 12).sort((a, b) => a.d - b.d).slice(0, 2);
     for (const o of lm) {
       const al = clamp((T * 12 - o.d) / (T * 3)), [x, y0_] = this.scr(o.x, o.y - 70), y = clamp(y0_, 190 * this.u(), mainCx.canvas.height - 120 * this.u());
-      const nm = o.l.name.toUpperCase(); k.font = `800 ${Math.round(22 * this.u())}px ${FONT}`; const w = k.measureText(nm).width + 22 * this.u(), h = 52 * this.u();
+      const nm = o.l.name.toUpperCase(); k.font = `800 ${Math.round(30 * this.u())}px ${FONT}`; const w = k.measureText(nm).width + 22 * this.u(), h = 66 * this.u();
       const r = { x: x - w / 2, y: y - h, w, h }; if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
-      k.globalAlpha = al; this.plate(nm, x, y, 22, o.l.subtitle || '', 14); k.globalAlpha = 1;
+      k.globalAlpha = al; this.plate(nm, x, y, 30, o.l.subtitle || '', 18); k.globalAlpha = 1;
     }
   }
   // ---- zoomed out
@@ -142,8 +142,8 @@ export class Marks {
       if (tries >= 4 && (rects.some(q => this.hitRect(q, r)) || placed.some(q => this.hitRect(q, r)))) return false; placed.push(r); this.lines(txt, x, y + size * u, col, size, 'rgba(255,248,230,.95)', 'center', w); return true;
     };
     const z = G.cam.z, ws = W.ws, al = clamp((.6 - z) / .1); k.globalAlpha = al;
-    for (const l of (W.id === 'athens' ? this.landmarks : [])) {  const [x, y] = this.scr(l.x * ws, l.y * ws); if (x < -100 || y < -30 || x > cw + 100 || y > ch + 30) continue; place(l.big ? l.name : (z < .3 ? l.short : l.name), x, y - 8 * u, l.big ? 22 : 16, l.big ? '#6a3e0c' : '#4a2c1c', l.big ? 6 : 5); }
-    for (const c of cl) if (c.list.length === 1) { const a = c.list[0]; if (!a.main || a.got) continue; place(a.unk ? '?' : this.name(a.s), a.x, a.y + 3 * u, 16, '#3a2250', 5); }
+    for (const l of (W.id === 'athens' ? this.landmarks : [])) {  const [x, y] = this.scr(l.x * ws, l.y * ws); if (x < -100 || y < -30 || x > cw + 100 || y > ch + 30) continue; place(l.big ? l.name : (z < .3 ? l.short : l.name), x, y - 8 * u, l.big ? 28 : 21, l.big ? '#6a3e0c' : '#4a2c1c', l.big ? 7 : 6); }
+    for (const c of cl) if (c.list.length === 1) { const a = c.list[0]; if (!a.main || a.got) continue; place(a.unk ? '?' : this.name(a.s), a.x, a.y + 3 * u, 20, '#3a2250', 6); }
     k.globalAlpha = 1;
   }
   drop(k, x, y, h, col) {   // plain teardrop pin, tip at (x, y)

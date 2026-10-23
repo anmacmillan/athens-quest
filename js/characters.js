@@ -89,7 +89,7 @@ export class Characters {
     if (o.pet) { im = IM[`pet_${o.pet}_${Math.floor(t * 1.5 + o.phase) % 2}`]; if (!im) return; ax = im.width / 2; ay = im.height - 2; shadowAt(o.x, o.y, 9, .25); g.drawImage(im, R(o.x - ax), R(o.y - ay)); return; }
     if (c.statue && !o.sprite && this.drawStatue(c, t)) return;
     const name = o.sprite || `c_${o.who}_0`, up = o.gest > 0; im = o.sprite ? IM[o.sprite] : this.img(o.who, up); if (!im) return;
-    const a = o.sprite ? o.anchor : (this.G.anchors || {})[`c_${o.who}_0`]; ax = a ? a[0] : im.width / 2; ay = a ? a[1] : im.height - 1;
+    const a = o.sprite ? o.anchor : (this.G.anchors || {})[`c_${o.who}_0`]; ax = a ? a[0] : im.width / 2; ay = a ? a[1] : im.height - 1; o.top = ay + (o.lift || 0);
     const bob = c.statue ? 0 : Math.round(Math.sin(t * 2.1 + o.phase) * .6 + (o.stretch || c.stretch ? 0 : 0)), lift = o.lift || 0;
     shadowAt(o.x, o.y, 12, c.statue ? .2 : .28);
     if (c.statue) { const gl = .22 + .1 * Math.sin(t * 2 + o.phase); g.globalAlpha = gl; g.fillStyle = c.glow || '#fff'; g.beginPath(); g.ellipse(o.x, o.y - 18, 15, 24, 0, 0, 7); g.fill(); g.globalAlpha = c.statue ? .93 : 1; }
@@ -103,9 +103,12 @@ export class Characters {
     shadowAt(p.x, p.y, 14, .28); g.drawImage(im, R(p.x - a[0]), R(p.y - a[1]));
   }
   mark(c, t) {   // the '...' bubble above an unfinished story's character, a small gold check once it is done
-    const G = this.G, done = G.collected(c.id), top = c.pet ? 18 : ((IM[c.sprite || `c_${c.who}_0`] || { height: 34 }).height) + 4 + (c.lift || 0);
+    const G = this.G, done = G.collected(c.id), top = c.pet ? 18 : (c.top || ((IM[c.sprite || `c_${c.who}_0`] || { height: 34 }).height) + (c.lift || 0)) + 4;
     const bx = R(c.x - 8), by = R(c.y - top - 16 + Math.sin(t * 3 + c.phase) * 1.5);
-    if (!done) { const e = IM.emote_dots; if (e) g.drawImage(e, bx, by); }
+    if (!done) {   // a story to hear: a bouncing gold '!' (the RPG sign every child knows)
+      const X = R(c.x - 3), Y = R(c.y - top - 18 + Math.abs(Math.sin(t * 4 + c.phase)) * -3), ink = '#3a2140', gold = '#ffd23f', hi = '#fff6c0';
+      px(X - 1, Y - 1, 8, 12, ink); px(X - 1, Y + 12, 8, 6, ink); px(X, Y, 6, 10, gold); px(X + 1, Y, 2, 9, hi); px(X, Y + 13, 6, 4, gold); px(X + 1, Y + 13, 2, 2, hi);
+    }
     else { const X = R(c.x - 3), Y = R(c.y - top - 6); px(X - 1, Y, 7, 7, '#5b3a29'); const gold = '#f5c542'; for (const [dx, dy] of [[0, 3], [1, 4], [2, 5], [3, 4], [4, 3], [5, 2]]) px(X + dx, Y + dy, 1, 1, gold); px(X + 1, Y + 3, 1, 1, gold); px(X + 4, Y + 2, 1, 1, '#fff6c0'); }
   }
   ents(W) {

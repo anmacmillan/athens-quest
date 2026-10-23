@@ -124,6 +124,7 @@ export class Game {
     label(s.label, s.x, s.y - 30 - (near ? 2 : 0), near ? '#ffffff' : '#fff4d6', '#3a2c4c', true);
   }
   drawSpot(s, t) {
+    if (this.chars && this.chars.ready && this.chars.has(s.id)) return;   // a character stands here with a '!' over their head: no flag as well
     const got = this.collected(s.id), fr = Math.floor(t * 3 + s.i) % 2, f = IM['flag_' + s.story.flag + '_' + fr] || IM.flag_history_0;
     if (!got) { const p = .5 + .5 * Math.sin(t * 3 + s.i); g.strokeStyle = `rgba(255,255,255,${(.25 + .3 * p).toFixed(2)})`; g.lineWidth = 1; g.beginPath(); g.ellipse(s.x, s.y + 1, 6 + 3 * p, 2 + p, 0, 0, 7); g.stroke(); }
     shadowAt(s.x, s.y, 6, .3); const mk = pennant(s.story.flag, t, s.i); if (mk) g.drawImage(mk.im, R(s.x - mk.ax), R(s.y - mk.ay)); else g.drawImage(f, R(s.x - 5), R(s.y - 12));   // the art lead's pennant when art/markers exists
