@@ -28,7 +28,7 @@ export class Gods {
     this.cfg = await j('data/gods.json'); const A = this.W; if (!this.cfg || !A) return; const X = this.G.extras; if (!X || !X.ready) return;
     Object.assign(SPEAKERS, Object.fromEntries(Object.entries(NAMES).filter(([k]) => !SPEAKERS[k])));
     for (const d of this.cfg.gods) {
-      if (!IM['c_' + d.sprite + '_0']) continue;   // e.g. a god whose sprite has not been made yet
+      if (!IM['c_' + d.sprite + '_0'] && !tocaHas(d.sprite)) continue;   // no sprite yet (the Bacchae exist only as cartoons)
       const h = d.home, c = h.lat !== undefined ? A.project(h.lat, h.lon) : { x: h.x * A.ws, y: h.y * A.ws }; c.x += (h.dx || 0); c.y += (h.dy || 0);
       const q = X.walkNear(c, 5); if (q.moved === -1) continue;
       this.list.push({ d, id: d.id, x: q.x, y: q.y, hx: q.x, hy: q.y, tx: q.x, ty: q.y, going: false, wait: .5 + rnd(this.list.length + 2) * 3, t: 0, moving: false, face: 1, armed: true, cool: 0, last: -1, talks: [], speakT: -99, seed: this.list.length * 2.3 });
@@ -45,7 +45,10 @@ export class Gods {
     const near = (this.cfg.near || 3) * W.T, busy = G.scene || G.busy || G.mode !== 'play' || G.flight || G.trans;
     for (const o of this.list) {
       o.moving = false; const dp = dist(o.x, o.y, p.x, p.y); o.cool -= dt;
-      if (dp < 900 && !(o.talking && dp < near * 1.5)) {
+      if (o.d.follow && dp < 900) {   // a troop: run after the leader, keeping a place beside her
+        const L = this.list.find(q => q.id === o.d.follow); if (L) { const tx = L.x + (o.d.off || [0, 0])[0], ty = L.y + (o.d.off || [0, 0])[1], dd = dist(o.x, o.y, tx, ty);
+          if (dd > 3) { const sp = Math.min(dd * 4, o.d.speed), nx = o.x + (tx - o.x) / dd * sp * dt, ny = o.y + (ty - o.y) / dd * sp * dt; if (this.walkable(nx, ny)) { o.x = nx; o.y = ny; } else { o.x = tx; o.y = ty; } o.moving = true; o.face = tx < o.x ? -1 : 1; o.t += dt; } else o.face = L.face; }
+      } else if (dp < 900 && !(o.talking && dp < near * 1.5)) {
         o.wait -= dt; const d = o.d;
         if (o.wait <= 0 && !o.going) {
           const a = rnd(t * 3 + o.hx) * 6.28, r = (.25 + rnd(t + o.hy) * .75) * d.radius * W.T, tx = o.hx + Math.cos(a) * r, ty = o.hy + Math.sin(a) * r * .7;
@@ -72,12 +75,14 @@ export class Gods {
   tap(w) {
     if (!this.ready || this.G.world.id !== 'athens' || this.G.busy || this.G.scene) return false; const o = this.nearest(w, 24); if (!o) return false;
     const p = this.G.player; if (dist(p.x, p.y, o.x, o.y) > 110) { ui.toast(`${o.d.name} is too far. Walk closer.`, 1800); sfx.tap(); return true; }
+    if (o.d.story && this.G.time - o.speakT < 6 && !this.G.busy && !this.G.scene) { const sp = this.G.spotById(o.d.story); if (sp) { this.closeBubble(); this.G.playStory(sp); return true; } }   // second tap: the story
     if (this.G.time - o.speakT < 1.2) return true; this.talk(o); return true;
   }
   nextLine(o) { const L = o.d.lines; let i; do { i = Math.floor(Math.random() * L.length); } while (L.length > 1 && i === o.last); o.last = i; return L[i]; }
   talk(o) {
     const G = this.G, t = G.time; o.armed = false; o.speakT = t; o.cool = 3; o.talks = o.talks.filter(x => t - x < (this.cfg.pesterWindow || 60)); o.talks.push(t);
     const line = this.nextLine(o), text = typeof line === 'string' ? line : line.t, pester = o.talks.length >= (this.cfg.pesterCount || 3);
+    if (o.d.story && !this.G.collected(o.d.story)) setTimeout(() => ui.toast(`Tap ${o.d.name} again for the story`, 2600), 900);
     this.say(o, text);
     if (typeof line !== 'string' && line.steal) this.steal(o, 900);
     if (pester) { o.talks = []; setTimeout(() => this.pester(o), 1100); }
@@ -124,7 +129,7 @@ export class Gods {
     if (!this.ready || W.id !== 'athens') return [];
     const G = this.G, t = G.time, cx = G.cam.x, cy = G.cam.y, out = [], near = (x, y, r) => Math.abs(x - cx) < r && Math.abs(y - cy) < r;
     for (const o of this.list) if (near(o.x, o.y, 480)) {
-      const tp = tocaHas(o.d.sprite) && tocaPose(o.d.sprite, o.moving ? (o.face < 0 ? 'l' : 'r') : 'f', o.moving, t);
+      const tp = tocaHas(o.d.sprite) && tocaPose(o.d.sprite, o.moving ? (o.face < 0 ? 'l' : 'r') : 'f', o.moving, t * (o.d.speed > 30 ? 1.8 : 1));
       if (tp) { tp.x = o.x; tp.y = o.y; out.push({ y: o.y, box: { x0: o.x - 16, y0: o.y - 66, x1: o.x + 16, y1: o.y + 2 }, toca: tp, draw: () => { shadowAt(o.x, o.y, 15, .26); g.save(); g.globalCompositeOperation = 'lighter'; g.globalAlpha = .35 + .15 * Math.sin(t * 2 + o.seed); g.fillStyle = `rgb(${o.d.glow})`; g.beginPath(); g.ellipse(o.x, o.y - 30, 22, 36, 0, 0, 7); g.fill(); g.restore(); } });
         if (o.talking) out.push({ y: o.y + .5, draw: () => { const e = IM.emote_exclaim; e && g.drawImage(e, R(o.x - 8), R(o.y - 72 + Math.sin(t * 5))); } }); continue; }
       out.push({ y: o.y, box: { x0: o.x - 14, y0: o.y - 42, x1: o.x + 14, y1: o.y + 2 }, draw: () => this.drawGod(o, t) });

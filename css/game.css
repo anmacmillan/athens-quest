@@ -316,3 +316,6 @@ body.nohud #tour { opacity: 0; pointer-events: none; }
 @media (orientation: portrait) { #arrival .ar-body { flex-direction: column; } #arrival .ar-host { width: min(44vw, 24vh); flex: none; } #arrival .ar-look img { width: 14vh; } #arrival { justify-content: flex-start; overflow-y: auto; } #arrival .ar-say::before { display: none; } }
 #charcard .cc-port { position: absolute; left: calc(4vw - 8px); top: -4px; width: clamp(70px, 10vw, 120px); aspect-ratio: 1; object-fit: cover; object-position: 50% 15%; border: 4px solid #1b1424; border-radius: 50%; background: #f7ead0; }
 #charcard.hasport .cc-name, #charcard.hasport .cc-sub { margin-left: calc(clamp(70px, 10vw, 120px) + 1vw); }
+
+#tour .tr-sec { font-weight: 800; font-size: 13px; color: #9ecbf0; text-transform: uppercase; letter-spacing: 1px; margin: 8px 4px 2px; }
+#tour .tr-sub { color: #c9b6e0; font-size: 12px; }

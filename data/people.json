@@ -1,0 +1,65 @@
+[
+ {
+  "who": "diogenes",
+  "name": "Diogenes",
+  "sub": "lives in a jar",
+  "story": "diogenes-jar"
+ },
+ {
+  "who": "zeno",
+  "name": "Zeno",
+  "sub": "the first Stoic",
+  "story": "zeno-porch"
+ },
+ {
+  "who": "hypatia",
+  "name": "Hypatia",
+  "sub": "astronomer",
+  "story": "hypatia"
+ },
+ {
+  "who": "epicurus",
+  "name": "Epicurus",
+  "sub": "the happy garden",
+  "story": "epicurus"
+ },
+ {
+  "who": "athena",
+  "name": "Athena and Poseidon",
+  "sub": "the contest",
+  "story": "athena-poseidon"
+ },
+ {
+  "who": "medea",
+  "name": "Medea",
+  "sub": "the sorceress",
+  "story": "medea-cup"
+ },
+ {
+  "who": "phaedra",
+  "name": "Phaedra",
+  "sub": "a tragedy",
+  "story": "phaedra"
+ },
+ {
+  "who": "ariadne",
+  "name": "Ariadne",
+  "sub": "looking for Theseus",
+  "story": "naxos",
+  "wander": "ariadne_w"
+ },
+ {
+  "who": "maenad_a",
+  "name": "The Bacchae",
+  "sub": "run!",
+  "story": "bacchae",
+  "wander": "bacchae_1",
+  "face": "art/toca/maenad_a_f.png"
+ },
+ {
+  "who": "tortoise",
+  "name": "The Tortoise",
+  "sub": "very unlucky",
+  "story": "tortoise"
+ }
+]

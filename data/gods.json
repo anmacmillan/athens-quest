@@ -1,31 +1,310 @@
 {
-  "_doc": "Roaming gods: ignored until the player is within `near` tiles, then they turn and say a rude one-liner (rotating). Talking 3+ times within 60 s triggers the god's `pester` effect (harmless). home: {lat, lon, dx, dy (world px)} ; radius in tiles; speed in px/s; glow = rgb of the additive aura; fx = sparkle | drip | ember | streak. A line may be {t, steal:true} (Hermes takes 1 owl and flicks it back 2 s later). Marble story statues live in data/characters.json and are separate.",
-  "near": 3,
-  "pesterCount": 3,
-  "pesterWindow": 60,
-  "gods": [
-    { "id": "athena", "sprite": "athena", "name": "Athena", "home": { "lat": 37.97158, "lon": 23.72735 }, "radius": 3, "speed": 11, "glow": "255,214,90", "fx": "sparkle", "pester": "owlglare",
-      "skate": "No skateboards in my sanctuary.",
-      "lines": ["Owls are wiser than you. No offence. Some offence.", "I won this city fair and square. Poseidon still sulks.", "You're standing on my olive's roots."] },
-    { "id": "poseidon", "sprite": "poseidon", "name": "Poseidon", "home": { "lat": 37.97226, "lon": 23.72622 }, "radius": 2.5, "speed": 10, "glow": "90,190,255", "fx": "drip", "pester": "splash",
-      "lines": ["They chose a TREE. Over the sea. A tree!", "Mind the puddles. They're mine.", "Salt water is a perfectly good gift."] },
-    { "id": "zeus", "sprite": "zeus", "name": "Zeus", "home": { "lat": 37.96962, "lon": 23.73305 }, "radius": 3, "speed": 9, "glow": "255,236,140", "fx": "sparkle", "pester": "lightning",
-      "lines": ["Six hundred and fifty years to finish my temple. Mortals are so slow.", "Kneel. Or don't. I'll remember either way.", "Don't look directly at me. Thunderbolt allergy."] },
-    { "id": "hera", "sprite": "hera", "name": "Hera", "home": { "lat": 37.96945, "lon": 23.73345 }, "radius": 3, "speed": 9, "glow": "255,214,120", "fx": "sparkle", "pester": "sparks",
-      "lines": ["Have you seen my husband? He's always busy.", "My peacock is prettier than you."] },
-    { "id": "hephaestus", "sprite": "hephaestus", "name": "Hephaestus", "home": { "lat": 37.97545, "lon": 23.72125 }, "radius": 3, "speed": 9, "glow": "255,160,70", "fx": "ember", "pester": "sparks",
-      "lines": ["Out of my forge. Busy.", "My mother threw me off a mountain. Go on, ask about my day.", "Touch that anvil and I'll make you a chain."] },
-    { "id": "hermes", "sprite": "hermes", "name": "Hermes", "home": { "lat": 37.97475, "lon": 23.72185 }, "radius": 7, "speed": 46, "glow": "255,240,170", "fx": "streak", "pester": "steal", "wait": 0.8,
-      "lines": ["Message for you: you're slow.", { "t": "Wallet? What wallet?", "steal": true }, "Who smashed my statues? I know. I'm not telling."] },
-    { "id": "dionysus", "sprite": "dionysus", "name": "Dionysus", "home": { "lat": 37.9702, "lon": 23.7273 }, "radius": 3, "speed": 12, "glow": "200,120,255", "fx": "sparkle", "pester": "vines",
-      "lines": ["Applause, please. No? Rude.", "Pirates. Dolphins. Long story.", "Tragedy or comedy? Depends on your face."] },
-    { "id": "ares", "sprite": "ares", "name": "Ares", "home": { "lat": 37.97255, "lon": 23.72318 }, "radius": 2.5, "speed": 12, "glow": "255,110,90", "fx": "ember", "pester": "sparks",
-      "lines": ["Fight me. No? Coward.", "They put ME on trial. Here. The cheek."] },
-    { "id": "aphrodite", "sprite": "aphrodite", "name": "Aphrodite", "home": { "lat": 37.97107, "lon": 23.72528 }, "radius": 2.5, "speed": 9, "glow": "255,150,200", "fx": "sparkle", "pester": "hearts",
-      "lines": ["Mirror? You need one.", "Love is complicated. Ask Paris. Actually, don't."] },
-    { "id": "demeter", "sprite": "demeter", "name": "Demeter", "home": { "lat": 37.97331, "lon": 23.72492 }, "radius": 3, "speed": 9, "glow": "190,230,110", "fx": "sparkle", "pester": "hearts",
-      "lines": ["Have you seen my daughter? Again?", "Eat your vegetables. I grew them."] },
-    { "id": "nike", "sprite": "nike", "name": "Nike", "home": { "lat": 37.97150, "lon": 23.72488 }, "radius": 1.6, "speed": 8, "glow": "255,230,130", "fx": "sparkle", "pester": "sparks",
-      "lines": ["I would fly away, but they took my wings.", "Winning isn't everything. It's nearly everything."] }
-  ]
+ "_doc": "Roaming gods: ignored until the player is within `near` tiles, then they turn and say a rude one-liner (rotating). Talking 3+ times within 60 s triggers the god's `pester` effect (harmless). home: {lat, lon, dx, dy (world px)} ; radius in tiles; speed in px/s; glow = rgb of the additive aura; fx = sparkle | drip | ember | streak. A line may be {t, steal:true} (Hermes takes 1 owl and flicks it back 2 s later). Marble story statues live in data/characters.json and are separate.",
+ "near": 3,
+ "pesterCount": 3,
+ "pesterWindow": 60,
+ "gods": [
+  {
+   "id": "athena",
+   "sprite": "athena",
+   "name": "Athena",
+   "home": {
+    "lat": 37.97158,
+    "lon": 23.72735
+   },
+   "radius": 3,
+   "speed": 11,
+   "glow": "255,214,90",
+   "fx": "sparkle",
+   "pester": "owlglare",
+   "skate": "No skateboards in my sanctuary.",
+   "lines": [
+    "Owls are wiser than you. No offence. Some offence.",
+    "I won this city fair and square. Poseidon still sulks.",
+    "You're standing on my olive's roots."
+   ]
+  },
+  {
+   "id": "poseidon",
+   "sprite": "poseidon",
+   "name": "Poseidon",
+   "home": {
+    "lat": 37.97226,
+    "lon": 23.72622
+   },
+   "radius": 2.5,
+   "speed": 10,
+   "glow": "90,190,255",
+   "fx": "drip",
+   "pester": "splash",
+   "lines": [
+    "They chose a TREE. Over the sea. A tree!",
+    "Mind the puddles. They're mine.",
+    "Salt water is a perfectly good gift."
+   ]
+  },
+  {
+   "id": "zeus",
+   "sprite": "zeus",
+   "name": "Zeus",
+   "home": {
+    "lat": 37.96962,
+    "lon": 23.73305
+   },
+   "radius": 3,
+   "speed": 9,
+   "glow": "255,236,140",
+   "fx": "sparkle",
+   "pester": "lightning",
+   "lines": [
+    "Six hundred and fifty years to finish my temple. Mortals are so slow.",
+    "Kneel. Or don't. I'll remember either way.",
+    "Don't look directly at me. Thunderbolt allergy."
+   ]
+  },
+  {
+   "id": "hera",
+   "sprite": "hera",
+   "name": "Hera",
+   "home": {
+    "lat": 37.96945,
+    "lon": 23.73345
+   },
+   "radius": 3,
+   "speed": 9,
+   "glow": "255,214,120",
+   "fx": "sparkle",
+   "pester": "sparks",
+   "lines": [
+    "Have you seen my husband? He's always busy.",
+    "My peacock is prettier than you."
+   ]
+  },
+  {
+   "id": "hephaestus",
+   "sprite": "hephaestus",
+   "name": "Hephaestus",
+   "home": {
+    "lat": 37.97545,
+    "lon": 23.72125
+   },
+   "radius": 3,
+   "speed": 9,
+   "glow": "255,160,70",
+   "fx": "ember",
+   "pester": "sparks",
+   "lines": [
+    "Out of my forge. Busy.",
+    "My mother threw me off a mountain. Go on, ask about my day.",
+    "Touch that anvil and I'll make you a chain."
+   ]
+  },
+  {
+   "id": "hermes",
+   "sprite": "hermes",
+   "name": "Hermes",
+   "home": {
+    "lat": 37.97475,
+    "lon": 23.72185
+   },
+   "radius": 7,
+   "speed": 46,
+   "glow": "255,240,170",
+   "fx": "streak",
+   "pester": "steal",
+   "wait": 0.8,
+   "lines": [
+    "Message for you: you're slow.",
+    {
+     "t": "Wallet? What wallet?",
+     "steal": true
+    },
+    "Who smashed my statues? I know. I'm not telling."
+   ]
+  },
+  {
+   "id": "dionysus",
+   "sprite": "dionysus",
+   "name": "Dionysus",
+   "home": {
+    "lat": 37.9702,
+    "lon": 23.7273
+   },
+   "radius": 3,
+   "speed": 12,
+   "glow": "200,120,255",
+   "fx": "sparkle",
+   "pester": "vines",
+   "lines": [
+    "Applause, please. No? Rude.",
+    "Pirates. Dolphins. Long story.",
+    "Tragedy or comedy? Depends on your face."
+   ]
+  },
+  {
+   "id": "ares",
+   "sprite": "ares",
+   "name": "Ares",
+   "home": {
+    "lat": 37.97255,
+    "lon": 23.72318
+   },
+   "radius": 2.5,
+   "speed": 12,
+   "glow": "255,110,90",
+   "fx": "ember",
+   "pester": "sparks",
+   "lines": [
+    "Fight me. No? Coward.",
+    "They put ME on trial. Here. The cheek."
+   ]
+  },
+  {
+   "id": "aphrodite",
+   "sprite": "aphrodite",
+   "name": "Aphrodite",
+   "home": {
+    "lat": 37.97107,
+    "lon": 23.72528
+   },
+   "radius": 2.5,
+   "speed": 9,
+   "glow": "255,150,200",
+   "fx": "sparkle",
+   "pester": "hearts",
+   "lines": [
+    "Mirror? You need one.",
+    "Love is complicated. Ask Paris. Actually, don't."
+   ]
+  },
+  {
+   "id": "demeter",
+   "sprite": "demeter",
+   "name": "Demeter",
+   "home": {
+    "lat": 37.97331,
+    "lon": 23.72492
+   },
+   "radius": 3,
+   "speed": 9,
+   "glow": "190,230,110",
+   "fx": "sparkle",
+   "pester": "hearts",
+   "lines": [
+    "Have you seen my daughter? Again?",
+    "Eat your vegetables. I grew them."
+   ]
+  },
+  {
+   "id": "nike",
+   "sprite": "nike",
+   "name": "Nike",
+   "home": {
+    "lat": 37.9715,
+    "lon": 23.72488
+   },
+   "radius": 1.6,
+   "speed": 8,
+   "glow": "255,230,130",
+   "fx": "sparkle",
+   "pester": "sparks",
+   "lines": [
+    "I would fly away, but they took my wings.",
+    "Winning isn't everything. It's nearly everything."
+   ]
+  },
+  {
+   "id": "ariadne_w",
+   "sprite": "ariadne",
+   "name": "Ariadne",
+   "home": {
+    "lat": 37.97075,
+    "lon": 23.7262
+   },
+   "radius": 6,
+   "speed": 13,
+   "glow": "255,120,120",
+   "fx": "sparkle",
+   "pester": "hearts",
+   "story": "naxos",
+   "lines": [
+    "Have you seen Theseus? Tall, curly hair, terrible at goodbyes.",
+    "I gave him the thread that got him out of the Labyrinth. He gave me an island. Naxos.",
+    "If you see a ship with black sails, that's his. He never remembers to change them.",
+    "My little sister Phaedra married him later. Don't ask how that went."
+   ]
+  },
+  {
+   "id": "bacchae_1",
+   "sprite": "maenad_a",
+   "name": "A Bacchant",
+   "home": {
+    "lat": 37.97052,
+    "lon": 23.72815
+   },
+   "radius": 6,
+   "speed": 46,
+   "wait": 0.4,
+   "glow": "190,90,255",
+   "fx": "sparkle",
+   "pester": "vines",
+   "story": "bacchae",
+   "lines": [
+    "Euoi! Euoi! Dionysus is coming!",
+    "We tore a bull apart with our bare hands this morning. Normal Tuesday.",
+    "Have you seen King Pentheus? He was spying on us...",
+    "Dance! Dance or get out of the way!"
+   ]
+  },
+  {
+   "id": "bacchae_2",
+   "sprite": "maenad_b",
+   "name": "A Bacchant",
+   "follow": "bacchae_1",
+   "off": [
+    -16,
+    10
+   ],
+   "home": {
+    "lat": 37.97052,
+    "lon": 23.72815
+   },
+   "radius": 6,
+   "speed": 50,
+   "glow": "190,90,255",
+   "fx": "sparkle",
+   "pester": "vines",
+   "story": "bacchae",
+   "lines": [
+    "Euoi!",
+    "The mountain! To the mountain!",
+    "Wine, ivy, drums. What else do you need?"
+   ]
+  },
+  {
+   "id": "bacchae_3",
+   "sprite": "maenad_a",
+   "name": "A Bacchant",
+   "follow": "bacchae_1",
+   "off": [
+    15,
+    13
+   ],
+   "home": {
+    "lat": 37.97052,
+    "lon": 23.72815
+   },
+   "radius": 6,
+   "speed": 50,
+   "glow": "190,90,255",
+   "fx": "sparkle",
+   "pester": "vines",
+   "story": "bacchae",
+   "lines": [
+    "Euoi! Euoi!",
+    "Our god is the god of wild things.",
+    "Faster! FASTER!"
+   ]
+  }
+ ]
 }

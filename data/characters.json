@@ -1,298 +1,302 @@
 {
-  "_doc": "Standing story characters. stories: {storyId: {who|sprite|pet, dx, dy (world px from the flag, optional), pose, props:[{prop, dx, dy, front}], extra:[{who, dx, dy, lines, gesture}], stretch}}. Every story whose speaker is not glauka gets who=speaker by default (skipped on the Greece map). statues: living statues placed relative to a story spot, still and faintly glowing. Statues with art/c_<who>_marble.png are drawn as marble and fade to colour as the player comes within ~60 px (see Characters.drawFigure).",
-  "skip": [
-    "epicurus"
-  ],
-  "stories": {
-    "caryatids": {
-      "who": "caryatid",
-      "stretch": true,
-      "dx": 0,
-      "dy": 18
-    },
-    "tortoise": {
-      "pet": "tortoise",
-      "dx": 26,
-      "dy": 10
-    },
-    "tribute": {
-      "who": "minos",
-      "dx": -30,
-      "dy": 6
-    },
-    "arrephoroi": {
-      "who": "arrephoros",
-      "dx": 22,
-      "dy": 8
-    },
-    "priestess": {
-      "who": "priestess",
-      "dx": -22,
-      "dy": 8
-    },
-    "solon-croesus": {
-      "who": "solon",
-      "dx": 28,
-      "dy": 6
-    },
-    "pericles": {
-      "who": "pericles",
-      "dx": 28,
-      "dy": 6
-    },
-    "socrates-face": {
-      "who": "socrates",
-      "dx": -28,
-      "dy": 6
-    },
-    "simon-shop": {
-      "who": "socrates",
-      "dx": 26,
-      "dy": 8,
-      "extra": [
-        {
-          "who": "citizen2",
-          "dx": 52,
-          "dy": 6,
-          "name": "Simon",
-          "lines": [
-            "Mind the hobnails. Socrates talks more than he buys."
-          ]
-        }
-      ]
-    },
-    "philo-socrates": {
-      "who": "socrates",
-      "dx": -26,
-      "dy": 8,
-      "gesture": true,
-      "extra": [
-        {
-          "who": "youth_a",
-          "dx": -52,
-          "dy": 12,
-          "gesture": true,
-          "lines": [
-            "He keeps asking what I mean. I no longer know."
-          ]
-        },
-        {
-          "who": "youth_b",
-          "dx": -2,
-          "dy": 14,
-          "gesture": true,
-          "lines": [
-            "I was winning, I think. Then he asked one more question."
-          ]
-        }
-      ]
-    },
-    "diogenes-lamp": {
-      "who": "diogenes",
-      "dx": 26,
-      "dy": 6
-    },
-    "diogenes-jar": {
-      "who": "diogenes",
-      "dx": -4,
-      "dy": 2,
-      "lift": 12,
-      "props": [
-        {
-          "prop": "jar",
-          "dx": -4,
-          "dy": 8,
-          "front": true
-        },
-        {
-          "prop": "dog",
-          "dx": 26,
-          "dy": 10
-        }
-      ]
-    },
-    "zeno-porch": {
-      "who": "zeno",
-      "dx": 26,
-      "dy": 6
-    },
-    "plato-academy": {
-      "who": "plato",
-      "dx": -24,
-      "dy": 8
-    },
-    "philo-plato": {
-      "who": "plato",
-      "dx": 24,
-      "dy": 8
-    },
-    "hypatia": {
-      "who": "hypatia",
-      "dx": 24,
-      "dy": 8
-    },
-    "aristotle-lyceum": {
-      "who": "aristotle",
-      "dx": -24,
-      "dy": 8
-    },
-    "aristotle-dandy": {
-      "who": "aristotle",
-      "dx": 24,
-      "dy": 8
-    },
-    "philo-aristotle": {
-      "who": "aristotle",
-      "dx": 24,
-      "dy": 8
-    },
-    "labyrinth": {
-      "who": "ariadne",
-      "dx": -24,
-      "dy": 8
-    },
-    "aegeus": {
-      "sprite": "ae_stand",
-      "dx": 22,
-      "dy": 14,
-      "anchor": [
-        13,
-        32
-      ],
-      "shadow": 12,
-      "name": "Aegeus",
-      "lines": [
-        "I watch the sea every day. Surely, surely, white sails."
-      ]
-    },
-    "medea-cup": {
-      "who": "medea",
-      "dx": 26,
-      "dy": 10,
-      "name": "Medea",
-      "lines": [
-        "Do not look at me like that. I only stir the cup."
-      ]
-    },
-    "evzones": {
-      "who": "evzone",
-      "dx": -24,
-      "dy": 14,
-      "name": "Evzone",
-      "lines": [
-        "Shh. I am on duty.",
-        "Do not wave. Do not smile. I am a statue."
-      ],
-      "extra": [
-        {
-          "who": "evzone",
-          "dx": 24,
-          "dy": 14,
-          "name": "Evzone",
-          "lines": [
-            "Left foot, right foot, stamp!",
-            "The shoes weigh three kilos."
-          ]
-        }
-      ]
-    }
+ "_doc": "Standing story characters. stories: {storyId: {who|sprite|pet, dx, dy (world px from the flag, optional), pose, props:[{prop, dx, dy, front}], extra:[{who, dx, dy, lines, gesture}], stretch}}. Every story whose speaker is not glauka gets who=speaker by default (skipped on the Greece map). statues: living statues placed relative to a story spot, still and faintly glowing. Statues with art/c_<who>_marble.png are drawn as marble and fade to colour as the player comes within ~60 px (see Characters.drawFigure).",
+ "skip": [
+  "bacchae",
+  "epicurus"
+ ],
+ "stories": {
+  "caryatids": {
+   "who": "caryatid",
+   "stretch": true,
+   "dx": 0,
+   "dy": 18
   },
-  "statues": [
+  "tortoise": {
+   "pet": "tortoise",
+   "dx": 26,
+   "dy": 10
+  },
+  "tribute": {
+   "who": "minos",
+   "dx": -30,
+   "dy": 6
+  },
+  "arrephoroi": {
+   "who": "arrephoros",
+   "dx": 22,
+   "dy": 8
+  },
+  "priestess": {
+   "who": "priestess",
+   "dx": -22,
+   "dy": 8
+  },
+  "solon-croesus": {
+   "who": "solon",
+   "dx": 28,
+   "dy": 6
+  },
+  "pericles": {
+   "who": "pericles",
+   "dx": 28,
+   "dy": 6
+  },
+  "socrates-face": {
+   "who": "socrates",
+   "dx": -28,
+   "dy": 6
+  },
+  "simon-shop": {
+   "who": "socrates",
+   "dx": 26,
+   "dy": 8,
+   "extra": [
     {
-      "id": "athena-statue",
-      "who": "athena",
-      "near": "athena-poseidon",
-      "dx": -62,
-      "dy": 34,
-      "glow": "#f5e08a",
-      "name": "Athena",
-      "lines": [
-        "I planted the olive. Look how well it has done."
-      ]
-    },
-    {
-      "id": "poseidon-statue",
-      "who": "poseidon",
-      "near": "athena-poseidon",
-      "dx": 46,
-      "dy": -40,
-      "glow": "#7cd8c8",
-      "name": "Poseidon",
-      "lines": [
-        "My trident left those marks. Quite the temper."
-      ]
-    },
-    {
-      "id": "zeus-statue",
-      "who": "zeus",
-      "near": "zeus-cronus",
-      "dx": -34,
-      "dy": 26,
-      "glow": "#9ec8ff",
-      "name": "Zeus",
-      "lines": [
-        "My temple took 650 years. I was patient. Mostly."
-      ]
-    },
-    {
-      "id": "hephaestus-statue",
-      "who": "hephaestus",
-      "near": "hephaestus-throne",
-      "dx": -30,
-      "dy": 24,
-      "glow": "#ff9a4a",
-      "name": "Hephaestus",
-      "lines": [
-        "Mind the anvil. Sit down on nothing golden."
-      ]
-    },
-    {
-      "id": "dionysus-statue",
-      "who": "dionysus",
-      "near": "dionysus-pirates",
-      "dx": 30,
-      "dy": 22,
-      "glow": "#b58cff",
-      "name": "Dionysus",
-      "lines": [
-        "Pirates, I said. Not dolphins. Well. Both."
-      ]
-    },
-    {
-      "id": "hermes-statue",
-      "who": "hermes",
-      "near": "hermes-herms",
-      "dx": -34,
-      "dy": 20,
-      "glow": "#ffe27a",
-      "name": "Hermes",
-      "lines": [
-        "Somebody broke my faces. I can run, but I can't forgive."
-      ]
-    },
-    {
-      "id": "herm-statue",
-      "who": "herm",
-      "near": "hermes-herms",
-      "dx": 30,
-      "dy": 26,
-      "glow": "#fff3c0",
-      "name": "Herm",
-      "lines": [
-        "...(a stone pillar with a smashed nose, standing very still)"
-      ]
-    },
-    {
-      "id": "nike-statue",
-      "who": "nike",
-      "near": "nike",
-      "dx": -28,
-      "dy": 22,
-      "glow": "#fff6c0",
-      "name": "Nike",
-      "lines": [
-        "No wings, in my temple. Athenians wanted victory to stay."
-      ]
+     "who": "citizen2",
+     "dx": 52,
+     "dy": 6,
+     "name": "Simon",
+     "lines": [
+      "Mind the hobnails. Socrates talks more than he buys."
+     ]
     }
-  ]
+   ]
+  },
+  "philo-socrates": {
+   "who": "socrates",
+   "dx": -26,
+   "dy": 8,
+   "gesture": true,
+   "extra": [
+    {
+     "who": "youth_a",
+     "dx": -52,
+     "dy": 12,
+     "gesture": true,
+     "lines": [
+      "He keeps asking what I mean. I no longer know."
+     ]
+    },
+    {
+     "who": "youth_b",
+     "dx": -2,
+     "dy": 14,
+     "gesture": true,
+     "lines": [
+      "I was winning, I think. Then he asked one more question."
+     ]
+    }
+   ]
+  },
+  "diogenes-lamp": {
+   "who": "diogenes",
+   "dx": 26,
+   "dy": 6
+  },
+  "diogenes-jar": {
+   "who": "diogenes",
+   "dx": -4,
+   "dy": 2,
+   "lift": 12,
+   "props": [
+    {
+     "prop": "jar",
+     "dx": -4,
+     "dy": 8,
+     "front": true
+    },
+    {
+     "prop": "dog",
+     "dx": 26,
+     "dy": 10
+    }
+   ]
+  },
+  "zeno-porch": {
+   "who": "zeno",
+   "dx": 26,
+   "dy": 6
+  },
+  "plato-academy": {
+   "who": "plato",
+   "dx": -24,
+   "dy": 8
+  },
+  "philo-plato": {
+   "who": "plato",
+   "dx": 24,
+   "dy": 8
+  },
+  "hypatia": {
+   "who": "hypatia",
+   "dx": 24,
+   "dy": 8
+  },
+  "aristotle-lyceum": {
+   "who": "aristotle",
+   "dx": -24,
+   "dy": 8
+  },
+  "aristotle-dandy": {
+   "who": "aristotle",
+   "dx": 24,
+   "dy": 8
+  },
+  "philo-aristotle": {
+   "who": "aristotle",
+   "dx": 24,
+   "dy": 8
+  },
+  "labyrinth": {
+   "who": "ariadne",
+   "dx": -24,
+   "dy": 8
+  },
+  "aegeus": {
+   "sprite": "ae_stand",
+   "dx": 22,
+   "dy": 14,
+   "anchor": [
+    13,
+    32
+   ],
+   "shadow": 12,
+   "name": "Aegeus",
+   "lines": [
+    "I watch the sea every day. Surely, surely, white sails."
+   ]
+  },
+  "medea-cup": {
+   "who": "medea",
+   "dx": 26,
+   "dy": 10,
+   "name": "Medea",
+   "lines": [
+    "Do not look at me like that. I only stir the cup."
+   ]
+  },
+  "evzones": {
+   "who": "evzone",
+   "dx": -24,
+   "dy": 14,
+   "name": "Evzone",
+   "lines": [
+    "Shh. I am on duty.",
+    "Do not wave. Do not smile. I am a statue."
+   ],
+   "extra": [
+    {
+     "who": "evzone",
+     "dx": 24,
+     "dy": 14,
+     "name": "Evzone",
+     "lines": [
+      "Left foot, right foot, stamp!",
+      "The shoes weigh three kilos."
+     ]
+    }
+   ]
+  },
+  "phaedra": {
+   "who": "phaedra"
+  }
+ },
+ "statues": [
+  {
+   "id": "athena-statue",
+   "who": "athena",
+   "near": "athena-poseidon",
+   "dx": -62,
+   "dy": 34,
+   "glow": "#f5e08a",
+   "name": "Athena",
+   "lines": [
+    "I planted the olive. Look how well it has done."
+   ]
+  },
+  {
+   "id": "poseidon-statue",
+   "who": "poseidon",
+   "near": "athena-poseidon",
+   "dx": 46,
+   "dy": -40,
+   "glow": "#7cd8c8",
+   "name": "Poseidon",
+   "lines": [
+    "My trident left those marks. Quite the temper."
+   ]
+  },
+  {
+   "id": "zeus-statue",
+   "who": "zeus",
+   "near": "zeus-cronus",
+   "dx": -34,
+   "dy": 26,
+   "glow": "#9ec8ff",
+   "name": "Zeus",
+   "lines": [
+    "My temple took 650 years. I was patient. Mostly."
+   ]
+  },
+  {
+   "id": "hephaestus-statue",
+   "who": "hephaestus",
+   "near": "hephaestus-throne",
+   "dx": -30,
+   "dy": 24,
+   "glow": "#ff9a4a",
+   "name": "Hephaestus",
+   "lines": [
+    "Mind the anvil. Sit down on nothing golden."
+   ]
+  },
+  {
+   "id": "dionysus-statue",
+   "who": "dionysus",
+   "near": "dionysus-pirates",
+   "dx": 30,
+   "dy": 22,
+   "glow": "#b58cff",
+   "name": "Dionysus",
+   "lines": [
+    "Pirates, I said. Not dolphins. Well. Both."
+   ]
+  },
+  {
+   "id": "hermes-statue",
+   "who": "hermes",
+   "near": "hermes-herms",
+   "dx": -34,
+   "dy": 20,
+   "glow": "#ffe27a",
+   "name": "Hermes",
+   "lines": [
+    "Somebody broke my faces. I can run, but I can't forgive."
+   ]
+  },
+  {
+   "id": "herm-statue",
+   "who": "herm",
+   "near": "hermes-herms",
+   "dx": 30,
+   "dy": 26,
+   "glow": "#fff3c0",
+   "name": "Herm",
+   "lines": [
+    "...(a stone pillar with a smashed nose, standing very still)"
+   ]
+  },
+  {
+   "id": "nike-statue",
+   "who": "nike",
+   "near": "nike",
+   "dx": -28,
+   "dy": 22,
+   "glow": "#fff6c0",
+   "name": "Nike",
+   "lines": [
+    "No wings, in my temple. Athenians wanted victory to stay."
+   ]
+  }
+ ]
 }

@@ -2860,5 +2860,46 @@
   "flag": "myth",
   "main": false,
   "trail": "olympians"
+ },
+ {
+  "id": "bacchae",
+  "title": "The Bacchae",
+  "area": "Theatre of Dionysus",
+  "speaker": "glauka",
+  "pages": [
+   [
+    "myth",
+    "Dionysus, god of wine and theatre, came home to Thebes in disguise. His cousin, King Pentheus, said he was a fake and threw him in jail."
+   ],
+   [
+    "myth",
+    "So Dionysus drove the women of Thebes wild. They ran up the mountain as Bacchae: dancing, shrieking, tearing wild animals apart with their bare hands. Pentheus's own mother, Agave, led them."
+   ],
+   [
+    "myth",
+    "Dionysus tricked Pentheus into dressing up as a woman to spy on them. The Bacchae spotted him hiding in a pine tree. In their frenzy they thought he was a mountain lion."
+   ],
+   [
+    "myth",
+    "They pulled the tree down and tore him apart. Agave marched home proudly with her lion's head stuck on her staff. Only then did she see whose head it was: her own son's."
+   ],
+   [
+    "history",
+    "Euripides wrote The Bacchae. It was first performed here, in this theatre, around 405 BC, just after he died, and it won first prize."
+   ]
+  ],
+  "q": "Who led the Bacchae who caught King Pentheus?",
+  "opts": [
+   "His own mother, Agave",
+   "The goddess Athena",
+   "A real mountain lion"
+  ],
+  "mission": "At the Theatre of Dionysus, sit in the rows where the audience watched The Bacchae for the first time.",
+  "pos": {
+   "lat": 37.97048,
+   "lon": 23.72828
+  },
+  "flag": "myth",
+  "main": false
  }
 ]

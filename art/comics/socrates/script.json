@@ -1,15 +1,6 @@
 {
  "story": "socrates",
  "title": "The Death of Socrates",
- "notes": [
-  "p3.3: the lettered bubble 'That is how we know.' stays; voice_speech changes Plato's spoken line, because Plato was not present (Phaedo 59b). Optional patch: re-letter the bubble as 'I was ill. They told me.'",
-  "p2.1, p2.3, p2.4: the kneeling, weeping friend in the gold-trimmed cloak is drawn like Plato on p3.3. Narration names him Crito (who made the escape offer). Optional patch: change the cloak so he does not read as Plato.",
-  "p1.4: caption 'Five hundred and one citizens found him guilty' overstates: a majority did (Apology 36a). Narration corrects it ('most did').",
-  "p3.2: Socrates' last words are voice only; no bubble is lettered.",
-  "p3.4: the archaeologists hold what looks like a glass bottle; the finds were small clay medicine bottles. Narration says clay. Low priority.",
-  "p2.4: narration is under 12 words on purpose (climax: let the SFX play).",
-  "fixed by tools/comic_fix.py (story_audit 6.3): pages [2, 3] regenerated"
- ],
  "flag": "history",
  "main": true,
  "layout": "2x2",
@@ -20,7 +11,8 @@
    "plato"
   ],
   [
-   "socrates"
+   "socrates",
+   "plato"
   ],
   [
    "socrates",
@@ -31,150 +23,128 @@
   {
    "page": 1,
    "panel": 1,
-   "visual": "Socrates (ugly, bald, bushy beard, barefoot, shabby cloak) in the Agora cheerfully asking a puzzled merchant questions, question marks flying",
-   "caption": "In 399 BC, Socrates asked awkward questions.",
+   "visual": "The busy Agora market of Athens, 399 BC: Socrates (old, bald, snub nose, bulging eyes, pot belly, barefoot, shabby cloak) cheerfully questioning a proud general in a plumed helmet, a crowd gathering",
+   "caption": "In 399 BC an old man called Socrates spent his days in this Agora, asking questions.",
    "speech": {
     "speaker": "Socrates",
-    "text": "But what is justice?"
+    "text": "So, General: what IS courage?"
    },
    "sfx": null,
-   "tag": null,
-   "narr": "This barefoot old man is Socrates. For years he wandered this Agora asking awkward questions. The poor man on the right only wanted to sell a pot.",
-   "voice_speech": {
-    "speaker": "Socrates",
-    "text": "But what is justice? You must know, surely?"
-   }
+   "tag": "HISTORY"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Grumpy Athenians in a crowd with arms folded glaring at Socrates, angry shadows",
-   "caption": "People did not always like the answers.",
+   "visual": "The general tangled up in his own words, sweating, a thought bubble full of knots; the crowd laughing",
+   "caption": "He showed that even important men did not really know what they were talking about.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "People did not always like the answers. Socrates showed important men, in public, that they didn't know what they thought they knew. Important men remember that."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "A courtroom of 501 jurors in rows, shown as a vast crowd of faces, Socrates standing alone in the centre",
-   "caption": "He was accused of disrespecting the gods and corrupting the young.",
+   "visual": "Young men following Socrates eagerly with scrolls, while their angry fathers and two rich politicians glare from a doorway",
+   "caption": "Young people loved it. Their parents and powerful men did not.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Three accusers pointing at Socrates in front of a court building, one shaking a scroll",
+   "caption": "He was put on trial: for not respecting the gods, and for corrupting the young.",
    "speech": {
     "speaker": "Accuser",
-    "text": "Guilty!"
+    "text": "He is a danger to Athens!"
    },
    "sfx": null,
-   "tag": null,
-   "narr": "In 399 BC they took him to court. He was accused of disrespecting the gods and corrupting the young. Five hundred and one jurors. One old man, alone in the middle."
-  },
-  {
-   "page": 1,
-   "panel": 4,
-   "visual": "A juror's black pebble dropped in an urn, closer view, tension, Socrates' calm face in the background",
-   "caption": "Five hundred and one citizens found him guilty.",
-   "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "Each juror dropped a pebble. Not all of them voted guilty, but most did: if about thirty had changed their minds, he'd have gone home. Look at his face. Calm."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 1,
-   "visual": "Socrates in a prison cell with a small barred window and a stone bed, his friends (Crito, a grey-haired man in a plain brown cloak, and two young men; no one in a gold-trimmed cloak) kneeling beside him urging him to leave",
-   "caption": "His friends offered to help him escape.",
+   "visual": "A huge jury of ordinary Athenian men dropping bronze voting discs into two urns, the 'guilty' urn fuller",
+   "caption": "501 citizens voted. Most said guilty. The sentence was death.",
    "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "His friends offered to help him escape. Crito, his old friend, came to the prison before dawn. The money was ready. Friends far away would hide him."
+   "sfx": "CLINK CLINK",
+   "tag": null
   },
   {
    "page": 2,
    "panel": 2,
-   "visual": "Close-up of Socrates shaking his head with a kind smile, the old friend Crito's hand on his shoulder",
-   "caption": "He refused them.",
+   "visual": "Socrates standing calm and unafraid in front of the jury, one finger raised, light on his face",
+   "caption": "He would not beg for his life.",
    "speech": {
     "speaker": "Socrates",
-    "text": "I will stay."
+    "text": "A life without questions is not worth living."
    },
    "sfx": null,
-   "tag": null,
-   "narr": "He refused them. All his life he had lived by the laws of Athens. He wasn't going to sneak out of them now, by the back door.",
-   "voice_speech": {
-    "speaker": "Socrates",
-    "text": "I will stay. After seventy years, should I run now, Crito?"
-   }
+   "tag": null
   },
   {
    "page": 2,
    "panel": 3,
-   "visual": "A servant carrying a clay cup of hemlock on a tray into the cell, grim faces",
-   "caption": "The sentence was death by poison: hemlock.",
-   "speech": null,
+   "visual": "A dim prison cell at night: his rich friend Crito whispering urgently through the bars, a bribed guard looking away, a boat waiting in a thought bubble",
+   "caption": "In prison, his friend Crito had a plan to get him out.",
+   "speech": {
+    "speaker": "Crito",
+    "text": "The guard is paid. Run!"
+   },
    "sfx": null,
-   "tag": null,
-   "narr": "The sentence was death by poison: hemlock, made from a plant. A man carried it in. Even the prison guard had cried when he came to say goodbye."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 4,
-   "visual": "Socrates calmly raising the clay cup, eyes serene above the rim, friends weeping behind him, a small '...'",
-   "caption": "He drank the cup calmly.",
-   "speech": null,
-   "sfx": "...",
-   "tag": null,
-   "narr": "He drank the cup calmly. All of it."
+   "visual": "Socrates sitting on his prison bed shaking his head gently, Crito in tears",
+   "caption": "Socrates refused.",
+   "speech": {
+    "speaker": "Socrates",
+    "text": "I have lived by the laws of Athens. I will not run from them now."
+   },
+   "sfx": null,
+   "tag": null
   },
   {
    "page": 3,
    "panel": 1,
-   "visual": "Socrates lying on the bed still talking and gesturing to his friends, who listen in tears",
-   "caption": "He went on talking about philosophy.",
+   "visual": "The jailer, sad-faced, handing Socrates a cup of hemlock; his friends around the cell crying into their cloaks; Socrates calm",
+   "caption": "On the last day he drank the hemlock calmly. His friends wept.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "All day he had talked about philosophy with his friends, as if it were any other afternoon. After the cup, he walked about until his legs grew heavy. Then he lay down."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 2,
-   "visual": "His legs under a blanket, a dimming curve of grey shading creeping up from his feet",
-   "caption": "The numbness crept up his body.",
+   "visual": "Socrates lying on the bed under his cloak, the jailer pressing his feet; a cold blue tint creeping up from his feet towards his knees",
+   "caption": "He walked about, then lay down. The cold crept up from his feet.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Socrates couldn't feel his feet when the man pressed them. The numbness crept up his body. His last words were for Crito, about Asclepius, the god of healing.",
-   "voice_speech": {
-    "speaker": "Socrates",
-    "text": "Crito, we owe a rooster to Asclepius. Pay it, won't you?"
-   }
+   "tag": null
   },
   {
    "page": 3,
    "panel": 3,
-   "visual": "Young Plato, pale and ill, wrapped in a blanket in a chair at home, writing at a table with a quill and a papyrus by a warm lamp, later, a friend telling him the news",
-   "caption": "Plato was ill and not there. He wrote it down afterwards.",
+   "visual": "Socrates uncovering his face for a moment to speak to Crito; a small inset of a rooster",
+   "caption": "His last words were about a debt.",
    "speech": {
-    "speaker": "Plato",
-    "text": "I was ill. They told me."
+    "speaker": "Socrates",
+    "text": "Crito, we owe a rooster to Asclepius. Pay it."
    },
    "sfx": null,
-   "tag": null,
-   "narr": "Then he was still. Plato wrote down what happened that day. But Plato wasn't there: he was ill. His friends told him everything.",
-   "voice_speech": {
-    "speaker": "Plato",
-    "text": "I was ill that day. My friends told me everything."
-   }
+   "tag": null
   },
   {
    "page": 3,
    "panel": 4,
-   "visual": "The Agora building in the south-west corner (small, dusty), archaeologists holding up a tiny clay medicine bottle, a big question mark above",
-   "caption": "It may have been the prison. Nobody can prove it.",
+   "visual": "Today: archaeologists' excavated stone foundations in the Agora, a case of tiny clay medicine bottles in the foreground, Glauka the owl pointing with a wing",
+   "caption": "Plato wrote it all down. In the Agora, archaeologists found a building with tiny medicine bottles: maybe his prison.",
    "speech": null,
    "sfx": null,
-   "tag": "BEST GUESS",
-   "narr": "That's history: it happened, and here's how we know: Plato. The prison is a best guess: a building in the south-west corner where diggers found tiny clay medicine bottles. Go and find it."
+   "tag": "MAYBE"
   }
  ]
 }

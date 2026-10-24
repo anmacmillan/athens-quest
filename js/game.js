@@ -346,6 +346,13 @@ export class Game {
     if (dist(this.player.x, this.player.y, spot.x, spot.y) < 60 || this.world.kind !== 'live') { if (this.world.kind !== 'live') { this.player.goto = { x: spot.x, y: spot.y + 6 }; this.pendingAct = { kind: 'spot', ref: spot }; return; } this.arrive(spot); return; }
     this.fly.fly({ x: spot.x, y: spot.y, then: () => this.arrive(spot) });
   }
+  // a person from the Grand Tour's people list: a wanderer is found where she is now, anyone else at their story's spot
+  async goWho(q) {
+    const o = q.wander && this.gods.list.find(x => x.id === q.wander);
+    if (!o) { const sp = this.spotById(q.story); if (sp) this.goPlace(sp); return; }
+    if (this.world.id !== 'athens') { await this.flyTo('athens', null, this.worlds.athens.nearestWalkable(o.x, o.y + 20)); return; }
+    ui.closeOverlay && ui.closeOverlay(); this.fly.closeCard(); this.fly.fly({ x: o.x, y: o.y + 4 });
+  }
   stampNear(l) { const W = this.worlds.athens; let b2 = 260, s2 = null; for (const st of (this.passport.stamps || [])) if (st.spot.world === 'athens') { const e = dist(l.x * W.ws, l.y * W.ws, st.spot.x, st.spot.y); if (e < b2) { b2 = e; s2 = st.spot; } } return s2; }
   // a named place with no story of its own: fly there, show its title, and Glauka says what it is (and where the related story is)
   goLandmark(l) {
