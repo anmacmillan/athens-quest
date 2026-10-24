@@ -5,7 +5,7 @@ import { lsGet, lsSet } from './util.js';
 import { girlNow } from './toca_look.js';
 
 const q = new URLSearchParams(location.search).get('toca');
-if (q !== null) lsSet('owlq.toca', q === '1');
+if (q !== null && !(q === '1' && lsGet('owlq.toca.auto', '') === 'off')) lsSet('owlq.toca', q === '1');   // a device that was too slow stays on pixel figures
 export const TOCA = !!lsGet('owlq.toca', false);
 const CAST = { girl: 64, socrates: 66, phidias: 66, nike: 68, pericles: 66, caryatid: 66, dionysus: 66, playwright: 66, paul: 62, hephaestus: 68, solon: 66, marcus: 66, zeus: 72, plato: 68, aristotle: 66, evzone: 70, glauka: 21,
   agamemnon: 68, ariadne: 64, arrephoros: 58, athena: 72, citizen2: 64, diogenes: 64, hermes: 66, hypatia: 64, medea: 64, minos: 68, poseidon: 72, priestess: 64, youth_a: 60, youth_b: 60, zeno: 64, aphrodite: 70, ares: 70, demeter: 68, hera: 70, aegeus: 66, phaedra: 64, maenad_a: 62, maenad_b: 62 };   // height in art pixels (the pixel girl is 44); a missing image falls back to the pixel sprite

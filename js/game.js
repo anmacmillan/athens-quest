@@ -154,6 +154,12 @@ export class Game {
     const dt = Math.min(.1, (now - (this.last || now)) / 1000); this.last = now;
     if (document.hidden) return;
     this.time += dt; this.update(dt); this.render();
+    // older iPads: if cartoon mode keeps running below 20 frames a second during play, switch to the lighter pixel figures (remembered)
+    if (TOCA && this.mode === 'play' && !this.scene && !this.flight && !this.busy) {
+      const pf = this.perf || (this.perf = { t: 0, n: 0, slow: 0 }); pf.t += dt; pf.n++;
+      if (pf.t >= 5) { if (pf.n / pf.t < 20) pf.slow++; else pf.slow = 0; pf.t = 0; pf.n = 0;
+        if (pf.slow >= 4) { try { localStorage.setItem('owlq.toca', 'false'); localStorage.setItem('owlq.toca.auto', 'off'); } catch (e) { } ui.toast('Switching to simpler graphics so the game runs smoothly', 3000); setTimeout(() => location.replace(location.pathname), 1800); this.perf = { t: -1e9, n: 0, slow: 0 }; } }
+    }
   }
   update(dt) {
     updateSoundscape(this); this.guide.update(dt); this.fog.update(dt); this.fly.update(dt); this.comp.update(dt); this.skate.update(dt); this.extras.update(dt); this.chars.update(dt); this.gods.update(dt); this.vis.update(); this.evz.update(dt); this.edges.update(dt);
@@ -210,8 +216,13 @@ export class Game {
     const ents = far ? [] : sc ? sc.entities() : this.entities();
     if (W.objectEntities) { const boxes = ents.filter(e => e.box).map(e => Object.assign({ fy: e.y }, e.box)); ents.push(...W.objectEntities(boxes)); }
     ents.sort((a, b) => a.y - b.y);
-    const cut = TOCA ? ents.filter(e => e.toca) : [];
-    if (!cut.length) for (const e of ents) e.draw();
+    const tocas = TOCA ? ents.filter(e => e.toca) : [];
+    // only a cartoon figure that something in front actually overlaps needs its own layer; the rest go on top at the end (cheaper on older iPads)
+    const hit = (a, b) => a && b && a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
+    const rectOf = e => e.box || { x0: e.toca.x - 14, y0: e.toca.y - e.toca.h, x1: e.toca.x + 14, y1: e.toca.y + 2 };
+    const cut = (sc || this.trans) ? tocas : tocas.filter(c => { const r = rectOf(c); for (let i = ents.indexOf(c) + 1; i < ents.length; i++) { const e = ents[i]; if (hit(r, e.toca ? rectOf(e) : e.box)) return true; } return false; });
+    const late = tocas.filter(c => !cut.includes(c));
+    if (!cut.length) { for (const e of ents) e.draw(); }
     else {   // cartoon pilot: present what is behind each smooth figure, draw the figure on the screen canvas, then carry on in front of it
       let i = 0;
       for (const c of cut) {
@@ -221,6 +232,7 @@ export class Game {
       }
       for (; i < ents.length; i++) ents[i].draw();
     }
+    this.lateToca = late; this.tocaStats = { cut: cut.length, late: late.length };
     if (!sc && !far && !TOCA && W.hiddenBehind && W.kind === 'live' && !(this.fly && this.fly.f)) { const p = this.player; if (W.hiddenBehind(p.x, p.y)) { const fr = p.moving ? 1 + (Math.floor((p.walkT || 0) * 7) % 2) : 0; drawPlayer(g, this.sheet(), p.x, p.y, p.facing || 'f', fr, .55); } }
     if (!sc) { const tg = TOCA && this.fly.f && this.fly.tocaGirl(); if (tg) { this.fly.drawGirl(); endWorld(); present(); tocaDraw(mainCx, cam, V, { toca: tg }); const ow = this.fly.tocaOwlPose(); if (ow) tocaDraw(mainCx, cam, V, { toca: ow }); g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, V.W, V.H); g.restore(); beginWorld(cam); if (!ow) this.fly.drawOwl(); } else this.fly.draw(); }
     if (W.drawOccluders) { const gi = sc ? sc.actors.get('girl') : this.player; W.drawOccluders(rect, gi ? gi.y : 0); }
@@ -230,6 +242,7 @@ export class Game {
     if (sc) sc.drawScreen();
     if (this.trans) this.drawTrans();
     present();
+    if (this.lateToca && this.lateToca.length) { for (const c of this.lateToca) tocaDraw(mainCx, cam, V, c); this.lateToca = null; }
     if (!sc) this.marks.draw();
   }
   drawTrans() { const tr = this.trans, u = clamp(tr.t / tr.dur); if (tr.kind === 'fadeIn') { g.fillStyle = `rgba(27,20,36,${(1 - u).toFixed(3)})`; g.fillRect(0, 0, V.W, V.H); } else if (tr.kind === 'fadeOut') { g.fillStyle = `rgba(27,20,36,${u.toFixed(3)})`; g.fillRect(0, 0, V.W, V.H); } }

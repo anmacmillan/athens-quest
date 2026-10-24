@@ -123,11 +123,11 @@ export class Characters {
       if (c.world !== W.id || this.hidden(c) || Math.abs(c.x - cx) > 460 || Math.abs(c.y - cy) > 340) continue;
       const parts = [...c.parts];
       const tid = c.who || SPRITE_TOCA[c.sprite], tp = tid && tocaHas(tid) && tocaPose(tid, 'f', false, t);
-      if (tp) { tp.x = c.x; tp.y = c.y; c.top = tp.h; out.push({ y: c.y, toca: tp, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); shadowAt(c.x, c.y, 15, .3); } }); out.push({ y: c.y + .5, draw: () => { if (c.owner) this.mark(c, t); } }); }
+      if (tp) { tp.x = c.x; tp.y = c.y; c.top = tp.h; out.push({ y: c.y, box: { x0: c.x - 14, y0: c.y - tp.h, x1: c.x + 14, y1: c.y + 2 }, toca: tp, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); shadowAt(c.x, c.y, 15, .3); } }); out.push({ y: c.y + .5, draw: () => { if (c.owner) this.mark(c, t); } }); }
       else out.push({ y: c.y, draw: () => { for (const p of parts) if (p.prop && !p.front) this.drawProp(p, t); this.drawFigure(c, t, c); if (c.owner && !c.statue) this.mark(c, t); } });
       for (const p of parts) {
         if (p.prop) out.push({ y: p.y + (p.front ? 1 : -1), draw: () => this.drawProp(p, t) });
-        else { const pt = p.who && tocaHas(p.who) && tocaPose(p.who, 'f', false, t); if (pt) { pt.x = p.x; pt.y = p.y; out.push({ y: p.y, toca: pt, draw: () => shadowAt(p.x, p.y, 14, .28) }); } else out.push({ y: p.y, draw: () => this.drawFigure(p, t, c) }); }
+        else { const pt = p.who && tocaHas(p.who) && tocaPose(p.who, 'f', false, t); if (pt) { pt.x = p.x; pt.y = p.y; out.push({ y: p.y, box: { x0: p.x - 14, y0: p.y - pt.h, x1: p.x + 14, y1: p.y + 2 }, toca: pt, draw: () => shadowAt(p.x, p.y, 14, .28) }); } else out.push({ y: p.y, draw: () => this.drawFigure(p, t, c) }); }
       }
     }
     return out;

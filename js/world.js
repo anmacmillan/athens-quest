@@ -109,7 +109,7 @@ export class LiveWorld extends World {
     for (let pass = 0; pass < 2; pass++) {   // anything in front of a redrawn object must be redrawn too, or it would be painted over
       for (const i of [...sel]) { const a = this.objs[i]; cand.clear(); this.objectsIn(a.x, a.y, a.x + a.w, a.y + a.h, cand); for (const j of cand) { const o = this.objs[j]; if (o.base > a.base && o.x < a.x + a.w && o.x + o.w > a.x && o.y < a.y + a.h && o.y + o.h > a.y) sel.add(j); } }
     }
-    const id = this.id; return [...sel].map(i => { const o = this.objs[i]; return { y: o.base, draw: () => { const im = IM['wobj_' + id + '_' + o.a]; if (im) g.drawImage(im, o.sx, o.sy, o.sw, o.sh, o.x, o.y, o.w, o.h); } }; });
+    const id = this.id; return [...sel].map(i => { const o = this.objs[i]; return { y: o.base, box: { x0: o.x, y0: o.y, x1: o.x + o.w, y1: o.base }, draw: () => { const im = IM['wobj_' + id + '_' + o.a]; if (im) g.drawImage(im, o.sx, o.sy, o.sw, o.sh, o.x, o.y, o.w, o.h); } }; });
   }
   // ---- level of detail. z = screen px per world px. At street scale (z >= 1) the chunks are drawn crisp; between .75 and 1 smoothed; below that the illustrated overview
   // (a smooth 0.5x downsample of the whole street map, with a halving mip chain) cross-fades in over z .5 -> .38, so the pixel map is never nearest-neighbour downscaled.
