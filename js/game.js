@@ -140,10 +140,10 @@ export class Game {
       const fr = ['ship_1_0', 'ship_1_1', 'ship_1_2', 'ship_1_1'][Math.floor(t * 3) % 4], im = IM[fr];
       out.push({ y: p.y, draw: () => { shadowAt(p.x, p.y + 2, 16, .2); g.drawImage(im, R(p.x - 15), R(p.y - 18 + Math.sin(t * 2.3))); } });
     } else {
-      if (TOCA && !pp && !p.skating && !(this.comp.ride)) { const pose = tocaPose('girl', p.facing || 'f', p.moving, t); if (pose) { pose.x = p.x; pose.y = p.y; out.push({ y: p.y, box: { x0: p.x - 14, y0: p.y - 64, x1: p.x + 14, y1: p.y + 2 }, toca: pose, draw: () => shadowAt(p.x, p.y, 16, .3) }); } else out.push({ y: p.y, draw: () => { } }); } else
+      if (TOCA && !pp && !p.skating && !(this.comp.ride)) { const pose = tocaPose('girl', p.facing || 'f', p.moving, t); if (pose) { pose.x = p.x; pose.y = p.y; out.push({ y: p.y, box: { x0: p.x - 12, y0: p.y - 52, x1: p.x + 12, y1: p.y + 2 }, toca: pose, draw: () => shadowAt(p.x, p.y, 16, .3) }); } else out.push({ y: p.y, draw: () => { } }); } else
       out.push({ y: p.y, box: { x0: p.x - 12, y0: p.y - 44, x1: p.x + 12, y1: p.y + 2 }, draw: () => { const fr = p.moving ? 1 + (Math.floor((p.walkT || 0) * 7) % 2) : 0; if ((!pp && this.comp.drawRider(p, this.sheet(), fr)) || this.skate.draw(p, this.sheet(), fr, !!pp)) return; shadowAt(p.x, p.y, 14, .3); drawPlayer(g, this.sheet(), p.x, p.y, p.facing || 'f', fr); } });
       const op = TOCA && !pp && tocaOwl(p.moving || (o.alt || 0) > 1 ? 'front' : 'sit', p.facing, Math.floor(t * 5) % 2 === 0);
-      if (op) { const al = o.alt || 0; op.x = o.x; op.y = o.y + 6 - al + (o.perched ? 0 : Math.sin(t * 3) * 1.5); out.push({ y: o.y + 6, toca: op, draw: () => shadowAt(o.x, o.y + 12, 8 - Math.min(3, al / 8), .2) }); } else
+      if (op) { const al = o.alt || 0; op.x = o.x; op.y = o.y + 6 - al - 22 + (o.perched ? 0 : Math.sin(t * 3) * 1.5); /* shoulder height beside the cartoon girl */ out.push({ y: o.y + 6, toca: op, draw: () => shadowAt(o.x, o.y + 12, 8 - Math.min(3, al / 8), .2) }); } else
       out.push({ y: o.y + 6, box: { x0: o.x - 10, y0: o.y - 16, x1: o.x + 10, y1: o.y + 10 }, draw: () => { const fl = Math.floor(t * 5) % 2 && p.moving; const al = o.alt || 0, fl2 = o.flap !== undefined && al > 1 ? o.flap : fl; shadowAt(o.x, o.y + 12, 8 - Math.min(3, al / 8), .2); g.drawImage(this.comp.owlImg(fl2), R(o.x - 9), R(o.y - 14 - al + (o.perched ? 0 : Math.sin(t * 3) * 1.5))); } });
     }
     return out;

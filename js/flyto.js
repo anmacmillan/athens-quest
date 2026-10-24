@@ -129,7 +129,7 @@ export class FlyTo {
   tocaOwlPose() {   // cartoon Glauka above the cartoon girl's head, wings beating
     const f = this.f; if (!f) return null; const t = this.G.time, a = f.alt, grabU = f.ph === 'grab' ? eio(clamp(f.t / f.grab)) : 1;
     const pose = tocaOwl(f.ph === 'glide' ? 'side' : 'front', f.face, Math.floor(t * (f.ph === 'glide' ? 10 : 7)) % 2 === 0); if (!pose) return null;
-    pose.x = lerp(f.o0.x, f.x, grabU); pose.y = lerp(f.o0.y + 6, f.y - a - 56, grabU); return pose;
+    pose.x = lerp(f.o0.x, f.x, grabU); pose.y = lerp(f.o0.y + 6, f.y - a - 46, grabU); return pose;
   }
   drawGirl() {   // shadow and the pixel girl dangling from Glauka's talons
     const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt;
@@ -139,7 +139,7 @@ export class FlyTo {
     drawPlayer(g, G.sheet(), f.x, f.y - a, f.ph === 'glide' ? f.face : 'f', f.ph === 'glide' ? 1 + (Math.floor(t * 6) % 2) : 0);   // legs dangle and kick
   }
   drawOwl() {   // Glauka on top, talons gripping the girl's shoulders (higher for the taller cartoon girl)
-    const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt, big = TOCA && this.tocaGirl(), sh = big ? 42 : 30, up = big ? 52 : 36;
+    const G = this.G, f = this.f; if (!f) return; const t = G.time, a = f.alt, big = TOCA && this.tocaGirl(), sh = big ? 36 : 30, up = big ? 44 : 36;
     const grabU = f.ph === 'grab' ? eio(clamp(f.t / f.grab)) : 1, ox = lerp(f.o0.x, f.x, grabU), oy = lerp(f.o0.y, f.y - up - a, grabU);
     const flap = Math.floor(t * (f.ph === 'glide' ? 12 : 8)) % 2 === 1;
     const im = G.comp.owlImg(flap); g.drawImage(im, R(ox - 9), R(oy - 14));

@@ -30,6 +30,7 @@ export async function arrivalCard(st) {
           st.feature ? el('div', { class: 'ar-look' }, st.image ? el('img', { src: st.image, alt: '' }) : null, el('p', {}, el('b', { text: 'Look for: ' }), st.feature)) : null,
           el('div', { class: 'ar-btns' }, go, later))));
     card.addEventListener('pointerdown', e => e.stopPropagation());
+    const tc = document.getElementById('titlecard'); if (tc) tc.classList.add('out');   // the card carries the place name itself
     document.body.append(card); void card.offsetWidth; card.classList.add('in');
     sfx.whoosh && sfx.whoosh(); setTimeout(() => sfx.flourish && sfx.flourish(), 250);
     if (st.host && hasClip(`intro-${st.host}-1`)) playClip(clipUrl(`intro-${st.host}-1`));

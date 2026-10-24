@@ -126,7 +126,7 @@ export class Gods {
     for (const o of this.list) if (near(o.x, o.y, 480)) {
       const tp = tocaHas(o.d.sprite) && tocaPose(o.d.sprite, o.moving ? (o.face < 0 ? 'l' : 'r') : 'f', o.moving, t);
       if (tp) { tp.x = o.x; tp.y = o.y; out.push({ y: o.y, box: { x0: o.x - 16, y0: o.y - 66, x1: o.x + 16, y1: o.y + 2 }, toca: tp, draw: () => { shadowAt(o.x, o.y, 15, .26); g.save(); g.globalCompositeOperation = 'lighter'; g.globalAlpha = .35 + .15 * Math.sin(t * 2 + o.seed); g.fillStyle = `rgb(${o.d.glow})`; g.beginPath(); g.ellipse(o.x, o.y - 30, 22, 36, 0, 0, 7); g.fill(); g.restore(); } });
-        if (o.talking) out.push({ y: o.y + .5, draw: () => { const e = IM.emote_exclaim; e && g.drawImage(e, R(o.x - 8), R(o.y - 86 + Math.sin(t * 5))); } }); continue; }
+        if (o.talking) out.push({ y: o.y + .5, draw: () => { const e = IM.emote_exclaim; e && g.drawImage(e, R(o.x - 8), R(o.y - 72 + Math.sin(t * 5))); } }); continue; }
       out.push({ y: o.y, box: { x0: o.x - 14, y0: o.y - 42, x1: o.x + 14, y1: o.y + 2 }, draw: () => this.drawGod(o, t) });
     }
     for (const f of this.fxs) out.push({ y: (f.o ? f.o.y : f.y) + (f.type === 'vines' || f.type === 'bolt' ? 2 : 40), draw: () => this.drawFx(f, t) });

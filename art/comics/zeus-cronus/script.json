@@ -1,0 +1,143 @@
+{
+ "story": "zeus-cronus",
+ "title": "The Baby and the Stone",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "cronus"
+  ],
+  [
+   "cronus"
+  ],
+  [
+   "cronus",
+   "zeus"
+  ]
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Uranus the starry Sky, a vast face made of night and stars, stretched over Gaia the Earth, a giant mountain-woman with a stern face; tiny lightning",
+   "caption": "Before the gods there were the Titans. Their father was Uranus, the Sky. He was cruel to his children.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "Cronus, a huge wild-haired Titan with burning eyes, gripping a giant curved stone sickle, leaping up at the sky in a dark storm",
+   "caption": "His son Cronus took a giant sickle and attacked his father.",
+   "speech": {
+    "speaker": "Cronus",
+    "text": "I will be king now!"
+   },
+   "sfx": "SHHHING",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Dark-red drops of blood falling from the torn night sky onto the earth like a storm of red rain, Cronus seen small below, sickle raised",
+   "caption": "Drops of the Sky's blood rained down on the Earth.",
+   "speech": null,
+   "sfx": "DRIP DRIP",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "Out of red puddles in the earth rise the Furies, three snake-haired winged women with glowing eyes, and huge armoured Giants climbing out of the ground, horror lighting",
+   "caption": "Where they fell, monsters sprang up: the Furies and the Giants.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Old Gaia, the Earth, whispering a prophecy into Cronus's ear, his eyes widening in fear, dark background with a cracked crown",
+   "caption": "Then Cronus was warned: one of your children will overthrow you.",
+   "speech": {
+    "speaker": "Gaia",
+    "text": "Your own child will take your throne."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Horror shot from below: the giant Cronus towering in a dark palace, wild bulging eyes, cheeks puffed out as he gulps something down, a small empty cradle in the foreground, his wife Rhea in the background with her hands over her face in despair",
+   "caption": "So every time his wife Rhea had a baby, he swallowed it whole.",
+   "speech": null,
+   "sfx": "GULP",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Five small glowing ghost-like silhouettes of children (Hestia, Demeter, Hera, Hades, Poseidon) waiting together in a gloomy dark cave-like space, worried but alive, faint red light",
+   "caption": "Hestia, Demeter, Hera, Hades, Poseidon. Five children, alive in their father's belly.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "A museum wall in the Prado with a dark, rough old oil painting in a gold frame showing a wild grey-haired giant with mad staring white eyes in blackness, dark red smears; a small modern girl visitor stepping back in shock",
+   "caption": "Two thousand years later the painter Goya painted it even worse: Cronus chewing.",
+   "speech": null,
+   "sfx": null,
+   "tag": "A PAINTING"
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Rhea in a dark cave handing Cronus a heavy stone wrapped in baby blankets, her face hiding a secret smile, Cronus snatching it greedily",
+   "caption": "When the sixth baby came, Rhea wrapped a stone in baby clothes.",
+   "speech": {
+    "speaker": "Rhea",
+    "text": "Here is your son."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Cronus gulping the wrapped stone down whole, throat bulging; inset, baby Zeus safe in a cave on Crete with a goat, and warriors banging their shields to hide his crying",
+   "caption": "Cronus gulped it down. Baby Zeus grew up in secret on Crete.",
+   "speech": null,
+   "sfx": "GLUNK",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Grown-up Zeus, young and strong with a thunderbolt, as Cronus doubles over and spews out a big stone and five grown gods tumbling out alive in a disgusting gush",
+   "caption": "Grown up, Zeus made him throw up the stone and all five children, alive.",
+   "speech": null,
+   "sfx": "BLAAARGH",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Zeus and his brothers and sisters standing together in lightning against the defeated Titans, Cronus chained in the dark depths below; in the corner, a round carved stone on an altar at Delphi",
+   "caption": "Together they beat the Titans. The Greeks said the stone itself was kept at Delphi.",
+   "speech": {
+    "speaker": "Zeus",
+    "text": "Now WE rule."
+   },
+   "sfx": null,
+   "tag": null
+  }
+ ],
+ "mood": "Gothic horror mood for this story: deep black shadows, a monstrous giant, terrified faces, dripping dark-red ink as the single accent colour; blood shown as falling drops and splashes, never wounds or body parts; frightening but suitable for brave children aged 9 to 11."
+}
