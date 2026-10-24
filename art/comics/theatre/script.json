@@ -1,21 +1,13 @@
 {
  "story": "theatre",
  "title": "Theatre of Dionysus",
- "notes": [
-  "p1.1: the stone theatre and columned stage building are the later stone theatre (4th century BC and after); in Euripides' day the seats and stage building were simpler. Narration does not describe the building, so no patch needed.",
-  "p1.3: art shows a modern girl with a pink-bowed owl in the ancient crowd (the player and Glauka). Narration uses it ('That's you and me').",
-  "p2.2: the 'Euripides' Hecuba, 424 BC' tag is lettered on this panel and the caption on p2.3 repeats it. Narrated over; optional patch to remove the tag.",
-  "p2.4: shows an empty theatre that is not obviously this one. Harmless.",
-  "p3.1/p3.2: the surviving marble throne dates from well after Euripides (Hellenistic/Roman); the priest in 424 BC sat on an earlier seat. The card says 'He had the best view', which stays true; narration does not date the throne. p3.1 carving (winged lions, shield) is invented; the real throne has different reliefs. Low priority.",
-  "p2.3: climax panel is deliberately short and ends on 'Then the queen weeps.'"
- ],
  "flag": "history",
  "main": true,
  "layout": "2x2",
  "pages": 3,
  "refs": [
   [
-   "glauka"
+   "dionysus"
   ],
   [
    "glauka"
@@ -28,128 +20,116 @@
   {
    "page": 1,
    "panel": 1,
-   "visual": "Wide view of the Theatre of Dionysus on the slope of the Acropolis, rows of ancient Athenians on the hillside, a stage below, sunlit",
-   "caption": "Theatre was born on this slope.",
+   "visual": "Dionysus (young, long dark curls, ivy crown, leopard skin) laughing among grapevines, a cup of wine in one hand and a smiling theatre mask in the other",
+   "caption": "Dionysus was the Greek god of wine, wild parties, and pretending to be someone else.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Theatre was born on this slope, right where you're sitting. I saw the very first plays. Well, from a tree near the top."
+   "tag": "MYTH"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Three ancient playwrights (Aeschylus, Sophocles, Euripides) shown side by side as portrait busts with name plaques, each holding a scroll",
-   "caption": "Plays by Aeschylus, Sophocles and Euripides had their first performances here.",
+   "visual": "A crowd of Athenians in spring carrying a wooden statue of Dionysus through the streets with music, ivy garlands and dancing",
+   "caption": "Every spring Athens held a huge festival for him, the City Dionysia.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Three names to know: Aeschylus, Sophocles and Euripides. Their plays had their first performances here, on this hillside. Here they are as marble busts. Back then they were writers with a new play."
+   "tag": "HISTORY"
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "Thousands of spectators sitting in rows up the hillside, cushions and sunhats, a huge crowd",
-   "caption": "Up to about sixteen thousand people watched.",
+   "visual": "A chorus of men in masks singing and dancing round an altar on a flat earth circle at the foot of a hill, people sitting on the grassy slope above",
+   "caption": "Choruses sang and danced for him on this slope. Then one singer stepped out and played a character. Theatre was born.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Up to about sixteen thousand people watched, once the stone seats were built. They packed the rows with cushions and sunhats. Find the girl with the owl beside her. That's you and me."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 4,
-   "visual": "The orchestra circle with a chorus of masked men in robes, dancing in a ring, dust rising",
-   "caption": "Everyone watched from the hillside.",
+   "visual": "The finished stone Theatre of Dionysus on the south slope of the Acropolis, rows of seats packed with about 16,000 people",
+   "caption": "Later the hillside got stone seats for about sixteen thousand people.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Everyone watched from the hillside while the chorus danced in a ring below, stamping up the dust. Look at their faces: masks, every one. Backstage, one man was getting ready."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 1,
-   "visual": "Backstage view of three actors holding large masks with painted faces, putting them on",
-   "caption": "All the actors were men in masks.",
+   "visual": "Three playwrights side by side as in a poster: Aeschylus (bald, old soldier), Sophocles (handsome, calm), Euripides (thoughtful, beard, scroll)",
+   "caption": "Three great writers of tragedy had their plays first performed here: Aeschylus, Sophocles and Euripides.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "All the actors were men in masks. Backstage they pulled on painted faces: a grin, a scowl, a scream. Put one on and you were a king, a slave or a god."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 2,
-   "visual": "An actor in a queen's mask (woman's face, tragic expression) and a long robe, but with the broad shoulders of a man",
-   "caption": "Even when they played queens.",
+   "visual": "Judges dropping voting tablets into an urn while three playwrights wait nervously; one is crowned with ivy",
+   "caption": "It was a contest. Judges voted, and the winner got an ivy crown.",
    "speech": null,
    "sfx": null,
-   "tag": "Euripides' Hecuba, 424 BC",
-   "narr": "Even when they played queens. This one is Hecuba, queen of Troy. Look closely: a woman's face, a long robe and a man's big arms. The audience saw only the queen."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 3,
-   "visual": "Close-up of the Queen Hecuba mask with a tear painted on it, dramatic stage lighting",
-   "caption": "Euripides' Hecuba was performed here around 424 BC.",
-   "speech": null,
+   "visual": "Backstage: a bearded male actor holding up a sad woman's mask, about to put it on, wearing a long queen's robe",
+   "caption": "All the actors were men. Even when they played queens, they wore masks.",
+   "speech": {
+    "speaker": "Actor",
+    "text": "Today I'm a queen."
+   },
    "sfx": null,
-   "tag": null,
-   "narr": "Euripides' Hecuba was performed here around 424 BC. Troy has fallen. Her children are taken from her, one by one. Then the queen weeps."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 4,
-   "visual": "The empty stage with a clear sign of no women: a crossed-out ladies silhouette in a thought bubble over a puzzled Glauka",
-   "caption": "No women stood on this stage.",
-   "speech": {
-    "speaker": "Glauka",
-    "text": "Not one."
-   },
+   "visual": "On stage, the masked actor playing Queen Hecuba of Troy, kneeling and grieving, burning city painted behind; the audience weeping",
+   "caption": "In Euripides' play Hecuba, a man in a mask played the grieving Queen of Troy, and thousands cried.",
+   "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "No women stood on this stage. Every queen, every mother, every goddess was a man in a mask. The saddest woman in Troy was played by a man."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 1,
-   "visual": "The front row of the theatre with marble thrones; the marble throne of the priest of Dionysus in the middle, richly carved",
-   "caption": "In the front row, in the middle, is the marble throne of the priest of Dionysus.",
+   "visual": "The front row of marble seats with names carved into them, important men in fine robes sitting in them",
+   "caption": "The front row was marble seats for VIPs.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Now look at the front row, in the middle. That's the marble throne of the priest of Dionysus, the god this whole theatre was built for."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 2,
-   "visual": "The priest of Dionysus in a rich robe and a wreath sitting comfortably on his throne with a cushion and a drink",
-   "caption": "He had the best view in the theatre.",
+   "visual": "Close-up of the grand central marble throne with carved lion's paws for feet and decorations, a priest of Dionysus in robes sitting on it",
+   "caption": "The best seat, right in the middle, was for the priest of Dionysus. Look: lion's paws for feet.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "He had the best view in the theatre, close enough to see every mask. Look at him: a soft cushion and a cup in his hand."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 3,
-   "visual": "Modern view of the same throne in ruins on a sunny day with little tourists posing next to it",
-   "caption": "It is still there.",
+   "visual": "Today: the ruined theatre on the slope, tourists among the marble thrones, the Acropolis above",
+   "caption": "The theatre is still here, and so are the thrones.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "It is still there, cracked and worn, in the same front row. Tourists stop to photograph it every day. Now you know who sat in it."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 4,
-   "visual": "Glauka the owl sitting on the arm of the marble throne and facing us proudly",
-   "caption": "Take your seat.",
+   "visual": "Two girls sitting in the front row next to the priest's throne, Glauka the owl perched on its arm",
+   "caption": "Find the priest's throne. Best view in the house.",
    "speech": {
     "speaker": "Glauka",
-    "text": "The best view in the house."
+    "text": "Try not to cry at the play."
    },
    "sfx": null,
-   "tag": null,
-   "narr": "That's history: it happened, and here's how we know. Euripides' Hecuba still survives, and the priest's seat is still in the front row. Climb higher, look down at the stage, and picture the queen."
+   "tag": null
   }
  ]
 }

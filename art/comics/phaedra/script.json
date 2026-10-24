@@ -4,24 +4,30 @@
  "flag": "myth",
  "main": false,
  "layout": "2x2",
- "pages": 2,
+ "pages": 3,
  "refs": [
   [
+   "theseus",
+   "hippolytus",
+   "phaedra"
+  ],
+  [
+   "aphrodite",
    "phaedra",
    "hippolytus"
   ],
   [
-   "hippolytus",
    "theseus",
-   "phaedra"
+   "hippolytus",
+   "artemis"
   ]
  ],
  "panels": [
   {
    "page": 1,
    "panel": 1,
-   "visual": "Prince Hippolytus hunting in the forest with a bow, laughing, a statue of Artemis in the trees; in the distance a small statue of Aphrodite turned away",
-   "caption": "Hippolytus loved hunting and the goddess Artemis. He had no time for Aphrodite.",
+   "visual": "King Theseus of Athens (older now, short grey-streaked beard, crown, cloak) with his arm round his grown-up son Hippolytus (young, athletic hunter with a bow and two hounds) in front of the palace; an inset portrait of a fierce Amazon queen with a shield",
+   "caption": "Years after the Minotaur, Theseus was king of Athens. His grown-up son Hippolytus was the son of an Amazon queen.",
    "speech": null,
    "sfx": null,
    "tag": "MYTH"
@@ -29,8 +35,8 @@
   {
    "page": 1,
    "panel": 2,
-   "visual": "Aphrodite (glowing, beautiful, cold) smiling cruelly in the clouds and pointing her finger at Phaedra, a pink glow curse",
-   "caption": "Aphrodite took her revenge.",
+   "visual": "The wedding of Theseus and Phaedra (young Cretan woman, long dark wavy hair, thin gold crown, red Minoan dress); Hippolytus standing politely to one side",
+   "caption": "Theseus married again: Phaedra, Ariadne's little sister. So Phaedra became Hippolytus's stepmother.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -38,8 +44,8 @@
   {
    "page": 1,
    "panel": 3,
-   "visual": "Phaedra sitting alone by a window, troubled, a love-struck face, a sad shadow",
-   "caption": "She made Phaedra fall desperately in love with her own stepson.",
+   "visual": "Hippolytus hunting deer in a moonlit forest with his hounds, and beside him the goddess Artemis (young huntress, short tunic, silver bow, crescent moon on her brow) smiling approvingly",
+   "caption": "Hippolytus loved hunting. He worshipped Artemis, goddess of the hunt, who wanted nothing to do with love.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -47,11 +53,11 @@
   {
    "page": 1,
    "panel": 4,
-   "visual": "Hippolytus turning away from Phaedra in disgust, Phaedra stunned, hurt, a dark tragedy mood",
-   "caption": "Hippolytus was disgusted and refused her.",
+   "visual": "Hippolytus walking straight past a rose-covered statue of Aphrodite without a glance; the real goddess Aphrodite (golden hair, pink gown, doves) appearing behind the statue, red-faced with jealousy, fists clenched",
+   "caption": "He ignored Aphrodite, goddess of love. The two goddesses were rivals, and Aphrodite was furious.",
    "speech": {
     "speaker": "Hippolytus",
-    "text": "Never."
+    "text": "Love? A waste of time."
    },
    "sfx": null,
    "tag": null
@@ -59,38 +65,87 @@
   {
    "page": 2,
    "panel": 1,
-   "visual": "A letter on a table, Phaedra's hand with a quill, the dark window; she is gone, only a fluttering curtain, a heavy tragic mood, nothing violent shown",
-   "caption": "Phaedra left a letter blaming him for something he had not done.",
-   "speech": null,
+   "visual": "Aphrodite on a cloud shooting a glowing pink arrow into Phaedra's heart while Phaedra, in the palace, stares at Hippolytus passing in the courtyard",
+   "caption": "To punish him, Aphrodite made Phaedra fall madly in love with her own stepson.",
+   "speech": {
+    "speaker": "Aphrodite",
+    "text": "Let's see him ignore THIS."
+   },
    "sfx": null,
    "tag": null
   },
   {
    "page": 2,
    "panel": 2,
-   "visual": "Theseus reading the letter with a stormy face, raising a fist to the sea, waves crashing",
-   "caption": "Theseus believed the letter and cursed his son with a wish Poseidon had promised him.",
-   "speech": null,
+   "visual": "Phaedra's old nurse whispering the secret to Hippolytus; Hippolytus recoiling in disgust, hand raised",
+   "caption": "When Hippolytus found out, he was disgusted and refused.",
+   "speech": {
+    "speaker": "Hippolytus",
+    "text": "Never! She is my father's wife!"
+   },
    "sfx": null,
    "tag": null
   },
   {
    "page": 2,
    "panel": 3,
-   "visual": "On a rocky shore a monstrous bull bursts out of a towering wave in front of a young prince's chariot: horses rearing in panic, spray and speed lines, no gore",
-   "caption": "A gift from the sea.",
+   "visual": "Phaedra alone at night writing a letter by the light of an oil lamp, crying, ashamed and terrified",
+   "caption": "Phaedra was ashamed and terrified of what he might tell. She wrote a letter with a lie about him in it.",
    "speech": null,
-   "sfx": "DOGOOON",
+   "sfx": null,
    "tag": null
   },
   {
    "page": 2,
    "panel": 4,
-   "visual": "Theseus kneeling by the dying Hippolytus with Artemis appearing in silver light behind them, father and son forgiving each other, soft end",
-   "caption": "Artemis told Theseus the truth. Theseus had learned the truth too late, again.",
+   "visual": "Theseus coming home to the palace to find servants weeping, an overturned stool and a fallen red veil on the floor, the letter in his shaking hands; no body shown",
+   "caption": "Then she hanged herself. Theseus came home and found the letter.",
    "speech": null,
+   "sfx": "!!",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Theseus raging on the seashore with the letter, shouting at the stormy sea, the giant face of the sea god Poseidon rising in the waves",
+   "caption": "Theseus believed the lie. Poseidon had once promised him one wish.",
+   "speech": {
+    "speaker": "Theseus",
+    "text": "Poseidon! Destroy my son!"
+   },
    "sfx": null,
    "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Hippolytus driving a two-horse chariot along a rocky shore as a monstrous bull bursts out of a giant wave; the horses rear and bolt; then the chariot smashing on the rocks, red splashes, Hippolytus tangled in the reins",
+   "caption": "A monstrous bull burst out of the waves. The horses bolted and dragged Hippolytus over the rocks.",
+   "speech": null,
+   "sfx": "ROOOAR",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Theseus kneeling and holding his broken, dying son; the goddess Artemis glowing silver above them, pointing at the torn letter",
+   "caption": "Artemis appeared and told Theseus the truth. Father and son forgave each other. Then Hippolytus died.",
+   "speech": {
+    "speaker": "Artemis",
+    "text": "Your son did nothing wrong."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "The Theatre of Dionysus in Athens in 428 BC: a packed audience on the stone seats watching masked actors on stage; inset, an old poster from Paris 1677 reading 'Phèdre'",
+   "caption": "Euripides' play Hippolytus was first performed in this theatre in 428 BC and won first prize. In Paris, Racine retold it as Phèdre.",
+   "speech": null,
+   "sfx": null,
+   "tag": "HISTORY"
   }
- ]
+ ],
+ "mood": "Tragic mood for this story: warm daylight turning to stormy grey and night, dark-red ink as the single accent colour; the crash shown with blood as splashes and drips, never wounds; suitable for children aged 9 to 11."
 }

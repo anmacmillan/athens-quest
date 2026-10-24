@@ -4,18 +4,26 @@
  "flag": "legend",
  "main": false,
  "layout": "2x2",
- "pages": 1,
+ "pages": 3,
  "refs": [
   [
    "zeno"
+  ],
+  [
+   "zeno"
+  ],
+  [
+   "zeno",
+   "marcus",
+   "glauka"
   ]
  ],
  "panels": [
   {
    "page": 1,
    "panel": 1,
-   "visual": "A Cypriot merchant ship with purple dye barrels sinking in a storm, Zeno clinging to a plank",
-   "caption": "Zeno came from Cyprus as a merchant with a cargo of purple dye. His ship was wrecked.",
+   "visual": "Zeno (young lean merchant, sunburnt, short dark beard) on the deck of a merchant ship from Cyprus loaded with tall jars of precious purple dye, sunny sea",
+   "caption": "About 312 BC, a merchant from Cyprus called Zeno sailed for Athens with a cargo of precious purple dye.",
    "speech": null,
    "sfx": null,
    "tag": "LEGEND?"
@@ -23,17 +31,17 @@
   {
    "page": 1,
    "panel": 2,
-   "visual": "Zeno in a bookshop in Athens reading a scroll, a bookseller pointing out of the door at a passing philosopher",
-   "caption": "In a bookshop in Athens he asked where he could find men like Socrates.",
+   "visual": "A storm smashing the ship on rocks near the coast, purple dye spilling into the waves, Zeno clinging to a plank",
+   "caption": "Near Athens his ship was wrecked. He lost everything.",
    "speech": null,
-   "sfx": null,
+   "sfx": "KRRAK",
    "tag": null
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "The Painted Porch (Stoa Poikile): a long colonnade covered with battle paintings, Zeno teaching a crowd",
-   "caption": "He taught in the Painted Porch. His followers were called Stoics, after the stoa.",
+   "visual": "Zeno, soaking wet and penniless, wandering into a small bookshop full of scroll racks in Athens; the bookseller looking up",
+   "caption": "Wet and penniless, he wandered into a bookshop.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -41,14 +49,98 @@
   {
    "page": 1,
    "panel": 4,
-   "visual": "The slave Epictetus with his leg twisted by his master, calm face, a stern master, a sweat drop; no gore",
-   "caption": "A Stoic called Epictetus, born a slave, said calmly: 'You will break it.' Then: 'Did I not tell you?'",
+   "visual": "Zeno sitting on a stool reading a scroll, eyes shining, a little thought bubble of barefoot Socrates asking questions in the Agora",
+   "caption": "He read about Socrates, who had died a hundred years before.",
    "speech": {
-    "speaker": "Epictetus",
-    "text": "You will break it."
+    "speaker": "Zeno",
+    "text": "Where can I find a man like this?"
    },
    "sfx": null,
    "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "The bookseller pointing out of the shop door at a scruffy, cheerful philosopher with a staff and a ragged cloak, barefoot, walking past in the street",
+   "caption": "The bookseller pointed at a scruffy philosopher walking past: Crates.",
+   "speech": {
+    "speaker": "Bookseller",
+    "text": "Follow HIM!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Zeno blushing as he carries a big pot of lentil soup through a busy market; Crates smashing the pot with his staff and soup running down Zeno's legs, people laughing",
+   "caption": "Zeno became Crates's pupil. To cure his shyness, Crates made him carry soup through the market, then smashed the pot.",
+   "speech": {
+    "speaker": "Crates",
+    "text": "Why run? Nothing terrible has happened!"
+   },
+   "sfx": "CRASH",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Years later: Zeno, now older, teaching a crowd of students in a long covered walkway with columns, its back wall covered in huge colourful paintings of a battle with soldiers and ships",
+   "caption": "Years later Zeno taught in the Painted Stoa, a long covered walkway on the edge of the Agora, painted with battle scenes.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Zeno's students proudly gathered between the columns of the Painted Stoa, waving, a banner-like caption",
+   "caption": "His followers were named after the place: Stoics.",
+   "speech": {
+    "speaker": "Students",
+    "text": "We're Stoics!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "Zeno calmly pointing up at a storm cloud he cannot stop, and then at his own calm heart",
+   "caption": "Stoics said: you can't control what happens to you. You CAN control how you respond.",
+   "speech": {
+    "speaker": "Zeno",
+    "text": "My shipwreck brought me here."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "A modern girl at a picnic as rain suddenly pours down; first she frowns, then she laughs and dances in the rain",
+   "caption": "Rain on your picnic? You can't stop the rain. Sulking or dancing: that part is up to you.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Marcus Aurelius, Roman emperor (curly beard, laurel wreath, toga), writing in a notebook by lamplight in an army tent at night",
+   "caption": "Four hundred years later a Roman emperor, Marcus Aurelius, lived by these ideas. Find him at the Tower of the Winds.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Today: low excavated stone foundations of the Painted Stoa seen from behind a railing beside a modern street with cafes, a metro train passing, Glauka the owl perched on the railing pointing down",
+   "caption": "The Painted Stoa's ruins were dug up beside Adrianou Street. You can look down at them from the pavement.",
+   "speech": null,
+   "sfx": null,
+   "tag": "HISTORY"
   }
  ]
 }

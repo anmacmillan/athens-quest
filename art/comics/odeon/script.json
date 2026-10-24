@@ -4,8 +4,12 @@
  "flag": "history",
  "main": false,
  "layout": "2x2",
- "pages": 1,
+ "pages": 3,
  "refs": [
+  [
+   "glauka"
+  ],
+  [],
   [
    "glauka"
   ]
@@ -14,26 +18,26 @@
   {
    "page": 1,
    "panel": 1,
-   "visual": "The Odeon of Herodes Atticus: arched stone facade and curved rows, a summer-night concert with musicians and lanterns",
-   "caption": "A music hall for about five thousand people, built around AD 161.",
+   "visual": "Herodes Atticus (Greek, curly beard, fine robes, rings) in a rich villa surrounded by gold, about AD 160",
+   "caption": "Around AD 160 the richest man in Greece was an Athenian called Herodes Atticus.",
    "speech": null,
    "sfx": null,
-   "tag": null
+   "tag": "HISTORY"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Herodes Atticus (rich Greek in fine robes, beard) standing in front of his building proudly, a coin purse",
-   "caption": "Herodes Atticus was the richest man in Greece.",
+   "visual": "His father kneeling in the family house beside a broken floor, staring at a buried pot overflowing with gold coins",
+   "caption": "The family fortune began, they said, when his father found buried treasure in their house.",
    "speech": null,
    "sfx": null,
-   "tag": null
+   "tag": "LEGEND?"
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "Herodes by a grave wreath with a sad face, the half-built Odeon behind him, dusk",
-   "caption": "He built it in memory of his wife Regilla. She died while pregnant.",
+   "visual": "Herodes marrying Regilla, a rich Roman noblewoman",
+   "caption": "He married Regilla, a rich Roman lady.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -41,9 +45,87 @@
   {
    "page": 1,
    "panel": 4,
-   "visual": "A Roman court with magistrates and Herodes standing calmly while Regilla's brother points at him accusingly",
-   "caption": "Her brother accused him of ordering it. He was tried in Rome and let off.",
+   "visual": "A freedman in a tunic lashing out with a kick at Regilla, who is expecting a baby; shown from behind, no injuries",
+   "caption": "When she was expecting a baby, one of his freedmen kicked her in the stomach, and she died.",
    "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Regilla's brother pointing furiously at Herodes in a Roman law court",
+   "caption": "Her brother accused Herodes of ordering it.",
+   "speech": {
+    "speaker": "Brother",
+    "text": "Murderer!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Herodes on trial in Rome before the emperor on a high seat; then walking free",
+   "caption": "He was tried in Rome, and let off.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Herodes in black mourning clothes showing builders a plan for a great music hall",
+   "caption": "Herodes said he was heartbroken. He built this music hall in Regilla's memory.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "The finished Odeon with a cedar-wood roof, musicians on stage and about five thousand people on the curved seats",
+   "caption": "It held about five thousand people, under a roof of cedar wood.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "AD 267: raiders burning Athens, the Odeon's wooden roof in flames",
+   "caption": "About a hundred years later, raiders burnt Athens. The roof went up in flames.",
+   "speech": null,
+   "sfx": "FWOOSH",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "The roofless ruin covered in weeds under the Acropolis for centuries",
+   "caption": "For centuries it stood as a ruin.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Today: the rebuilt marble seats full of people at a summer night concert, lights on the stage",
+   "caption": "In the 1950s the seats were rebuilt in marble. Today it is full of concerts again on summer nights.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Glauka the owl counting the rows of round arches in the tall stone wall",
+   "caption": "Count the rows of round arches in the big wall: a Roman idea.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "One, two, three..."
+   },
    "sfx": null,
    "tag": null
   }

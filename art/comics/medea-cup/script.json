@@ -4,71 +4,134 @@
  "flag": "myth",
  "main": false,
  "layout": "2x2",
- "pages": 1,
+ "pages": 3,
  "refs": [
   [
    "aegeus",
-   "medea",
-   "theseus"
+   "medea"
+  ],
+  [
+   "theseus",
+   "aegeus",
+   "medea"
   ],
   [
    "aegeus",
-   "medea",
-   "theseus"
+   "theseus",
+   "medea"
   ]
  ],
  "panels": [
   {
    "page": 1,
    "panel": 1,
-   "visual": "A young Theseus lifting a huge heavy rock to take the sword and sandals hidden under it, muscles straining, an old palace on the Acropolis behind, a hill-top",
-   "caption": "Aegeus had left a sword and a pair of sandals under a heavy rock.",
+   "visual": "Long before the temples: an old palace on top of the Acropolis rock; old King Aegeus (white beard, crown) on its steps",
+   "caption": "Long before the temples, a palace stood on this rock. Old King Aegeus lived there.",
    "speech": null,
    "sfx": null,
-   "tag": "MYTH",
-   "narr": "Far from Athens, a boy heaves up a rock his father left for him. Under it: a sword, sandals, and an order. Come to Athens."
+   "tag": "MYTH"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Theseus setting off along a dusty road to Athens, sword on his hip, defeating a lurking bandit in a small inset",
-   "caption": "Theseus walked to Athens. On the road he met villains. That is a different story.",
+   "visual": "Medea (long black hair, emerald dress and cloak, a soft green glow round her hands) arriving at the palace",
+   "caption": "His new wife was Medea, a sorceress on the run from Corinth, where she had killed her own children.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Theseus walks, and beats every bandit on the road. By the time he reaches Athens, everyone knows his name. Everyone except his father."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "A palace feast: Theseus at the table taking up his knife, a golden cup beside his plate; Medea in the background, hooded, glaring with glowing eyes",
-   "caption": "Medea persuaded Aegeus to poison the stranger's cup.",
+   "visual": "Medea holding a little boy and gazing greedily at the throne",
+   "caption": "Now she had a little son with Aegeus, and she wanted him to be king.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "But Medea knows. She wants her own little son to be king. So she tells the old king this famous stranger has come to steal his throne, and hands him the poison."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 4,
-   "visual": "King Aegeus' hand slaps the golden cup away from the young man's lips; green poison arcs through the air with a tiny skull shape; Medea flees",
-   "caption": "Aegeus knew that sword. He knocked the cup away.",
+   "visual": "Years earlier, far away: Aegeus hiding a sword and a pair of sandals under a huge rock",
+   "caption": "But years before, far away, Aegeus had a secret son. He hid a sword and sandals under a huge rock for him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "A sixteen-year-old Theseus (curly hair) heaving the huge rock up and finding the sword and sandals",
+   "caption": "That son was Theseus. At sixteen he lifted the rock.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Theseus on the road to Athens beating a bandit who has a giant bed",
+   "caption": "He walked to Athens, beating every bandit on the road.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Theseus arriving at the palace to cheers; Aegeus suspicious; Medea whispering in the king's ear",
+   "caption": "He arrived famous, but told no one who his father was. Medea whispered: he has come for your throne.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Medea pouring green poison into a golden cup and handing it to the frightened old king",
+   "caption": "She mixed a cup of poison. Frightened, the old king agreed.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "At a feast, Theseus drawing his sword to cut his meat, the hilt clearly visible",
+   "caption": "At the feast, Theseus drew his sword to cut his meat, so his father would see it.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Aegeus recognising the sword and knocking the poisoned cup flying, green poison hissing on the floor",
+   "caption": "Aegeus knew that sword.",
    "speech": {
     "speaker": "Aegeus",
     "text": "My son!"
    },
-   "sfx": "KSHHH",
-   "tag": null,
-   "narr": "Theseus draws his sword to cut his meat, on purpose, so his father will see it. Aegeus knows that sword. Medea grabs her boy and runs. That's a myth: Plutarch tells it.",
-   "voice_speech": {
-    "speaker": "aegeus",
-    "text": "Not that cup! My son. My son!"
-   }
+   "sfx": "KLANG",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Medea grabbing her little boy and fleeing in a chariot pulled by two winged dragons",
+   "caption": "Medea snatched her little boy and fled from Athens.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Aegeus hugging Theseus; Glauka the owl pointing towards the edge of the rock and the sea beyond",
+   "caption": "Father and son at last. You'll meet this old king again, on the edge of this rock, watching for sails.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
   }
- ],
- "narr_voice": "glauka",
- "notes": [
-  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated",
-  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
  ]
 }

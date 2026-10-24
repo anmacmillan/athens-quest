@@ -9,143 +9,123 @@
   [
    "glauka"
   ],
-  [
-   "glauka"
-  ],
+  [],
   [
    "glauka"
   ]
- ],
- "notes": [
-  "p1.1 and p1.2 run in reverse order (conclusion before set-up). Narration on p1.1 opens on Glauka and the Ottoman guards; p1.2 then carries 'two thousand years'.",
-  "p1.2: the church and mosque insets are drawn as separate domed buildings; really the Parthenon itself was converted. Narration says the same building changed.",
-  "p3.4: the caption 'Remember: an explosion, not time.' breaks the voice bible ('never says Remember:'). It is lettered; narration paraphrases without it. Patch to 'An explosion, not time.' if regenerating.",
-  "p2.1: a field cannon is drawn rather than a mortar. Minor."
  ],
  "panels": [
   {
    "page": 1,
    "panel": 1,
-   "visual": "The Parthenon as a mosque with a minaret, Ottoman guards on the Acropolis walls, calm blue sky, Glauka on a column",
-   "caption": "It was a temple, then a church, then a mosque.",
+   "visual": "The Parthenon gleaming new with painted sculptures, 432 BC, Athenians carrying offerings up to it",
+   "caption": "The Parthenon was built as a temple to Athena, finished in 432 BC.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Hoo. I've sat on these columns a very long time. In my day this was a temple. Later it was a church, then a mosque, with a minaret on the side."
+   "tag": "HISTORY"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "The building complete under its roof across the centuries, three small inset pictures: a temple with a golden statue, a church with a cross, a mosque with a crescent",
-   "caption": "For two thousand years the Parthenon kept its roof.",
+   "visual": "The Parthenon around AD 600 with a bell, Christian priests and a cross on top, candles inside",
+   "caption": "About a thousand years later it became a Christian church.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Gods changed. Prayers changed. The building didn't. For two thousand years the Parthenon stood almost whole, roof and all."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 3,
-   "visual": "Venetian ships and an army camp under General Morosini at the foot of the Acropolis, cannons smoking, banners with winged lions",
-   "caption": "In 1687 a Venetian army under Morosini besieged the Acropolis.",
+   "visual": "The Parthenon around 1460 with a slender minaret tower rising from one corner, Ottoman Turks in turbans praying inside",
+   "caption": "When the Ottoman Turks took Athens, it became a mosque. For two thousand years it still had its roof.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Then, in 1687, a Venetian army under General Morosini besieged the Acropolis: they surrounded it and attacked. Ottoman Turks held the top. The Venetians wanted it."
+   "tag": null
   },
   {
    "page": 1,
    "panel": 4,
-   "visual": "Inside the Parthenon, Ottoman soldiers stacking barrels of gunpowder under the old roof, a sweat drop",
-   "caption": "The Ottomans stored gunpowder inside the Parthenon.",
+   "visual": "1687: Venetian soldiers in tricorn hats and armour dragging cannons up the hill opposite the Acropolis, their general Morosini (grey moustache) pointing",
+   "caption": "In 1687 a Venetian army under General Morosini attacked the Turks on the Acropolis.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Ottoman soldiers needed a strong place for their gunpowder, so they stored it inside the Parthenon, barrel after barrel. One spark was all it would take."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 1,
-   "visual": "A big mortar firing from a hill, a flaming shell in the air over Athens, long curved speed lines",
-   "caption": "Morosini's guns fired on the Acropolis.",
+   "visual": "Ottoman soldiers rolling barrels marked with a gunpowder symbol into the dark Parthenon, women and children sheltering inside too",
+   "caption": "The Turks stored their gunpowder in the Parthenon. They thought it was the strongest building there. Families sheltered inside too.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Night, 26 September 1687: a Venetian mortar firing, a glowing shell arcing across the dark sky towards the Acropolis",
+   "caption": "On the night of 26 September 1687, a Venetian shell flew over the walls...",
    "speech": null,
    "sfx": "BOOM",
-   "tag": null,
-   "narr": "Morosini's guns fired on the Acropolis. Shell after shell went up, and came down on rock and wall. Then one came down somewhere else."
-  },
-  {
-   "page": 2,
-   "panel": 2,
-   "visual": "Close-up of a mortar shell dropping through a hole in the roof of the Parthenon, the barrels of gunpowder below, tiny white dots of fear",
-   "caption": "A mortar shell came through the roof.",
-   "speech": null,
-   "sfx": "SHUUUU",
-   "tag": null,
-   "narr": "A mortar shell came through the roof. Straight down, into the room full of barrels."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 3,
-   "visual": "Black silhouette of the Parthenon with the middle blowing apart in white-hot light, columns flying, smoke; shown wide and vivid",
-   "caption": "26 September 1687.",
+   "visual": "The shell crashing through the Parthenon's roof among the gunpowder barrels, sparks flying",
+   "caption": "...and fell through the roof, right onto the gunpowder.",
    "speech": null,
-   "sfx": "DOOOM",
-   "tag": null,
-   "narr": "The twenty-sixth of September, 1687.",
-   "direction": "Say the date, then silence for the DOOOM."
+   "sfx": null,
+   "tag": null
   },
   {
    "page": 2,
    "panel": 4,
-   "visual": "Smoke clearing over the half-ruined Parthenon: broken columns in rubble, a tiny Glauka looking down",
-   "caption": "About three hundred people died.",
+   "visual": "A gigantic explosion blowing the middle of the Parthenon apart, columns and roof flying, orange fire against the night",
+   "caption": "The middle of the Parthenon blew apart.",
    "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "(pause) When the smoke cleared, the middle of the Parthenon was gone. About three hundred people died."
+   "sfx": "KA-BOOOOM",
+   "tag": null
   },
   {
    "page": 3,
    "panel": 1,
-   "visual": "The ruined Parthenon at dawn, with empty spaces where the middle was, Glauka perched on a broken column",
-   "caption": "It is a ruin because of an explosion, not old age.",
+   "visual": "Smoke over the broken Parthenon at dawn, the long sides with a huge gap in the middle, rubble everywhere",
+   "caption": "About three hundred people died. The roof, many columns and carvings were gone.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "In the morning I came back to my column. Two thousand years of standing, undone by one shell. It is a ruin because of an explosion, not old age."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 2,
-   "visual": "A big close-up of the broken column drums scattered, hand-drawn arrows showing the missing middle",
-   "caption": "The middle of the building blew apart.",
+   "visual": "Morosini's soldiers trying to lower carved horse statues from the pediment with ropes; the ropes snap and the statues smash on the ground",
+   "caption": "Morosini tried to take statues home as trophies. His men dropped them and they smashed.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Look where the arrows point. The middle of the building blew apart, and columns from both long sides came down in pieces."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 3,
-   "visual": "Modern tourists with cameras climbing the Acropolis steps with a tiny girl-and-owl pointing up",
-   "caption": "Today we visit what is left.",
+   "visual": "Around 1801: Lord Elgin's workmen sawing carved marble panels off the ruin and crating them up for a ship",
+   "caption": "More than a hundred years later, Lord Elgin's men took many of the carvings to London.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "Today we visit what is left. Crowds climb these steps every day to see a building that was blown up, not worn down."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 4,
-   "visual": "Glauka the owl flying right at us with a cute stern face, caption box beside her",
-   "caption": "Remember: an explosion, not time.",
+   "visual": "Today: the Parthenon covered in scaffolding with cranes and restorers, the gap in the side clearly visible, Glauka on a column",
+   "caption": "Look at the long sides: you can see the gap. It's a ruin because of an explosion, not old age.",
    "speech": {
     "speaker": "Glauka",
-    "text": "Gunpowder stored in a temple, always a bad idea."
+    "text": "Gunpowder in a temple. Bad idea."
    },
    "sfx": null,
-   "tag": null,
-   "narr": "That's history: it happened, and the proof is the gap in the middle of each long side. An explosion, not time. Go and find it."
+   "tag": null
   }
- ]
+ ],
+ "mood": "Dramatic war mood: smoke, fire, night sky lit orange, one orange-red accent colour; no gore; suitable for children aged 9 to 11."
 }

@@ -4,8 +4,16 @@
  "flag": "legend",
  "main": false,
  "layout": "2x2",
- "pages": 1,
+ "pages": 3,
  "refs": [
+  [
+   "plato",
+   "socrates"
+  ],
+  [
+   "plato",
+   "aristotle"
+  ],
   [
    "plato"
   ]
@@ -14,17 +22,20 @@
   {
    "page": 1,
    "panel": 1,
-   "visual": "Plato teaching students in a shady olive grove with a sacred shrine, scrolls and a drawing in the dust",
-   "caption": "Around 387 BC Plato started a school in a grove sacred to the hero Akademos. So it was called the Academy.",
-   "speech": null,
+   "visual": "Young Plato, a broad-shouldered wrestler, pinning an opponent in a wrestling school, crowd cheering",
+   "caption": "Plato was born in Athens around 428 BC, into a rich family. They say he was a champion wrestler.",
+   "speech": {
+    "speaker": "Plato",
+    "text": "Platon means broad!"
+   },
    "sfx": null,
    "tag": "LEGEND?"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "A modern city park with ruins and a tall apartment building behind, Glauka perched on a broken column",
-   "caption": "Every academy in the world since then is named after that grove.",
+   "visual": "Plato in the Agora listening to barefoot old Socrates, then throwing his own scrolls of poems into a fire",
+   "caption": "Then he met Socrates, and burned the plays he had been writing so he could follow him.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -32,23 +43,95 @@
   {
    "page": 1,
    "panel": 3,
-   "visual": "Plato's bare shoulders in a wrestling match in a gym, sand, a crowd, comic scene with 'Platon' meaning broad",
-   "caption": "Platon means broad. Some say it came from his shoulders.",
-   "speech": {
-    "speaker": "Plato",
-    "text": "Broad. Like me."
-   },
+   "visual": "Plato weeping as Socrates drinks the hemlock in prison, friends around",
+   "caption": "When Athens put Socrates to death in 399 BC, Plato was heartbroken, and left the city for years.",
+   "speech": null,
    "sfx": null,
    "tag": null
   },
   {
    "page": 1,
    "panel": 4,
-   "visual": "A sign above a school door reading LET NO ONE IGNORANT OF GEOMETRY ENTER, a student reading it, a question mark and a clock showing centuries",
-   "caption": "Nobody mentioned that sign until centuries later.",
+   "visual": "Plato walking out of the city gate along a road to a green grove of olive trees",
+   "caption": "When he came back, he walked out of the city to an olive grove sacred to a hero called Akademos.",
    "speech": null,
    "sfx": null,
-   "tag": "LATE STORY"
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Plato teaching students under olive trees, drawing triangles and circles in the sand with a stick",
+   "caption": "Around 387 BC he started a school there. People called it the Academy, after the grove.",
+   "speech": null,
+   "sfx": null,
+   "tag": "HISTORY"
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "A neat young student with rings (Aristotle) arguing with Plato, both smiling",
+   "caption": "Bright young people came from all over Greece. One student, Aristotle, stayed twenty years.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Two young women among the students, one wearing a man's cloak, listening closely",
+   "caption": "Two women, Axiothea and Lasthenia, studied there too. One old story says Axiothea dressed like a man.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "A stone sign over a doorway reading LET NO ONE IGNORANT OF GEOMETRY ENTER, a big question mark beside it",
+   "caption": "A story says a sign over the door read this. Nobody mentions it until centuries later.",
+   "speech": null,
+   "sfx": null,
+   "tag": "LEGEND?"
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "The school under the olive trees over many generations, teachers grey-haired and new students arriving",
+   "caption": "The school went on for hundreds of years after Plato died.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "AD 529: a Byzantine emperor (Justinian, crown, purple robes) signing a decree; philosophers packing up scrolls",
+   "caption": "In AD 529 the emperor Justinian banned pagans from teaching. The old schools closed.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Today: a modern city park with olive trees and low stone ruins behind fences, apartment blocks around, children playing",
+   "caption": "Today the Academy is a park in a busy neighbourhood, two kilometres from the Agora. Only low ruins are left.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A modern school building with a sign ACADEMY, Glauka the owl perched on the sign",
+   "caption": "Every academy in the world is named after this olive grove.",
+   "speech": {
+    "speaker": "Glauka",
+    "text": "Even yours."
+   },
+   "sfx": null,
+   "tag": null
   }
  ]
 }
