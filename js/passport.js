@@ -23,6 +23,7 @@ export class Passport {
       this.byStory[st.story] = st;
     }
     this.stamps = this.data.stamps.filter(s => s.spot);
+    this.pre = this.stamps.filter(s => s.host).map(s => { const i = new Image(); i.src = `art/web/portraits/${s.host}_neutral.jpeg`; return i; });   // arrival-card portraits ready before she arrives
   }
   ofStory(id) { return this.byStory[id] || null; }
   done(st) { return this.G.collected(st.story); }

@@ -36,12 +36,14 @@ export class Characters {
       return { id: spot.id, world: W.id, spot, x: q.x, y: q.y + (cfg.lift ? 0 : 0), lift: cfg.lift || 0, who: cfg.who, sprite: cfg.sprite, pet: cfg.pet, anchor: cfg.anchor, shadow: cfg.shadow, name: cfg.name, lines: cfg.lines, gesture: !!cfg.gesture, stretch: !!cfg.stretch,
         phase: rnd(this.list.length + 3) * 6, gT: 3 + rnd(this.list.length) * 6, gest: 0, owner: base, parts: [] };
     };
-    for (const spot of G.spots) {
+    for (const spot of [...G.spots].sort((a, b) => (b.stamp ? 1 : 0) - (a.stamp ? 1 : 0))) {   // building hosts first, so a twin story joins the host at the door
       const W = G.worlds[spot.world]; if (!W || W.kind === 'map') continue; const st = spot.story; if ((D.skip || []).includes(spot.id)) continue;
       let cfg = (D.stories || {})[spot.id]; if (!cfg && st.speaker && st.speaker !== 'glauka' && IM['c_' + st.speaker + '_0']) cfg = { who: st.speaker };
       const host = spot.stamp && spot.stamp.host;   // a passport building: its host stands at the door (the wandering gods have their own module)
       if (host && !['zeus', 'hephaestus', 'dionysus'].includes(host) && IM['c_' + host + '_0'] && (!cfg || !cfg.who || cfg.who !== host)) cfg = Object.assign({}, cfg && cfg.who === null ? {} : (cfg || {}), { who: host, dx: (cfg && cfg.dx) ?? 26, dy: (cfg && cfg.dy) ?? 6 });
       if (!cfg) continue;
+      const twin = cfg.who && this.list.find(q => q.owner && q.who === cfg.who && q.world === W.id);   // one figure per person per area: Plato tells both his stories
+      if (twin) { (twin.more = twin.more || []).push(spot); spot.mergedInto = twin; continue; }
       const c = mk(W, spot, cfg, true); if (!c) { console.warn('no place for', spot.id); continue; }
       for (const pr of cfg.props || []) c.parts.push({ prop: pr.prop, x: c.x + pr.dx - (cfg.dx ?? -26), y: c.y + pr.dy - (cfg.dy ?? 8), front: !!pr.front });
       for (const ex of cfg.extra || []) { const q = place(W, spot.x + ex.dx, spot.y + ex.dy, spot); if (q) { taken.push({ w: W.id, x: q.x, y: q.y }); c.parts.push({ who: ex.who, x: q.x, y: q.y, name: ex.name, lines: ex.lines, gesture: !!ex.gesture, phase: rnd(this.list.length + 9) * 6, gT: 2 + rnd(this.list.length + 4) * 5, gest: 0 }); } }
@@ -107,7 +109,7 @@ export class Characters {
     shadowAt(p.x, p.y, 14, .28); g.drawImage(im, R(p.x - a[0]), R(p.y - a[1]));
   }
   mark(c, t) {   // the '...' bubble above an unfinished story's character, a small gold check once it is done
-    const G = this.G, done = G.collected(c.id), top = c.pet ? 18 : (c.top || ((IM[c.sprite || `c_${c.who}_0`] || { height: 34 }).height) + (c.lift || 0)) + 4;
+    const G = this.G, done = G.collected(c.id) && (c.more || []).every(sp => G.collected(sp.id)), top = c.pet ? 18 : (c.top || ((IM[c.sprite || `c_${c.who}_0`] || { height: 34 }).height) + (c.lift || 0)) + 4;
     const bx = R(c.x - 8), by = R(c.y - top - 16 + Math.sin(t * 3 + c.phase) * 1.5);
     if (!done) {   // a story to hear: a bouncing gold '!' (the RPG sign every child knows)
       const X = R(c.x - 3), Y = R(c.y - top - 18 + Math.abs(Math.sin(t * 4 + c.phase)) * -3), ink = '#3a2140', gold = '#ffd23f', hi = '#fff6c0';
@@ -141,7 +143,8 @@ export class Characters {
     if (!h.c.owner) { this.chat(h.c); return true; }            // statues just talk
     if (dist(p.x, p.y, h.c.spot.x, h.c.spot.y) > 70) { ui.toast('Walk closer.'); sfx.tap(); return true; }
     if (h.o !== h.c && h.o.lines) { this.chat(h.o); return true; }   // an extra figure answers with a line; the main character starts the story
-    G.playStory(h.c.spot); return true;
+    const all = [h.c.spot, ...(h.c.more || [])], next = all.find(sp => !G.collected(sp.id)) || h.c.spot;
+    G.playStory(next); return true;
   }
   async chat(o) {
     const G = this.G; if (G.scene || G.busy || !(o.lines && o.lines.length)) return; const sp = (o.name || o.who || 'npc').toLowerCase().replace(/[^a-z]/g, '');

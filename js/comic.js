@@ -7,27 +7,35 @@ import { aiAssets } from './scene.js';
 import { readCps, decorHold, autoTap } from './reading.js';
 
 const EXTS = ['jpeg', 'jpg', 'png', 'webp'], PAGE_DIRS = ['art/web/comics', 'art/comics'];   // the published site ships only the web copies
-const cache = {};
+const cache = {}, inflight = {};
 const loadImg = src => new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
 
 // does this story have a comic? resolves {id, script, pages:[{n, src, img, rects}]} or null
-export async function loadComic(id) {
-  if (cache[id] !== undefined) return cache[id];
-  let script = null, narrVoice = null;
-  try { const r = await fetch(`art/comics/${id}/script.json`); if (r.ok) { const j = await r.json(); script = Array.isArray(j) ? j : (j.panels || j.script || null); if (!Array.isArray(j)) narrVoice = j.narr_voice || null; } } catch (e) { }
-  if (!script || !script.length) { cache[id] = null; return null; }
-  const layouts = {}; script.forEach(s => { if (s.layout) layouts[s.page] = s.layout; });
-  const nums = [...new Set(script.map(s => s.page))].sort((a, b) => a - b), pages = [];
-  for (const n of nums) {
-    let img = null, src = null;
-    for (const b of PAGE_DIRS) { for (const e of EXTS) { img = await loadImg(src = `${b}/${id}/p${n}.${e}`); if (img) break; } if (img) break; }   // 1600 px web copy first, then the original
-    if (!img) continue;
-    const entries = script.filter(s => s.page === n).sort((a, b) => a.panel - b.panel);
-    pages.push({ n, src, img, entries, rects: detectPanels(img, layouts[n] || (entries.length === 3 ? '2+1' : '2x2')) });
-  }
-  cache[id] = pages.length ? { id, script, pages, narrVoice } : null;
-  return cache[id];
+let known = null; const knownP = fetch('data/comics.json').then(r => r.ok ? r.json() : null).then(j => { known = j ? new Set(j) : null; }).catch(() => { });
+export function loadComic(id) {   // one shared promise per story, so a prefetch and the real load are the same request
+  if (cache[id] !== undefined) return Promise.resolve(cache[id]);
+  if (known && !known.has(id) && id[0] !== '_') return Promise.resolve(cache[id] = null);   // data/comics.json lists the stories that have one
+  if (inflight[id]) return inflight[id];
+  return inflight[id] = (async () => {
+    await knownP; if (known && !known.has(id) && id[0] !== '_') { delete inflight[id]; return cache[id] = null; }
+    let script = null, narrVoice = null;
+    try { const r = await fetch(`art/comics/${id}/script.json`); if (r.ok) { const j = await r.json(); script = Array.isArray(j) ? j : (j.panels || j.script || null); if (!Array.isArray(j)) narrVoice = j.narr_voice || null; } } catch (e) { }
+    if (!script || !script.length) { cache[id] = null; return null; }
+    const layouts = {}; script.forEach(s => { if (s.layout) layouts[s.page] = s.layout; });
+    const nums = [...new Set(script.map(s => s.page))].sort((a, b) => a - b);
+    const one = async n => {   // all pages at once; the 1600 px .jpeg web copy is the normal case, other names only as a fallback
+      let img = null, src = null;
+      for (const b of PAGE_DIRS) { for (const e of EXTS) { img = await loadImg(src = `${b}/${id}/p${n}.${e}`); if (img) break; } if (img) break; }
+      if (!img) return null;
+      const entries = script.filter(s => s.page === n).sort((a, b) => a.panel - b.panel);
+      return { n, src, img, entries, rects: detectPanels(img, layouts[n] || (entries.length === 3 ? '2+1' : '2x2')) };
+    };
+    const pages = (await Promise.all(nums.map(one))).filter(Boolean);
+    cache[id] = pages.length ? { id, script, pages, narrVoice } : null; delete inflight[id];
+    return cache[id];
+  })();
 }
+export const prefetchComic = id => { if (cache[id] === undefined && !inflight[id]) loadComic(id).catch(() => { }); };
 
 // Find the white gutters. Returns panel rects in image pixels, in reading order (TL, TR, BL, BR; or TL, TR, wide bottom for 2+1).
 export function detectPanels(img, layout = '2x2') {

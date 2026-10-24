@@ -11,7 +11,7 @@ import { earnOwls, REWARDS } from './economy.js';
 import { sfx, unlock, music } from './audio.js';
 import { updateSoundscape } from './soundscape.js';
 import * as ui from './ui.js';
-import { loadComic, playComic } from './comic.js';
+import { prefetchComic, loadComic, playComic } from './comic.js';
 import { Theseus } from './theseus.js';
 import { loadMinigames, playMinigame } from './minigame.js';
 import { Skate } from './skate.js';
@@ -125,7 +125,7 @@ export class Game {
     label(s.label, s.x, s.y - 30 - (near ? 2 : 0), near ? '#ffffff' : '#fff4d6', '#3a2c4c', true);
   }
   drawSpot(s, t) {
-    if (this.chars && this.chars.ready && this.chars.has(s.id)) return;   // a character stands here with a '!' over their head: no flag as well
+    if (s.mergedInto || (this.chars && this.chars.ready && this.chars.has(s.id))) return;   // a character stands here with a '!' over their head: no flag as well
     const got = this.collected(s.id), fr = Math.floor(t * 3 + s.i) % 2, f = IM['flag_' + s.story.flag + '_' + fr] || IM.flag_history_0;
     if (!got) { const p = .5 + .5 * Math.sin(t * 3 + s.i); g.strokeStyle = `rgba(255,255,255,${(.25 + .3 * p).toFixed(2)})`; g.lineWidth = 1; g.beginPath(); g.ellipse(s.x, s.y + 1, 6 + 3 * p, 2 + p, 0, 0, 7); g.stroke(); }
     shadowAt(s.x, s.y, 6, .3); const mk = pennant(s.story.flag, t, s.i); if (mk) g.drawImage(mk.im, R(s.x - mk.ax), R(s.y - mk.ay)); else g.drawImage(f, R(s.x - 5), R(s.y - 12));   // the art lead's pennant when art/markers exists
@@ -162,6 +162,7 @@ export class Game {
     if (this.trans) { this.trans.t += dt; if (this.trans.t >= this.trans.dur) { const r = this.trans.res; this.trans = null; r && r(); } }
     if (this.mode === 'play' && !this.scene && !this.trans && !this.busy && !this.flight) {
       this.unstick();
+      this.pfT = (this.pfT || 0) - dt; if (this.pfT <= 0) { this.pfT = .6; const p = this.player; for (const s of this.spots) if (s.world === this.world.id && !this.collected(s.id) && dist(p.x, p.y, s.x, s.y) < 280) prefetchComic(s.story.id); }   // comics of nearby stories load before she gets there
       this.movePlayer(dt); this.updateOwl(dt); this.passport.update(); this.title.update(dt);
       const W = this.world, p = this.player, rr = W.kind === 'map' ? 17 : 40; let best = null, bd = 1e9;
       for (const s of this.spots) if (s.world === W.id) { const d = dist(p.x, p.y, s.x, s.y); if (d < rr && d < bd) { bd = d; best = { kind: 'spot', ref: s }; } }
@@ -338,6 +339,7 @@ export class Game {
   // go to a place from anywhere: Glauka flies her there (across zones too, e.g. the Academy and the Lyceum), then arrive
   async goPlace(spot) {
     if (!spot || this.busy || this.scene || this.flight || this.trans) return;
+    if (!this.collected(spot.id)) prefetchComic(spot.story.id);   // fetch the comic while she flies
     ui.closeOverlay && ui.closeOverlay(); this.fly.closeCard(); this.player.goto = null; this.player.route = null; this.pendingAct = null;
     if (spot.world !== this.world.id) {
       const B = this.worlds[spot.world]; if (!B) return; const q = B.kind === 'live' ? B.nearestWalkable(spot.x, spot.y + 16) : { x: spot.x, y: spot.y + 12 };

@@ -235,5 +235,15 @@
   "y": -492,
   "big": false,
   "note": "The potters' quarter and the old cemetery, just outside the city wall."
+ },
+ {
+  "id": "poikile",
+  "name": "Painted Stoa",
+  "short": "Painted Stoa",
+  "subtitle": "where the Stoics got their name",
+  "x": 1172,
+  "y": 317,
+  "big": false,
+  "note": "This fenced dig is the Painted Stoa, the Stoa Poikile. Zeno taught here around 300 BC, so his followers were called Stoics: the porch people. The big rebuilt stoa across the Agora is the Stoa of Attalos, built 150 years later."
  }
 ]

@@ -1,0 +1,140 @@
+{
+ "story": "bacchae",
+ "title": "The Bacchae",
+ "flag": "myth",
+ "main": false,
+ "layout": "2x2",
+ "pages": 3,
+ "refs": [
+  [
+   "dionysus"
+  ],
+  [
+   "dionysus"
+  ],
+  []
+ ],
+ "panels": [
+  {
+   "page": 1,
+   "panel": 1,
+   "visual": "Dionysus (young, long dark curls, ivy crown, leopard skin) arriving at the gates of the city of Thebes disguised as a smiling stranger, a dangerous glint in his eye",
+   "caption": "Dionysus, god of wine and theatre, came home to Thebes in disguise.",
+   "speech": null,
+   "sfx": null,
+   "tag": "MYTH"
+  },
+  {
+   "page": 1,
+   "panel": 2,
+   "visual": "King Pentheus (young, stern, crown, armour) pointing furiously while guards chain up the smiling stranger",
+   "caption": "His cousin, King Pentheus, said he was a fake and threw him in jail.",
+   "speech": {
+    "speaker": "Pentheus",
+    "text": "A fake god! Chain him!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "The chains snapping and the palace walls cracking and shaking, Dionysus walking out free and smiling, guards fleeing",
+   "caption": "Chains cannot hold a god.",
+   "speech": null,
+   "sfx": "KRAKOOM",
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The women of Thebes with wild eyes and ivy in their hair running up a dark mountain at night with torches and pine-cone staffs",
+   "caption": "He drove the women of Thebes wild. They ran up the mountain as Bacchae.",
+   "speech": {
+    "speaker": "Bacchae",
+    "text": "Euoi! Euoi!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Frenzied Bacchae women on the mountain tearing at a huge wild bull with their bare hands, dark-red blood splashing everywhere, torches, horror",
+   "caption": "They danced, they shrieked, and they tore wild animals apart with their bare hands.",
+   "speech": null,
+   "sfx": "RIIIP",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Agave, the king's mother (older woman, wild grey-streaked hair, ivy crown, blood-splashed dress), leading the pack with a pine-cone staff raised, eyes blazing",
+   "caption": "Their leader was Pentheus's own mother, Agave.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "Dionysus slyly helping Pentheus into a long woman's dress and a wig, Pentheus looking dazed and excited",
+   "caption": "Dionysus tricked Pentheus into dressing as a woman, to spy on them.",
+   "speech": {
+    "speaker": "Dionysus",
+    "text": "Nobody will know it's you."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Pentheus in his disguise peeking down from the top of a tall pine tree at the Bacchae dancing round a fire below, moonlight",
+   "caption": "He climbed a tall pine tree to watch.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "The Bacchae all looking up at once with glowing white eyes; above them, in their frenzied vision, the man in the tree looks like a snarling mountain lion",
+   "caption": "In their frenzy, they did not see a king. They saw a mountain lion.",
+   "speech": {
+    "speaker": "Agave",
+    "text": "A LION! Get it!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Dozens of hands pulling the whole pine tree down, Pentheus falling into the screaming crowd, dark-red blood splashing across the panel",
+   "caption": "They pulled the tree down and tore him apart.",
+   "speech": null,
+   "sfx": "RRRRIP",
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Agave marching home through the city gates in triumph at dawn, holding up her staff with a dark round shape stuck on top, shown only as a black silhouette against the rising sun, people backing away in horror",
+   "caption": "Agave marched home proudly with her lion's head on her staff.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "Extreme close-up of Agave's face as the frenzy leaves her: tiny shaking pupils, mouth open in a silent scream, tears, a drip of red on her cheek; behind her Dionysus fading into shadow, smiling",
+   "caption": "Then she saw whose head it was. Her own son's.",
+   "speech": null,
+   "sfx": "!!",
+   "tag": null
+  }
+ ],
+ "mood": "Gothic horror mood for this story: wild night scenes on a mountain, torches, frenzied faces, deep black shadows, dark-red ink as the single accent colour; blood shown as splashes and drips, never wounds or body parts; frightening but suitable for brave children aged 9 to 11."
+}

@@ -14,6 +14,7 @@ export class Marks {
   async init() {
     try { this.landmarks = await (await fetch('data/landmarks.json')).json(); } catch (e) { }
     try { this.labels = await (await fetch('data/labels.json')).json(); } catch (e) { }
+    try { this.streets = await (await fetch('data/streets.json')).json(); } catch (e) { this.streets = []; }
     try { document.fonts && document.fonts.load('16px Sprout'); } catch (e) { }
   }
   name(s) { return this.labels[s.id] || s.story.title; }
@@ -66,7 +67,31 @@ export class Marks {
   draw() {
     const G = this.G, W = G.world, k = mainCx; if (!k || G.scene || W.kind !== 'live' || G.flight || G.trans) { this.hits = []; return; }
     const far = G.cam.z < .6; this.hits = [];
+    k.save(); try { if (W.id === 'athens') this.drawStreetNames(k, W); } finally { k.restore(); }
     k.save(); try { far ? this.drawFar(k, W) : this.drawStreet(k, W); } finally { k.restore(); }
+  }
+  // ---- street names (data/streets.json from OpenStreetMap): a blue Athens street sign, Greek over Latin letters, along the longest visible stretch
+  drawStreetNames(k, W) {
+    const u = this.u(), cw = k.canvas.width, ch = k.canvas.height, placed = [];
+    if (!this.streetW) this.streetW = (this.streets || []).map(st => ({ st, lines: st.lines.map(l => l.map(([la, lo]) => W.project(la, lo))) }));
+    for (const { st, lines } of this.streetW) {
+      let best = null, bl = 90 * u;
+      for (const l of lines) for (let i = 1; i < l.length; i++) {
+        const [x0, y0] = this.scr(l[i - 1].x, l[i - 1].y), [x1, y1] = this.scr(l[i].x, l[i].y), mx = (x0 + x1) / 2, my = (y0 + y1) / 2, len = Math.hypot(x1 - x0, y1 - y0);
+        if (mx < 60 * u || my < 120 * u || mx > cw - 60 * u || my > ch - 60 * u) continue;
+        if (len > bl) { bl = len; best = { mx, my, a: Math.atan2(y1 - y0, x1 - x0) }; }
+      }
+      if (!best) continue;
+      let a = best.a; if (a > Math.PI / 2) a -= Math.PI; if (a < -Math.PI / 2) a += Math.PI;
+      k.font = `800 ${Math.round(15 * u)}px ${FONT}`; const w1 = k.measureText(st.el).width; k.font = `700 ${Math.round(13 * u)}px ${FONT}`; const w2 = k.measureText(st.en).width;
+      const w = Math.max(w1, w2) + 16 * u, h = 37 * u, r = { x: best.mx - w / 2, y: best.my - h / 2, w, h };
+      if (placed.some(q => this.hitRect(q, r))) continue; placed.push(r);
+      k.save(); k.translate(best.mx, best.my); k.rotate(a);
+      k.fillStyle = '#1f4fa0'; k.strokeStyle = '#ffffff'; k.lineWidth = 2 * u; k.beginPath(); k.roundRect ? k.roundRect(-w / 2, -h / 2, w, h, 4 * u) : k.rect(-w / 2, -h / 2, w, h); k.fill(); k.stroke();
+      k.fillStyle = '#ffffff'; k.textAlign = 'center'; k.textBaseline = 'alphabetic';
+      k.font = `800 ${Math.round(15 * u)}px ${FONT}`; k.fillText(st.el, 0, -1 * u); k.font = `700 ${Math.round(13 * u)}px ${FONT}`; k.fillText(st.en, 0, 13 * u);
+      k.restore();
+    }
   }
   // ---- street level
   drawStreet(k, W) {

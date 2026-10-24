@@ -34,7 +34,12 @@ export class Guide {
   canZoom() { const G = this.G; return G.mode === 'play' && !G.busy && !G.scene && !G.flight && !G.trans && G.world.kind === 'live'; }
   zoomStep(dir) {   // +1 in, -1 out
     if (!this.canZoom()) return; const st = this.stops(); let i = 0, bd = 9; st.forEach((z, k) => { const d = Math.abs(Math.log(z / this.zt)); if (d < bd) { bd = d; i = k; } });
-    const j = clamp(i + (dir > 0 ? -1 : 1), 0, st.length - 1); if (j !== i) { this.zt = st[j]; sfx.tap(); }
+    const j = clamp(i + (dir > 0 ? -1 : 1), 0, st.length - 1); if (j !== i) { this.zt = st[j]; sfx.tap(); this.outT = 0; return; }
+    const G = this.G, W = G.world;   // pinching out past the whole of a side area (Academy, Lyceum, Syntagma) takes her back to Athens
+    if (dir < 0 && W.id !== 'athens' && G.worlds.athens) {
+      const now = G.time; if (this.outT && now - this.outT < 2.5) { this.outT = 0; sfx.hoot(); G.flyTo('athens'); }
+      else { this.outT = now; ui.toast('Pinch out again to fly back to Athens', 2200); }
+    }
   }
   onWheel(dy, ctrl) { this.acc += dy * (ctrl ? .06 : .012); while (Math.abs(this.acc) >= 1) { this.zoomStep(this.acc > 0 ? -1 : 1); this.acc -= Math.sign(this.acc); } }
   // ------------------------------------------------------------ targets

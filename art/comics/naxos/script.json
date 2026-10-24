@@ -2,30 +2,41 @@
  "story": "naxos",
  "title": "Left on Naxos",
  "flag": "myth",
- "main": false,
+ "main": true,
  "layout": "2x2",
- "pages": 1,
+ "pages": 3,
  "refs": [
   [
    "ariadne",
    "theseus"
+  ],
+  [
+   "ariadne",
+   "theseus"
+  ],
+  [
+   "ariadne",
+   "dionysus"
   ]
  ],
  "panels": [
   {
    "page": 1,
    "panel": 1,
-   "visual": "Theseus and Ariadne on a ship sailing away from Crete, bright sea, Theseus smiling, Ariadne leaning on the rail",
-   "caption": "Ariadne and Theseus sailed away from Crete together.",
-   "speech": null,
+   "visual": "Princess Ariadne of Crete (long dark curls, red-and-blue Minoan dress) secretly meeting the young hero Theseus at night by the dark doorway of the Labyrinth, pressing a red ball of thread into his hands",
+   "caption": "Princess Ariadne of Crete helped Theseus beat the Minotaur.",
+   "speech": {
+    "speaker": "Ariadne",
+    "text": "Tie it at the door. Follow it back."
+   },
    "sfx": null,
    "tag": "MYTH"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Ariadne asleep on the beach at Naxos in the dawn light, Theseus's ship leaving the shore far behind",
-   "caption": "On Naxos he left her asleep on the beach and sailed on.",
+   "visual": "Theseus bursting out of the Labyrinth doorway holding the red thread, sword in hand, Ariadne running to him",
+   "caption": "Her thread led him out of the Labyrinth alive.",
    "speech": null,
    "sfx": null,
    "tag": null
@@ -33,8 +44,35 @@
   {
    "page": 1,
    "panel": 3,
-   "visual": "Ariadne seen from behind, long dark hair whipping in wind, a tiny ship on the far horizon, an inset of her eye with a tear and the ship in it",
-   "caption": "He left her.",
+   "visual": "Ariadne and Theseus on the deck of a ship slipping out of the harbour of Crete at dawn, hand in hand, Cretan palace behind them",
+   "caption": "She gave up her home and sailed away with him.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 4,
+   "visual": "The ship pulling up on a quiet island beach with rocks and a little white chapel-like rock on a headland, sunset",
+   "caption": "They stopped for the night on the island of Naxos.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 1,
+   "visual": "Ariadne asleep on the sand under a cloak in moonlight; Theseus tiptoeing away towards the ship, looking back guiltily",
+   "caption": "While she slept, Theseus crept back to the ship.",
+   "speech": null,
+   "sfx": "shhh",
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 2,
+   "visual": "Ariadne waking at dawn on the empty beach, the ship tiny on the horizon, her hand reaching out",
+   "caption": "She woke up alone. His ship was already far away.",
    "speech": {
     "speaker": "Ariadne",
     "text": "Theseus?"
@@ -43,16 +81,64 @@
    "tag": null
   },
   {
-   "page": 1,
+   "page": 2,
+   "panel": 3,
+   "visual": "Ariadne standing on a rock in the wind, hair and dress whipping, shouting a curse at the sea with storm clouds gathering over the distant ship, dramatic",
+   "caption": "One old poem says she cursed him: may you forget, the way you forgot me.",
+   "speech": {
+    "speaker": "Ariadne",
+    "text": "May you forget!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
    "panel": 4,
-   "visual": "Dionysus the god (garlands, grape-vine crown, smiling kindly) offering Ariadne a hand on the shore, tiger and vines behind him, a bit of colour",
-   "caption": "Then the god Dionysus found her and married her. Theseus was far away.",
+   "visual": "The distant ship in a storm of grey cloud, its sail black; Theseus on deck looking blank and forgetful, a little question mark over his head",
+   "caption": "And Theseus forgot to change his black sails. You know what happened to his father.",
+   "speech": null,
+   "sfx": null,
+   "tag": "ONE VERSION"
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "The god Dionysus (young, long dark curls, ivy crown, leopard skin) arriving on the beach in a chariot pulled by two panthers, with dancing Bacchae women and music, grapevines sprouting from the sand",
+   "caption": "Then a god came to Naxos: Dionysus, with his panthers and his wild Bacchae.",
    "speech": null,
    "sfx": null,
    "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 2,
+   "visual": "Dionysus kneeling and offering his hand to the surprised Ariadne, petals and ivy swirling, warm golden light",
+   "caption": "He fell in love with her at first sight, and they married.",
+   "speech": {
+    "speaker": "Dionysus",
+    "text": "Forget him. Come with me."
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 3,
+   "visual": "Dionysus throwing a glittering golden crown up into the night sky, where it turns into a curved arc of seven stars; Ariadne watching in wonder",
+   "caption": "As a wedding gift he threw her crown into the sky.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 4,
+   "visual": "A modern night sky full of stars over the sea, a curved half-circle of bright stars highlighted with a faint dotted outline of a crown, a girl and an owl looking up from a rock",
+   "caption": "It is still there: the Northern Crown, Corona Borealis. Look for it on a summer night.",
+   "speech": null,
+   "sfx": null,
+   "tag": "REAL STARS"
   }
- ],
- "notes": [
-  "fixed by tools/comic_fix.py (story_audit 6.3): pages [1] regenerated"
  ]
 }
