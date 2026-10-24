@@ -75,7 +75,7 @@ export async function openWardrobe(opts = {}) {
   const nameIn = el('input', { type: 'text', maxlength: 14, placeholder: 'Your name', autocomplete: 'off', class: 'wd-name', oninput: e => { name = e.target.value.trim(); nameIn.classList.toggle('need', first && !name); } });
   const doneBtn = el('button', { class: 'btn go', text: first ? 'Start' : 'Done', onclick: () => finish() });
   if (first) nameIn.classList.add('need');   // the empty name box glows: it is the first thing to do
-  let chosenSpeed = 'normal'; const speedEl = first ? el('div', { class: 'wd-speed' }, el('small', { text: 'Reading speed' }), speedPicker(v => { chosenSpeed = v; }, 'normal')) : null;
+  let chosenSpeed = 'normal'; const speedEl = first ? el('div', { class: 'wd-speed' }, el('small', { text: 'How fast do words appear?' }), speedPicker(v => { chosenSpeed = v; }, 'normal')) : null;
   const bar = el('div', { class: 'wd-bar' }, first ? nameIn : null, speedEl, el('span', { class: 'wd-grow' }), owlsEl, doneBtn);
   const turn = el('div', { class: 'wd-turn' },
     el('button', { class: 'btn small', text: 'Wave', onclick: () => { sfx.tap(); view && view.wave(); } }),
@@ -113,12 +113,12 @@ export async function openWardrobe(opts = {}) {
       if (id && ICONS.has(id)) { const im = new Image(); im.alt = ''; im.onload = () => pic.replaceChildren(im); im.onerror = draw; im.src = new URL('../art/avatar/icons/' + id + '.png', import.meta.url).href; } else draw();
     }
     b.append(el('small', { text: t.label }));
-    if (!own) b.append(troph ? el('em', { class: 'wd-lock', text: 'Locked' }) : el('em', { class: 'wd-price', text: String(t.item.price) }));
+    if (!own) b.append(troph ? el('em', { class: 'wd-lock', text: 'Locked' }) : el('em', { class: 'wd-price', text: String(t.item.price), title: t.item.price + ' owl coins' }));
     else if (cur) b.append(el('em', { class: 'wd-worn', text: 'On' }));
     return b;
   }
   function render() {
-    owlsEl.textContent = `${owlsBalance()} owls`; owlsEl.className = 'wd-owls';
+    owlsEl.textContent = `${owlsBalance()} owl coins to spend`; owlsEl.className = 'wd-owls';
     tabsEl.replaceChildren(...TABS.map(t => el('button', { class: 'btn small' + (t.id === tabId ? ' on' : ''), text: t.name, onclick: () => { sfx.tap(); tabId = t.id; sel = null; setView(lookNow()); render(); } })));
     const tab = TABS.find(t => t.id === tabId); grid.replaceChildren();
     for (const sec of tab.sections) {

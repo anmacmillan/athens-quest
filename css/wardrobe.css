@@ -25,7 +25,7 @@
 .wd-sw { width: 54px; height: 54px; border-radius: 12px; border: 3px solid #fff; box-shadow: 0 0 0 2px var(--edge); display: block; }
 .wd-txt { font-family: Sprout, monospace; font-size: 18px; text-align: center; }
 .wd-tile em { position: absolute; top: 3px; right: 3px; font-style: normal; font-size: 11px; font-weight: 800; border-radius: 8px; padding: 0 6px; }
-.wd-price { background: #f5c542; color: #4a3200; } .wd-price::before { content: ''; } .wd-lock { background: #8b8fa0; color: #fff; } .wd-worn { background: #4caf6a; color: #fff; }
+.wd-price { background: #f5c542; color: #4a3200; } .wd-price::before { content: ''; display: inline-block; width: 13px; height: 13px; margin-right: 3px; vertical-align: -2px; background: url(../art/coin.png) center / contain no-repeat; image-rendering: pixelated; } .wd-lock { background: #8b8fa0; color: #fff; } .wd-worn { background: #4caf6a; color: #fff; }
 .wd-detail { flex: none; min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--paper); border: 3px solid var(--edge); border-radius: 12px; padding: 4px 12px; font-family: ui-rounded, "Trebuchet MS", system-ui; }
 .wd-info { display: flex; flex-direction: column; gap: 1px; } .wd-info b { font-size: 18px; } .wd-info small { font-size: 13px; } .wd-hint { color: #8a3fd0; font-weight: 700; }
 .wd-acts { display: flex; gap: 6px; flex: none; }
@@ -46,3 +46,5 @@
 @keyframes wdglow { 50% { box-shadow: 0 0 0 3px #ffd23f, 0 0 4px 1px rgba(255,210,63,.3); } }
 .wd-name.shake { animation: wdshake .4s; }
 @keyframes wdshake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+.wd-tabs button, .wd-tab { min-height: 44px; min-width: 64px; margin: 2px; font-size: 15px; }

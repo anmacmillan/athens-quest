@@ -108,7 +108,7 @@ export class Guide {
   drawTrail() {   // faint dotted trail in the air from the player to a little past Glauka
     const G = this.G, T = this.path && this.T; if (!T || G.world.kind !== 'live' || G.scene || this.state === 'back' || this.mode === 'follow') return;
     const pr = this.progress(G.player.x, G.player.y), a = pr.s + 22, b = Math.min(this.L, this.owlS + 40), t = G.time; if (b <= a) return;
-    for (let s = a, i = 0; s < b; s += 13, i++) { const q = this.ptAt(s + ((t * 18) % 13)), al = (.62 - .4 * (s - a) / Math.max(1, b - a)); if (s + ((t * 18) % 13) > b) break; const yy = q.y - 24 + Math.sin(t * 4 + i * .8) * 1.5, aa = Math.max(.25, al + .15); px(q.x - 1, yy - 1, 4, 4, '#3a2c4c', aa * .45); px(q.x, yy, 2, 2, '#fffbe0', Math.min(1, aa + .2)); }
+    for (let s = a, i = 0; s < b; s += 13, i++) { const q = this.ptAt(s + ((t * 18) % 13)), al = (.62 - .4 * (s - a) / Math.max(1, b - a)); if (s + ((t * 18) % 13) > b) break; const yy = q.y - 24 + Math.sin(t * 4 + i * .8) * 1.5, aa = Math.max(.25, al + .15); px(q.x - 2, yy - 2, 6, 6, '#3a2c4c', Math.min(1, aa + .35)); px(q.x - 1, yy - 1, 4, 4, '#ffd23f', Math.min(1, aa + .4)); px(q.x - 1, yy - 1, 2, 2, '#fff6c0', Math.min(1, aa + .4)); }   // gold dots with a dark rim: readable on pale marble
   }
   // Zoomed out (z < .6) the street entities are not drawn (the illustrated overview shows); instead pins at constant screen size, drawn in screen space after the world.
   far() { const G = this.G; return G.world.kind === 'live' && G.cam.z < .6 && !G.scene; }

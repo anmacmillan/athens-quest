@@ -333,6 +333,7 @@ export class Game {
       if (W.kind === 'map') { this.player.goto = { x: s.x, y: s.y + 6 }; this.pendingAct = best; return; }
       if (dist(this.player.x, this.player.y, s.x, s.y) < 44) this.activate(best); else { sfx.tap(); this.walkTo(s.x, s.y + 6, best); }
     } else if (W.kind === 'map') { if (!W.solid(w.x, w.y)) { this.player.goto = { x: w.x, y: w.y }; this.pendingAct = null; } }
+    else if (W.kind === 'live' && this.cam.z >= .6) { sfx.tap(); this.walkTo(w.x, w.y, null); }   // tap the ground: she walks there
   }
   // double-tap a building or flag: Glauka flies her to its doorway, the title slams in, then the host steps out
   onDoubleTap(v) {
@@ -404,7 +405,7 @@ export class Game {
     unlock();
     if (this.scene) { this.scene.tap(); return; }
     if (this.mode !== 'play' || this.busy || this.trans || this.flight) return;
-    if (this.nearest) this.activate(this.nearest); else if (!this.extras.aTap()) { sfx.hoot(); ui.toast('Find a flag. Hoot!'); }
+    if (this.nearest) this.activate(this.nearest); else if (!this.extras.aTap()) { sfx.hoot(); ui.toast('Look for someone with a gold ! Hoot!'); }
   }
   async loadScene(story) {
     if (!story.scene) return null;
@@ -424,12 +425,12 @@ export class Game {
     const wasDone = this.collected(spot.story.id);
     const story = spot.story, comicP = window.__noComic ? Promise.resolve(null) : loadComic(story.id).catch(() => null), foundP = this.loadScene(story);
     const st0 = !opts.replay && this.passport.ofStory(story.id);
-    if (st0 && !this.collected(story.id)) {   // an unstamped building: the arrival card (place, host, look-for), the comic loads behind it
+    if (st0) {   // a building: the arrival card (place, host, look-for), also on a replay; the comic loads behind it
       const r = await arrivalCard(st0);
       if (r !== 'go') { this.busy = false; this.mode = 'play'; input.enabled = true; ui.hud(true); return; }
     }
     const comic = await comicP, found = await foundP;
-    if (!st0 || this.collected(story.id)) await this.intro(story, found);   // other stories: the owning character steps out and says hello
+    if (!st0) await this.intro(story, found);   // other stories: the owning character steps out and says hello
     const sceneData = comic ? null : (found || this.cardScene(story));   // one telling: the comic; a puppet scene only where no comic exists yet
     if (sceneData) {
       const onMap = this.world.kind === 'map';

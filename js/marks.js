@@ -93,8 +93,20 @@ export class Marks {
       k.restore();
     }
   }
+  // Glauka off screen while guiding: a gold arrow on the screen edge points the way to her
+  owlArrow(k) {
+    const G = this.G, gd = G.guide; if (!gd || gd.mode === 'follow' || !(gd.path || gd.wp) || G.scene || G.busy) return;
+    const o = G.owl, u = this.u(), cw = k.canvas.width, ch = k.canvas.height, [x, y] = this.scr(o.x, o.y - 10), m = 60 * u;
+    if (x > m && y > m && x < cw - m && y < ch - m) return;
+    const cx = cw / 2, cy = ch / 2, dx = x - cx, dy = y - cy, sc = Math.min((cw / 2 - m) / Math.abs(dx || 1e-6), (ch / 2 - m) / Math.abs(dy || 1e-6)), ax = cx + dx * sc, ay = cy + dy * sc, a = Math.atan2(dy, dx), pu = 1 + .12 * Math.sin(G.time * 6);
+    k.save(); k.translate(ax, ay); k.rotate(a); k.scale(pu, pu);
+    k.fillStyle = '#ffd23f'; k.strokeStyle = '#3a2140'; k.lineWidth = 4 * u; k.beginPath(); k.moveTo(26 * u, 0); k.lineTo(-10 * u, -18 * u); k.lineTo(-4 * u, 0); k.lineTo(-10 * u, 18 * u); k.closePath(); k.stroke(); k.fill();
+    k.restore();
+    const im = IM.owl_0; if (im) { k.save(); k.imageSmoothingEnabled = false; const s = 2.2 * u; k.drawImage(im, ax - Math.cos(a) * 34 * u - im.width * s / 2, ay - Math.sin(a) * 34 * u - im.height * s / 2, im.width * s, im.height * s); k.restore(); }
+  }
   // ---- street level
   drawStreet(k, W) {
+    this.owlArrow(k);
     const G = this.G, u = V.dpr || 1, t = G.time, p = G.player, T = W.T, placed = [];
     const spots = G.spots.filter(s => s.world === W.id);
     // done coins over finished spots (small, bobbing, about 20 css px)

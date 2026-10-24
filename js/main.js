@@ -31,7 +31,7 @@ async function boot() {
   import('./wardrobe.js').then(m => m.initWardrobe(game)).catch(e => console.warn('wardrobe', e));
   game.afterPick = () => {
     ui.refresh(); ui.hud(true);
-    if (!window.__noIntro && !/nointro/.test(location.search) && !game.opening.seenIntro(me())) game.opening.play(); else ui.toast(`Hello ${me().name}! Drag to walk. A talks to Glauka at flags.`, 4200);
+    if (!window.__noIntro && !/nointro/.test(location.search) && !game.opening.seenIntro(me())) game.opening.play(); else ui.toast(`Hello ${me().name}! Tap the ground to walk. Look for people with a gold !`, 4200);
   };
   const loop = now => { game.frame(now); requestAnimationFrame(loop); }; requestAnimationFrame(loop);
   $('loading').classList.add('done');
@@ -50,4 +50,5 @@ async function boot() {
   if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(() => { });
   window.__ready = true;
 }
+setTimeout(() => { if (!window.__ready) { const m = document.querySelector('#loading small'); if (m) { m.textContent = 'Slow connection... still loading. Tap here to try again.'; m.style.cursor = 'pointer'; m.onclick = () => location.reload(); } } }, 30000);   // hotel wifi
 boot().catch(e => { console.error(e); document.querySelector('#loading small').textContent = 'Something went wrong: ' + e.message; });
