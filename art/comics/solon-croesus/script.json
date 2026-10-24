@@ -1,15 +1,6 @@
 {
  "story": "solon-croesus",
  "title": "Call No Man Happy",
- "notes": [
-  "Point of view: narration is Solon in the first person (the card's speaker) on every panel except p3.4, the coda, which is Glauka (narr_voice: glauka). The lettered captions stay third person ('Then Solon travelled').",
-  "p1.1: the 'LEGEND?' tag sits on Solon's reforms, which are history. Narrated over; the card flags page 1 history. Optional patch: change tag to HISTORY.",
-  "p1.1: the Parthenon is drawn on the Acropolis behind Solon, about 150 years too early. Narration does not mention it. Low priority.",
-  "p3.4: Glauka's sign reads 'GLAUKA' and the lettered bubble says 'LEGEND?'. The script's 'speech' is null although a bubble is lettered; left unchanged as instructed. Patch the sign (audit 6.3).",
-  "Scene: the Pnyx assembly place post-dates Solon; the scene says only 'From this hill you can see the whole city', which is true and does not place Solon's lawgiving on the Pnyx.",
-  "p3.3: narration is under 12 words on purpose (climax: the lettered 'Solon! Solon! Solon!' does the work).",
-  "fixed by tools/comic_fix.py (story_audit 6.3): pages [3] regenerated"
- ],
  "flag": "legend",
  "main": true,
  "layout": "2x2",
@@ -30,139 +21,125 @@
   {
    "page": 1,
    "panel": 1,
-   "visual": "Solon (wise old man, wide hat, staff, white beard) on the Pnyx hill speaking to a crowd of Athenian citizens, hand raised, golden light",
-   "caption": "Around 594 BC, Athens chose Solon to fix its laws.",
+   "visual": "Athens around 620 BC: a stern lawgiver, Draco (thin, grim, long black beard), unrolling a scroll of laws in a dark hall while frightened citizens look on",
+   "caption": "Long ago, Athens had the laws of Draco. Almost every crime was punished with death.",
    "speech": null,
    "sfx": null,
-   "tag": "LEGEND?",
-   "narr": "I have been everywhere, children, and I will tell you all of it. But first: around 594 BC Athens was in a mess, so it chose me, Solon, to fix its laws."
+   "tag": "HISTORY"
   },
   {
    "page": 1,
    "panel": 2,
-   "visual": "Solon tearing up a scroll of old laws, chains of debtors falling off several Athenians who rejoice",
-   "caption": "He cancelled most of the old laws and freed Athenians sold as slaves for debt.",
-   "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "Poor Athenians who could not pay their debts were being sold as slaves. I cancelled most of the old laws and set them free. Chains are heavy. Laws should be lighter."
-  },
-  {
-   "page": 1,
-   "panel": 3,
-   "visual": "An ancient court and a thief with a single cabbage, a stern judge shouting 'Death!', comic horror",
-   "caption": "The laws of Draco were so harsh that stealing a cabbage could be punished with death.",
+   "visual": "An ancient Athenian court: a scrawny thief clutching one cabbage, a stern judge pointing, comic horror",
+   "caption": "Even stealing a cabbage.",
    "speech": {
     "speaker": "Judge",
     "text": "A cabbage?! Death!"
    },
    "sfx": null,
-   "tag": null,
-   "narr": "Before me, Athens used the laws of Draco. They were so harsh that stealing a cabbage could get you killed. A cabbage! I have met many cabbages. None was worth a man."
+   "tag": null
+  },
+  {
+   "page": 1,
+   "panel": 3,
+   "visual": "Poor Athenian farmers in chains being led away by a rich lender with a money bag, a family crying, angry crowds gathering with sticks",
+   "caption": "Poor farmers who could not pay their debts were sold as slaves. Athens was close to civil war.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
   },
   {
    "page": 1,
    "panel": 4,
-   "visual": "A scroll of Draco's laws dripping red ink drawn as 'written in blood', comic, no gore",
-   "caption": "People said they were written in blood.",
+   "visual": "Solon (wise old man, wide straw hat, staff, grey beard) on a rocky hill above Athens being handed a scroll and a laurel by citizens, rich and poor together, golden light",
+   "caption": "In 594 BC both sides asked one man to fix it: Solon, poet and traveller.",
    "speech": null,
    "sfx": null,
-   "tag": null,
-   "narr": "People said Draco's laws were written in blood, not ink. Even today you call a cruel rule draconian. Mine were kinder. Kind laws last longer than cruel ones."
+   "tag": null
   },
   {
    "page": 2,
    "panel": 1,
-   "visual": "Solon travelling on foot along a road with a staff and a travel bag, eagle in the sky",
-   "caption": "Then Solon travelled.",
+   "visual": "Solon breaking chains off the Athenian farmers, who leap up rejoicing; torn debt documents flying in the wind",
+   "caption": "He cancelled the debts and freed everyone enslaved for debt.",
    "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "Then I travelled. I left Athens for ten years, so nobody could make me change my laws. A wise man does not stay home to argue with his own rules."
+   "sfx": "CLANK",
+   "tag": null
   },
   {
    "page": 2,
    "panel": 2,
-   "visual": "A glittering hall of treasure: heaps of gold and gems; Croesus, king of Lydia (plump, jewelled, proud) showing off to Solon",
-   "caption": "Herodotus says he visited Croesus, the richest man in the world.",
+   "visual": "Solon tossing Draco's scroll into a fire, keeping one small scroll labelled MURDER",
+   "caption": "He scrapped Draco's cruel laws, all except the law on murder.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 3,
+   "visual": "A big open-air assembly of ordinary Athenian men on a hillside with a stone speaker's platform cut into the rock, one poor farmer raising his hand to vote; Solon smiling",
+   "caption": "And he let every citizen, even the poorest, vote in the Assembly. Later the Assembly met right here, on the Pnyx.",
+   "speech": null,
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 2,
+   "panel": 4,
+   "visual": "Solon on a ship leaving the harbour of Athens, waving; on the shore citizens shouting requests at him, holding scrolls",
+   "caption": "Then everyone wanted changes. So he made Athens swear to keep his laws, and sailed away for ten years.",
+   "speech": {
+    "speaker": "Solon",
+    "text": "Keep them. I'm off!"
+   },
+   "sfx": null,
+   "tag": null
+  },
+  {
+   "page": 3,
+   "panel": 1,
+   "visual": "A glittering treasure hall in Sardis: heaps of gold and gems; Croesus, king of Lydia (plump, jewelled, proud) showing it all off to the travelling Solon",
+   "caption": "In Lydia he met King Croesus, the richest man in the world.",
    "speech": {
     "speaker": "Croesus",
     "text": "Who is the happiest man alive?"
    },
    "sfx": null,
-   "tag": null,
-   "narr": "Herodotus says I visited Croesus, king of Lydia, the richest man in the world. His servants showed me every room of his treasure. Then the king asked his question.",
-   "voice_speech": {
-    "speaker": "Croesus",
-    "text": "Tell me, Athenian: who is the happiest man alive?"
-   }
+   "tag": "LEGEND?"
   },
   {
-   "page": 2,
-   "panel": 3,
-   "visual": "Croesus leaning forward expecting to hear his own name, big hopeful grin",
-   "caption": "He expected Solon to say him.",
-   "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "He expected me to say him. Look at that face. A man who asks that question with gold all round him does not want an answer. He wants a mirror."
-  },
-  {
-   "page": 2,
-   "panel": 4,
-   "visual": "Solon calmly shaking his head and pointing at a simple Athenian soldier in a distant battle",
-   "caption": "Solon named an ordinary Athenian who died bravely in battle.",
+   "page": 3,
+   "panel": 2,
+   "visual": "Solon calmly shaking his head while Croesus, who expected his own name, goes red; inset, a simple Athenian soldier, Tellus, with his grandchildren",
+   "caption": "Solon named Tellus, an ordinary Athenian who saw his grandchildren grow and died bravely for his city.",
    "speech": {
     "speaker": "Solon",
     "text": "Call no man happy until he is dead."
    },
    "sfx": null,
-   "tag": null,
-   "narr": "I named Tellus, an ordinary Athenian. He had fine sons, saw their children born, and died bravely in battle for his city. Croesus was furious. I told him why."
-  },
-  {
-   "page": 3,
-   "panel": 1,
-   "visual": "King Cyrus of Persia and his army overrunning the golden city of Sardis, flames and banners",
-   "caption": "Years later Croesus lost his kingdom to the Persian king Cyrus.",
-   "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "Years later Croesus lost his kingdom to the Persian king Cyrus. His city, his gold, his throne: all of it gone in one war."
-  },
-  {
-   "page": 3,
-   "panel": 2,
-   "visual": "Croesus bound on a high burning pyre, bursting flames, Cyrus watching",
-   "caption": "He was put on a burning pyre.",
-   "speech": null,
-   "sfx": null,
-   "tag": null,
-   "narr": "Cyrus had him tied up on a great pyre of wood and set it alight. The richest man in the world. All he had left was one sentence."
+   "tag": null
   },
   {
    "page": 3,
    "panel": 3,
-   "visual": "Croesus' face in a halo of flames shouting a name, desperate",
-   "caption": "He cried out Solon's name three times.",
+   "visual": "Years later: Croesus, captured by the Persian king Cyrus, tied on top of a great pyre of logs as the fire is lit, crying out to the sky; Cyrus watching from his horse",
+   "caption": "Years later Cyrus of Persia took his kingdom and put him on a burning pyre.",
    "speech": {
     "speaker": "Croesus",
     "text": "Solon! Solon! Solon!"
    },
-   "sfx": null,
-   "tag": null,
-   "narr": "In the flames, he remembered me."
+   "sfx": "FWOOSH",
+   "tag": null
   },
   {
    "page": 3,
    "panel": 4,
-   "visual": "A sudden rainstorm falling from the sky over the pyre, Cyrus looking up in wonder; in a corner Glauka the owl holds up a tiny wooden sign on which is lettered exactly the word LEGEND? (a question mark after it; the sign does not say Glauka)",
-   "caption": "A sudden rainstorm put the fire out. But Croesus and Solon may never have met.",
+   "visual": "Cyrus raising his hand to stop the fire while servants throw water; a sudden thunderstorm of rain pouring down on the pyre; Glauka in a corner holding a tiny sign 'the dates don't fit'",
+   "caption": "Cyrus heard why, remembered he was only a man too, and ordered the fire put out. Then rain finished the job.",
    "speech": null,
    "sfx": null,
-   "tag": "LEGEND?",
-   "narr": "Only Apollo's rain could put the fire out. That's a legend: a real person, and a story that grew around him. Croesus became king when Solon was very old. They may never have met.",
-   "narr_voice": "glauka"
+   "tag": "LEGEND?"
   }
  ]
 }

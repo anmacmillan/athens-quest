@@ -17,15 +17,17 @@ async function loadStories() {
   }
   return [];
 }
+// loading screen progress: a fraction and a line of what is happening
+const step = (f, msg) => { const b = document.querySelector('#loading .ld-bar i'), m = document.querySelector('#loading small'); if (b) b.style.width = Math.round(f * 100) + '%'; if (m && msg) m.textContent = msg; };
 async function boot() {
   loadStore(); try { await preloadAvatar(me()); } catch (e) { }
   initRender($('cv')); bindCanvas(cv);
-  await loadManifest('art/manifest.json'); await loadAudioManifest();
-  await loadWorlds();
+  step(.1, 'Sharpening pencils...'); await loadManifest('art/manifest.json'); step(.35, 'Tuning the lyres...'); await loadAudioManifest();
+  step(.45, 'Building Athens...'); await loadWorlds();
   try { const r = await fetch('art/stills/index.json'); if (r.ok) (await r.json()).forEach(f => stillList.add(f)); } catch (e) { }
-  await loadAiManifest(); await loadMarkers();
+  step(.7, 'Unrolling the scrolls...'); await loadAiManifest(); await loadMarkers();
   const stories = await loadStories();
-  const game = new Game(); await game.init(stories); ui.init(game);
+  step(.8, 'Waking the gods...'); const game = new Game(); await game.init(stories); ui.init(game); step(1, 'Ready!');
   import('./wardrobe.js').then(m => m.initWardrobe(game)).catch(e => console.warn('wardrobe', e));
   game.afterPick = () => {
     ui.refresh(); ui.hud(true);
