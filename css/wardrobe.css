@@ -41,3 +41,8 @@
 @media (max-height: 560px) { .wd-tile { width: 80px; } .wd-pic { width: 54px; height: 54px; } .panel.big.wd h2 { display: none; } }
 .athumb{width:110px;height:110px;image-rendering:auto}.thumbbox{display:flex;align-items:center;gap:6px}
 .thumbbox .tport{width:96px;height:96px;object-fit:cover;border:3px solid var(--edge);border-radius:12px;background:#f6ecd6;image-rendering:auto}.thumbbox canvas.pv{image-rendering:pixelated}
+
+.wd-name.need { box-shadow: 0 0 0 3px #ffd23f, 0 0 14px 4px rgba(255,210,63,.7); animation: wdglow 1.4s ease-in-out infinite; }
+@keyframes wdglow { 50% { box-shadow: 0 0 0 3px #ffd23f, 0 0 4px 1px rgba(255,210,63,.3); } }
+.wd-name.shake { animation: wdshake .4s; }
+@keyframes wdshake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }

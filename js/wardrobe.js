@@ -72,9 +72,9 @@ export async function openWardrobe(opts = {}) {
   // ---- layout
   const viewBox = el('div', { class: 'wd-view' }), owlsEl = el('span', { class: 'wd-owls' }), detail = el('div', { class: 'wd-detail' });
   const tabsEl = el('div', { class: 'wd-tabs' }), grid = el('div', { class: 'wd-grid' });
-  const nameIn = el('input', { type: 'text', maxlength: 14, placeholder: 'Your name', autocomplete: 'off', class: 'wd-name', oninput: e => { name = e.target.value.trim(); doneBtn.disabled = first && !name; } });
+  const nameIn = el('input', { type: 'text', maxlength: 14, placeholder: 'Your name', autocomplete: 'off', class: 'wd-name', oninput: e => { name = e.target.value.trim(); nameIn.classList.toggle('need', first && !name); } });
   const doneBtn = el('button', { class: 'btn go', text: first ? 'Start' : 'Done', onclick: () => finish() });
-  if (first) doneBtn.disabled = true;
+  if (first) nameIn.classList.add('need');   // the empty name box glows: it is the first thing to do
   let chosenSpeed = 'normal'; const speedEl = first ? el('div', { class: 'wd-speed' }, el('small', { text: 'Reading speed' }), speedPicker(v => { chosenSpeed = v; }, 'normal')) : null;
   const bar = el('div', { class: 'wd-bar' }, first ? nameIn : null, speedEl, el('span', { class: 'wd-grow' }), owlsEl, doneBtn);
   const turn = el('div', { class: 'wd-turn' },
@@ -86,7 +86,7 @@ export async function openWardrobe(opts = {}) {
 
   function teardown() { if (view) { view.dispose(); view = null; } saving = -1; }
   async function finish() {
-    if (first && !store.me) { if (!name) return; addPlayer(name, Object.assign({}, costume)); const p = me(); p.outfit = {}; p.readSpeed = chosenSpeed; touch(store.me); }
+    if (first && !store.me) { if (!name) { nameIn.classList.remove('shake'); void nameIn.offsetWidth; nameIn.classList.add('shake'); nameIn.focus(); ui.toast('Type your name first', 2200); return; } addPlayer(name, Object.assign({}, costume)); const p = me(); p.outfit = {}; p.readSpeed = chosenSpeed; touch(store.me); }
     else persist();
     teardown(); ui.closeOverlay(); sfx.tap(); refreshButton();
     if (opts.onDone) opts.onDone(); else if (first && G && G.afterPick) G.afterPick();

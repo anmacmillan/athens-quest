@@ -220,7 +220,8 @@ export class Game {
     // only a cartoon figure that something in front actually overlaps needs its own layer; the rest go on top at the end (cheaper on older iPads)
     const hit = (a, b) => a && b && a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
     const rectOf = e => e.box || { x0: e.toca.x - 14, y0: e.toca.y - e.toca.h, x1: e.toca.x + 14, y1: e.toca.y + 2 };
-    const cut = (sc || this.trans) ? tocas : tocas.filter(c => { const r = rectOf(c); for (let i = ents.indexOf(c) + 1; i < ents.length; i++) { const e = ents[i]; if (hit(r, e.toca ? rectOf(e) : e.box)) return true; } return false; });
+    const occ = W.occluders || [], behind = r => occ.some(o => r.y1 - 2 < o.feet && o.x < r.x1 && o.x + o.w > r.x0 && o.y < r.y1 && o.y + o.h > r.y0);   // baked-in buildings drawn over figures behind them
+    const cut = (sc || this.trans) ? tocas : tocas.filter(c => { const r = rectOf(c); if (behind(r)) return true; for (let i = ents.indexOf(c) + 1; i < ents.length; i++) { const e = ents[i]; if (hit(r, e.toca ? rectOf(e) : e.box)) return true; } return false; });
     const late = tocas.filter(c => !cut.includes(c));
     if (!cut.length) { for (const e of ents) e.draw(); }
     else {   // cartoon pilot: present what is behind each smooth figure, draw the figure on the screen canvas, then carry on in front of it

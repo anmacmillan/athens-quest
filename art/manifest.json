@@ -5233,5 +5233,35 @@
 "f": "art/c_evzone_marble.png",
 "w": 25,
 "h": 48
+},
+"c_maenad_a_0": {
+"f": "art/c_maenad_a_0.png",
+"w": 35,
+"h": 46
+},
+"c_maenad_a_1": {
+"f": "art/c_maenad_a_1.png",
+"w": 35,
+"h": 46
+},
+"c_maenad_a_2": {
+"f": "art/c_maenad_a_2.png",
+"w": 35,
+"h": 46
+},
+"c_maenad_b_0": {
+"f": "art/c_maenad_b_0.png",
+"w": 28,
+"h": 46
+},
+"c_maenad_b_1": {
+"f": "art/c_maenad_b_1.png",
+"w": 35,
+"h": 46
+},
+"c_maenad_b_2": {
+"f": "art/c_maenad_b_2.png",
+"w": 28,
+"h": 46
 }
 }
